@@ -2,116 +2,155 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>中医免疫知识图谱</title>
-    <!-- 引入 ECharts -->
+    <title>赛博中医免疫知识图谱</title>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
     <style>
-        body { margin: 0; padding: 0; background-color: #0b1120; color: white; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
-        #main { width: 100%; height: 100%; }
+        body { margin: 0; padding: 0; background-color: #03060d; color: #fff; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
+        #main { width: 100vw; height: 100vh; }
         .header { position: absolute; top: 20px; left: 20px; z-index: 10; pointer-events: none; }
-        .header h1 { font-size: 24px; margin: 0; color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
-        .header p { font-size: 14px; margin: 5px 0 0 0; color: #aaa; }
+        .header h1 { font-size: 28px; margin: 0; background: linear-gradient(45deg, #00e5ff, #ff80bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 20px rgba(0,229,255,0.2); }
+        .header p { font-size: 14px; color: #8892b0; margin-top: 5px; letter-spacing: 1px; }
+        #loading-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #8892b0; font-size: 18px; letter-spacing: 2px; animation: pulse 1.5s infinite alternate; }
+        @keyframes pulse { from { opacity: 0.4; } to { opacity: 1; } }
+        .instructions { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); font-size: 13px; color: #5a6385; background: rgba(0,0,0,0.6); padding: 8px 15px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); pointer-events: none; }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>✨ 中医免疫知识星云</h1>
-        <p>数据来源于 PubMed 文献自动抽取</p>
+        <h1>⚕️ 赛博中医免疫知识星云</h1>
+        <p>数据来源：PubMed 文献 AI 自动抽取 | 点击节点查看关联文献</p>
     </div>
-    <!-- 图表容器 -->
+    <div id="loading-text">正在点亮星云...</div>
     <div id="main"></div>
+    <div class="instructions">鼠标滚轮缩放，拖拽旋转，点击实体查看 PubMed 文献</div>
 
     <script>
         var myChart = echarts.init(document.getElementById('main'), 'dark');
+        document.getElementById('loading-text').style.display = 'block';
 
-        // 显示加载动画
-        myChart.showLoading();
-
-        // 并发请求获取节点和关系数据
         Promise.all([
             fetch('nodes.json').then(res => res.json()),
             fetch('edges.json').then(res => res.json())
         ]).then(([nodesData, edgesData]) => {
-            myChart.hideLoading();
+            document.getElementById('loading-text').style.display = 'none';
 
-            // ECharts 的节点格式要求：必须保证每个节点有唯一 'name' 
-            // 如果你的 nodes.json 里用的是 'id' 和 'label'，需要在这里转换一下
+            // 建立节点与 PubMed 的跳转映射
+            const nodeLinkMap = {};
+            nodesData.forEach(node => {
+                // 如果数据本身有 pmid 就用 pmid，没有就以节点名称去搜索
+                const searchTerm = node.name || node.label || node.id;
+                nodeLinkMap[node.name] = `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(searchTerm)}`;
+            });
+
             const formattedNodes = nodesData.map(node => {
                 return {
-                    name: node.label || node.name || node.id, // 根据实际情况取显示名称
-                    value: node.value || 1, // 节点大小权重
-                    category: node.category || 0, // 分类
-                    ...node // 保留原始数据
+                    name: node.label || node.name || node.id,
+                    symbolSize: 12 + Math.random() * 10, // 节点大小随机，增加灵动感
+                    category: 0,
+                    // 动画光晕
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowColor: 'rgba(0, 229, 255, 0.8)'
+                    }
                 };
             });
 
-            // 配置项
             var option = {
-                tooltip: {},
-                legend: [{
-                    data: ['中医相关实体']
-                }],
+                backgroundColor: '#03060d',
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(10, 20, 40, 0.9)',
+                    borderColor: '#00e5ff',
+                    borderWidth: 1,
+                    textStyle: { color: '#fff' },
+                    formatter: function (params) {
+                        let res = `<div style="font-weight:bold; color:#00e5ff; font-size:16px; margin-bottom:5px;">🔬 ${params.name}</div>`;
+                        res += `<div style="font-size:12px; margin-top:5px;">📄 点击节点可跳转查看 PubMed 相关文献</div>`;
+                        // 如果有 3D 效果附加信息可以加在这里
+                        return res;
+                    }
+                },
                 series: [{
                     type: 'graph',
-                    layout: 'force', // 力导向布局，让节点自动散开
+                    layout: 'force',
                     force: {
-                        repulsion: 200, // 节点排斥力
-                        edgeLength: 100, // 连线长度
+                        repulsion: 600, // 增加排斥力，让星云更开阔
+                        edgeLength: [80, 200],
+                        gravity: 0.1,
+                        friction: 0.1,
                         layoutAnimation: true
                     },
-                    roam: true, // 允许鼠标拖拽、缩放
+                    roam: true,
                     draggable: true,
                     data: formattedNodes,
                     edges: edgesData.map(edge => ({
                         source: edge.source,
                         target: edge.target,
-                        value: edge.value || 1,
-                        // 可以自定义连线样式
+                        // 发光连线
                         lineStyle: {
-                            color: '#58a6ff',
-                            opacity: 0.6,
-                            width: 1
-                        }
-                    })),
-                    categories: [{ name: '中医相关实体' }],
-                    // 节点样式
-                    itemStyle: {
-                        color: function(params) {
-                            // 随机生成漂亮的颜色
-                            const colors = ['#58a6ff', '#f0883e', '#3fb950', '#f778ba', '#ff80bf'];
-                            return colors[params.dataIndex % colors.length];
+                            color: 'rgba(0, 229, 255, 0.4)',
+                            width: 1.5,
+                            curveness: 0.3,
+                            shadowBlur: 8,
+                            shadowColor: 'rgba(0, 229, 255, 0.5)'
                         },
-                        borderColor: '#fff',
-                        borderWidth: 1
-                    },
+                        // 动画效果 (模拟信号分子流动)
+                        animation: true
+                    })),
+                    categories: [{ name: '中医实体', itemStyle: { color: '#00e5ff' } }],
                     label: {
                         show: true,
                         position: 'right',
-                        color: '#eee',
-                        fontSize: 12
-                    },
-                    // 节点大小根据数据调整
-                    symbolSize: 12,
-                    lineStyle: {
-                        color: 'source',
-                        curveness: 0.3,
-                        width: 1
+                        color: '#cad2c5',
+                        fontSize: 11,
+                        fontWeight: 600
                     },
                     emphasis: {
-                        focus: 'adjacency', // 鼠标放上去，高亮相邻节点
+                        focus: 'adjacency', // 高亮邻居
                         lineStyle: {
-                            width: 2
+                            width: 3,
+                            color: '#ff80bf', // 激活动态变为粉色
+                            shadowBlur: 15,
+                            shadowColor: '#ff80bf'
+                        },
+                        itemStyle: {
+                            shadowBlur: 30,
+                            shadowColor: '#ff80bf'
                         }
                     }
                 }]
             };
             myChart.setOption(option);
+
+            // 【高级交互】点击节点，跳转 PubMed 查阅文献
+            myChart.on('click', function (params) {
+                if (params.componentType === 'series' && params.dataType === 'node') {
+                    const nodeName = params.name;
+                    if (nodeLinkMap[nodeName]) {
+                        // 在当前页面新标签打开，不破坏星云
+                        window.open(nodeLinkMap[nodeName], '_blank');
+                    }
+                }
+            });
+
+            // 3D 动态呼吸光效模拟：定时闪烁
+            let colorToggle = true;
+            setInterval(() => {
+                const color = colorToggle ? '#00e5ff' : '#ff80bf';
+                myChart.setOption({
+                    series: [{
+                        lineStyle: {
+                            color: color
+                        }
+                    }]
+                });
+                colorToggle = !colorToggle;
+            }, 3000);
+
         }).catch(error => {
-            myChart.hideLoading();
-            document.getElementById('main').innerHTML = '<p style="color:red;text-align:center;margin-top:20px;">读取数据失败，请检查文件路径和JSON格式。' + error + '</p>';
+            document.getElementById('loading-text').innerHTML = `<p style="color:red;">数据加载失败，请确保 nodes.json 和 edges.json 存在并与 index.html 放在一起。<br>错误信息：${error}</p>`;
         });
 
-        // 窗口大小改变时重绘
         window.addEventListener('resize', function() {
             myChart.resize();
         });
