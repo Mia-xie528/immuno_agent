@@ -1,0 +1,300 @@
+[
+  {
+    "id": "N000001",
+    "name": "柚皮素",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.577,
+    "y": -4.564,
+    "z": 146.463,
+    "position": {
+      "x": 5.577,
+      "y": -4.564,
+      "z": 146.463
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42438788"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:18 中国标准时间",
+    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+  },
+  {
+    "id": "N000002",
+    "name": "NF-κB",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -8.03,
+    "y": -5.514,
+    "z": 111.166,
+    "position": {
+      "x": -8.03,
+      "y": -5.514,
+      "z": 111.166
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42438788"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:18 中国标准时间",
+    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+  },
+  {
+    "id": "N000003",
+    "name": "NLRP3",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 3.4,
+    "y": 8.781,
+    "z": 115.123,
+    "position": {
+      "x": 3.4,
+      "y": 8.781,
+      "z": 115.123
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42438788"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:18 中国标准时间",
+    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+  },
+  {
+    "id": "N000004",
+    "name": "Caspase-1",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 7.813,
+    "y": -0.236,
+    "z": 118.862,
+    "position": {
+      "x": 7.813,
+      "y": -0.236,
+      "z": 118.862
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42438788"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:18 中国标准时间",
+    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+  },
+  {
+    "id": "N000005",
+    "name": "IL-1β",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": 4.998,
+    "y": -0.642,
+    "z": 118.313,
+    "position": {
+      "x": 4.998,
+      "y": -0.642,
+      "z": 118.313
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42438788"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:18 中国标准时间",
+    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+  },
+  {
+    "id": "N000006",
+    "name": "TNF-α",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": -3.561,
+    "y": -2.169,
+    "z": 114.226,
+    "position": {
+      "x": -3.561,
+      "y": -2.169,
+      "z": 114.226
+    },
+    "evidence_count": 2,
+    "evidence_pmids": [
+      "42438788",
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug"
+      },
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:18 中国标准时间",
+    "updated_at": "2026-07-14 16:07:22 中国标准时间"
+  },
+  {
+    "id": "N000007",
+    "name": "Gasdermin D",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.557,
+    "y": -4.715,
+    "z": 147.173,
+    "position": {
+      "x": 1.557,
+      "y": -4.715,
+      "z": 147.173
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42438788"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:18 中国标准时间",
+    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+  },
+  {
+    "id": "N000008",
+    "name": "普济痔疮栓",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -3.209,
+    "y": 2.467,
+    "z": 153.658,
+    "position": {
+      "x": -3.209,
+      "y": 2.467,
+      "z": 153.658
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:22 中国标准时间",
+    "updated_at": "2026-07-14 16:07:22 中国标准时间"
+  },
+  {
+    "id": "N000009",
+    "name": "PI3K-Akt信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -8.156,
+    "y": 2.531,
+    "z": 113.441,
+    "position": {
+      "x": -8.156,
+      "y": 2.531,
+      "z": 113.441
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:22 中国标准时间",
+    "updated_at": "2026-07-14 16:07:22 中国标准时间"
+  },
+  {
+    "id": "N000010",
+    "name": "IL-6",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": -6.35,
+    "y": 3.873,
+    "z": 114.931,
+    "position": {
+      "x": -6.35,
+      "y": 3.873,
+      "z": 114.931
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:22 中国标准时间",
+    "updated_at": "2026-07-14 16:07:22 中国标准时间"
+  }
+]
