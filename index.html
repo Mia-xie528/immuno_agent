@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>中医免疫知识图谱</title>
+    <!-- 引入 ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        body { margin: 0; padding: 0; background-color: #0b1120; color: white; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+        #main { width: 100%; height: 100%; }
+        .header { position: absolute; top: 20px; left: 20px; z-index: 10; pointer-events: none; }
+        .header h1 { font-size: 24px; margin: 0; color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+        .header p { font-size: 14px; margin: 5px 0 0 0; color: #aaa; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>✨ 中医免疫知识星云</h1>
+        <p>数据来源于 PubMed 文献自动抽取</p>
+    </div>
+    <!-- 图表容器 -->
+    <div id="main"></div>
+
+    <script>
+        var myChart = echarts.init(document.getElementById('main'), 'dark');
+
+        // 显示加载动画
+        myChart.showLoading();
+
+        // 并发请求获取节点和关系数据
+        Promise.all([
+            fetch('nodes.json').then(res => res.json()),
+            fetch('edges.json').then(res => res.json())
+        ]).then(([nodesData, edgesData]) => {
+            myChart.hideLoading();
+
+            // ECharts 的节点格式要求：必须保证每个节点有唯一 'name' 
+            // 如果你的 nodes.json 里用的是 'id' 和 'label'，需要在这里转换一下
+            const formattedNodes = nodesData.map(node => {
+                return {
+                    name: node.label || node.name || node.id, // 根据实际情况取显示名称
+                    value: node.value || 1, // 节点大小权重
+                    category: node.category || 0, // 分类
+                    ...node // 保留原始数据
+                };
+            });
+
+            // 配置项
+            var option = {
+                tooltip: {},
+                legend: [{
+                    data: ['中医相关实体']
+                }],
+                series: [{
+                    type: 'graph',
+                    layout: 'force', // 力导向布局，让节点自动散开
+                    force: {
+                        repulsion: 200, // 节点排斥力
+                        edgeLength: 100, // 连线长度
+                        layoutAnimation: true
+                    },
+                    roam: true, // 允许鼠标拖拽、缩放
+                    draggable: true,
+                    data: formattedNodes,
+                    edges: edgesData.map(edge => ({
+                        source: edge.source,
+                        target: edge.target,
+                        value: edge.value || 1,
+                        // 可以自定义连线样式
+                        lineStyle: {
+                            color: '#58a6ff',
+                            opacity: 0.6,
+                            width: 1
+                        }
+                    })),
+                    categories: [{ name: '中医相关实体' }],
+                    // 节点样式
+                    itemStyle: {
+                        color: function(params) {
+                            // 随机生成漂亮的颜色
+                            const colors = ['#58a6ff', '#f0883e', '#3fb950', '#f778ba', '#ff80bf'];
+                            return colors[params.dataIndex % colors.length];
+                        },
+                        borderColor: '#fff',
+                        borderWidth: 1
+                    },
+                    label: {
+                        show: true,
+                        position: 'right',
+                        color: '#eee',
+                        fontSize: 12
+                    },
+                    // 节点大小根据数据调整
+                    symbolSize: 12,
+                    lineStyle: {
+                        color: 'source',
+                        curveness: 0.3,
+                        width: 1
+                    },
+                    emphasis: {
+                        focus: 'adjacency', // 鼠标放上去，高亮相邻节点
+                        lineStyle: {
+                            width: 2
+                        }
+                    }
+                }]
+            };
+            myChart.setOption(option);
+        }).catch(error => {
+            myChart.hideLoading();
+            document.getElementById('main').innerHTML = '<p style="color:red;text-align:center;margin-top:20px;">读取数据失败，请检查文件路径和JSON格式。' + error + '</p>';
+        });
+
+        // 窗口大小改变时重绘
+        window.addEventListener('resize', function() {
+            myChart.resize();
+        });
+    </script>
+</body>
+</html>
