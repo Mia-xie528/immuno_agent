@@ -1,0 +1,64 @@
+name: 每日中医免疫知识图谱更新
+
+on:
+  # 每天 UTC 02:00 运行，即北京时间 10:00
+  schedule:
+    - cron: "0 2 * * *"
+
+  # 允许在 GitHub Actions 页面手动运行
+  workflow_dispatch:
+
+# 允许工作流使用 GITHUB_TOKEN 向仓库提交内容
+permissions:
+  contents: write
+
+jobs:
+  daily-update:
+    name: 更新知识图谱
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出当前仓库代码
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          # 获取完整提交历史，便于后续执行 git commit 和 git push
+          fetch-depth: 0
+
+      # 2. 配置 Python 3.10
+      - name: 设置 Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      # 3. 安装脚本所需依赖
+      - name: 安装 Python 依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests openai
+
+      # 4. 运行知识图谱自动更新脚本
+      - name: 运行知识图谱更新脚本
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
+        run: |
+          python update_immuno_meridian.py
+
+      # 5. 检查 nodes.json 和 edges.json 是否发生变化
+      #    有变化时自动提交并推送；无变化时不创建空提交
+      - name: 提交更新后的知识图谱
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [[ -n "$(git status --porcelain -- nodes.json edges.json)" ]]; then
+            echo "检测到 nodes.json 或 edges.json 发生变化，准备提交。"
+
+            git add nodes.json edges.json
+            git commit -m "🤖 每日知识自动更新 [skip ci]"
+            git push
+          else
+            echo "nodes.json 和 edges.json 均无变化，无需提交。"
+          fi
