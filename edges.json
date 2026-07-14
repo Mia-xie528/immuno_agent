@@ -15,7 +15,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin-treated COPD mice displayed inhibited activation of the NF-κB/NLRP3/Caspase-1 axis"
+        "evidence": "naringenin and NF-κB showed stable binding; naringenin downregulated phospho-NF-κB p65 expression"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -37,7 +37,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "downregulated NLRP3 expression"
+        "evidence": "naringenin downregulated NLRP3 expression"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -59,7 +59,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "inhibited Caspase-1 activation"
+        "evidence": "naringenin inhibited Caspase-1 activation"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -81,7 +81,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "attenuated IL-1β maturation"
+        "evidence": "naringenin attenuated IL-1β maturation"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -103,7 +103,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "downregulated TNF-α expression"
+        "evidence": "naringenin downregulated TNF-α expression; decreased serum TNF-α levels"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -199,8 +199,30 @@
   },
   {
     "id": "E000010",
-    "source": "N000011",
-    "target": "N000012",
+    "source": "N000001",
+    "target": "N000011",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42438788"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug",
+        "evidence": "naringenin-treated COPD mice displayed diminished pulmonary inflammatory cell infiltration."
+      }
+    ],
+    "created_at": "2026-07-14 20:30:25 中国标准时间",
+    "updated_at": "2026-07-14 20:30:25 中国标准时间"
+  },
+  {
+    "id": "E000011",
+    "source": "N000012",
+    "target": "N000013",
     "relation": "抑制",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -216,12 +238,12 @@
         "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-1α"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000011",
-    "source": "N000011",
+    "id": "E000012",
+    "source": "N000012",
     "target": "N000005",
     "relation": "抑制",
     "evidence_count": 1,
@@ -238,12 +260,12 @@
         "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-1β"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000012",
-    "source": "N000011",
+    "id": "E000013",
+    "source": "N000012",
     "target": "N000010",
     "relation": "抑制",
     "evidence_count": 1,
@@ -260,13 +282,13 @@
         "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-6"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000013",
-    "source": "N000011",
-    "target": "N000013",
+    "id": "E000014",
+    "source": "N000012",
+    "target": "N000014",
     "relation": "抑制",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -282,13 +304,13 @@
         "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-17A"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000014",
-    "source": "N000011",
-    "target": "N000014",
+    "id": "E000015",
+    "source": "N000012",
+    "target": "N000015",
     "relation": "抑制",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -304,13 +326,13 @@
         "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-8"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000015",
-    "source": "N000011",
-    "target": "N000015",
+    "id": "E000016",
+    "source": "N000012",
+    "target": "N000016",
     "relation": "抑制",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -326,13 +348,13 @@
         "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as G-CSF"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000016",
-    "source": "N000011",
-    "target": "N000016",
+    "id": "E000017",
+    "source": "N000012",
+    "target": "N000017",
     "relation": "抑制",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -348,13 +370,13 @@
         "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as GM-CSF"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000017",
-    "source": "N000011",
-    "target": "N000017",
+    "id": "E000018",
+    "source": "N000012",
+    "target": "N000018",
     "relation": "抑制",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -370,13 +392,13 @@
         "evidence": "it effectively suppressed the Th1 cell differentiation"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000018",
-    "source": "N000011",
-    "target": "N000018",
+    "id": "E000019",
+    "source": "N000012",
+    "target": "N000019",
     "relation": "抑制",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -392,13 +414,13 @@
         "evidence": "it effectively suppressed the Th17 cell differentiation"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "E000019",
-    "source": "N000019",
-    "target": "N000020",
+    "id": "E000020",
+    "source": "N000020",
+    "target": "N000021",
     "relation": "促进",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -414,13 +436,13 @@
         "evidence": "EA significantly enhanced CD8+ T cell effector capacity"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "E000020",
-    "source": "N000019",
-    "target": "N000021",
+    "id": "E000021",
+    "source": "N000020",
+    "target": "N000022",
     "relation": "促进",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -436,13 +458,13 @@
         "evidence": "augmented intratumoral immune infiltration, characterized by elevated CD8+ T cells, NK cells"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "E000021",
-    "source": "N000019",
-    "target": "N000022",
+    "id": "E000022",
+    "source": "N000020",
+    "target": "N000023",
     "relation": "促进",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -458,12 +480,12 @@
         "evidence": "M1-polarized macrophages"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "E000022",
-    "source": "N000023",
+    "id": "E000023",
+    "source": "N000020",
     "target": "N000024",
     "relation": "抑制",
     "evidence_count": 1,
@@ -480,13 +502,35 @@
         "evidence": "reduced norepinephrine (NE) output in both circulation and tumors"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "E000023",
-    "source": "N000023",
+    "id": "E000024",
+    "source": "N000020",
     "target": "N000025",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "NGF downregulation"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "E000025",
+    "source": "N000020",
+    "target": "N000026",
     "relation": "促进",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -499,15 +543,15 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
         "doi": "10.1186/s13020-026-01445-6",
         "publication_date": "2026-Jul-13",
-        "evidence": "activated c-Fos+/ChAT+ cholinergic neurons in the dorsal motor nucleus of the vagus"
+        "evidence": "Hippo pathway activation"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "E000024",
-    "source": "N000026",
+    "id": "E000026",
+    "source": "N000020",
     "target": "N000027",
     "relation": "促进",
     "evidence_count": 1,
@@ -521,16 +565,368 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
         "doi": "10.1186/s13020-026-01445-6",
         "publication_date": "2026-Jul-13",
-        "evidence": "α2-adrenergic receptor antagonism with yohimbine abrogated NE-induced NGF upregulation"
+        "evidence": "EA upregulated AMOT"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "E000025",
-    "source": "N000027",
-    "target": "N000028",
+    "id": "E000027",
+    "source": "N000020",
+    "target": "N000010",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "suppression of downstream IL-6 secretion"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "E000028",
+    "source": "N000028",
+    "target": "N000029",
+    "relation": "归经",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "EA was applied at ST36 (Zusanli)"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "E000029",
+    "source": "N000024",
+    "target": "N000025",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "NE-induced NGF upregulation"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "E000030",
+    "source": "N000030",
+    "target": "N000031",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "α2-AR as the receptor subtype linking sympathetic signaling to the NGF/Hippo axis"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "E000031",
+    "source": "N000020",
+    "target": "N000032",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "EA activated c-Fos+/ChAT+ cholinergic neurons in the dorsal motor nucleus of the vagus"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "E000032",
+    "source": "N000033",
+    "target": "N000034",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13",
+        "evidence": "PJZC exert anti-inflammatory effects may involve reduced PI3K-Akt signaling pathway"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:39 中国标准时间",
+    "updated_at": "2026-07-14 20:30:39 中国标准时间"
+  },
+  {
+    "id": "E000033",
+    "source": "N000033",
+    "target": "N000006",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13",
+        "evidence": "evaluating perianal diameter, anorectal coefficient, TNF-α and IL-6 levels"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:39 中国标准时间",
+    "updated_at": "2026-07-14 20:30:39 中国标准时间"
+  },
+  {
+    "id": "E000034",
+    "source": "N000033",
+    "target": "N000010",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13",
+        "evidence": "evaluating perianal diameter, anorectal coefficient, TNF-α and IL-6 levels"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:39 中国标准时间",
+    "updated_at": "2026-07-14 20:30:39 中国标准时间"
+  },
+  {
+    "id": "E000035",
+    "source": "N000028",
+    "target": "N000021",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "EA significantly enhanced CD8+ T cell effector capacity"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000036",
+    "source": "N000028",
+    "target": "N000022",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "augmented intratumoral immune infiltration, characterized by elevated ... NK cells"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000037",
+    "source": "N000028",
+    "target": "N000023",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "augmented intratumoral immune infiltration, characterized by elevated ... M1-polarized macrophages"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000038",
+    "source": "N000028",
+    "target": "N000024",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "reduced norepinephrine (NE) output in both circulation and tumors"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000039",
+    "source": "N000028",
+    "target": "N000032",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "activated c-Fos+/ChAT+ cholinergic neurons in the dorsal motor nucleus of the vagus (DMV)"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000040",
+    "source": "N000028",
+    "target": "N000025",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "Transcriptomic profiling identified NGF downregulation"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000041",
+    "source": "N000028",
+    "target": "N000035",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "Hippo pathway activation as central events"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000042",
+    "source": "N000030",
+    "target": "N000025",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "α2-adrenergic receptor (α2-AR) antagonism with yohimbine abrogated NE-induced NGF upregulation"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000043",
+    "source": "N000025",
+    "target": "N000036",
     "relation": "抑制",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -546,34 +942,12 @@
         "evidence": "exogenous NGF suppressed YAP phosphorylation"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
   },
   {
-    "id": "E000026",
-    "source": "N000023",
-    "target": "N000029",
-    "relation": "促进",
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42443928"
-    ],
-    "sources": [
-      {
-        "pmid": "42443928",
-        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
-        "doi": "10.1186/s13020-026-01445-6",
-        "publication_date": "2026-Jul-13",
-        "evidence": "EA upregulated AMOT, driving YAP phosphorylation at Ser127"
-      }
-    ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
-  },
-  {
-    "id": "E000027",
-    "source": "N000030",
+    "id": "E000044",
+    "source": "N000037",
     "target": "N000010",
     "relation": "促进",
     "evidence_count": 1,
@@ -590,13 +964,13 @@
         "evidence": "suppression of downstream IL-6 secretion"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
   },
   {
-    "id": "E000028",
-    "source": "N000023",
-    "target": "N000031",
+    "id": "E000045",
+    "source": "N000028",
+    "target": "N000027",
     "relation": "促进",
     "evidence_count": 1,
     "evidence_pmids": [
@@ -609,76 +983,10 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
         "doi": "10.1186/s13020-026-01445-6",
         "publication_date": "2026-Jul-13",
-        "evidence": "upregulating perforin, granzyme B, CD69, and ZAP70 phosphorylation"
+        "evidence": "EA upregulated AMOT, driving YAP phosphorylation at Ser127"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
-  },
-  {
-    "id": "E000029",
-    "source": "N000032",
-    "target": "N000033",
-    "relation": "抑制",
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42443290"
-    ],
-    "sources": [
-      {
-        "pmid": "42443290",
-        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
-        "doi": "10.1038/s41598-026-61558-8",
-        "publication_date": "2026-Jul-13",
-        "evidence": "PJZC exert anti-inflammatory effects may involve reduced PI3K-Akt signaling pathway"
-      }
-    ],
-    "created_at": "2026-07-14 11:08:58 UTC",
-    "updated_at": "2026-07-14 11:08:58 UTC"
-  },
-  {
-    "id": "E000030",
-    "source": "N000032",
-    "target": "N000006",
-    "relation": "抑制",
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42443290"
-    ],
-    "sources": [
-      {
-        "pmid": "42443290",
-        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
-        "doi": "10.1038/s41598-026-61558-8",
-        "publication_date": "2026-Jul-13",
-        "evidence": "anti-inflammatory effects of PJZC were validated by evaluating ... TNF-α and IL-6 levels"
-      }
-    ],
-    "created_at": "2026-07-14 11:08:58 UTC",
-    "updated_at": "2026-07-14 11:08:58 UTC"
-  },
-  {
-    "id": "E000031",
-    "source": "N000032",
-    "target": "N000010",
-    "relation": "抑制",
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42443290"
-    ],
-    "sources": [
-      {
-        "pmid": "42443290",
-        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
-        "doi": "10.1038/s41598-026-61558-8",
-        "publication_date": "2026-Jul-13",
-        "evidence": "anti-inflammatory effects of PJZC were validated by evaluating ... TNF-α and IL-6 levels"
-      }
-    ],
-    "created_at": "2026-07-14 11:08:58 UTC",
-    "updated_at": "2026-07-14 11:08:58 UTC"
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
   }
 ]

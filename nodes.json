@@ -150,7 +150,7 @@
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
     "id": "N000006",
@@ -319,10 +319,39 @@
       }
     ],
     "created_at": "2026-07-14 16:07:22 中国标准时间",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
     "id": "N000011",
+    "name": "肺部炎症细胞浸润",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 41.598,
+    "y": 61.219,
+    "z": 147.979,
+    "position": {
+      "x": 41.598,
+      "y": 61.219,
+      "z": 147.979
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42438788"
+    ],
+    "sources": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "doi": "10.1007/s10616-026-01032-5",
+        "publication_date": "2026-Aug"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:25 中国标准时间",
+    "updated_at": "2026-07-14 20:30:25 中国标准时间"
+  },
+  {
+    "id": "N000012",
     "name": "大黄素",
     "type": "其他",
     "layer": "其他层",
@@ -347,11 +376,11 @@
         "publication_date": "2026-Jul-14"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "N000012",
+    "id": "N000013",
     "name": "IL-1α",
     "type": "细胞因子",
     "layer": "分子信号层",
@@ -376,11 +405,11 @@
         "publication_date": "2026-Jul-14"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "N000013",
+    "id": "N000014",
     "name": "IL-17A",
     "type": "细胞因子",
     "layer": "分子信号层",
@@ -405,11 +434,11 @@
         "publication_date": "2026-Jul-14"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "N000014",
+    "id": "N000015",
     "name": "IL-8",
     "type": "细胞因子",
     "layer": "分子信号层",
@@ -434,11 +463,11 @@
         "publication_date": "2026-Jul-14"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "N000015",
+    "id": "N000016",
     "name": "G-CSF",
     "type": "细胞因子",
     "layer": "分子信号层",
@@ -463,11 +492,11 @@
         "publication_date": "2026-Jul-14"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "N000016",
+    "id": "N000017",
     "name": "GM-CSF",
     "type": "细胞因子",
     "layer": "分子信号层",
@@ -492,11 +521,11 @@
         "publication_date": "2026-Jul-14"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "N000017",
+    "id": "N000018",
     "name": "Th1细胞分化",
     "type": "免疫细胞",
     "layer": "免疫细胞层",
@@ -521,11 +550,11 @@
         "publication_date": "2026-Jul-14"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "N000018",
+    "id": "N000019",
     "name": "Th17细胞分化",
     "type": "免疫细胞",
     "layer": "免疫细胞层",
@@ -550,21 +579,21 @@
         "publication_date": "2026-Jul-14"
       }
     ],
-    "created_at": "2026-07-14 11:08:48 UTC",
-    "updated_at": "2026-07-14 11:08:48 UTC"
+    "created_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-14 20:30:30 中国标准时间"
   },
   {
-    "id": "N000019",
-    "name": "ST36",
-    "type": "穴位",
-    "layer": "经络层",
-    "x": -7.064,
-    "y": -7.832,
-    "z": 0.063,
+    "id": "N000020",
+    "name": "电针",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -6.653,
+    "y": -2.198,
+    "z": 147.654,
     "position": {
-      "x": -7.064,
-      "y": -7.832,
-      "z": 0.063
+      "x": -6.653,
+      "y": -2.198,
+      "z": 147.654
     },
     "evidence_count": 1,
     "evidence_pmids": [
@@ -579,11 +608,11 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "N000020",
+    "id": "N000021",
     "name": "CD8+ T细胞",
     "type": "免疫细胞",
     "layer": "免疫细胞层",
@@ -608,11 +637,11 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "N000021",
+    "id": "N000022",
     "name": "NK细胞",
     "type": "免疫细胞",
     "layer": "免疫细胞层",
@@ -637,11 +666,11 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "N000022",
+    "id": "N000023",
     "name": "M1型巨噬细胞",
     "type": "免疫细胞",
     "layer": "免疫细胞层",
@@ -666,37 +695,8 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
-  },
-  {
-    "id": "N000023",
-    "name": "电针",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 48.347,
-    "y": -37.198,
-    "z": 147.654,
-    "position": {
-      "x": 48.347,
-      "y": -37.198,
-      "z": 147.654
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42443928"
-    ],
-    "sources": [
-      {
-        "pmid": "42443928",
-        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
-        "doi": "10.1186/s13020-026-01445-6",
-        "publication_date": "2026-Jul-13"
-      }
-    ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
     "id": "N000024",
@@ -724,69 +724,11 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
     "id": "N000025",
-    "name": "c-Fos+/ChAT+胆碱能神经元",
-    "type": "神经结构",
-    "layer": "神经免疫层",
-    "x": -63.006,
-    "y": 3.255,
-    "z": 58.367,
-    "position": {
-      "x": -63.006,
-      "y": 3.255,
-      "z": 58.367
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42443928"
-    ],
-    "sources": [
-      {
-        "pmid": "42443928",
-        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
-        "doi": "10.1186/s13020-026-01445-6",
-        "publication_date": "2026-Jul-13"
-      }
-    ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
-  },
-  {
-    "id": "N000026",
-    "name": "α2-AR",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -6.138,
-    "y": 2.957,
-    "z": 146.948,
-    "position": {
-      "x": -6.138,
-      "y": 2.957,
-      "z": 146.948
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42443928"
-    ],
-    "sources": [
-      {
-        "pmid": "42443928",
-        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
-        "doi": "10.1186/s13020-026-01445-6",
-        "publication_date": "2026-Jul-13"
-      }
-    ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
-  },
-  {
-    "id": "N000027",
     "name": "NGF",
     "type": "细胞因子",
     "layer": "分子信号层",
@@ -811,21 +753,21 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "N000028",
-    "name": "YAP磷酸化",
+    "id": "N000026",
+    "name": "Hippo通路",
     "type": "信号通路",
     "layer": "分子信号层",
-    "x": -7.895,
-    "y": -2.036,
-    "z": 111.59,
+    "x": -7.866,
+    "y": 5.708,
+    "z": 110.994,
     "position": {
-      "x": -7.895,
-      "y": -2.036,
-      "z": 111.59
+      "x": -7.866,
+      "y": 5.708,
+      "z": 110.994
     },
     "evidence_count": 1,
     "evidence_pmids": [
@@ -840,11 +782,11 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
-    "id": "N000029",
+    "id": "N000027",
     "name": "AMOT",
     "type": "其他",
     "layer": "其他层",
@@ -869,21 +811,79 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "N000028",
+    "name": "ST36",
+    "type": "穴位",
+    "layer": "经络层",
+    "x": -2.064,
+    "y": -22.832,
+    "z": 0.063,
+    "position": {
+      "x": -2.064,
+      "y": -22.832,
+      "z": 0.063
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "N000029",
+    "name": "足阳明胃经",
+    "type": "经络",
+    "layer": "经络层",
+    "x": 7.286,
+    "y": -21.951,
+    "z": 3.812,
+    "position": {
+      "x": 7.286,
+      "y": -21.951,
+      "z": 3.812
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
     "id": "N000030",
-    "name": "YAP",
-    "type": "信号通路",
-    "layer": "分子信号层",
-    "x": -2.083,
-    "y": -1.725,
-    "z": 116.428,
+    "name": "α2-AR",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -6.138,
+    "y": 2.957,
+    "z": 146.948,
     "position": {
-      "x": -2.083,
-      "y": -1.725,
-      "z": 116.428
+      "x": -6.138,
+      "y": 2.957,
+      "z": 146.948
     },
     "evidence_count": 1,
     "evidence_pmids": [
@@ -898,21 +898,21 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
     "id": "N000031",
-    "name": "CD8+ T细胞效应功能",
-    "type": "免疫细胞",
-    "layer": "免疫细胞层",
-    "x": 1.563,
-    "y": -4.905,
-    "z": 74.654,
+    "name": "NGF/Hippo轴",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -2.701,
+    "y": 4.223,
+    "z": 114.665,
     "position": {
-      "x": 1.563,
-      "y": -4.905,
-      "z": 74.654
+      "x": -2.701,
+      "y": 4.223,
+      "z": 114.665
     },
     "evidence_count": 1,
     "evidence_pmids": [
@@ -927,11 +927,40 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:53 UTC",
-    "updated_at": "2026-07-14 11:08:53 UTC"
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
   },
   {
     "id": "N000032",
+    "name": "c-Fos+/ChAT+胆碱能神经元",
+    "type": "神经结构",
+    "layer": "神经免疫层",
+    "x": -63.006,
+    "y": 3.255,
+    "z": 58.367,
+    "position": {
+      "x": -63.006,
+      "y": 3.255,
+      "z": 58.367
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+  },
+  {
+    "id": "N000033",
     "name": "Puji Zhichuang suppositories",
     "type": "其他",
     "layer": "其他层",
@@ -956,11 +985,11 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:58 UTC",
-    "updated_at": "2026-07-14 11:08:58 UTC"
+    "created_at": "2026-07-14 20:30:39 中国标准时间",
+    "updated_at": "2026-07-14 20:30:39 中国标准时间"
   },
   {
-    "id": "N000033",
+    "id": "N000034",
     "name": "PI3K-Akt signaling pathway",
     "type": "信号通路",
     "layer": "分子信号层",
@@ -985,7 +1014,94 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 11:08:58 UTC",
-    "updated_at": "2026-07-14 11:08:58 UTC"
+    "created_at": "2026-07-14 20:30:39 中国标准时间",
+    "updated_at": "2026-07-14 20:30:39 中国标准时间"
+  },
+  {
+    "id": "N000035",
+    "name": "Hippo信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -7.928,
+    "y": -7.541,
+    "z": 112.078,
+    "position": {
+      "x": -7.928,
+      "y": -7.541,
+      "z": 112.078
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "N000036",
+    "name": "YAP磷酸化",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 2.601,
+    "y": -5.672,
+    "z": 149.682,
+    "position": {
+      "x": 2.601,
+      "y": -5.672,
+      "z": 149.682
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "N000037",
+    "name": "YAP",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -2.279,
+    "y": 4.732,
+    "z": 147.2,
+    "position": {
+      "x": -2.279,
+      "y": 4.732,
+      "z": 147.2
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 22:56:43 中国标准时间",
+    "updated_at": "2026-07-14 22:56:43 中国标准时间"
   }
 ]
