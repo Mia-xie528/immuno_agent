@@ -15,7 +15,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin and NF-κB showed stable binding; naringenin downregulated phospho-NF-κB p65 expression"
+        "evidence": "naringenin-treated COPD mice displayed inhibited activation of the NF-κB/NLRP3/Caspase-1 axis"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -37,7 +37,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin downregulated NLRP3 expression"
+        "evidence": "downregulated NLRP3 expression"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -59,7 +59,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin inhibited Caspase-1 activation"
+        "evidence": "inhibited Caspase-1 activation"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -81,7 +81,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin attenuated IL-1β maturation"
+        "evidence": "attenuated IL-1β maturation"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -103,7 +103,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin downregulated TNF-α expression in vitro and decreased serum TNF-α levels in vivo"
+        "evidence": "downregulated TNF-α expression"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -196,5 +196,489 @@
     ],
     "created_at": "2026-07-14 16:07:22 中国标准时间",
     "updated_at": "2026-07-14 16:07:22 中国标准时间"
+  },
+  {
+    "id": "E000010",
+    "source": "N000011",
+    "target": "N000012",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-1α"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000011",
+    "source": "N000011",
+    "target": "N000005",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-1β"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000012",
+    "source": "N000011",
+    "target": "N000010",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-6"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000013",
+    "source": "N000011",
+    "target": "N000013",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-17A"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000014",
+    "source": "N000011",
+    "target": "N000014",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as IL-8"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000015",
+    "source": "N000011",
+    "target": "N000015",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as G-CSF"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000016",
+    "source": "N000011",
+    "target": "N000016",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "emodin downregulated gut tissue levels of key pro-inflammatory cytokines such as GM-CSF"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000017",
+    "source": "N000011",
+    "target": "N000017",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "it effectively suppressed the Th1 cell differentiation"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000018",
+    "source": "N000011",
+    "target": "N000018",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14",
+        "evidence": "it effectively suppressed the Th17 cell differentiation"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "E000019",
+    "source": "N000019",
+    "target": "N000020",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "EA significantly enhanced CD8+ T cell effector capacity"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000020",
+    "source": "N000019",
+    "target": "N000021",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "augmented intratumoral immune infiltration, characterized by elevated CD8+ T cells, NK cells"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000021",
+    "source": "N000019",
+    "target": "N000022",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "M1-polarized macrophages"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000022",
+    "source": "N000023",
+    "target": "N000024",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "reduced norepinephrine (NE) output in both circulation and tumors"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000023",
+    "source": "N000023",
+    "target": "N000025",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "activated c-Fos+/ChAT+ cholinergic neurons in the dorsal motor nucleus of the vagus"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000024",
+    "source": "N000026",
+    "target": "N000027",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "α2-adrenergic receptor antagonism with yohimbine abrogated NE-induced NGF upregulation"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000025",
+    "source": "N000027",
+    "target": "N000028",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "exogenous NGF suppressed YAP phosphorylation"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000026",
+    "source": "N000023",
+    "target": "N000029",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "EA upregulated AMOT, driving YAP phosphorylation at Ser127"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000027",
+    "source": "N000030",
+    "target": "N000010",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "suppression of downstream IL-6 secretion"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000028",
+    "source": "N000023",
+    "target": "N000031",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13",
+        "evidence": "upregulating perforin, granzyme B, CD69, and ZAP70 phosphorylation"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "E000029",
+    "source": "N000032",
+    "target": "N000033",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13",
+        "evidence": "PJZC exert anti-inflammatory effects may involve reduced PI3K-Akt signaling pathway"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:58 UTC",
+    "updated_at": "2026-07-14 11:08:58 UTC"
+  },
+  {
+    "id": "E000030",
+    "source": "N000032",
+    "target": "N000006",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13",
+        "evidence": "anti-inflammatory effects of PJZC were validated by evaluating ... TNF-α and IL-6 levels"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:58 UTC",
+    "updated_at": "2026-07-14 11:08:58 UTC"
+  },
+  {
+    "id": "E000031",
+    "source": "N000032",
+    "target": "N000010",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13",
+        "evidence": "anti-inflammatory effects of PJZC were validated by evaluating ... TNF-α and IL-6 levels"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:58 UTC",
+    "updated_at": "2026-07-14 11:08:58 UTC"
   }
 ]

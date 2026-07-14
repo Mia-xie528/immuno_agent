@@ -128,9 +128,10 @@
       "y": -0.642,
       "z": 118.313
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "42438788"
+      "42438788",
+      "42444447"
     ],
     "sources": [
       {
@@ -139,10 +140,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug"
+      },
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+    "updated_at": "2026-07-14 11:08:48 UTC"
   },
   {
     "id": "N000006",
@@ -281,6 +289,660 @@
       "y": 3.873,
       "z": 114.931
     },
+    "evidence_count": 3,
+    "evidence_pmids": [
+      "42443290",
+      "42444447",
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13"
+      },
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      },
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 16:07:22 中国标准时间",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000011",
+    "name": "大黄素",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 2.338,
+    "y": 2.727,
+    "z": 147.123,
+    "position": {
+      "x": 2.338,
+      "y": 2.727,
+      "z": 147.123
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "N000012",
+    "name": "IL-1α",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": 3.164,
+    "y": -3.655,
+    "z": 117.449,
+    "position": {
+      "x": 3.164,
+      "y": -3.655,
+      "z": 117.449
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "N000013",
+    "name": "IL-17A",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": -5.971,
+    "y": -6.611,
+    "z": 111.142,
+    "position": {
+      "x": -5.971,
+      "y": -6.611,
+      "z": 111.142
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "N000014",
+    "name": "IL-8",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": 2.481,
+    "y": -1.574,
+    "z": 116.005,
+    "position": {
+      "x": 2.481,
+      "y": -1.574,
+      "z": 116.005
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "N000015",
+    "name": "G-CSF",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": -1.666,
+    "y": -1.116,
+    "z": 113.833,
+    "position": {
+      "x": -1.666,
+      "y": -1.116,
+      "z": 113.833
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "N000016",
+    "name": "GM-CSF",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": -7.747,
+    "y": 0.85,
+    "z": 111.217,
+    "position": {
+      "x": -7.747,
+      "y": 0.85,
+      "z": 111.217
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "N000017",
+    "name": "Th1细胞分化",
+    "type": "免疫细胞",
+    "layer": "免疫细胞层",
+    "x": 4.914,
+    "y": -1.604,
+    "z": 78.576,
+    "position": {
+      "x": 4.914,
+      "y": -1.604,
+      "z": 78.576
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "N000018",
+    "name": "Th17细胞分化",
+    "type": "免疫细胞",
+    "layer": "免疫细胞层",
+    "x": 6.572,
+    "y": 2.212,
+    "z": 72.152,
+    "position": {
+      "x": 6.572,
+      "y": 2.212,
+      "z": 72.152
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42444447"
+    ],
+    "sources": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "doi": "10.1142/S0192415X26500588",
+        "publication_date": "2026-Jul-14"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:48 UTC",
+    "updated_at": "2026-07-14 11:08:48 UTC"
+  },
+  {
+    "id": "N000019",
+    "name": "ST36",
+    "type": "穴位",
+    "layer": "经络层",
+    "x": -7.064,
+    "y": -7.832,
+    "z": 0.063,
+    "position": {
+      "x": -7.064,
+      "y": -7.832,
+      "z": 0.063
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000020",
+    "name": "CD8+ T细胞",
+    "type": "免疫细胞",
+    "layer": "免疫细胞层",
+    "x": -8.113,
+    "y": 0.414,
+    "z": 77.196,
+    "position": {
+      "x": -8.113,
+      "y": 0.414,
+      "z": 77.196
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000021",
+    "name": "NK细胞",
+    "type": "免疫细胞",
+    "layer": "免疫细胞层",
+    "x": -6.478,
+    "y": 2.216,
+    "z": 75.739,
+    "position": {
+      "x": -6.478,
+      "y": 2.216,
+      "z": 75.739
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000022",
+    "name": "M1型巨噬细胞",
+    "type": "免疫细胞",
+    "layer": "免疫细胞层",
+    "x": 1.114,
+    "y": 4.678,
+    "z": 76.306,
+    "position": {
+      "x": 1.114,
+      "y": 4.678,
+      "z": 76.306
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000023",
+    "name": "电针",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 48.347,
+    "y": -37.198,
+    "z": 147.654,
+    "position": {
+      "x": 48.347,
+      "y": -37.198,
+      "z": 147.654
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000024",
+    "name": "去甲肾上腺素",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 55.236,
+    "y": -36.06,
+    "z": 149.116,
+    "position": {
+      "x": 55.236,
+      "y": -36.06,
+      "z": 149.116
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000025",
+    "name": "c-Fos+/ChAT+胆碱能神经元",
+    "type": "神经结构",
+    "layer": "神经免疫层",
+    "x": -63.006,
+    "y": 3.255,
+    "z": 58.367,
+    "position": {
+      "x": -63.006,
+      "y": 3.255,
+      "z": 58.367
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000026",
+    "name": "α2-AR",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -6.138,
+    "y": 2.957,
+    "z": 146.948,
+    "position": {
+      "x": -6.138,
+      "y": 2.957,
+      "z": 146.948
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000027",
+    "name": "NGF",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": -1.701,
+    "y": 3.553,
+    "z": 117.811,
+    "position": {
+      "x": -1.701,
+      "y": 3.553,
+      "z": 117.811
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000028",
+    "name": "YAP磷酸化",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -7.895,
+    "y": -2.036,
+    "z": 111.59,
+    "position": {
+      "x": -7.895,
+      "y": -2.036,
+      "z": 111.59
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000029",
+    "name": "AMOT",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -6.43,
+    "y": -5.88,
+    "z": 147.148,
+    "position": {
+      "x": -6.43,
+      "y": -5.88,
+      "z": 147.148
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000030",
+    "name": "YAP",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -2.083,
+    "y": -1.725,
+    "z": 116.428,
+    "position": {
+      "x": -2.083,
+      "y": -1.725,
+      "z": 116.428
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000031",
+    "name": "CD8+ T细胞效应功能",
+    "type": "免疫细胞",
+    "layer": "免疫细胞层",
+    "x": 1.563,
+    "y": -4.905,
+    "z": 74.654,
+    "position": {
+      "x": 1.563,
+      "y": -4.905,
+      "z": 74.654
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443928"
+    ],
+    "sources": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "doi": "10.1186/s13020-026-01445-6",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:53 UTC",
+    "updated_at": "2026-07-14 11:08:53 UTC"
+  },
+  {
+    "id": "N000032",
+    "name": "Puji Zhichuang suppositories",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -3.665,
+    "y": -2.077,
+    "z": 150.909,
+    "position": {
+      "x": -3.665,
+      "y": -2.077,
+      "z": 150.909
+    },
     "evidence_count": 1,
     "evidence_pmids": [
       "42443290"
@@ -294,7 +956,36 @@
         "publication_date": "2026-Jul-13"
       }
     ],
-    "created_at": "2026-07-14 16:07:22 中国标准时间",
-    "updated_at": "2026-07-14 16:07:22 中国标准时间"
+    "created_at": "2026-07-14 11:08:58 UTC",
+    "updated_at": "2026-07-14 11:08:58 UTC"
+  },
+  {
+    "id": "N000033",
+    "name": "PI3K-Akt signaling pathway",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -0.74,
+    "y": 0.7,
+    "z": 116.99,
+    "position": {
+      "x": -0.74,
+      "y": 0.7,
+      "z": 116.99
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42443290"
+    ],
+    "sources": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "doi": "10.1038/s41598-026-61558-8",
+        "publication_date": "2026-Jul-13"
+      }
+    ],
+    "created_at": "2026-07-14 11:08:58 UTC",
+    "updated_at": "2026-07-14 11:08:58 UTC"
   }
 ]
