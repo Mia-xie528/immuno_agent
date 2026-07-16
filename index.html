@@ -7,14 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1"></script>
     <style>
+        * { box-sizing: border-box; }
         body { margin: 0; overflow: hidden; background: #02050d; font-family: 'Inter', sans-serif; color: #fff; }
         #graph-container { width: 100vw; height: 100vh; }
-        .ui-header { position: absolute; top: 24px; left: 28px; z-index: 10; pointer-events: none; }
-        .main-title { font-size: 24px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
-        .main-title .light { color: #ffffff; }
+        .ui-header { position: absolute; top: 24px; left: 28px; z-index: 10; pointer-events: none; display: flex; flex-direction: column; gap: 6px; }
+        .main-title { font-size: 24px; font-weight: 700; letter-spacing: 1.2px; display: flex; align-items: center; gap: 6px; }
+        .main-title .light { color: #ffffff; text-shadow: 0 0 20px rgba(255,255,255,0.1); }
         .main-title .accent { color: #00e5ff; }
-        .subtitle { font-size: 13px; color: #56647a; }
-        .loading-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #46516b; font-size: 14px; }
+        .subtitle { font-size: 13px; font-weight: 400; color: #56647a; letter-spacing: 1px; }
+        .loading-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #46516b; font-size: 14px; letter-spacing: 2px; background: rgba(0,0,0,0.5); padding: 6px 16px; border-radius: 20px; }
     </style>
 </head>
 <body>
@@ -23,29 +24,26 @@
         <div class="subtitle">▸ PubMed 文献 AI 自动抽取</div>
     </div>
     <div id="graph-container"></div>
-    <div class="loading-text" id="loading-text">正在加载庞大星云数据，请稍候...</div>
+    <div class="loading-text" id="loading-text">正在加载星云...</div>
 
     <script>
-        // 设置一个超时加载避免卡死
-        const LOAD_TIMEOUT = 60000; // 60秒超时
-        
         document.getElementById('loading-text').style.display = 'block';
-
-        const timer = setTimeout(() => {
-            document.getElementById('loading-text').innerHTML = "数据加载超时。请确认 nodes.json 和 edges.json 文件大小未超过 50MB。";
-        }, LOAD_TIMEOUT);
 
         Promise.all([
             fetch('nodes.json').then(res => res.json()),
             fetch('edges.json').then(res => res.json())
         ]).then(([nodes, edges]) => {
-            clearTimeout(timer);
             document.getElementById('loading-text').style.display = 'none';
             
-            // 极简 3D 逻辑
+            // 兼容各种 JSON 格式
             const formattedNodes = nodes.map(node => {
                 let name = node.name || node.label || node.id;
-                return { id: name, name: name, type: node.type || "其他", val: 5 };
+                return {
+                    id: name, name: name, 
+                    type: node.type || node.entity_type || node.category || "其他", 
+                    val: (node.evidence_count || 1) * 0.8 + 1, 
+                    color: ['#00e5ff', '#818cf8', '#a78bfa', '#34d399', '#f472b6'][Math.floor(Math.random() * 5)]
+                };
             });
             const formattedEdges = edges.map(edge => ({
                 source: edge.source || edge.source_id || edge.from,
@@ -54,11 +52,20 @@
 
             const Graph = ForceGraph3D()(document.getElementById('graph-container'))
                 .graphData({ nodes: formattedNodes, links: formattedEdges })
-                .enableAutoRotate(true).autoRotateSpeed(0.5);
-
-        }).catch(err => {
-            clearTimeout(timer);
-            document.getElementById('loading-text').innerHTML = "加载失败。请确保 nodes.json 和 edges.json 已上传到仓库的最外层根目录。<br>F12 查看网络请求中的具体错误信息。";
+                .nodeLabel(node => `${node.name}`)
+                .nodeAutoColorBy('type')
+                .linkDirectionalParticles(2)
+                .linkDirectionalParticleSpeed(0.005)
+                .linkWidth(1.5)
+                .linkOpacity(0.6)
+                .d3AlphaDecay(0.02)
+                .d3VelocityDecay(0.3)
+                .nodeRelSize(5)
+                .enableAutoRotate(true)
+                .autoRotateSpeed(0.5);
+        })
+        .catch(err => {
+            document.getElementById('loading-text').innerHTML = "数据加载失败，请确保 nodes.json 和 edges.json 已上传到仓库根目录。";
             console.error(err);
         });
     </script>
