@@ -73,8 +73,8 @@ SEARCH_QUERY = (
 )
 # ========================================================
 
-LOOKBACK_DAYS = 7
-MAX_ARTICLES = 10
+LOOKBACK_DAYS = 365    # 往过去回溯 1 年，确保有足够的论文
+MAX_ARTICLES = 50      # 每天最多抓取 50 篇交给 AI 审查
 PUBMED_REQUEST_TIMEOUT_SECONDS = 30
 PUBMED_MAX_RETRIES = 3
 
