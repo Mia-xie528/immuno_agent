@@ -2,10 +2,12 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
   />
+
   <meta name="theme-color" content="#02030a" />
 
   <title>中医免疫 3D 知识图谱</title>
@@ -40,7 +42,13 @@
       margin: 0;
       overflow: hidden;
       background:
-        radial-gradient(circle at 50% 42%, #101a35 0%, #060916 38%, #02030a 72%, #000106 100%);
+        radial-gradient(
+          circle at 50% 42%,
+          #101a35 0%,
+          #060916 38%,
+          #02030a 72%,
+          #000106 100%
+        );
     }
 
     body {
@@ -58,7 +66,11 @@
       width: 100%;
       height: 100%;
       background:
-        radial-gradient(circle at 50% 48%, rgba(19, 42, 83, 0.2), transparent 45%),
+        radial-gradient(
+          circle at 50% 48%,
+          rgba(19, 42, 83, 0.2),
+          transparent 45%
+        ),
         #010208;
     }
 
@@ -182,7 +194,11 @@
       visibility: hidden;
       opacity: 0;
       background:
-        radial-gradient(circle at center, rgba(28, 52, 91, 0.18), transparent 42%),
+        radial-gradient(
+          circle at center,
+          rgba(28, 52, 91, 0.18),
+          transparent 42%
+        ),
         rgba(0, 1, 8, 0.68);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
@@ -231,11 +247,12 @@
       width: 300px;
       height: 300px;
       border-radius: 50%;
-      background: radial-gradient(
-        circle,
-        rgba(74, 226, 255, 0.24),
-        rgba(74, 226, 255, 0) 68%
-      );
+      background:
+        radial-gradient(
+          circle,
+          rgba(74, 226, 255, 0.24),
+          rgba(74, 226, 255, 0) 68%
+        );
       pointer-events: none;
     }
 
@@ -247,11 +264,12 @@
       width: 320px;
       height: 320px;
       border-radius: 50%;
-      background: radial-gradient(
-        circle,
-        rgba(133, 91, 255, 0.2),
-        rgba(133, 91, 255, 0) 68%
-      );
+      background:
+        radial-gradient(
+          circle,
+          rgba(133, 91, 255, 0.2),
+          rgba(133, 91, 255, 0) 68%
+        );
       pointer-events: none;
     }
 
@@ -305,7 +323,13 @@
       font-weight: 900;
       letter-spacing: 0.1em;
       border-radius: 999px;
-      background: linear-gradient(100deg, #f9ffbc, #caff5f, #fff6ae);
+      background:
+        linear-gradient(
+          100deg,
+          #f9ffbc,
+          #caff5f,
+          #fff6ae
+        );
       box-shadow:
         0 0 16px rgba(217, 255, 92, 0.45),
         0 0 30px rgba(255, 240, 128, 0.24);
@@ -382,12 +406,13 @@
       letter-spacing: 0.035em;
       text-decoration: none;
       border-radius: 16px;
-      background: linear-gradient(
-        100deg,
-        #64f0ff,
-        #83afff 56%,
-        #bc88ff
-      );
+      background:
+        linear-gradient(
+          100deg,
+          #64f0ff,
+          #83afff 56%,
+          #bc88ff
+        );
       box-shadow:
         0 12px 30px rgba(76, 222, 255, 0.26),
         0 0 24px rgba(140, 112, 255, 0.22);
@@ -410,8 +435,8 @@
     .pubmed-icon {
       width: 20px;
       height: 20px;
-      fill: currentColor;
       flex: 0 0 auto;
+      fill: currentColor;
     }
 
     @media (max-width: 520px) {
@@ -451,10 +476,15 @@
       aria-modal="true"
       aria-labelledby="node-name"
     >
-      <button id="close-modal" type="button" aria-label="关闭详情">×</button>
+      <button id="close-modal" type="button" aria-label="关闭详情">
+        ×
+      </button>
 
       <div class="card-kicker">PubMed Knowledge Entity</div>
-      <div id="new-node-badge">✨ 48 小时内新增</div>
+
+      <div id="new-node-badge">
+        ✨ 48 小时内新增
+      </div>
 
       <h2 id="node-name"></h2>
 
@@ -466,7 +496,10 @@
 
         <div class="info-item">
           <span class="info-label">关联文献数量</span>
-          <span class="info-value" id="node-evidence-count"></span>
+          <span
+            class="info-value"
+            id="node-evidence-count"
+          ></span>
         </div>
       </div>
 
@@ -476,11 +509,16 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <svg class="pubmed-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <svg
+          class="pubmed-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
           <path
             d="M14 3a1 1 0 1 0 0 2h3.586l-7.293 7.293a1 1 0 0 0 1.414 1.414L19 6.414V10a1 1 0 1 0 2 0V3h-7ZM5 5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 1 0-2 0v5H5V7h5a1 1 0 1 0 0-2H5Z"
           />
         </svg>
+
         在 PubMed 中检索该实体
       </a>
     </article>
@@ -513,17 +551,29 @@
       const errorPanel = document.getElementById("error-panel");
       const errorMessage = document.getElementById("error-message");
 
-      const modalOverlay = document.getElementById("modal-overlay");
-      const closeModalButton = document.getElementById("close-modal");
-      const newNodeBadge = document.getElementById("new-node-badge");
-      const nodeNameElement = document.getElementById("node-name");
-      const nodeTypeElement = document.getElementById("node-type");
-      const evidenceCountElement = document.getElementById(
-        "node-evidence-count"
-      );
-      const pubmedLinkElement = document.getElementById("pubmed-link");
+      const modalOverlay =
+        document.getElementById("modal-overlay");
+
+      const closeModalButton =
+        document.getElementById("close-modal");
+
+      const newNodeBadge =
+        document.getElementById("new-node-badge");
+
+      const nodeNameElement =
+        document.getElementById("node-name");
+
+      const nodeTypeElement =
+        document.getElementById("node-type");
+
+      const evidenceCountElement =
+        document.getElementById("node-evidence-count");
+
+      const pubmedLinkElement =
+        document.getElementById("pubmed-link");
 
       const animatedNodeObjects = new Set();
+      const glowTextureCache = new Map();
 
       let graph = null;
       let animationFrameId = null;
@@ -531,13 +581,16 @@
       function showError(error) {
         if (animationFrameId !== null) {
           cancelAnimationFrame(animationFrameId);
+          animationFrameId = null;
         }
 
         loadingElement.style.display = "none";
         errorPanel.style.display = "block";
 
         const message =
-          error instanceof Error ? error.message : String(error);
+          error instanceof Error
+            ? error.message
+            : String(error);
 
         errorMessage.textContent = message;
         console.error(error);
@@ -546,56 +599,86 @@
       function hashString(value) {
         let hash = 0;
 
-        for (let index = 0; index < value.length; index += 1) {
-          hash = (hash << 5) - hash + value.charCodeAt(index);
+        for (
+          let index = 0;
+          index < value.length;
+          index += 1
+        ) {
+          hash =
+            (hash << 5) -
+            hash +
+            value.charCodeAt(index);
+
           hash |= 0;
         }
 
         return Math.abs(hash);
       }
 
-      function parseChinaStandardTime(value) {
-        if (typeof value !== "string" || value.trim() === "") {
-          return null;
-        }
+      function isValidUtcDateParts(
+        date,
+        year,
+        month,
+        day,
+        hour,
+        minute,
+        second
+      ) {
+        return (
+          date.getUTCFullYear() === year &&
+          date.getUTCMonth() === month - 1 &&
+          date.getUTCDate() === day &&
+          date.getUTCHours() === hour &&
+          date.getUTCMinutes() === minute &&
+          date.getUTCSeconds() === second
+        );
+      }
 
-        const normalized = value
-          .trim()
-          .replace(/中国标准时间/g, "")
-          .replace(/\s+/g, " ")
-          .trim();
-
-        const match = normalized.match(
-          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})$/
+      function createUtcDate(
+        year,
+        month,
+        day,
+        hour,
+        minute,
+        second
+      ) {
+        const date = new Date(
+          Date.UTC(
+            year,
+            month - 1,
+            day,
+            hour,
+            minute,
+            second
+          )
         );
 
-        if (!match) {
-          return null;
-        }
-
-        const year = Number(match[1]);
-        const month = Number(match[2]);
-        const day = Number(match[3]);
-        const hour = Number(match[4]);
-        const minute = Number(match[5]);
-        const second = Number(match[6]);
-
         if (
-          month < 1 ||
-          month > 12 ||
-          day < 1 ||
-          day > 31 ||
-          hour < 0 ||
-          hour > 23 ||
-          minute < 0 ||
-          minute > 59 ||
-          second < 0 ||
-          second > 59
+          !isValidUtcDateParts(
+            date,
+            year,
+            month,
+            day,
+            hour,
+            minute,
+            second
+          )
         ) {
           return null;
         }
 
-        const timestamp = Date.UTC(
+        return date;
+      }
+
+      function createChinaStandardDate(
+        year,
+        month,
+        day,
+        hour,
+        minute,
+        second
+      ) {
+        const utcTimestamp = Date.UTC(
           year,
           month - 1,
           day,
@@ -604,21 +687,135 @@
           second
         );
 
-        const date = new Date(timestamp);
+        const date = new Date(utcTimestamp);
 
-        return Number.isNaN(date.getTime()) ? null : date;
+        if (Number.isNaN(date.getTime())) {
+          return null;
+        }
+
+        const chinaTime = new Date(
+          date.getTime() + 8 * 60 * 60 * 1000
+        );
+
+        if (
+          !isValidUtcDateParts(
+            chinaTime,
+            year,
+            month,
+            day,
+            hour,
+            minute,
+            second
+          )
+        ) {
+          return null;
+        }
+
+        return date;
+      }
+
+      function parseNodeCreatedAt(value) {
+        if (
+          typeof value !== "string" ||
+          value.trim() === ""
+        ) {
+          return null;
+        }
+
+        const text = value
+          .trim()
+          .replace(/[。；;，,]+$/, "")
+          .trim();
+
+        let match = text.match(
+          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*中国标准时间$/i
+        );
+
+        if (match) {
+          return createChinaStandardDate(
+            Number(match[1]),
+            Number(match[2]),
+            Number(match[3]),
+            Number(match[4]),
+            Number(match[5]),
+            Number(match[6])
+          );
+        }
+
+        match = text.match(
+          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*(?:UTC|GMT)$/i
+        );
+
+        if (match) {
+          return createUtcDate(
+            Number(match[1]),
+            Number(match[2]),
+            Number(match[3]),
+            Number(match[4]),
+            Number(match[5]),
+            Number(match[6])
+          );
+        }
+
+        match = text.match(
+          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*(?:北京时间|北京标准时间)$/i
+        );
+
+        if (match) {
+          return createChinaStandardDate(
+            Number(match[1]),
+            Number(match[2]),
+            Number(match[3]),
+            Number(match[4]),
+            Number(match[5]),
+            Number(match[6])
+          );
+        }
+
+        const isoPattern =
+          /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/i;
+
+        if (isoPattern.test(text)) {
+          const date = new Date(text);
+
+          return Number.isNaN(date.getTime())
+            ? null
+            : date;
+        }
+
+        const spaceTimezonePattern =
+          /^(\d{4}-\d{2}-\d{2})\s(\d{2}:\d{2}:\d{2})([+-]\d{2}:\d{2})$/;
+
+        match = text.match(spaceTimezonePattern);
+
+        if (match) {
+          const date = new Date(
+            `${match[1]}T${match[2]}${match[3]}`
+          );
+
+          return Number.isNaN(date.getTime())
+            ? null
+            : date;
+        }
+
+        return null;
       }
 
       function isNewNode(createdAt) {
-        const createdDate = parseChinaStandardTime(createdAt);
+        const createdDate =
+          parseNodeCreatedAt(createdAt);
 
         if (!createdDate) {
           return false;
         }
 
-        const elapsed = Date.now() - createdDate.getTime();
+        const elapsed =
+          Date.now() - createdDate.getTime();
 
-        return elapsed >= 0 && elapsed <= NEW_NODE_WINDOW_MS;
+        return (
+          elapsed >= 0 &&
+          elapsed <= NEW_NODE_WINDOW_MS
+        );
       }
 
       function getNodeColor(node) {
@@ -626,8 +823,13 @@
           return NEW_NODE_CORE_COLOR;
         }
 
-        const type = String(node.type || "unknown");
-        return TYPE_COLORS[hashString(type) % TYPE_COLORS.length];
+        const type = String(
+          node.type || "unknown"
+        );
+
+        return TYPE_COLORS[
+          hashString(type) % TYPE_COLORS.length
+        ];
       }
 
       function getNodeGlowColor(node) {
@@ -646,46 +848,92 @@
 
         return Math.max(
           3.8,
-          Math.min(9.2, 3.8 + Math.log10(evidenceCount + 1) * 1.8)
+          Math.min(
+            9.2,
+            3.8 +
+              Math.log10(evidenceCount + 1) *
+                1.8
+          )
         );
       }
 
       function createGlowTexture(color) {
-        const canvas = document.createElement("canvas");
+        if (glowTextureCache.has(color)) {
+          return glowTextureCache.get(color);
+        }
+
+        const canvas =
+          document.createElement("canvas");
+
         const size = 256;
 
         canvas.width = size;
         canvas.height = size;
 
-        const context = canvas.getContext("2d");
+        const context =
+          canvas.getContext("2d");
 
         if (!context) {
-          throw new Error("浏览器无法创建 Canvas 2D 上下文。");
+          throw new Error(
+            "浏览器无法创建 Canvas 2D 上下文。"
+          );
         }
 
         const center = size / 2;
-        const gradient = context.createRadialGradient(
-          center,
-          center,
+
+        const gradient =
+          context.createRadialGradient(
+            center,
+            center,
+            0,
+            center,
+            center,
+            center
+          );
+
+        gradient.addColorStop(
           0,
-          center,
-          center,
-          center
+          "rgba(255,255,255,1)"
         );
 
-        gradient.addColorStop(0, "rgba(255,255,255,1)");
         gradient.addColorStop(0.1, color);
-        gradient.addColorStop(0.3, `${color}CC`);
-        gradient.addColorStop(0.58, `${color}48`);
-        gradient.addColorStop(0.82, `${color}12`);
-        gradient.addColorStop(1, "rgba(0,0,0,0)");
+        gradient.addColorStop(
+          0.3,
+          `${color}CC`
+        );
+        gradient.addColorStop(
+          0.58,
+          `${color}48`
+        );
+        gradient.addColorStop(
+          0.82,
+          `${color}12`
+        );
+        gradient.addColorStop(
+          1,
+          "rgba(0,0,0,0)"
+        );
 
         context.fillStyle = gradient;
-        context.fillRect(0, 0, size, size);
+        context.fillRect(
+          0,
+          0,
+          size,
+          size
+        );
 
-        const texture = new THREE.CanvasTexture(canvas);
-        texture.colorSpace = THREE.SRGBColorSpace;
+        const texture =
+          new THREE.CanvasTexture(canvas);
+
+        texture.colorSpace =
+          THREE.SRGBColorSpace;
+
         texture.needsUpdate = true;
+
+        glowTextureCache.set(
+          color,
+          texture
+        );
 
         return texture;
       }
@@ -693,96 +941,161 @@
       function createNodeObject(node) {
         const group = new THREE.Group();
 
-        const radius = getNodeRadius(node);
-        const coreColor = getNodeColor(node);
-        const glowColor = getNodeGlowColor(node);
+        const radius =
+          getNodeRadius(node);
 
-        const threeCoreColor = new THREE.Color(coreColor);
-        const threeGlowColor = new THREE.Color(glowColor);
+        const coreColor =
+          getNodeColor(node);
 
-        const innerGeometry = new THREE.SphereGeometry(radius, 40, 40);
-        const innerMaterial = new THREE.MeshStandardMaterial({
-          color: threeCoreColor,
-          emissive: threeGlowColor,
-          emissiveIntensity: node.__isNew ? 4.3 : 2.6,
-          roughness: 0.17,
-          metalness: 0.2,
-          transparent: true,
-          opacity: 0.99
-        });
+        const glowColor =
+          getNodeGlowColor(node);
 
-        const innerSphere = new THREE.Mesh(
-          innerGeometry,
-          innerMaterial
-        );
+        const threeCoreColor =
+          new THREE.Color(coreColor);
+
+        const threeGlowColor =
+          new THREE.Color(glowColor);
+
+        const innerGeometry =
+          new THREE.SphereGeometry(
+            radius,
+            40,
+            40
+          );
+
+        const innerMaterial =
+          new THREE.MeshStandardMaterial({
+            color: threeCoreColor,
+            emissive: threeGlowColor,
+            emissiveIntensity:
+              node.__isNew ? 4.3 : 2.6,
+            roughness: 0.17,
+            metalness: 0.2,
+            transparent: true,
+            opacity: 0.99
+          });
+
+        const innerSphere =
+          new THREE.Mesh(
+            innerGeometry,
+            innerMaterial
+          );
 
         innerSphere.renderOrder = 3;
         group.add(innerSphere);
 
-        const outerGeometry = new THREE.SphereGeometry(
-          radius * (node.__isNew ? 1.58 : 1.45),
-          40,
-          40
-        );
+        const outerGeometry =
+          new THREE.SphereGeometry(
+            radius *
+              (node.__isNew
+                ? 1.58
+                : 1.45),
+            40,
+            40
+          );
 
-        const outerMaterial = new THREE.MeshBasicMaterial({
-          color: threeGlowColor,
-          transparent: true,
-          opacity: node.__isNew ? 0.29 : 0.16,
-          blending: THREE.AdditiveBlending,
-          depthWrite: false,
-          side: THREE.BackSide
-        });
+        const outerMaterial =
+          new THREE.MeshBasicMaterial({
+            color: threeGlowColor,
+            transparent: true,
+            opacity:
+              node.__isNew
+                ? 0.29
+                : 0.16,
+            blending:
+              THREE.AdditiveBlending,
+            depthWrite: false,
+            side: THREE.BackSide
+          });
 
-        const outerSphere = new THREE.Mesh(
-          outerGeometry,
-          outerMaterial
-        );
+        const outerSphere =
+          new THREE.Mesh(
+            outerGeometry,
+            outerMaterial
+          );
 
         outerSphere.renderOrder = 2;
         group.add(outerSphere);
 
-        const glowMaterial = new THREE.SpriteMaterial({
-          map: createGlowTexture(glowColor),
-          color: threeGlowColor,
-          transparent: true,
-          opacity: node.__isNew ? 0.95 : 0.67,
-          blending: THREE.AdditiveBlending,
-          depthWrite: false
-        });
+        const glowMaterial =
+          new THREE.SpriteMaterial({
+            map: createGlowTexture(
+              glowColor
+            ),
+            color: threeGlowColor,
+            transparent: true,
+            opacity:
+              node.__isNew
+                ? 0.95
+                : 0.67,
+            blending:
+              THREE.AdditiveBlending,
+            depthWrite: false
+          });
 
-        const glowSprite = new THREE.Sprite(glowMaterial);
-        const glowScale = radius * (node.__isNew ? 7.2 : 5.6);
+        const glowSprite =
+          new THREE.Sprite(
+            glowMaterial
+          );
 
-        glowSprite.scale.set(glowScale, glowScale, 1);
+        const glowScale =
+          radius *
+          (node.__isNew
+            ? 7.2
+            : 5.6);
+
+        glowSprite.scale.set(
+          glowScale,
+          glowScale,
+          1
+        );
+
         glowSprite.renderOrder = 1;
         group.add(glowSprite);
 
-        const labelText = node.__isNew
-          ? `${node.name}  ✨新`
-          : String(node.name);
+        const labelText =
+          node.__isNew
+            ? `${node.name}  ✨新`
+            : String(node.name);
 
-        const label = new SpriteText(labelText);
+        const label =
+          new SpriteText(labelText);
 
-        label.color = node.__isNew ? "#F4FFB0" : "#F2FCFF";
+        label.color =
+          node.__isNew
+            ? "#F4FFB0"
+            : "#F2FCFF";
+
         label.textHeight = Math.max(
           2.9,
-          Math.min(4.7, radius * 0.66)
+          Math.min(
+            4.7,
+            radius * 0.66
+          )
         );
-        label.backgroundColor = node.__isNew
-          ? "rgba(18, 27, 2, 0.88)"
-          : "rgba(0, 3, 12, 0.82)";
+
+        label.backgroundColor =
+          node.__isNew
+            ? "rgba(18, 27, 2, 0.88)"
+            : "rgba(0, 3, 12, 0.82)";
+
         label.padding = 2.5;
         label.borderRadius = 4;
         label.strokeWidth = 0.85;
-        label.strokeColor = "rgba(0, 0, 0, 0.98)";
-        label.position.set(0, -(radius * 1.9 + 2.6), 0);
+        label.strokeColor =
+          "rgba(0, 0, 0, 0.98)";
+
+        label.position.set(
+          0,
+          -(radius * 1.9 + 2.6),
+          0
+        );
 
         label.material.depthWrite = false;
         label.material.depthTest = false;
         label.material.transparent = true;
-
         label.renderOrder = 999;
+
         group.add(label);
 
         group.userData = {
@@ -791,7 +1104,10 @@
           glowSprite,
           label,
           isNew: node.__isNew,
-          phase: Math.random() * Math.PI * 2
+          phase:
+            Math.random() *
+            Math.PI *
+            2
         };
 
         animatedNodeObjects.add(group);
@@ -801,29 +1117,65 @@
 
       function createStarField() {
         const starCount = 3600;
-        const positions = new Float32Array(starCount * 3);
-        const colors = new Float32Array(starCount * 3);
 
-        const white = new THREE.Color("#FFFFFF");
-        const cyan = new THREE.Color("#84EFFF");
-        const violet = new THREE.Color("#B697FF");
-        const paleGold = new THREE.Color("#F4F5C5");
+        const positions =
+          new Float32Array(
+            starCount * 3
+          );
 
-        for (let index = 0; index < starCount; index += 1) {
-          const radius = 500 + Math.random() * 1900;
-          const theta = Math.random() * Math.PI * 2;
-          const phi = Math.acos(2 * Math.random() - 1);
+        const colors =
+          new Float32Array(
+            starCount * 3
+          );
+
+        const white =
+          new THREE.Color("#FFFFFF");
+
+        const cyan =
+          new THREE.Color("#84EFFF");
+
+        const violet =
+          new THREE.Color("#B697FF");
+
+        const paleGold =
+          new THREE.Color("#F4F5C5");
+
+        for (
+          let index = 0;
+          index < starCount;
+          index += 1
+        ) {
+          const radius =
+            500 +
+            Math.random() *
+              1900;
+
+          const theta =
+            Math.random() *
+            Math.PI *
+            2;
+
+          const phi =
+            Math.acos(
+              2 * Math.random() - 1
+            );
 
           positions[index * 3] =
-            radius * Math.sin(phi) * Math.cos(theta);
+            radius *
+            Math.sin(phi) *
+            Math.cos(theta);
 
           positions[index * 3 + 1] =
-            radius * Math.sin(phi) * Math.sin(theta);
+            radius *
+            Math.sin(phi) *
+            Math.sin(theta);
 
           positions[index * 3 + 2] =
-            radius * Math.cos(phi);
+            radius *
+            Math.cos(phi);
 
-          const random = Math.random();
+          const random =
+            Math.random();
 
           const selectedColor =
             random < 0.52
@@ -834,37 +1186,63 @@
                   ? violet
                   : paleGold;
 
-          const brightness = 0.42 + Math.random() * 0.58;
+          const brightness =
+            0.42 +
+            Math.random() *
+              0.58;
 
-          colors[index * 3] = selectedColor.r * brightness;
-          colors[index * 3 + 1] = selectedColor.g * brightness;
-          colors[index * 3 + 2] = selectedColor.b * brightness;
+          colors[index * 3] =
+            selectedColor.r *
+            brightness;
+
+          colors[index * 3 + 1] =
+            selectedColor.g *
+            brightness;
+
+          colors[index * 3 + 2] =
+            selectedColor.b *
+            brightness;
         }
 
-        const geometry = new THREE.BufferGeometry();
+        const geometry =
+          new THREE.BufferGeometry();
 
         geometry.setAttribute(
           "position",
-          new THREE.BufferAttribute(positions, 3)
+          new THREE.BufferAttribute(
+            positions,
+            3
+          )
         );
 
         geometry.setAttribute(
           "color",
-          new THREE.BufferAttribute(colors, 3)
+          new THREE.BufferAttribute(
+            colors,
+            3
+          )
         );
 
-        const material = new THREE.PointsMaterial({
-          size: 1.7,
-          sizeAttenuation: true,
-          vertexColors: true,
-          transparent: true,
-          opacity: 0.9,
-          blending: THREE.AdditiveBlending,
-          depthWrite: false
-        });
+        const material =
+          new THREE.PointsMaterial({
+            size: 1.7,
+            sizeAttenuation: true,
+            vertexColors: true,
+            transparent: true,
+            opacity: 0.9,
+            blending:
+              THREE.AdditiveBlending,
+            depthWrite: false
+          });
 
-        const stars = new THREE.Points(geometry, material);
-        stars.name = "deep-space-stars";
+        const stars =
+          new THREE.Points(
+            geometry,
+            material
+          );
+
+        stars.name =
+          "deep-space-stars";
 
         return stars;
       }
@@ -872,159 +1250,224 @@
       function validateNodes(nodes) {
         if (!Array.isArray(nodes)) {
           throw new Error(
-            'nodes.json 格式错误：根数据必须是数组。'
+            "nodes.json 格式错误：根数据必须是数组。"
           );
         }
 
         const nodeIds = new Set();
 
-        nodes.forEach((node, index) => {
-          const itemNumber = index + 1;
+        nodes.forEach(
+          (node, index) => {
+            const itemNumber =
+              index + 1;
 
-          if (!node || typeof node !== "object" || Array.isArray(node)) {
-            throw new Error(
-              `nodes.json 第 ${itemNumber} 条数据格式错误：节点必须是对象。`
-            );
+            if (
+              !node ||
+              typeof node !== "object" ||
+              Array.isArray(node)
+            ) {
+              throw new Error(
+                `nodes.json 第 ${itemNumber} 条数据格式错误：节点必须是对象。`
+              );
+            }
+
+            if (
+              typeof node.id !==
+                "string" ||
+              node.id.trim() === ""
+            ) {
+              throw new Error(
+                `nodes.json 第 ${itemNumber} 条数据缺少有效字段 id。`
+              );
+            }
+
+            if (
+              typeof node.name !==
+                "string" ||
+              node.name.trim() === ""
+            ) {
+              throw new Error(
+                `nodes.json 中节点 ${node.id} 缺少有效字段 name。`
+              );
+            }
+
+            if (
+              typeof node.type !==
+                "string" ||
+              node.type.trim() === ""
+            ) {
+              throw new Error(
+                `nodes.json 中节点 ${node.id} 缺少有效字段 type。`
+              );
+            }
+
+            if (
+              typeof node.evidence_count !==
+                "number" ||
+              !Number.isFinite(
+                node.evidence_count
+              )
+            ) {
+              throw new Error(
+                `nodes.json 中节点 ${node.id} 的 evidence_count 必须是数字。`
+              );
+            }
+
+            if (
+              typeof node.created_at !==
+                "string" ||
+              node.created_at.trim() ===
+                ""
+            ) {
+              throw new Error(
+                `nodes.json 中节点 ${node.id} 缺少有效字段 created_at。`
+              );
+            }
+
+            const parsedCreatedAt =
+              parseNodeCreatedAt(
+                node.created_at
+              );
+
+            if (!parsedCreatedAt) {
+              throw new Error(
+                `nodes.json 中节点 ${node.id} 的 created_at 格式错误：${node.created_at}。\n` +
+                "支持以下时间格式：\n" +
+                "1. 2026-07-17 10:00:00 中国标准时间\n" +
+                "2. 2026-07-16 14:28:28 UTC\n" +
+                "3. 2026-07-16T14:28:28Z\n" +
+                "4. 2026-07-16T22:28:28+08:00"
+              );
+            }
+
+            if (
+              nodeIds.has(node.id)
+            ) {
+              throw new Error(
+                `nodes.json 存在重复节点 id：${node.id}。`
+              );
+            }
+
+            node.__createdAtDate =
+              parsedCreatedAt;
+
+            node.__isNew =
+              isNewNode(
+                node.created_at
+              );
+
+            nodeIds.add(node.id);
           }
-
-          if (
-            typeof node.id !== "string" ||
-            node.id.trim() === ""
-          ) {
-            throw new Error(
-              `nodes.json 第 ${itemNumber} 条数据缺少有效字段 id。`
-            );
-          }
-
-          if (
-            typeof node.name !== "string" ||
-            node.name.trim() === ""
-          ) {
-            throw new Error(
-              `nodes.json 中节点 ${node.id} 缺少有效字段 name。`
-            );
-          }
-
-          if (
-            typeof node.type !== "string" ||
-            node.type.trim() === ""
-          ) {
-            throw new Error(
-              `nodes.json 中节点 ${node.id} 缺少有效字段 type。`
-            );
-          }
-
-          if (
-            typeof node.evidence_count !== "number" ||
-            !Number.isFinite(node.evidence_count)
-          ) {
-            throw new Error(
-              `nodes.json 中节点 ${node.id} 的 evidence_count 必须是数字。`
-            );
-          }
-
-          if (
-            typeof node.created_at !== "string" ||
-            node.created_at.trim() === ""
-          ) {
-            throw new Error(
-              `nodes.json 中节点 ${node.id} 缺少有效字段 created_at。`
-            );
-          }
-
-          if (!parseChinaStandardTime(node.created_at)) {
-            throw new Error(
-              `nodes.json 中节点 ${node.id} 的 created_at 格式错误：${node.created_at}。正确格式应为“2026-07-17 10:00:00 中国标准时间”。`
-            );
-          }
-
-          if (nodeIds.has(node.id)) {
-            throw new Error(
-              `nodes.json 存在重复节点 id：${node.id}。`
-            );
-          }
-
-          node.__isNew = isNewNode(node.created_at);
-          nodeIds.add(node.id);
-        });
+        );
 
         return nodeIds;
       }
 
-      function validateEdges(edges, nodeIds) {
+      function validateEdges(
+        edges,
+        nodeIds
+      ) {
         if (!Array.isArray(edges)) {
           throw new Error(
             "edges.json 格式错误：根数据必须是数组。"
           );
         }
 
-        edges.forEach((edge, index) => {
-          const itemNumber = index + 1;
+        edges.forEach(
+          (edge, index) => {
+            const itemNumber =
+              index + 1;
 
-          if (!edge || typeof edge !== "object" || Array.isArray(edge)) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据格式错误：连接必须是对象。`
-            );
-          }
+            if (
+              !edge ||
+              typeof edge !== "object" ||
+              Array.isArray(edge)
+            ) {
+              throw new Error(
+                `edges.json 第 ${itemNumber} 条数据格式错误：连接必须是对象。`
+              );
+            }
 
-          if (
-            typeof edge.source !== "string" ||
-            edge.source.trim() === ""
-          ) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据缺少有效字段 source。`
-            );
-          }
+            if (
+              typeof edge.source !==
+                "string" ||
+              edge.source.trim() === ""
+            ) {
+              throw new Error(
+                `edges.json 第 ${itemNumber} 条数据缺少有效字段 source。`
+              );
+            }
 
-          if (
-            typeof edge.target !== "string" ||
-            edge.target.trim() === ""
-          ) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据缺少有效字段 target。`
-            );
-          }
+            if (
+              typeof edge.target !==
+                "string" ||
+              edge.target.trim() === ""
+            ) {
+              throw new Error(
+                `edges.json 第 ${itemNumber} 条数据缺少有效字段 target。`
+              );
+            }
 
-          if (
-            typeof edge.relation !== "string" ||
-            edge.relation.trim() === ""
-          ) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据缺少有效字段 relation。`
-            );
-          }
+            if (
+              typeof edge.relation !==
+                "string" ||
+              edge.relation.trim() ===
+                ""
+            ) {
+              throw new Error(
+                `edges.json 第 ${itemNumber} 条数据缺少有效字段 relation。`
+              );
+            }
 
-          if (!nodeIds.has(edge.source)) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据引用了不存在的 source 节点：${edge.source}。`
-            );
-          }
+            if (
+              !nodeIds.has(
+                edge.source
+              )
+            ) {
+              throw new Error(
+                `edges.json 第 ${itemNumber} 条数据引用了不存在的 source 节点：${edge.source}。`
+              );
+            }
 
-          if (!nodeIds.has(edge.target)) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据引用了不存在的 target 节点：${edge.target}。`
-            );
+            if (
+              !nodeIds.has(
+                edge.target
+              )
+            ) {
+              throw new Error(
+                `edges.json 第 ${itemNumber} 条数据引用了不存在的 target 节点：${edge.target}。`
+              );
+            }
           }
-        });
+        );
       }
 
-      async function fetchJson(filename) {
+      async function fetchJson(
+        filename
+      ) {
         let response;
 
         try {
-          response = await fetch(`./${filename}`, {
-            method: "GET",
-            cache: "no-store"
-          });
+          response = await fetch(
+            `./${filename}`,
+            {
+              method: "GET",
+              cache: "no-store"
+            }
+          );
         } catch (error) {
           throw new Error(
-            `无法加载 ${filename}：${error.message}。\n请确认网页通过 GitHub Pages 或 HTTP 服务器访问，并且 ${filename} 与 index.html 位于同一目录。`
+            `无法加载 ${filename}：${error.message}。\n` +
+            `请确认 ${filename} 与 index.html 位于同一目录，并通过 GitHub Pages 或 HTTP 服务器访问。`
           );
         }
 
-        if (response.status === 404) {
+        if (
+          response.status === 404
+        ) {
           throw new Error(
-            `找不到 ${filename}。请确认文件与 index.html 位于同一目录，并检查文件名大小写。`
+            `找不到 ${filename}。\n` +
+            `请确认 ${filename} 与 index.html 位于同一目录，并检查文件名大小写。`
           );
         }
 
@@ -1034,10 +1477,21 @@
           );
         }
 
-        const rawText = await response.text();
+        const rawText =
+          await response.text();
+
+        if (
+          rawText.trim() === ""
+        ) {
+          throw new Error(
+            `${filename} 内容为空。`
+          );
+        }
 
         try {
-          return JSON.parse(rawText);
+          return JSON.parse(
+            rawText
+          );
         } catch (error) {
           throw new Error(
             `${filename} JSON 解析失败：${error.message}`
@@ -1046,22 +1500,44 @@
       }
 
       function openNodeModal(node) {
-        const nodeName = String(node.name);
-        const nodeType = String(node.type);
-        const evidenceCount = Number(node.evidence_count);
+        const nodeName =
+          String(node.name);
 
-        nodeNameElement.textContent = nodeName;
-        nodeTypeElement.textContent = nodeType;
+        const nodeType =
+          String(node.type);
+
+        const evidenceCount =
+          Number(
+            node.evidence_count
+          );
+
+        nodeNameElement.textContent =
+          nodeName;
+
+        nodeTypeElement.textContent =
+          nodeType;
+
         evidenceCountElement.textContent =
-          evidenceCount.toLocaleString("zh-CN");
+          evidenceCount.toLocaleString(
+            "zh-CN"
+          );
 
         pubmedLinkElement.href =
           `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(nodeName)}`;
 
-        newNodeBadge.classList.toggle("visible", Boolean(node.__isNew));
+        newNodeBadge.classList.toggle(
+          "visible",
+          Boolean(node.__isNew)
+        );
 
-        modalOverlay.classList.add("visible");
-        modalOverlay.setAttribute("aria-hidden", "false");
+        modalOverlay.classList.add(
+          "visible"
+        );
+
+        modalOverlay.setAttribute(
+          "aria-hidden",
+          "false"
+        );
 
         window.setTimeout(() => {
           closeModalButton.focus();
@@ -1069,213 +1545,410 @@
       }
 
       function closeNodeModal() {
-        modalOverlay.classList.remove("visible");
-        modalOverlay.setAttribute("aria-hidden", "true");
+        modalOverlay.classList.remove(
+          "visible"
+        );
+
+        modalOverlay.setAttribute(
+          "aria-hidden",
+          "true"
+        );
       }
 
       function animateNodeGlow() {
-        const elapsed = performance.now() * 0.001;
+        const elapsed =
+          performance.now() *
+          0.001;
 
-        animatedNodeObjects.forEach((object) => {
-          const {
-            innerSphere,
-            outerSphere,
-            glowSprite,
-            label,
-            isNew,
-            phase
-          } = object.userData;
+        animatedNodeObjects.forEach(
+          (object) => {
+            const {
+              innerSphere,
+              outerSphere,
+              glowSprite,
+              label,
+              isNew,
+              phase
+            } = object.userData;
 
-          const corePulse =
-            1 + Math.sin(elapsed * (isNew ? 2.4 : 1.7) + phase) *
-            (isNew ? 0.065 : 0.035);
+            const corePulse =
+              1 +
+              Math.sin(
+                elapsed *
+                  (isNew
+                    ? 2.4
+                    : 1.7) +
+                  phase
+              ) *
+                (isNew
+                  ? 0.065
+                  : 0.035);
 
-          const haloPulse =
-            1 + Math.sin(elapsed * (isNew ? 1.8 : 1.25) + phase) *
-            (isNew ? 0.13 : 0.075);
+            const haloPulse =
+              1 +
+              Math.sin(
+                elapsed *
+                  (isNew
+                    ? 1.8
+                    : 1.25) +
+                  phase
+              ) *
+                (isNew
+                  ? 0.13
+                  : 0.075);
 
-          innerSphere.scale.setScalar(corePulse);
-          outerSphere.scale.setScalar(haloPulse);
+            innerSphere.scale.setScalar(
+              corePulse
+            );
 
-          glowSprite.material.opacity =
-            (isNew ? 0.88 : 0.58) +
-            Math.sin(elapsed * (isNew ? 2.1 : 1.45) + phase) *
-            (isNew ? 0.11 : 0.1);
+            outerSphere.scale.setScalar(
+              haloPulse
+            );
 
-          if (isNew) {
-            label.material.opacity =
-              0.9 + Math.sin(elapsed * 2 + phase) * 0.1;
+            glowSprite.material.opacity =
+              (isNew
+                ? 0.88
+                : 0.58) +
+              Math.sin(
+                elapsed *
+                  (isNew
+                    ? 2.1
+                    : 1.45) +
+                  phase
+              ) *
+                (isNew
+                  ? 0.11
+                  : 0.1);
+
+            if (isNew) {
+              label.material.opacity =
+                0.9 +
+                Math.sin(
+                  elapsed * 2 +
+                    phase
+                ) *
+                  0.1;
+            }
           }
-        });
+        );
 
         animationFrameId =
-          window.requestAnimationFrame(animateNodeGlow);
+          window.requestAnimationFrame(
+            animateNodeGlow
+          );
       }
 
-      function initializeGraph(nodes, edges) {
+      function initializeGraph(
+        nodes,
+        edges
+      ) {
         if (
-          typeof THREE === "undefined" ||
-          typeof ForceGraph3D === "undefined" ||
-          typeof SpriteText === "undefined"
+          typeof THREE ===
+            "undefined" ||
+          typeof ForceGraph3D ===
+            "undefined" ||
+          typeof SpriteText ===
+            "undefined"
         ) {
           throw new Error(
             "3D 依赖库加载失败，请检查网络连接或 CDN 是否可访问。"
           );
         }
 
-        graph = ForceGraph3D()(graphElement)
-          .width(window.innerWidth)
-          .height(window.innerHeight)
-          .backgroundColor("#010208")
-          .showNavInfo(false)
-          .graphData({
-            nodes,
-            links: edges
-          })
-          .nodeId("id")
-          .nodeThreeObject(createNodeObject)
-          .nodeThreeObjectExtend(false)
-          .nodeLabel(() => "")
-          .linkSource("source")
-          .linkTarget("target")
-          .linkColor((link) => {
-            const relation = String(link.relation);
+        graph =
+          ForceGraph3D()(
+            graphElement
+          )
+            .width(
+              window.innerWidth
+            )
+            .height(
+              window.innerHeight
+            )
+            .backgroundColor(
+              "#010208"
+            )
+            .showNavInfo(false)
+            .graphData({
+              nodes,
+              links: edges
+            })
+            .nodeId("id")
+            .nodeThreeObject(
+              createNodeObject
+            )
+            .nodeThreeObjectExtend(
+              false
+            )
+            .nodeLabel(() => "")
+            .linkSource("source")
+            .linkTarget("target")
+            .linkColor((link) => {
+              const relation =
+                String(
+                  link.relation
+                );
 
-            if (relation.includes("抑制")) {
-              return "rgba(255, 64, 112, 0.74)";
-            }
+              if (
+                relation.includes(
+                  "抑制"
+                )
+              ) {
+                return "rgba(255, 64, 112, 0.74)";
+              }
 
-            if (relation.includes("促进")) {
-              return "rgba(74, 228, 255, 0.72)";
-            }
+              if (
+                relation.includes(
+                  "促进"
+                )
+              ) {
+                return "rgba(74, 228, 255, 0.72)";
+              }
 
-            return "rgba(166, 128, 255, 0.68)";
-          })
-          .linkWidth((link) => {
-            const relation = String(link.relation);
+              return "rgba(166, 128, 255, 0.68)";
+            })
+            .linkWidth((link) => {
+              const relation =
+                String(
+                  link.relation
+                );
 
-            return relation.includes("抑制") ? 1.25 : 0.95;
-          })
-          .linkOpacity(0.74)
-          .linkDirectionalArrowLength(3.7)
-          .linkDirectionalArrowRelPos(0.87)
-          .linkDirectionalArrowColor((link) => {
-            const relation = String(link.relation);
+              return relation.includes(
+                "抑制"
+              )
+                ? 1.25
+                : 0.95;
+            })
+            .linkOpacity(0.74)
+            .linkDirectionalArrowLength(
+              3.7
+            )
+            .linkDirectionalArrowRelPos(
+              0.87
+            )
+            .linkDirectionalArrowColor(
+              (link) => {
+                const relation =
+                  String(
+                    link.relation
+                  );
 
-            if (relation.includes("抑制")) {
-              return "#FF4C81";
-            }
+                if (
+                  relation.includes(
+                    "抑制"
+                  )
+                ) {
+                  return "#FF4C81";
+                }
 
-            if (relation.includes("促进")) {
-              return "#5CEBFF";
-            }
+                if (
+                  relation.includes(
+                    "促进"
+                  )
+                ) {
+                  return "#5CEBFF";
+                }
 
-            return "#B68BFF";
-          })
-          .linkDirectionalParticles((link) => {
-            const relation = String(link.relation);
+                return "#B68BFF";
+              }
+            )
+            .linkDirectionalParticles(
+              (link) => {
+                const relation =
+                  String(
+                    link.relation
+                  );
 
-            return relation.includes("抑制") ? 6 : 5;
-          })
-          .linkDirectionalParticleWidth((link) => {
-            const relation = String(link.relation);
+                return relation.includes(
+                  "抑制"
+                )
+                  ? 6
+                  : 5;
+              }
+            )
+            .linkDirectionalParticleWidth(
+              (link) => {
+                const relation =
+                  String(
+                    link.relation
+                  );
 
-            return relation.includes("抑制") ? 2.3 : 1.9;
-          })
-          .linkDirectionalParticleSpeed((link) => {
-            const relation = String(link.relation);
+                return relation.includes(
+                  "抑制"
+                )
+                  ? 2.3
+                  : 1.9;
+              }
+            )
+            .linkDirectionalParticleSpeed(
+              (link) => {
+                const relation =
+                  String(
+                    link.relation
+                  );
 
-            return relation.includes("抑制") ? 0.006 : 0.0045;
-          })
-          .linkDirectionalParticleColor((link) => {
-            const relation = String(link.relation);
+                return relation.includes(
+                  "抑制"
+                )
+                  ? 0.006
+                  : 0.0045;
+              }
+            )
+            .linkDirectionalParticleColor(
+              (link) => {
+                const relation =
+                  String(
+                    link.relation
+                  );
 
-            if (relation.includes("抑制")) {
-              return "#FF5288";
-            }
+                if (
+                  relation.includes(
+                    "抑制"
+                  )
+                ) {
+                  return "#FF5288";
+                }
 
-            if (relation.includes("促进")) {
-              return "#7DF5FF";
-            }
+                if (
+                  relation.includes(
+                    "促进"
+                  )
+                ) {
+                  return "#7DF5FF";
+                }
 
-            return "#C49BFF";
-          })
-          .linkDirectionalParticleResolution(14)
-          .onNodeClick(openNodeModal)
-          .onNodeHover((node) => {
-            graphElement.style.cursor = node ? "pointer" : "default";
-          })
-          .warmupTicks(100)
-          .cooldownTicks(220)
-          .d3AlphaDecay(0.021)
-          .d3VelocityDecay(0.3);
+                return "#C49BFF";
+              }
+            )
+            .linkDirectionalParticleResolution(
+              14
+            )
+            .onNodeClick(
+              openNodeModal
+            )
+            .onNodeHover(
+              (node) => {
+                graphElement.style.cursor =
+                  node
+                    ? "pointer"
+                    : "default";
+              }
+            )
+            .warmupTicks(100)
+            .cooldownTicks(220)
+            .d3AlphaDecay(0.021)
+            .d3VelocityDecay(0.3);
 
-        const chargeForce = graph.d3Force("charge");
-        const linkForce = graph.d3Force("link");
+        const chargeForce =
+          graph.d3Force("charge");
+
+        const linkForce =
+          graph.d3Force("link");
 
         if (chargeForce) {
-          chargeForce.strength(-170);
+          chargeForce.strength(
+            -170
+          );
         }
 
         if (linkForce) {
           linkForce.distance(58);
         }
 
-        const scene = graph.scene();
+        const scene =
+          graph.scene();
 
-        scene.add(createStarField());
-
-        const hemisphereLight = new THREE.HemisphereLight(
-          "#B8F3FF",
-          "#11061F",
-          1.55
+        scene.add(
+          createStarField()
         );
 
-        scene.add(hemisphereLight);
+        const hemisphereLight =
+          new THREE.HemisphereLight(
+            "#B8F3FF",
+            "#11061F",
+            1.55
+          );
 
-        const cyanLight = new THREE.PointLight(
-          "#45E7FF",
-          2900,
-          1300,
-          1.8
+        scene.add(
+          hemisphereLight
         );
 
-        cyanLight.position.set(240, 190, 280);
+        const cyanLight =
+          new THREE.PointLight(
+            "#45E7FF",
+            2900,
+            1300,
+            1.8
+          );
+
+        cyanLight.position.set(
+          240,
+          190,
+          280
+        );
+
         scene.add(cyanLight);
 
-        const violetLight = new THREE.PointLight(
-          "#936BFF",
-          2500,
-          1100,
-          1.8
+        const violetLight =
+          new THREE.PointLight(
+            "#936BFF",
+            2500,
+            1100,
+            1.8
+          );
+
+        violetLight.position.set(
+          -260,
+          -120,
+          -190
         );
 
-        violetLight.position.set(-260, -120, -190);
         scene.add(violetLight);
 
-        const goldLight = new THREE.PointLight(
-          "#DFFF72",
-          1600,
-          900,
-          1.9
+        const goldLight =
+          new THREE.PointLight(
+            "#DFFF72",
+            1600,
+            900,
+            1.9
+          );
+
+        goldLight.position.set(
+          30,
+          260,
+          -220
         );
 
-        goldLight.position.set(30, 260, -220);
         scene.add(goldLight);
 
-        scene.fog = new THREE.FogExp2("#010208", 0.0004);
+        scene.fog =
+          new THREE.FogExp2(
+            "#010208",
+            0.0004
+          );
 
-        const renderer = graph.renderer();
+        const renderer =
+          graph.renderer();
 
         renderer.setPixelRatio(
-          Math.min(window.devicePixelRatio || 1, 2)
+          Math.min(
+            window.devicePixelRatio ||
+              1,
+            2
+          )
         );
 
-        renderer.outputColorSpace = THREE.SRGBColorSpace;
-        renderer.toneMapping = THREE.ACESFilmicToneMapping;
-        renderer.toneMappingExposure = 1.3;
+        renderer.outputColorSpace =
+          THREE.SRGBColorSpace;
 
-        const controls = graph.controls();
+        renderer.toneMapping =
+          THREE.ACESFilmicToneMapping;
+
+        renderer.toneMappingExposure =
+          1.3;
+
+        const controls =
+          graph.controls();
 
         controls.enableDamping = true;
         controls.dampingFactor = 0.06;
@@ -1290,7 +1963,14 @@
             y: 42,
             z: Math.max(
               270,
-              195 + Math.sqrt(Math.max(nodes.length, 1)) * 26
+              195 +
+                Math.sqrt(
+                  Math.max(
+                    nodes.length,
+                    1
+                  )
+                ) *
+                  26
             )
           },
           {
@@ -1301,50 +1981,92 @@
           0
         );
 
-        loadingElement.style.display = "none";
+        loadingElement.style.display =
+          "none";
+
         animateNodeGlow();
       }
 
-      closeModalButton.addEventListener("click", closeNodeModal);
+      closeModalButton.addEventListener(
+        "click",
+        closeNodeModal
+      );
 
-      modalOverlay.addEventListener("click", (event) => {
-        if (event.target === modalOverlay) {
-          closeNodeModal();
+      modalOverlay.addEventListener(
+        "click",
+        (event) => {
+          if (
+            event.target ===
+            modalOverlay
+          ) {
+            closeNodeModal();
+          }
         }
-      });
+      );
 
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          closeNodeModal();
+      document.addEventListener(
+        "keydown",
+        (event) => {
+          if (
+            event.key ===
+            "Escape"
+          ) {
+            closeNodeModal();
+          }
         }
-      });
+      );
 
-      window.addEventListener("resize", () => {
-        if (!graph) {
-          return;
+      window.addEventListener(
+        "resize",
+        () => {
+          if (!graph) {
+            return;
+          }
+
+          graph
+            .width(
+              window.innerWidth
+            )
+            .height(
+              window.innerHeight
+            );
         }
+      );
 
-        graph
-          .width(window.innerWidth)
-          .height(window.innerHeight);
-      });
-
-      window.addEventListener("beforeunload", () => {
-        if (animationFrameId !== null) {
-          cancelAnimationFrame(animationFrameId);
+      window.addEventListener(
+        "beforeunload",
+        () => {
+          if (
+            animationFrameId !==
+            null
+          ) {
+            cancelAnimationFrame(
+              animationFrameId
+            );
+          }
         }
-      });
+      );
 
       Promise.all([
         fetchJson("nodes.json"),
         fetchJson("edges.json")
       ])
-        .then(([nodes, edges]) => {
-          const nodeIds = validateNodes(nodes);
+        .then(
+          ([nodes, edges]) => {
+            const nodeIds =
+              validateNodes(nodes);
 
-          validateEdges(edges, nodeIds);
-          initializeGraph(nodes, edges);
-        })
+            validateEdges(
+              edges,
+              nodeIds
+            );
+
+            initializeGraph(
+              nodes,
+              edges
+            );
+          }
+        )
         .catch(showError);
     })();
   </script>
