@@ -16,6 +16,7 @@
         .main-title .light { color: #ffffff; text-shadow: 0 0 20px rgba(255,255,255,0.1); }
         .main-title .accent { color: #00e5ff; }
         .subtitle { font-size: 13px; font-weight: 400; color: #56647a; letter-spacing: 1px; }
+        
         .loading-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #46516b; font-size: 14px; letter-spacing: 2px; background: rgba(0,0,0,0.5); padding: 6px 16px; border-radius: 20px; }
         
         #node-detail { 
@@ -42,7 +43,7 @@
         <div class="subtitle">▸ PubMed 文献 AI 自动抽取 | 点击节点查看文献</div>
     </div>
     <div id="graph-container"></div>
-    <div class="loading-text" id="loading-text">渲染霓虹荧光星云中...</div>
+    <div class="loading-text" id="loading-text">正在加载星云，请耐心等待...</div>
 
     <div id="node-detail">
         <button class="close-btn" onclick="document.getElementById('node-detail').style.display='none'">✖</button>
@@ -60,6 +61,7 @@
             fetch('edges.json').then(res => res.json())
         ]).then(([nodes, edges]) => {
             document.getElementById('loading-text').style.display = 'none';
+            console.log("数据加载成功，节点数量:", nodes.length);
             
             const formattedNodes = nodes.map(node => {
                 const name = node.name || node.id;
@@ -67,9 +69,8 @@
                     id: node.id || name,
                     name: name,
                     type: node.type || node.entity_type || "其他",
-                    val: Math.max(2, (node.evidence_count || 1) * 0.8), // 调大基础半径
+                    val: Math.max(2, (node.evidence_count || 1) * 0.8),
                     evidence_count: node.evidence_count || 0,
-                    // 更具荧光感的色彩池
                     color: ['#00e5ff', '#818cf8', '#a78bfa', '#34d399', '#f472b6'][Math.floor(Math.random() * 5)]
                 };
             });
@@ -79,32 +80,33 @@
                 target: edge.target || edge.target_id || edge.to
             }));
 
+            // 【检查点1】如果没有连线和节点，会在这里打印提示
+            console.log("节点数据准备完毕，准备渲染3D引擎。");
+
             const Graph = ForceGraph3D()(document.getElementById('graph-container'))
                 .graphData({ nodes: formattedNodes, links: formattedEdges })
                 .nodeLabel(node => `${node.name}`)
                 .nodeAutoColorBy('type')
                 
-                // 💡 【1. 修复：双层球体实现半透明霓虹荧光】
+                // 💡 1. 半透发光赛博球（修改了发光层逻辑，消除极白刺眼）
                 .nodeThreeObject(node => {
                     const group = new THREE.Group();
                     const size = node.val || 5;
 
-                    // 核心高亮球体
                     const coreMat = new THREE.MeshPhongMaterial({
                         color: node.color,
                         emissive: node.color,
-                        emissiveIntensity: 1.2,
+                        emissiveIntensity: 0.8,
                     });
                     const coreSphere = new THREE.Mesh(new THREE.SphereGeometry(size, 32, 16), coreMat);
                     group.add(coreSphere);
 
-                    // 外层半透明辉光球体（打造赛博荧光感）
                     const glowMat = new THREE.MeshPhongMaterial({
                         color: node.color,
                         emissive: node.color,
-                        emissiveIntensity: 0.5,
+                        emissiveIntensity: 0.3,
                         transparent: true,
-                        opacity: 0.3
+                        opacity: 0.25
                     });
                     const glowSphere = new THREE.Mesh(new THREE.SphereGeometry(size * 1.6, 32, 16), glowMat);
                     group.add(glowSphere);
@@ -112,25 +114,27 @@
                     return group;
                 })
 
-                // 📝 【2. 修复：名字永远漂浮在球体正下方】
+                // 📝 2. 名字常驻显示（使用最基础的 fillRect 替代 roundRect，避免崩溃）
                 .nodeCanvasObject((node, ctx, globalScale) => {
                     const label = node.name;
-                    const fontSize = 12 / globalScale;
+                    const fontSize = 12/globalScale;
                     ctx.font = `${fontSize}px Inter, Sans-Serif`;
                     const textWidth = ctx.measureText(label).width;
-                    const padding = 4 / globalScale;
+                    const padding = 4/globalScale;
                     
-                    // 名字背景框
-                    ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
-                    ctx.beginPath();
-                    ctx.roundRect(node.x - textWidth/2 - padding, node.y + (node.val*1.6 + 8) / globalScale - padding, textWidth + padding*2, fontSize + padding*2, 4/globalScale);
-                    ctx.fill();
+                    // 绝对安全的矩形绘制
+                    const x = node.x - textWidth/2 - padding;
+                    const y = node.y + (node.val * 1.6 + 8) / globalScale - padding;
+                    const w = textWidth + padding*2;
+                    const h = fontSize + padding*2;
                     
-                    // 名字文字
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
+                    ctx.fillRect(x, y, w, h);
+                    
                     ctx.textAlign = 'center';
                     ctx.textBaseline = 'middle';
                     ctx.fillStyle = '#e2e8f0';
-                    ctx.fillText(label, node.x, node.y + (node.val*1.6 + 10) / globalScale);
+                    ctx.fillText(label, node.x, node.y + (node.val * 1.6 + 10) / globalScale);
                 })
 
                 .linkDirectionalParticles(4)
@@ -145,12 +149,16 @@
                 .forceEngine('d3')
                 .d3ReheatSimulation()
 
-                // 🖱️ 【3. 修复：点击弹出卡片并跳转 PubMed】
+                // 🖱️ 3. 点击跳转 PubMed
                 .onNodeClick(node => {
-                    console.log("点击了节点:", node.name); // 调试语句
+                    // 【检查点2】控制台会告诉你有没有点中
+                    console.log("▶ 点击了节点:", node.name, "类型:", node.type);
 
                     const detail = document.getElementById('node-detail');
-                    if (!detail) return;
+                    if (!detail) {
+                        console.error("找不到弹窗元素！");
+                        return;
+                    }
 
                     document.getElementById('detail-name').innerText = node.name;
                     document.getElementById('detail-type-span').innerText = node.type;
@@ -161,8 +169,8 @@
                 });
         })
         .catch(err => {
-            document.getElementById('loading-text').innerHTML = `数据加载失败 (F12查看控制台详情)`;
-            console.error("加载出错:", err);
+            document.getElementById('loading-text').innerHTML = "数据加载失败，可能是 JSON 文件尺寸过大或路径不对。";
+            console.error("程序崩溃报错:", err); // 如果有红字，这里会印出来
         });
     </script>
 </body>
