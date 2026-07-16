@@ -19,6 +19,7 @@
         
         .loading-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #46516b; font-size: 14px; letter-spacing: 2px; background: rgba(0,0,0,0.5); padding: 6px 16px; border-radius: 20px; }
         
+        /* 弹窗卡片 */
         #node-detail { 
             display: none; 
             position: absolute; 
@@ -61,7 +62,7 @@
         <div class="subtitle">▸ PubMed 文献 AI 自动抽取 | 点击节点查看文献</div>
     </div>
     <div id="graph-container"></div>
-    <div class="loading-text" id="loading-text">点亮星光与数据网络...</div>
+    <div class="loading-text" id="loading-text">渲染半透明荧光星云中...</div>
 
     <div id="node-detail">
         <button class="close-btn" onclick="document.getElementById('node-detail').style.display='none'">✖</button>
@@ -81,13 +82,14 @@
             document.getElementById('loading-text').style.display = 'none';
             
             const formattedNodes = nodes.map(node => {
+                const name = node.name || node.id;
                 return {
-                    id: node.id || node.name,
-                    name: node.name || node.id,
+                    id: node.id || name,
+                    name: name,
                     type: node.type || node.entity_type || "其他",
                     val: (node.evidence_count || 1) * 0.8 + 1,
                     evidence_count: node.evidence_count || 0,
-                    // 节点本身的颜色
+                    // 定义一组带有荧光感的高亮色彩
                     color: ['#00e5ff', '#818cf8', '#a78bfa', '#34d399', '#f472b6'][Math.floor(Math.random() * 5)]
                 };
             });
@@ -99,30 +101,67 @@
 
             const Graph = ForceGraph3D()(document.getElementById('graph-container'))
                 .graphData({ nodes: formattedNodes, links: formattedEdges })
+                
+                // ★ 核心修复1：常驻显示节点名字
                 .nodeLabel(node => `${node.name}`)
-                .nodeAutoColorBy('type')
-                // ✨ 1. 开启霓虹发光特效！
-                .nodeGlowColor(node => node.color) 
-                .nodeGlowCoeff(0.6)
-                // 🌊 2. 加大粒子流数量
+                .nodeCanvasObject((node, ctx, globalScale) => {
+                    const label = node.name;
+                    const fontSize = 12/globalScale;
+                    ctx.font = `${fontSize}px Inter, Sans-Serif`;
+                    const textWidth = ctx.measureText(label).width;
+                    const padding = 4/globalScale;
+                    
+                    // 名字背景框，使其更具科技感
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+                    ctx.beginPath();
+                    ctx.roundRect(node.x - textWidth/2 - padding, node.y + 8/globalScale - padding, textWidth + padding*2, fontSize + padding*2, 4/globalScale);
+                    ctx.fill();
+                    
+                    // 名字文字
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillStyle = '#e2e8f0';
+                    ctx.fillText(label, node.x, node.y + 10/globalScale);
+                })
+                
+                // ★ 核心修复2：半透明发光特效
+                .nodeThreeObject((node) => {
+                    const geometry = new THREE.SphereGeometry(node.val * 1.2, 16, 16);
+                    // 使用半透明材质，内核心为白色+发光原色，外边缘半透明
+                    const material = new THREE.MeshPhongMaterial({
+                        color: node.color,
+                        emissive: node.color,       // 自发荧光
+                        emissiveIntensity: 0.35,
+                        transparent: true,
+                        opacity: 0.75,
+                        shininess: 30
+                    });
+                    return new THREE.Mesh(geometry, material);
+                })
+
                 .linkDirectionalParticles(4)
-                .linkDirectionalParticleSpeed(0.008)
-                .linkWidth(2)
-                .linkOpacity(0.6)
+                .linkDirectionalParticleSpeed(0.006)
+                .linkWidth(1.5)
+                .linkOpacity(0.5)
                 .d3AlphaDecay(0.02)
                 .d3VelocityDecay(0.3)
-                .nodeRelSize(5)
+                .nodeRelSize(0) // 不使用默认球体，完全依靠上面自定义的三维对象 nodeThreeObject
                 .enableAutoRotate(true)
                 .autoRotateSpeed(0.6)
                 .forceEngine('d3')
                 .d3ReheatSimulation()
-                // 🖱️ 3. 点击节点弹出 PubMed 详情卡片
+
+                // ★ 核心修复3：点击弹窗+PubMed跳转
                 .onNodeClick(node => {
                     const detail = document.getElementById('node-detail');
+                    if (!detail) return;
+                    
                     document.getElementById('detail-name').innerText = node.name;
                     document.getElementById('detail-type-span').innerText = node.type;
                     document.getElementById('detail-evidence').innerText = `关联文献：${node.evidence_count || 0} 篇`;
                     document.getElementById('detail-link').href = `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(node.name)}`;
+                    
+                    // 只有在点击时弹出卡片
                     detail.style.display = 'block';
                 });
         })
