@@ -16,43 +16,23 @@
         .main-title .light { color: #ffffff; text-shadow: 0 0 20px rgba(255,255,255,0.1); }
         .main-title .accent { color: #00e5ff; }
         .subtitle { font-size: 13px; font-weight: 400; color: #56647a; letter-spacing: 1px; }
-        
         .loading-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #46516b; font-size: 14px; letter-spacing: 2px; background: rgba(0,0,0,0.5); padding: 6px 16px; border-radius: 20px; }
         
-        /* 弹窗卡片 */
         #node-detail { 
             display: none; 
-            position: absolute; 
-            top: 50%; left: 50%; 
-            transform: translate(-50%, -50%); 
-            background: rgba(8, 14, 30, 0.9); 
-            backdrop-filter: blur(20px); 
-            border: 1px solid rgba(0, 229, 255, 0.3); 
-            border-radius: 20px; 
-            padding: 32px 40px; 
-            min-width: 260px; 
-            max-width: 400px; 
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            background: rgba(8, 14, 30, 0.9); backdrop-filter: blur(20px); 
+            border: 1px solid rgba(0, 229, 255, 0.3); border-radius: 20px; 
+            padding: 32px 40px; min-width: 260px; max-width: 400px; 
             box-shadow: 0 0 60px rgba(0, 229, 255, 0.15); 
-            z-index: 20; 
-            text-align: center;
-            pointer-events: auto;
+            z-index: 20; text-align: center; pointer-events: auto;
         }
-        #node-detail .close-btn { 
-            position: absolute; top: 12px; right: 16px; 
-            background: transparent; border: none; color: #46516b; font-size: 18px; cursor: pointer; 
-            transition: 0.2s;
-        }
+        #node-detail .close-btn { position: absolute; top: 12px; right: 16px; background: transparent; border: none; color: #46516b; font-size: 18px; cursor: pointer; transition: 0.2s; }
         #node-detail .close-btn:hover { color: #fff; }
         #node-detail h2 { margin: 0 0 8px 0; font-weight: 600; font-size: 20px; color: #fff; }
         #node-detail .type { display: inline-block; padding: 2px 10px; border-radius: 12px; background: rgba(0, 229, 255, 0.1); color: #00e5ff; font-size: 12px; border: 1px solid rgba(0, 229, 255, 0.1); }
         #node-detail .desc { margin-top: 12px; font-size: 13px; color: #8a98b6; }
-        .pubmed-btn { 
-            display: inline-flex; align-items: center; justify-content: center;
-            margin-top: 16px; padding: 8px 20px; 
-            background: #00e5ff; color: #02050d; border-radius: 24px; 
-            text-decoration: none; font-weight: 600; font-size: 13px; transition: 0.25s;
-            box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
-        }
+        .pubmed-btn { display: inline-flex; align-items: center; justify-content: center; margin-top: 16px; padding: 8px 20px; background: #00e5ff; color: #02050d; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 13px; transition: 0.25s; box-shadow: 0 0 15px rgba(0, 229, 255, 0.2); }
         .pubmed-btn:hover { background: #ffffff; box-shadow: 0 0 25px rgba(255, 255, 255, 0.2); transform: scale(1.02); }
     </style>
 </head>
@@ -62,7 +42,7 @@
         <div class="subtitle">▸ PubMed 文献 AI 自动抽取 | 点击节点查看文献</div>
     </div>
     <div id="graph-container"></div>
-    <div class="loading-text" id="loading-text">渲染半透明荧光星云中...</div>
+    <div class="loading-text" id="loading-text">渲染霓虹荧光星云中...</div>
 
     <div id="node-detail">
         <button class="close-btn" onclick="document.getElementById('node-detail').style.display='none'">✖</button>
@@ -87,9 +67,9 @@
                     id: node.id || name,
                     name: name,
                     type: node.type || node.entity_type || "其他",
-                    val: (node.evidence_count || 1) * 0.8 + 1,
+                    val: Math.max(2, (node.evidence_count || 1) * 0.8), // 调大基础半径
                     evidence_count: node.evidence_count || 0,
-                    // 定义一组带有荧光感的高亮色彩
+                    // 更具荧光感的色彩池
                     color: ['#00e5ff', '#818cf8', '#a78bfa', '#34d399', '#f472b6'][Math.floor(Math.random() * 5)]
                 };
             });
@@ -101,73 +81,88 @@
 
             const Graph = ForceGraph3D()(document.getElementById('graph-container'))
                 .graphData({ nodes: formattedNodes, links: formattedEdges })
-                
-                // ★ 核心修复1：常驻显示节点名字
                 .nodeLabel(node => `${node.name}`)
+                .nodeAutoColorBy('type')
+                
+                // 💡 【1. 修复：双层球体实现半透明霓虹荧光】
+                .nodeThreeObject(node => {
+                    const group = new THREE.Group();
+                    const size = node.val || 5;
+
+                    // 核心高亮球体
+                    const coreMat = new THREE.MeshPhongMaterial({
+                        color: node.color,
+                        emissive: node.color,
+                        emissiveIntensity: 1.2,
+                    });
+                    const coreSphere = new THREE.Mesh(new THREE.SphereGeometry(size, 32, 16), coreMat);
+                    group.add(coreSphere);
+
+                    // 外层半透明辉光球体（打造赛博荧光感）
+                    const glowMat = new THREE.MeshPhongMaterial({
+                        color: node.color,
+                        emissive: node.color,
+                        emissiveIntensity: 0.5,
+                        transparent: true,
+                        opacity: 0.3
+                    });
+                    const glowSphere = new THREE.Mesh(new THREE.SphereGeometry(size * 1.6, 32, 16), glowMat);
+                    group.add(glowSphere);
+
+                    return group;
+                })
+
+                // 📝 【2. 修复：名字永远漂浮在球体正下方】
                 .nodeCanvasObject((node, ctx, globalScale) => {
                     const label = node.name;
-                    const fontSize = 12/globalScale;
+                    const fontSize = 12 / globalScale;
                     ctx.font = `${fontSize}px Inter, Sans-Serif`;
                     const textWidth = ctx.measureText(label).width;
-                    const padding = 4/globalScale;
+                    const padding = 4 / globalScale;
                     
-                    // 名字背景框，使其更具科技感
-                    ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+                    // 名字背景框
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
                     ctx.beginPath();
-                    ctx.roundRect(node.x - textWidth/2 - padding, node.y + 8/globalScale - padding, textWidth + padding*2, fontSize + padding*2, 4/globalScale);
+                    ctx.roundRect(node.x - textWidth/2 - padding, node.y + (node.val*1.6 + 8) / globalScale - padding, textWidth + padding*2, fontSize + padding*2, 4/globalScale);
                     ctx.fill();
                     
                     // 名字文字
                     ctx.textAlign = 'center';
                     ctx.textBaseline = 'middle';
                     ctx.fillStyle = '#e2e8f0';
-                    ctx.fillText(label, node.x, node.y + 10/globalScale);
-                })
-                
-                // ★ 核心修复2：半透明发光特效
-                .nodeThreeObject((node) => {
-                    const geometry = new THREE.SphereGeometry(node.val * 1.2, 16, 16);
-                    // 使用半透明材质，内核心为白色+发光原色，外边缘半透明
-                    const material = new THREE.MeshPhongMaterial({
-                        color: node.color,
-                        emissive: node.color,       // 自发荧光
-                        emissiveIntensity: 0.35,
-                        transparent: true,
-                        opacity: 0.75,
-                        shininess: 30
-                    });
-                    return new THREE.Mesh(geometry, material);
+                    ctx.fillText(label, node.x, node.y + (node.val*1.6 + 10) / globalScale);
                 })
 
                 .linkDirectionalParticles(4)
                 .linkDirectionalParticleSpeed(0.006)
                 .linkWidth(1.5)
-                .linkOpacity(0.5)
+                .linkOpacity(0.4)
                 .d3AlphaDecay(0.02)
                 .d3VelocityDecay(0.3)
-                .nodeRelSize(0) // 不使用默认球体，完全依靠上面自定义的三维对象 nodeThreeObject
+                .nodeRelSize(0) 
                 .enableAutoRotate(true)
                 .autoRotateSpeed(0.6)
                 .forceEngine('d3')
                 .d3ReheatSimulation()
 
-                // ★ 核心修复3：点击弹窗+PubMed跳转
+                // 🖱️ 【3. 修复：点击弹出卡片并跳转 PubMed】
                 .onNodeClick(node => {
+                    console.log("点击了节点:", node.name); // 调试语句
+
                     const detail = document.getElementById('node-detail');
                     if (!detail) return;
-                    
+
                     document.getElementById('detail-name').innerText = node.name;
                     document.getElementById('detail-type-span').innerText = node.type;
                     document.getElementById('detail-evidence').innerText = `关联文献：${node.evidence_count || 0} 篇`;
                     document.getElementById('detail-link').href = `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(node.name)}`;
                     
-                    // 只有在点击时弹出卡片
                     detail.style.display = 'block';
                 });
         })
         .catch(err => {
-            document.getElementById('loading-text').innerHTML = "数据加载失败，请确保 nodes.json 和 edges.json 已上传到仓库根目录。";
-            console.error(err);
+            document.getElementById('loading-text').innerHTML = `数据加载失败 (F12查看控制台详情)`;
+            console.error("加载出错:", err);
         });
     </script>
 </body>
