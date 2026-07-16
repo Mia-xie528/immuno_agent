@@ -66,11 +66,12 @@ LLM_MAX_RETRIES = 3
 PUBMED_ESEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 PUBMED_EFETCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 
+# ====================== 插入这部分 ======================
 SEARCH_QUERY = (
-    '("acupuncture" OR "meridian" OR "spleen qi" OR "wei qi" '
-    'OR "traditional Chinese medicine") '
-    'AND ("immunology" OR "cytokine" OR "inflammation" OR "neuroimmune")'
+    'acupuncture OR meridian OR "traditional Chinese medicine" OR "spleen qi" OR "wei qi" '
+    'OR immunology OR cytokine OR inflammation OR immune OR neuroimmune'
 )
+# ========================================================
 
 LOOKBACK_DAYS = 7
 MAX_ARTICLES = 10
