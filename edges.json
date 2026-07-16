@@ -15,7 +15,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin and NF-κB showed stable binding; naringenin downregulated phospho-NF-κB p65 expression"
+        "evidence": "naringenin-treated COPD mice displayed inhibited activation of the NF-κB/NLRP3/Caspase-1 axis"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -37,7 +37,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin downregulated NLRP3 expression"
+        "evidence": "downregulated NLRP3 expression"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -59,7 +59,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin inhibited Caspase-1 activation"
+        "evidence": "inhibited Caspase-1 activation"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -81,7 +81,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin attenuated IL-1β maturation"
+        "evidence": "attenuated IL-1β maturation"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -103,7 +103,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug",
-        "evidence": "naringenin downregulated TNF-α expression; decreased serum TNF-α levels"
+        "evidence": "downregulated TNF-α"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
@@ -988,5 +988,137 @@
     ],
     "created_at": "2026-07-14 22:56:43 中国标准时间",
     "updated_at": "2026-07-14 22:56:43 中国标准时间"
+  },
+  {
+    "id": "E000046",
+    "source": "N000038",
+    "target": "N000039",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42456907"
+    ],
+    "sources": [
+      {
+        "pmid": "42456907",
+        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
+        "doi": "10.1016/j.jep.2026.122194",
+        "publication_date": "2026-Jul-15",
+        "evidence": "KBG inhibited NLRP3 inflammasome activation by regulating mitophagy through the SIRT3/FOXO3a signaling pathway."
+      }
+    ],
+    "created_at": "2026-07-16 08:10:08 UTC",
+    "updated_at": "2026-07-16 08:10:08 UTC"
+  },
+  {
+    "id": "E000047",
+    "source": "N000038",
+    "target": "N000040",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42456907"
+    ],
+    "sources": [
+      {
+        "pmid": "42456907",
+        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
+        "doi": "10.1016/j.jep.2026.122194",
+        "publication_date": "2026-Jul-15",
+        "evidence": "KBG regulated mitochondrial homeostasis and mitophagy through the SIRT3/FOXO3a signaling pathway."
+      }
+    ],
+    "created_at": "2026-07-16 08:10:08 UTC",
+    "updated_at": "2026-07-16 08:10:08 UTC"
+  },
+  {
+    "id": "E000048",
+    "source": "N000038",
+    "target": "N000041",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42456907"
+    ],
+    "sources": [
+      {
+        "pmid": "42456907",
+        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
+        "doi": "10.1016/j.jep.2026.122194",
+        "publication_date": "2026-Jul-15",
+        "evidence": "KBG regulated mitochondrial homeostasis and mitophagy through the SIRT3/FOXO3a signaling pathway."
+      }
+    ],
+    "created_at": "2026-07-16 08:10:08 UTC",
+    "updated_at": "2026-07-16 08:10:08 UTC"
+  },
+  {
+    "id": "E000049",
+    "source": "N000038",
+    "target": "N000042",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42456907"
+    ],
+    "sources": [
+      {
+        "pmid": "42456907",
+        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
+        "doi": "10.1016/j.jep.2026.122194",
+        "publication_date": "2026-Jul-15",
+        "evidence": "KBG improved renal function, alleviated pathological damage, and mitigated epithelial-mesenchymal transition, inflammation, and oxidative stress."
+      }
+    ],
+    "created_at": "2026-07-16 08:10:08 UTC",
+    "updated_at": "2026-07-16 08:10:08 UTC"
+  },
+  {
+    "id": "E000050",
+    "source": "N000038",
+    "target": "N000043",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42456907"
+    ],
+    "sources": [
+      {
+        "pmid": "42456907",
+        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
+        "doi": "10.1016/j.jep.2026.122194",
+        "publication_date": "2026-Jul-15",
+        "evidence": "KBG improved mitochondrial function and prevented NLRP3 inflammasome activation."
+      }
+    ],
+    "created_at": "2026-07-16 08:10:08 UTC",
+    "updated_at": "2026-07-16 08:10:08 UTC"
+  },
+  {
+    "id": "E000051",
+    "source": "N000038",
+    "target": "N000044",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42456907"
+    ],
+    "sources": [
+      {
+        "pmid": "42456907",
+        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
+        "doi": "10.1016/j.jep.2026.122194",
+        "publication_date": "2026-Jul-15",
+        "evidence": "KBG primarily remodeled metabolic homeostasis by regulating tryptophan metabolism, TCA cycle, and pyruvate metabolism."
+      }
+    ],
+    "created_at": "2026-07-16 08:10:08 UTC",
+    "updated_at": "2026-07-16 08:10:08 UTC"
   }
 ]
