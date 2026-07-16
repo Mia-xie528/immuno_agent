@@ -68,13 +68,18 @@ PUBMED_EFETCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 
 # ====================== 插入这部分 ======================
 SEARCH_QUERY = (
-    'acupuncture OR meridian OR "traditional Chinese medicine" OR "spleen qi" OR "wei qi" '
-    'OR immunology OR cytokine OR inflammation OR immune OR neuroimmune'
+    'immunology OR cytokine OR inflammation OR immune OR neuroimmune '
+    'OR macrophage OR "T cell" OR "B cell" OR interferon OR interleukin '
+    'OR chemokine OR "immune response" OR "signal pathway"'
 )
 # ========================================================
 
 LOOKBACK_DAYS = 365    # 往过去回溯 1 年，确保有足够的论文
-MAX_ARTICLES = 50      # 每天最多抓取 50 篇交给 AI 审查
+MAX_ARTICLES = 100      # 每天最多抓取 100 篇交给 AI 审查
+# ==================== 新增的目标配置 ====================
+TARGET_NODE_COUNT = 20   # 每天希望达到的新增节点目标
+MAX_TOTAL_ARTICLES = 500 # 【安全锁】即使没达到20个节点，最多也只跑500篇，防止余额烧光。
+# ========================================================
 PUBMED_REQUEST_TIMEOUT_SECONDS = 30
 PUBMED_MAX_RETRIES = 3
 
@@ -414,7 +419,7 @@ def get_date_range() -> Tuple[str, str]:
     return start_date.strftime("%Y/%m/%d"), end_date.strftime("%Y/%m/%d")
 
 
-def search_pubmed_ids(session: requests.Session) -> Tuple[List[str], str, str]:
+def search_pubmed_ids(session: requests.Session, retstart: int = 0) -> Tuple[List[str], str, str]:
     """
     使用 ESearch 检索最近若干天的 PubMed ID。
 
@@ -428,6 +433,7 @@ def search_pubmed_ids(session: requests.Session) -> Tuple[List[str], str, str]:
         "term": SEARCH_QUERY,
         "retmode": "json",
         "retmax": MAX_ARTICLES,
+        "retstart": retstart,  # <--- 【新增】从第 retstart 篇开始检索（实现翻页）
         "sort": "pub date",
         "datetype": "pdat",
         "mindate": start_date,
@@ -439,7 +445,7 @@ def search_pubmed_ids(session: requests.Session) -> Tuple[List[str], str, str]:
         params["email"] = NCBI_CONTACT_EMAIL
 
     logging.info(
-        "正在检索 PubMed，日期范围：%s 至 %s，最多 %d 篇。",
+        "正在检索 PubMed，日期范围: %s 至 %s，最多 %d 篇。",
         start_date,
         end_date,
         MAX_ARTICLES,
@@ -1979,7 +1985,6 @@ def generate_report(
 
 def main() -> int:
     """程序入口。返回 0 表示成功，返回非 0 表示失败。"""
-
     setup_logging()
     logging.info("=" * 72)
     logging.info("开始运行中医免疫知识图谱更新 Agent。")
@@ -1989,97 +1994,74 @@ def main() -> int:
     parsed_articles: List[Article] = []
     relevant_articles: List[Tuple[Article, ExtractionResult]] = []
     backups: List[Path] = []
+    total_articles_processed = 0
+    retstart = 0 # 偏移量，用于翻页
 
     try:
-        # 1. 先验证大模型配置，避免检索完成后才发现没有密钥。
         client = create_llm_client()
 
-        # 2. 读取原图谱数据。
+        # 加载原图谱
         nodes_root = load_json_or_default(NODES_FILE, [])
         edges_root = load_json_or_default(EDGES_FILE, [])
-
-        nodes, _, nodes_wrapper_key = extract_collection(
-            data=nodes_root,
-            preferred_key="nodes",
-            file_name=NODES_FILE.name,
-        )
-        edges, _, edges_wrapper_key = extract_collection(
-            data=edges_root,
-            preferred_key="edges",
-            file_name=EDGES_FILE.name,
-        )
-
+        nodes, _, nodes_wrapper_key = extract_collection(data=nodes_root, preferred_key="nodes", file_name=NODES_FILE.name)
+        edges, _, edges_wrapper_key = extract_collection(data=edges_root, preferred_key="edges", file_name=EDGES_FILE.name)
         graph = KnowledgeGraph(nodes=nodes, edges=edges, stats=stats)
 
-        # 3. 检索 PubMed。
-        session = requests.Session()
-        session.headers.update(
-            {
-                "User-Agent": (
-                    f"{NCBI_TOOL_NAME}/1.0 "
-                    f"({NCBI_CONTACT_EMAIL or 'contact-email-not-set'})"
-                )
-            }
-        )
+        # ============= 核心循环开始 =============
+        while stats.new_nodes < TARGET_NODE_COUNT and total_articles_processed < MAX_TOTAL_ARTICLES:
+            logging.info(f"=== 开始新批次检索 (已处理 {total_articles_processed} 篇，当前新增节点 {stats.new_nodes} 个) ===")
 
-        pmids, start_date, end_date = search_pubmed_ids(session)
-        stats.retrieved_articles = len(pmids)
+            session = requests.Session()
+            session.headers.update({"User-Agent": f"{NCBI_TOOL_NAME}/1.0 ({NCBI_CONTACT_EMAIL or 'contact-email-not-set'})"})
 
-        if pmids:
-            # 两次 NCBI 请求之间稍作间隔，避免给公共服务造成过高频率。
+            # 1. 检索（传入了 retstart）
+            pmids, start_date, end_date = search_pubmed_ids(session, retstart)
+            stats.retrieved_articles += len(pmids)
+
+            if not pmids:
+                logging.info("PubMed 没有返回更多有效文献，终止查找。")
+                break
+
+            # 2. 解析
             time.sleep(0.4)
-            parsed_articles = fetch_pubmed_articles(session, pmids)
+            batch_articles = fetch_pubmed_articles(session, pmids)
+            stats.parsed_articles += len(batch_articles)
+            parsed_articles.extend(batch_articles)
+            total_articles_processed += len(batch_articles)
 
-        stats.parsed_articles = len(parsed_articles)
+            # 3. 处理
+            for article in batch_articles:
+                try:
+                    extraction = extract_triples_with_llm(client, article)
+                    if not extraction.relevant:
+                        stats.irrelevant_articles += 1
+                        logging.info("PMID %s 被跳过：%s", article.pmid, extraction.reason)
+                        continue
 
-        missing_count = len(pmids) - len(parsed_articles)
-        if missing_count > 0:
-            stats.warnings.append(
-                f"有 {missing_count} 个 PMID 未能从 EFetch 结果中解析。"
-            )
+                    stats.valid_articles += 1
+                    relevant_articles.append((article, extraction))
+                    graph.merge_article(article, extraction)
+                    logging.info("PMID %s 抽取到 %d 条有效三元组。", article.pmid, len(extraction.triples))
 
-        # 4. 对每篇文献调用大模型并融合知识。
-        for article in parsed_articles:
-            try:
-                extraction = extract_triples_with_llm(client, article)
+                except Exception as exc:
+                    stats.failed_articles += 1
+                    stats.failed_article_details.append({"pmid": article.pmid, "title": article.title, "error": str(exc)})
+                    logging.exception("处理 PMID %s 时失败，继续处理下一篇。", article.pmid)
 
-                if not extraction.relevant:
-                    stats.irrelevant_articles += 1
-                    logging.info(
-                        "PMID %s 被跳过：%s",
-                        article.pmid,
-                        extraction.reason,
-                    )
-                    continue
+            # 4. 偏移量增加，为下一页做准备
+            retstart += MAX_ARTICLES
+            logging.info(f"批次结束，当前总新增节点: {stats.new_nodes} 个。")
 
-                stats.valid_articles += 1
-                relevant_articles.append((article, extraction))
-                graph.merge_article(article, extraction)
+            # 保险：如果已经超过了最大安全阈值，强制退出
+            if total_articles_processed >= MAX_TOTAL_ARTICLES:
+                logging.info(f"已达到安全上限 {MAX_TOTAL_ARTICLES} 篇，停止循环以防超额消费或超时。")
+                break
 
-                logging.info(
-                    "PMID %s 抽取到 %d 条有效三元组。",
-                    article.pmid,
-                    len(extraction.triples),
-                )
+            time.sleep(5) # 批次之间稍微歇息一下
+        # ============= 核心循环结束 =============
 
-            except Exception as exc:
-                stats.failed_articles += 1
-                stats.failed_article_details.append(
-                    {
-                        "pmid": article.pmid,
-                        "title": article.title,
-                        "error": str(exc),
-                    }
-                )
-                logging.exception(
-                    "处理 PMID %s 时失败，继续处理下一篇。",
-                    article.pmid,
-                )
-
-        # 5. 只有在全部融合操作结束后才备份并保存，减少半更新状态。
+        # 5. 只在所有循环结束后，备份并保存一次
         backups = backup_existing_files()
-
-        # 保持原来的顶层 JSON 结构。
         if nodes_wrapper_key is not None:
             nodes_root[nodes_wrapper_key] = nodes
             nodes_output = nodes_root
@@ -2095,26 +2077,14 @@ def main() -> int:
         atomic_write_json(NODES_FILE, nodes_output)
         atomic_write_json(EDGES_FILE, edges_output)
 
-        # 生成报告前删除仅用于内部去重的字段。
+        # 生成报告
         for conflict in stats.conflicts:
             conflict.pop("_dedupe_key", None)
 
-        report = generate_report(
-            stats=stats,
-            start_date=start_date,
-            end_date=end_date,
-            articles=parsed_articles,
-            relevant_articles=relevant_articles,
-            backups=backups,
-        )
+        report = generate_report(stats=stats, start_date=start_date, end_date=end_date, articles=parsed_articles, relevant_articles=relevant_articles, backups=backups)
         atomic_write_text(REPORT_FILE, report)
 
-        logging.info(
-            "更新完成：新增节点 %d 个，新增边 %d 条，潜在冲突 %d 项。",
-            stats.new_nodes,
-            stats.new_edges,
-            len(stats.conflicts),
-        )
+        logging.info("更新完成：新增节点 %d 个，新增边 %d 条，潜在冲突 %d 项。", stats.new_nodes, stats.new_edges, len(stats.conflicts))
         logging.info("报告已保存到：%s", REPORT_FILE)
         logging.info("日志已保存到：%s", LOG_FILE)
         logging.info("=" * 72)
@@ -2123,28 +2093,15 @@ def main() -> int:
 
     except Exception as exc:
         logging.exception("程序运行失败。")
-
-        # 即使主流程失败，也尽量输出一份错误报告，方便非技术用户排查。
         try:
             for conflict in stats.conflicts:
                 conflict.pop("_dedupe_key", None)
-
-            error_report = generate_report(
-                stats=stats,
-                start_date=start_date,
-                end_date=end_date,
-                articles=parsed_articles,
-                relevant_articles=relevant_articles,
-                backups=backups,
-                run_error=str(exc),
-            )
+            error_report = generate_report(stats=stats, start_date=start_date, end_date=end_date, articles=parsed_articles, relevant_articles=relevant_articles, backups=backups, run_error=str(exc))
             atomic_write_text(REPORT_FILE, error_report)
             logging.info("错误报告已保存到：%s", REPORT_FILE)
         except Exception:
             logging.exception("生成错误报告时也发生异常。")
-
         return 1
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
