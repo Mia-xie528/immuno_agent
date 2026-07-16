@@ -363,9 +363,10 @@
       "y": 2.727,
       "z": 147.123
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "42444447"
+      "42444447",
+      "41866335"
     ],
     "sources": [
       {
@@ -374,10 +375,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
         "doi": "10.1142/S0192415X26500588",
         "publication_date": "2026-Jul-14"
+      },
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "doi": "10.1080/13510002.2026.2646383",
+        "publication_date": "2026-Dec-31"
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-16 18:30:56 中国标准时间"
   },
   {
     "id": "N000013",
@@ -1106,205 +1114,640 @@
   },
   {
     "id": "N000038",
-    "name": "Kunkui Baoshen Granules",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -6.218,
-    "y": -8.676,
-    "z": 146.598,
+    "name": "经皮耳穴迷走神经刺激",
+    "type": "穴位",
+    "layer": "经络层",
+    "x": 3.265,
+    "y": -2.941,
+    "z": -1.909,
     "position": {
-      "x": -6.218,
-      "y": -8.676,
-      "z": 146.598
+      "x": 3.265,
+      "y": -2.941,
+      "z": -1.909
     },
     "evidence_count": 1,
     "evidence_pmids": [
-      "42456907"
+      "42339759"
     ],
     "sources": [
       {
-        "pmid": "42456907",
-        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
-        "doi": "10.1016/j.jep.2026.122194",
-        "publication_date": "2026-Jul-15"
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
       }
     ],
-    "created_at": "2026-07-16 08:10:08 UTC",
-    "updated_at": "2026-07-16 08:10:08 UTC"
+    "created_at": "2026-07-16 18:28:21 中国标准时间",
+    "updated_at": "2026-07-16 18:28:21 中国标准时间"
   },
   {
     "id": "N000039",
-    "name": "NLRP3炎症小体",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 3.95,
-    "y": -1.173,
-    "z": 147.037,
+    "name": "应激调节回路",
+    "type": "神经结构",
+    "layer": "神经免疫层",
+    "x": 1.766,
+    "y": 7.652,
+    "z": 57.47,
     "position": {
-      "x": 3.95,
-      "y": -1.173,
-      "z": 147.037
+      "x": 1.766,
+      "y": 7.652,
+      "z": 57.47
     },
     "evidence_count": 1,
     "evidence_pmids": [
-      "42456907"
+      "42339759"
     ],
     "sources": [
       {
-        "pmid": "42456907",
-        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
-        "doi": "10.1016/j.jep.2026.122194",
-        "publication_date": "2026-Jul-15"
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
       }
     ],
-    "created_at": "2026-07-16 08:10:08 UTC",
-    "updated_at": "2026-07-16 08:10:08 UTC"
+    "created_at": "2026-07-16 18:28:21 中国标准时间",
+    "updated_at": "2026-07-16 18:28:21 中国标准时间"
   },
   {
     "id": "N000040",
-    "name": "SIRT3/FOXO3a信号通路",
+    "name": "炎症信号通路",
     "type": "信号通路",
     "layer": "分子信号层",
-    "x": 2.876,
-    "y": 6.155,
-    "z": 116.573,
+    "x": -6.044,
+    "y": -4.172,
+    "z": 118.716,
     "position": {
-      "x": 2.876,
-      "y": 6.155,
-      "z": 116.573
+      "x": -6.044,
+      "y": -4.172,
+      "z": 118.716
     },
     "evidence_count": 1,
     "evidence_pmids": [
-      "42456907"
+      "42339759"
     ],
     "sources": [
       {
-        "pmid": "42456907",
-        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
-        "doi": "10.1016/j.jep.2026.122194",
-        "publication_date": "2026-Jul-15"
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
       }
     ],
-    "created_at": "2026-07-16 08:10:08 UTC",
-    "updated_at": "2026-07-16 08:10:08 UTC"
+    "created_at": "2026-07-16 18:28:21 中国标准时间",
+    "updated_at": "2026-07-16 18:28:21 中国标准时间"
   },
   {
     "id": "N000041",
-    "name": "线粒体自噬",
+    "name": "肠道微生物群组成",
     "type": "其他",
     "layer": "其他层",
-    "x": -2.903,
-    "y": -1.703,
-    "z": 150.222,
+    "x": -1.789,
+    "y": 5.2,
+    "z": 148.546,
     "position": {
-      "x": -2.903,
-      "y": -1.703,
-      "z": 150.222
+      "x": -1.789,
+      "y": 5.2,
+      "z": 148.546
     },
     "evidence_count": 1,
     "evidence_pmids": [
-      "42456907"
+      "42339759"
     ],
     "sources": [
       {
-        "pmid": "42456907",
-        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
-        "doi": "10.1016/j.jep.2026.122194",
-        "publication_date": "2026-Jul-15"
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
       }
     ],
-    "created_at": "2026-07-16 08:10:08 UTC",
-    "updated_at": "2026-07-16 08:10:08 UTC"
+    "created_at": "2026-07-16 18:28:21 中国标准时间",
+    "updated_at": "2026-07-16 18:28:21 中国标准时间"
   },
   {
     "id": "N000042",
-    "name": "炎症",
+    "name": "铁死亡",
     "type": "其他",
     "layer": "其他层",
-    "x": 4.019,
-    "y": -6.416,
-    "z": 151.339,
+    "x": -2.064,
+    "y": -6.313,
+    "z": 149.007,
     "position": {
-      "x": 4.019,
-      "y": -6.416,
-      "z": 151.339
+      "x": -2.064,
+      "y": -6.313,
+      "z": 149.007
     },
     "evidence_count": 1,
     "evidence_pmids": [
-      "42456907"
+      "41866335"
     ],
     "sources": [
       {
-        "pmid": "42456907",
-        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
-        "doi": "10.1016/j.jep.2026.122194",
-        "publication_date": "2026-Jul-15"
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "doi": "10.1080/13510002.2026.2646383",
+        "publication_date": "2026-Dec-31"
       }
     ],
-    "created_at": "2026-07-16 08:10:08 UTC",
-    "updated_at": "2026-07-16 08:10:08 UTC"
+    "created_at": "2026-07-16 18:30:56 中国标准时间",
+    "updated_at": "2026-07-16 18:30:56 中国标准时间"
   },
   {
     "id": "N000043",
-    "name": "线粒体功能",
+    "name": "GPX4",
     "type": "其他",
     "layer": "其他层",
-    "x": -0.841,
-    "y": -2.864,
-    "z": 147.89,
+    "x": -1.952,
+    "y": 2.46,
+    "z": 153.552,
     "position": {
-      "x": -0.841,
-      "y": -2.864,
-      "z": 147.89
+      "x": -1.952,
+      "y": 2.46,
+      "z": 153.552
     },
     "evidence_count": 1,
     "evidence_pmids": [
-      "42456907"
+      "41866335"
     ],
     "sources": [
       {
-        "pmid": "42456907",
-        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
-        "doi": "10.1016/j.jep.2026.122194",
-        "publication_date": "2026-Jul-15"
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "doi": "10.1080/13510002.2026.2646383",
+        "publication_date": "2026-Dec-31"
       }
     ],
-    "created_at": "2026-07-16 08:10:08 UTC",
-    "updated_at": "2026-07-16 08:10:08 UTC"
+    "created_at": "2026-07-16 18:30:56 中国标准时间",
+    "updated_at": "2026-07-16 18:30:56 中国标准时间"
   },
   {
     "id": "N000044",
-    "name": "代谢稳态",
+    "name": "ACSL4",
     "type": "其他",
     "layer": "其他层",
-    "x": -1.334,
-    "y": -8.41,
-    "z": 151.44,
+    "x": 2.974,
+    "y": -7.724,
+    "z": 152.364,
     "position": {
-      "x": -1.334,
-      "y": -8.41,
-      "z": 151.44
+      "x": 2.974,
+      "y": -7.724,
+      "z": 152.364
     },
     "evidence_count": 1,
     "evidence_pmids": [
-      "42456907"
+      "41866335"
     ],
     "sources": [
       {
-        "pmid": "42456907",
-        "title": "Kunkui Baoshen Granules Attenuate Diabetic Kidney Disease via the SIRT3/FOXO3a Signaling Pathway: An Integrated Multi-Omics Analysis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42456907/",
-        "doi": "10.1016/j.jep.2026.122194",
-        "publication_date": "2026-Jul-15"
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "doi": "10.1080/13510002.2026.2646383",
+        "publication_date": "2026-Dec-31"
       }
     ],
-    "created_at": "2026-07-16 08:10:08 UTC",
-    "updated_at": "2026-07-16 08:10:08 UTC"
+    "created_at": "2026-07-16 18:30:56 中国标准时间",
+    "updated_at": "2026-07-16 18:30:56 中国标准时间"
+  },
+  {
+    "id": "N000045",
+    "name": "促炎细胞因子",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": 2.323,
+    "y": -5.908,
+    "z": 112.953,
+    "position": {
+      "x": 2.323,
+      "y": -5.908,
+      "z": 112.953
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41866335"
+    ],
+    "sources": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "doi": "10.1080/13510002.2026.2646383",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:30:56 中国标准时间",
+    "updated_at": "2026-07-16 18:30:56 中国标准时间"
+  },
+  {
+    "id": "N000046",
+    "name": "氧化应激",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -2.177,
+    "y": 8.653,
+    "z": 149.741,
+    "position": {
+      "x": -2.177,
+      "y": 8.653,
+      "z": 149.741
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41866335"
+    ],
+    "sources": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "doi": "10.1080/13510002.2026.2646383",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:30:56 中国标准时间",
+    "updated_at": "2026-07-16 18:30:56 中国标准时间"
+  },
+  {
+    "id": "N000047",
+    "name": "肠道病毒组",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 0.596,
+    "y": 3.483,
+    "z": 153.293,
+    "position": {
+      "x": 0.596,
+      "y": 3.483,
+      "z": 153.293
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:32:54 中国标准时间",
+    "updated_at": "2026-07-16 18:32:54 中国标准时间"
+  },
+  {
+    "id": "N000048",
+    "name": "卵巢氧化应激",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 0.526,
+    "y": 5.526,
+    "z": 151.01,
+    "position": {
+      "x": 0.526,
+      "y": 5.526,
+      "z": 151.01
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:32:54 中国标准时间",
+    "updated_at": "2026-07-16 18:32:54 中国标准时间"
+  },
+  {
+    "id": "N000049",
+    "name": "卵巢炎症",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.824,
+    "y": -2.291,
+    "z": 146.601,
+    "position": {
+      "x": 5.824,
+      "y": -2.291,
+      "z": 146.601
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:32:54 中国标准时间",
+    "updated_at": "2026-07-16 18:32:54 中国标准时间"
+  },
+  {
+    "id": "N000050",
+    "name": "肺",
+    "type": "脏腑",
+    "layer": "脏腑层",
+    "x": 41.801,
+    "y": -47.806,
+    "z": 33.589,
+    "position": {
+      "x": 41.801,
+      "y": -47.806,
+      "z": 33.589
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000051",
+    "name": "大肠",
+    "type": "脏腑",
+    "layer": "脏腑层",
+    "x": 31.263,
+    "y": -50.299,
+    "z": 36.187,
+    "position": {
+      "x": 31.263,
+      "y": -50.299,
+      "z": 36.187
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000052",
+    "name": "短链脂肪酸",
+    "type": "能量代谢物",
+    "layer": "分子信号层",
+    "x": 38.888,
+    "y": 62.273,
+    "z": 113.426,
+    "position": {
+      "x": 38.888,
+      "y": 62.273,
+      "z": 113.426
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000053",
+    "name": "肺泡巨噬细胞代谢重编程",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 26.712,
+    "y": 57.106,
+    "z": 149.328,
+    "position": {
+      "x": 26.712,
+      "y": 57.106,
+      "z": 149.328
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000054",
+    "name": "丙酸盐",
+    "type": "能量代谢物",
+    "layer": "分子信号层",
+    "x": 41.755,
+    "y": 67.628,
+    "z": 115.713,
+    "position": {
+      "x": 41.755,
+      "y": 67.628,
+      "z": 115.713
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000055",
+    "name": "高纤维饮食",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.028,
+    "y": -1.313,
+    "z": 149.169,
+    "position": {
+      "x": 1.028,
+      "y": -1.313,
+      "z": 149.169
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000056",
+    "name": "短链脂肪酸产生菌",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -0.952,
+    "y": 8.731,
+    "z": 149.043,
+    "position": {
+      "x": -0.952,
+      "y": 8.731,
+      "z": 149.043
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000057",
+    "name": "无菌性肺损伤炎症",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 42.07,
+    "y": 68.027,
+    "z": 147.644,
+    "position": {
+      "x": 42.07,
+      "y": 68.027,
+      "z": 147.644
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000058",
+    "name": "感染性肺损伤",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 32.921,
+    "y": 64.843,
+    "z": 146.332,
+    "position": {
+      "x": 32.921,
+      "y": 64.843,
+      "z": 146.332
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+  },
+  {
+    "id": "N000059",
+    "name": "肺泡巨噬细胞",
+    "type": "免疫细胞",
+    "layer": "免疫细胞层",
+    "x": 35.47,
+    "y": 73.837,
+    "z": 71.78,
+    "position": {
+      "x": 35.47,
+      "y": 73.837,
+      "z": 71.78
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-16 18:33:09 中国标准时间"
   }
 ]
