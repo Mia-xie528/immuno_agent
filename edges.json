@@ -1225,7 +1225,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要提到gut‒lung axis（肠-肺轴），与中医肺与大肠相表里理论一致。"
+        "evidence": "摘要中提及gut‒lung axis（肠-肺轴），与中医肺与大肠相表里理论一致。"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -1247,7 +1247,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "SCFAs altered the metabolic programming of AMs and lung tissue ex vivo"
+        "evidence": "摘要提到SCFAs altered the metabolic programming of AMs。"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -1269,7 +1269,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出FR饮食的效果依赖于微生物产生丙酸盐的能力。"
+        "evidence": "摘要指出propionate is the key SCFA mediating the effect via FMT experiments。"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -1555,7 +1555,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出高纤维饮食促进短链脂肪酸（SCFA）产生。"
+        "evidence": "摘要指出fiber-rich diet favor SCFA-producing bacteria and increase SCFA levels。"
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
@@ -1577,7 +1577,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出高纤维饮食重编程肺泡巨噬细胞并减轻无菌损伤后的肺部炎症。"
+        "evidence": "摘要指出fiber-rich diet attenuated lung inflammation after sterile injury。"
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
@@ -1599,7 +1599,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要提到高纤维饮食加重肺部感染。"
+        "evidence": "摘要指出fiber-rich diet exacerbated lung infection。"
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
@@ -2220,5 +2220,115 @@
     ],
     "created_at": "2026-07-16 16:01:08 UTC",
     "updated_at": "2026-07-16 16:01:08 UTC"
+  },
+  {
+    "id": "E000102",
+    "source": "N000047",
+    "target": "N000096",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31",
+        "evidence": "The above regulatory effect is primarily due to modulations of gut bacteriome"
+      }
+    ],
+    "created_at": "2026-07-17 04:18:51 UTC",
+    "updated_at": "2026-07-17 04:18:51 UTC"
+  },
+  {
+    "id": "E000103",
+    "source": "N000047",
+    "target": "N000090",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31",
+        "evidence": "modulations of ... intestinal barrier integrity"
+      }
+    ],
+    "created_at": "2026-07-17 04:18:51 UTC",
+    "updated_at": "2026-07-17 04:18:51 UTC"
+  },
+  {
+    "id": "E000104",
+    "source": "N000090",
+    "target": "N000097",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31",
+        "evidence": "affect hypothalamic-pituitary-ovarian axis hormone levels"
+      }
+    ],
+    "created_at": "2026-07-17 04:18:51 UTC",
+    "updated_at": "2026-07-17 04:18:51 UTC"
+  },
+  {
+    "id": "E000105",
+    "source": "N000090",
+    "target": "N000048",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31",
+        "evidence": "regulate ovarian oxidative stress and inflammation"
+      }
+    ],
+    "created_at": "2026-07-17 04:18:51 UTC",
+    "updated_at": "2026-07-17 04:18:51 UTC"
+  },
+  {
+    "id": "E000106",
+    "source": "N000090",
+    "target": "N000049",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31",
+        "evidence": "regulate ovarian oxidative stress and inflammation"
+      }
+    ],
+    "created_at": "2026-07-17 04:18:51 UTC",
+    "updated_at": "2026-07-17 04:18:51 UTC"
   }
 ]

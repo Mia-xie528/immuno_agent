@@ -2673,9 +2673,10 @@
       "y": 7.232,
       "z": 146.666
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "41496520"
+      "41496520",
+      "41503791"
     ],
     "sources": [
       {
@@ -2684,10 +2685,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
         "doi": "10.1080/19490976.2025.2611546",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31"
       }
     ],
     "created_at": "2026-07-16 14:34:22 UTC",
-    "updated_at": "2026-07-16 14:34:22 UTC"
+    "updated_at": "2026-07-17 04:18:51 UTC"
   },
   {
     "id": "N000091",
@@ -2833,5 +2841,63 @@
     ],
     "created_at": "2026-07-16 16:01:08 UTC",
     "updated_at": "2026-07-16 16:01:08 UTC"
+  },
+  {
+    "id": "N000096",
+    "name": "肠道细菌组",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.492,
+    "y": 0.757,
+    "z": 147.911,
+    "position": {
+      "x": 5.492,
+      "y": 0.757,
+      "z": 147.911
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 04:18:51 UTC",
+    "updated_at": "2026-07-17 04:18:51 UTC"
+  },
+  {
+    "id": "N000097",
+    "name": "下丘脑-垂体-卵巢轴激素水平",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 2.746,
+    "y": 5.394,
+    "z": 151.585,
+    "position": {
+      "x": 2.746,
+      "y": 5.394,
+      "z": 151.585
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41503791"
+    ],
+    "sources": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "doi": "10.1080/19490976.2025.2611645",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 04:18:51 UTC",
+    "updated_at": "2026-07-17 04:18:51 UTC"
   }
 ]
