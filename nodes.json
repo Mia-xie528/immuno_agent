@@ -26,7 +26,56 @@
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+    "updated_at": "2026-07-14 16:07:18 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Naringenin"
+    ],
+    "search_terms": [
+      "柚皮素",
+      "其他",
+      "其他层",
+      "活性成分",
+      "Naringenin",
+      "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+      "10.1007/s10616-026-01032-5"
+    ],
+    "category": "活性成分",
+    "publications": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Aug",
+        "doi": "10.1007/s10616-026-01032-5",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 7,
+      "degree_centrality": 0.101449,
+      "betweenness_centrality": 0.086388,
+      "closeness_centrality": 0.172738,
+      "pagerank": 0.010745
+    },
+    "community_id": 0,
+    "community_name": "柚皮素-NF-κB/NLRP3炎症轴",
+    "community_color": "#55E6FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:18 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000002",
@@ -55,7 +104,52 @@
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+    "updated_at": "2026-07-14 16:07:18 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "NF-κB",
+      "信号通路",
+      "分子信号层",
+      "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+      "10.1007/s10616-026-01032-5"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Aug",
+        "doi": "10.1007/s10616-026-01032-5",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.135266,
+      "pagerank": 0.01205
+    },
+    "community_id": 0,
+    "community_name": "柚皮素-NF-κB/NLRP3炎症轴",
+    "community_color": "#55E6FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:18 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000003",
@@ -84,7 +178,52 @@
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+    "updated_at": "2026-07-14 16:07:18 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "NLRP3",
+      "信号通路",
+      "分子信号层",
+      "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+      "10.1007/s10616-026-01032-5"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Aug",
+        "doi": "10.1007/s10616-026-01032-5",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.135266,
+      "pagerank": 0.01205
+    },
+    "community_id": 0,
+    "community_name": "柚皮素-NF-κB/NLRP3炎症轴",
+    "community_color": "#55E6FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:18 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000004",
@@ -113,7 +252,52 @@
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+    "updated_at": "2026-07-14 16:07:18 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "Caspase-1",
+      "信号通路",
+      "分子信号层",
+      "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+      "10.1007/s10616-026-01032-5"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Aug",
+        "doi": "10.1007/s10616-026-01032-5",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.135266,
+      "pagerank": 0.01205
+    },
+    "community_id": 0,
+    "community_name": "柚皮素-NF-κB/NLRP3炎症轴",
+    "community_color": "#55E6FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:18 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000005",
@@ -150,7 +334,71 @@
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "IL-1β",
+      "细胞因子",
+      "分子信号层",
+      "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+      "10.1007/s10616-026-01032-5",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Aug",
+        "doi": "10.1007/s10616-026-01032-5",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "evidence": ""
+      },
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.052288,
+      "closeness_centrality": 0.201301,
+      "pagerank": 0.012659
+    },
+    "community_id": 0,
+    "community_name": "柚皮素-NF-κB/NLRP3炎症轴",
+    "community_color": "#55E6FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:18 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      },
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "updated",
+        "evidence_count": 2,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000006",
@@ -187,7 +435,71 @@
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 16:07:22 中国标准时间"
+    "updated_at": "2026-07-14 16:07:22 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "TNF-α",
+      "细胞因子",
+      "分子信号层",
+      "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+      "10.1007/s10616-026-01032-5",
+      "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+      "10.1038/s41598-026-61558-8"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Aug",
+        "doi": "10.1007/s10616-026-01032-5",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "evidence": ""
+      },
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1038/s41598-026-61558-8",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 3,
+      "degree_centrality": 0.043478,
+      "betweenness_centrality": 0.040921,
+      "closeness_centrality": 0.173913,
+      "pagerank": 0.018138
+    },
+    "community_id": 3,
+    "community_name": "普济痔疮栓-PI3K-Akt模块",
+    "community_color": "#FFB657",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:18 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      },
+      {
+        "at": "2026-07-14 16:07:22 中国标准时间",
+        "event": "updated",
+        "evidence_count": 2,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000007",
@@ -216,7 +528,52 @@
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 16:07:18 中国标准时间"
+    "updated_at": "2026-07-14 16:07:18 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "Gasdermin D",
+      "其他",
+      "其他层",
+      "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+      "10.1007/s10616-026-01032-5"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Aug",
+        "doi": "10.1007/s10616-026-01032-5",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.135266,
+      "pagerank": 0.01205
+    },
+    "community_id": 0,
+    "community_name": "柚皮素-NF-κB/NLRP3炎症轴",
+    "community_color": "#55E6FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:18 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000008",
@@ -245,7 +602,58 @@
       }
     ],
     "created_at": "2026-07-14 16:07:22 中国标准时间",
-    "updated_at": "2026-07-14 16:07:22 中国标准时间"
+    "updated_at": "2026-07-14 16:07:22 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Puji Zhichuang suppositories",
+      "PJZC"
+    ],
+    "search_terms": [
+      "普济痔疮栓",
+      "其他",
+      "其他层",
+      "中药复方",
+      "Puji Zhichuang suppositories",
+      "PJZC",
+      "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+      "10.1038/s41598-026-61558-8"
+    ],
+    "category": "中药复方",
+    "publications": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1038/s41598-026-61558-8",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 3,
+      "degree_centrality": 0.043478,
+      "betweenness_centrality": 0.037582,
+      "closeness_centrality": 0.206171,
+      "pagerank": 0.010745
+    },
+    "community_id": 3,
+    "community_name": "普济痔疮栓-PI3K-Akt模块",
+    "community_color": "#FFB657",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:22 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000009",
@@ -274,7 +682,57 @@
       }
     ],
     "created_at": "2026-07-14 16:07:22 中国标准时间",
-    "updated_at": "2026-07-14 16:07:22 中国标准时间"
+    "updated_at": "2026-07-14 16:07:22 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "PI3K-Akt signaling pathway",
+      "PI3K/AKT pathway"
+    ],
+    "search_terms": [
+      "PI3K-Akt信号通路",
+      "信号通路",
+      "分子信号层",
+      "PI3K-Akt signaling pathway",
+      "PI3K/AKT pathway",
+      "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+      "10.1038/s41598-026-61558-8"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1038/s41598-026-61558-8",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.154941,
+      "pagerank": 0.013789
+    },
+    "community_id": 3,
+    "community_name": "普济痔疮栓-PI3K-Akt模块",
+    "community_color": "#FFB657",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:22 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000010",
@@ -319,7 +777,84 @@
       }
     ],
     "created_at": "2026-07-14 16:07:22 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "IL-6",
+      "细胞因子",
+      "分子信号层",
+      "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+      "10.1038/s41598-026-61558-8",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1038/s41598-026-61558-8",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "evidence": ""
+      },
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      },
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 5,
+      "degree_centrality": 0.072464,
+      "betweenness_centrality": 0.213271,
+      "closeness_centrality": 0.258235,
+      "pagerank": 0.027591
+    },
+    "community_id": 3,
+    "community_name": "普济痔疮栓-PI3K-Akt模块",
+    "community_color": "#FFB657",
+    "evidence_grade": "B",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 16:07:22 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      },
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "updated",
+        "evidence_count": 3,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000011",
@@ -348,7 +883,55 @@
       }
     ],
     "created_at": "2026-07-14 20:30:25 中国标准时间",
-    "updated_at": "2026-07-14 20:30:25 中国标准时间"
+    "updated_at": "2026-07-14 20:30:25 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "pulmonary inflammatory cell infiltration"
+    ],
+    "search_terms": [
+      "肺部炎症细胞浸润",
+      "其他",
+      "其他层",
+      "pulmonary inflammatory cell infiltration",
+      "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+      "10.1007/s10616-026-01032-5"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42438788",
+        "title": "Naringenin as a potential immunomodulator for attenuating lung abnormal inflammation in Chronic Obstructive Pulmonary Disease (COPD) via the NF-κB/NLRP3/Caspase-1 Axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Aug",
+        "doi": "10.1007/s10616-026-01032-5",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.135266,
+      "pagerank": 0.01205
+    },
+    "community_id": 0,
+    "community_name": "柚皮素-NF-κB/NLRP3炎症轴",
+    "community_color": "#55E6FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:25 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000012",
@@ -385,7 +968,75 @@
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-16 18:30:56 中国标准时间"
+    "updated_at": "2026-07-16 18:30:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Emodin"
+    ],
+    "search_terms": [
+      "大黄素",
+      "其他",
+      "其他层",
+      "活性成分",
+      "Emodin",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588",
+      "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+      "10.1080/13510002.2026.2646383"
+    ],
+    "category": "活性成分",
+    "publications": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      },
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/13510002.2026.2646383",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 15,
+      "degree_centrality": 0.217391,
+      "betweenness_centrality": 0.216539,
+      "closeness_centrality": 0.255652,
+      "pagerank": 0.010745
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      },
+      {
+        "at": "2026-07-16 18:30:56 中国标准时间",
+        "event": "updated",
+        "evidence_count": 2,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000013",
@@ -414,7 +1065,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "IL-1α",
+      "细胞因子",
+      "分子信号层",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000014",
@@ -443,7 +1139,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "IL-17A",
+      "细胞因子",
+      "分子信号层",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000015",
@@ -472,7 +1213,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "IL-8",
+      "细胞因子",
+      "分子信号层",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000016",
@@ -501,7 +1287,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "G-CSF",
+      "细胞因子",
+      "分子信号层",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000017",
@@ -530,7 +1361,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "GM-CSF",
+      "细胞因子",
+      "分子信号层",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000018",
@@ -559,7 +1435,55 @@
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Th1 cell differentiation"
+    ],
+    "search_terms": [
+      "Th1细胞分化",
+      "免疫细胞",
+      "免疫细胞层",
+      "Th1 cell differentiation",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588"
+    ],
+    "category": "免疫细胞",
+    "publications": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000019",
@@ -588,7 +1512,55 @@
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间"
+    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Th17 cell differentiation"
+    ],
+    "search_terms": [
+      "Th17细胞分化",
+      "免疫细胞",
+      "免疫细胞层",
+      "Th17 cell differentiation",
+      "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+      "10.1142/S0192415X26500588"
+    ],
+    "category": "免疫细胞",
+    "publications": [
+      {
+        "pmid": "42444447",
+        "title": "Anti-Malignancy and Anti-Inflammation Properties of Emodin, an Essential Constituent in Popular Laxative Botanicals.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-14",
+        "doi": "10.1142/S0192415X26500588",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:30 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000020",
@@ -617,7 +1589,58 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Electroacupuncture",
+      "EA"
+    ],
+    "search_terms": [
+      "电针",
+      "其他",
+      "其他层",
+      "中医干预",
+      "Electroacupuncture",
+      "EA",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "中医干预",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 9,
+      "degree_centrality": 0.130435,
+      "betweenness_centrality": 0.180094,
+      "closeness_centrality": 0.228261,
+      "pagerank": 0.010745
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000021",
@@ -646,7 +1669,55 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "CD8+ T cells"
+    ],
+    "search_terms": [
+      "CD8+ T细胞",
+      "免疫细胞",
+      "免疫细胞层",
+      "CD8+ T cells",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "免疫细胞",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.00548,
+      "closeness_centrality": 0.173913,
+      "pagerank": 0.012775
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000022",
@@ -675,7 +1746,57 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "NK cells",
+      "natural killer cells"
+    ],
+    "search_terms": [
+      "NK细胞",
+      "免疫细胞",
+      "免疫细胞层",
+      "NK cells",
+      "natural killer cells",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "免疫细胞",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.00548,
+      "closeness_centrality": 0.173913,
+      "pagerank": 0.012775
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000023",
@@ -704,7 +1825,57 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "M1 macrophages",
+      "M1-polarized macrophages"
+    ],
+    "search_terms": [
+      "M1型巨噬细胞",
+      "免疫细胞",
+      "免疫细胞层",
+      "M1 macrophages",
+      "M1-polarized macrophages",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "免疫细胞",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.00548,
+      "closeness_centrality": 0.173913,
+      "pagerank": 0.012775
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000024",
@@ -733,7 +1904,57 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Norepinephrine",
+      "NE"
+    ],
+    "search_terms": [
+      "去甲肾上腺素",
+      "其他",
+      "其他层",
+      "Norepinephrine",
+      "NE",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 3,
+      "degree_centrality": 0.043478,
+      "betweenness_centrality": 0.00548,
+      "closeness_centrality": 0.178778,
+      "pagerank": 0.012775
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000025",
@@ -762,7 +1983,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "NGF",
+      "细胞因子",
+      "分子信号层",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 5,
+      "degree_centrality": 0.072464,
+      "betweenness_centrality": 0.056205,
+      "closeness_centrality": 0.182609,
+      "pagerank": 0.0282
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000026",
@@ -791,7 +2057,57 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Hippo pathway",
+      "Hippo signaling pathway"
+    ],
+    "search_terms": [
+      "Hippo通路",
+      "信号通路",
+      "分子信号层",
+      "Hippo pathway",
+      "Hippo signaling pathway",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.167093,
+      "pagerank": 0.01176
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000027",
@@ -820,7 +2136,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "AMOT",
+      "其他",
+      "其他层",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.00548,
+      "closeness_centrality": 0.173913,
+      "pagerank": 0.012775
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000028",
@@ -849,7 +2210,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "ST36",
+      "穴位",
+      "经络层",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "穴位",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 9,
+      "degree_centrality": 0.130435,
+      "betweenness_centrality": 0.041986,
+      "closeness_centrality": 0.154007,
+      "pagerank": 0.010745
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000029",
@@ -878,7 +2284,57 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "stomach meridian",
+      "Foot Yangming Stomach Meridian"
+    ],
+    "search_terms": [
+      "足阳明胃经",
+      "经络",
+      "经络层",
+      "stomach meridian",
+      "Foot Yangming Stomach Meridian",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "经络",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.123503,
+      "pagerank": 0.01176
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000030",
@@ -907,7 +2363,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "α2-AR",
+      "其他",
+      "其他层",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.017477,
+      "closeness_centrality": 0.142822,
+      "pagerank": 0.010745
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000031",
@@ -936,7 +2437,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "NGF/Hippo轴",
+      "信号通路",
+      "分子信号层",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.116206,
+      "pagerank": 0.015312
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000032",
@@ -965,7 +2511,52 @@
       }
     ],
     "created_at": "2026-07-14 20:30:35 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间"
+    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "c-Fos+/ChAT+胆碱能神经元",
+      "神经结构",
+      "神经免疫层",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "神经结构",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.00548,
+      "closeness_centrality": 0.173913,
+      "pagerank": 0.012775
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:35 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000033",
@@ -994,7 +2585,58 @@
       }
     ],
     "created_at": "2026-07-14 20:30:39 中国标准时间",
-    "updated_at": "2026-07-14 20:30:39 中国标准时间"
+    "updated_at": "2026-07-14 20:30:39 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "普济痔疮栓",
+      "PJZC"
+    ],
+    "search_terms": [
+      "Puji Zhichuang suppositories",
+      "其他",
+      "其他层",
+      "中药复方",
+      "普济痔疮栓",
+      "PJZC",
+      "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+      "10.1038/s41598-026-61558-8"
+    ],
+    "category": "中药复方",
+    "publications": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1038/s41598-026-61558-8",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 3,
+      "degree_centrality": 0.043478,
+      "betweenness_centrality": 0.037582,
+      "closeness_centrality": 0.206171,
+      "pagerank": 0.010745
+    },
+    "community_id": 3,
+    "community_name": "普济痔疮栓-PI3K-Akt模块",
+    "community_color": "#FFB657",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:39 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000034",
@@ -1023,7 +2665,57 @@
       }
     ],
     "created_at": "2026-07-14 20:30:39 中国标准时间",
-    "updated_at": "2026-07-14 20:30:39 中国标准时间"
+    "updated_at": "2026-07-14 20:30:39 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "PI3K-Akt信号通路",
+      "PI3K/AKT pathway"
+    ],
+    "search_terms": [
+      "PI3K-Akt signaling pathway",
+      "信号通路",
+      "分子信号层",
+      "PI3K-Akt信号通路",
+      "PI3K/AKT pathway",
+      "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+      "10.1038/s41598-026-61558-8"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42443290",
+        "title": "Puji Zhichuang suppositories alleviate acetic acid-induced hemorrhoid-like anorectal inflammation model may involve reduced the PI3K-Akt signaling pathway.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1038/s41598-026-61558-8",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443290/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.154941,
+      "pagerank": 0.013789
+    },
+    "community_id": 3,
+    "community_name": "普济痔疮栓-PI3K-Akt模块",
+    "community_color": "#FFB657",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 20:30:39 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000035",
@@ -1052,7 +2744,57 @@
       }
     ],
     "created_at": "2026-07-14 22:56:43 中国标准时间",
-    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+    "updated_at": "2026-07-14 22:56:43 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "Hippo pathway",
+      "Hippo signaling pathway"
+    ],
+    "search_terms": [
+      "Hippo信号通路",
+      "信号通路",
+      "分子信号层",
+      "Hippo pathway",
+      "Hippo signaling pathway",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.123503,
+      "pagerank": 0.01176
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 22:56:43 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000036",
@@ -1081,7 +2823,52 @@
       }
     ],
     "created_at": "2026-07-14 22:56:43 中国标准时间",
-    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+    "updated_at": "2026-07-14 22:56:43 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "YAP磷酸化",
+      "其他",
+      "其他层",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.141244,
+      "pagerank": 0.034716
+    },
+    "community_id": 2,
+    "community_name": "电针-神经免疫/Hippo模块",
+    "community_color": "#9C82FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 22:56:43 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000037",
@@ -1110,7 +2897,52 @@
       }
     ],
     "created_at": "2026-07-14 22:56:43 中国标准时间",
-    "updated_at": "2026-07-14 22:56:43 中国标准时间"
+    "updated_at": "2026-07-14 22:56:43 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "YAP",
+      "其他",
+      "其他层",
+      "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+      "10.1186/s13020-026-01445-6"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42443928",
+        "title": "Electroacupuncture enhances anti-tumor immunity in TNBC by reducing NE release and blocking α2-AR-mediated NGF/Hippo signaling.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Jul-13",
+        "doi": "10.1186/s13020-026-01445-6",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.182609,
+      "pagerank": 0.010745
+    },
+    "community_id": 3,
+    "community_name": "普济痔疮栓-PI3K-Akt模块",
+    "community_color": "#FFB657",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-14 22:56:43 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000038",
@@ -1139,7 +2971,58 @@
       }
     ],
     "created_at": "2026-07-16 18:28:21 中国标准时间",
-    "updated_at": "2026-07-16 18:28:21 中国标准时间"
+    "updated_at": "2026-07-16 18:28:21 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "transcutaneous auricular vagus nerve stimulation",
+      "taVNS"
+    ],
+    "search_terms": [
+      "经皮耳穴迷走神经刺激",
+      "穴位",
+      "经络层",
+      "中医干预",
+      "transcutaneous auricular vagus nerve stimulation",
+      "taVNS",
+      "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+      "10.1080/10253890.2026.2684153"
+    ],
+    "category": "中医干预",
+    "publications": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/10253890.2026.2684153",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 4,
+      "degree_centrality": 0.057971,
+      "betweenness_centrality": 0.002558,
+      "closeness_centrality": 0.057971,
+      "pagerank": 0.010745
+    },
+    "community_id": 4,
+    "community_name": "耳穴迷走神经-肠脑免疫模块",
+    "community_color": "#54F2B2",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 1,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:28:21 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000039",
@@ -1168,7 +3051,55 @@
       }
     ],
     "created_at": "2026-07-16 18:28:21 中国标准时间",
-    "updated_at": "2026-07-16 18:28:21 中国标准时间"
+    "updated_at": "2026-07-16 18:28:21 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "stress regulation circuit"
+    ],
+    "search_terms": [
+      "应激调节回路",
+      "神经结构",
+      "神经免疫层",
+      "stress regulation circuit",
+      "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+      "10.1080/10253890.2026.2684153"
+    ],
+    "category": "神经结构",
+    "publications": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/10253890.2026.2684153",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.033126,
+      "pagerank": 0.013028
+    },
+    "community_id": 4,
+    "community_name": "耳穴迷走神经-肠脑免疫模块",
+    "community_color": "#54F2B2",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:28:21 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000040",
@@ -1197,7 +3128,55 @@
       }
     ],
     "created_at": "2026-07-16 18:28:21 中国标准时间",
-    "updated_at": "2026-07-16 18:28:21 中国标准时间"
+    "updated_at": "2026-07-16 18:28:21 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "inflammatory signaling pathway"
+    ],
+    "search_terms": [
+      "炎症信号通路",
+      "信号通路",
+      "分子信号层",
+      "inflammatory signaling pathway",
+      "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+      "10.1080/10253890.2026.2684153"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/10253890.2026.2684153",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.033126,
+      "pagerank": 0.013028
+    },
+    "community_id": 4,
+    "community_name": "耳穴迷走神经-肠脑免疫模块",
+    "community_color": "#54F2B2",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 1,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:28:21 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000041",
@@ -1226,7 +3205,57 @@
       }
     ],
     "created_at": "2026-07-16 18:28:21 中国标准时间",
-    "updated_at": "2026-07-16 18:28:21 中国标准时间"
+    "updated_at": "2026-07-16 18:28:21 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "gut microbiome composition",
+      "gut microbiota composition"
+    ],
+    "search_terms": [
+      "肠道微生物群组成",
+      "其他",
+      "其他层",
+      "gut microbiome composition",
+      "gut microbiota composition",
+      "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+      "10.1080/10253890.2026.2684153"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/10253890.2026.2684153",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.033126,
+      "pagerank": 0.013028
+    },
+    "community_id": 4,
+    "community_name": "耳穴迷走神经-肠脑免疫模块",
+    "community_color": "#54F2B2",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:28:21 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000042",
@@ -1255,7 +3284,55 @@
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
-    "updated_at": "2026-07-16 18:30:56 中国标准时间"
+    "updated_at": "2026-07-16 18:30:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "ferroptosis"
+    ],
+    "search_terms": [
+      "铁死亡",
+      "其他",
+      "其他层",
+      "ferroptosis",
+      "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+      "10.1080/13510002.2026.2646383"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/13510002.2026.2646383",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:30:56 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000043",
@@ -1270,10 +3347,9 @@
       "y": 2.46,
       "z": 153.552
     },
-    "evidence_count": 2,
+    "evidence_count": 1,
     "evidence_pmids": [
-      "41866335",
-      "42241031"
+      "41866335"
     ],
     "sources": [
       {
@@ -1282,17 +3358,55 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31"
-      },
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
-    "updated_at": "2026-07-16 14:29:14 UTC"
+    "updated_at": "2026-07-16 18:30:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "GPX4",
+      "其他",
+      "其他层",
+      "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+      "10.1080/13510002.2026.2646383"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/13510002.2026.2646383",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:30:56 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000044",
@@ -1321,7 +3435,52 @@
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
-    "updated_at": "2026-07-16 18:30:56 中国标准时间"
+    "updated_at": "2026-07-16 18:30:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "ACSL4",
+      "其他",
+      "其他层",
+      "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+      "10.1080/13510002.2026.2646383"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/13510002.2026.2646383",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:30:56 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000045",
@@ -1336,10 +3495,9 @@
       "y": -5.908,
       "z": 112.953
     },
-    "evidence_count": 2,
+    "evidence_count": 1,
     "evidence_pmids": [
-      "41866335",
-      "42241031"
+      "41866335"
     ],
     "sources": [
       {
@@ -1348,17 +3506,58 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31"
-      },
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
-    "updated_at": "2026-07-16 14:29:14 UTC"
+    "updated_at": "2026-07-16 18:30:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "pro-inflammatory cytokines"
+    ],
+    "search_terms": [
+      "促炎细胞因子",
+      "细胞因子",
+      "分子信号层",
+      "pro-inflammatory cytokines",
+      "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+      "10.1080/13510002.2026.2646383"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/13510002.2026.2646383",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:30:56 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000046",
@@ -1387,7 +3586,55 @@
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
-    "updated_at": "2026-07-16 18:30:56 中国标准时间"
+    "updated_at": "2026-07-16 18:30:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "oxidative stress"
+    ],
+    "search_terms": [
+      "氧化应激",
+      "其他",
+      "其他层",
+      "oxidative stress",
+      "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+      "10.1080/13510002.2026.2646383"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/13510002.2026.2646383",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:30:56 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000047",
@@ -1416,7 +3663,55 @@
       }
     ],
     "created_at": "2026-07-16 18:32:54 中国标准时间",
-    "updated_at": "2026-07-16 18:32:54 中国标准时间"
+    "updated_at": "2026-07-16 18:32:54 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "gut virome"
+    ],
+    "search_terms": [
+      "肠道病毒组",
+      "其他",
+      "其他层",
+      "gut virome",
+      "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+      "10.1080/19490976.2025.2611645"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2611645",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 3,
+      "degree_centrality": 0.043478,
+      "betweenness_centrality": 0.001279,
+      "closeness_centrality": 0.043478,
+      "pagerank": 0.010745
+    },
+    "community_id": 5,
+    "community_name": "肠道病毒组-卵巢炎症模块",
+    "community_color": "#FF7188",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:32:54 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000048",
@@ -1445,7 +3740,55 @@
       }
     ],
     "created_at": "2026-07-16 18:32:54 中国标准时间",
-    "updated_at": "2026-07-16 18:32:54 中国标准时间"
+    "updated_at": "2026-07-16 18:32:54 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "ovarian oxidative stress"
+    ],
+    "search_terms": [
+      "卵巢氧化应激",
+      "其他",
+      "其他层",
+      "ovarian oxidative stress",
+      "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+      "10.1080/19490976.2025.2611645"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2611645",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.026087,
+      "pagerank": 0.013789
+    },
+    "community_id": 5,
+    "community_name": "肠道病毒组-卵巢炎症模块",
+    "community_color": "#FF7188",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:32:54 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000049",
@@ -1474,7 +3817,55 @@
       }
     ],
     "created_at": "2026-07-16 18:32:54 中国标准时间",
-    "updated_at": "2026-07-16 18:32:54 中国标准时间"
+    "updated_at": "2026-07-16 18:32:54 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "ovarian inflammation"
+    ],
+    "search_terms": [
+      "卵巢炎症",
+      "其他",
+      "其他层",
+      "ovarian inflammation",
+      "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+      "10.1080/19490976.2025.2611645"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2611645",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.026087,
+      "pagerank": 0.013789
+    },
+    "community_id": 5,
+    "community_name": "肠道病毒组-卵巢炎症模块",
+    "community_color": "#FF7188",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:32:54 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000050",
@@ -1503,7 +3894,55 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "lung"
+    ],
+    "search_terms": [
+      "肺",
+      "脏腑",
+      "脏腑层",
+      "lung",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "脏腑",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.014493,
+      "pagerank": 0.010745
+    },
+    "community_id": 6,
+    "community_name": "肺-大肠脏腑关联模块",
+    "community_color": "#78A8FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000051",
@@ -1532,7 +3971,57 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "large intestine",
+      "colon"
+    ],
+    "search_terms": [
+      "大肠",
+      "脏腑",
+      "脏腑层",
+      "large intestine",
+      "colon",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "脏腑",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.014493,
+      "pagerank": 0.019878
+    },
+    "community_id": 6,
+    "community_name": "肺-大肠脏腑关联模块",
+    "community_color": "#78A8FF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000052",
@@ -1561,7 +4050,57 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "short-chain fatty acids",
+      "SCFA"
+    ],
+    "search_terms": [
+      "短链脂肪酸",
+      "能量代谢物",
+      "分子信号层",
+      "short-chain fatty acids",
+      "SCFA",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "能量代谢物",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 4,
+      "degree_centrality": 0.057971,
+      "betweenness_centrality": 0.014066,
+      "closeness_centrality": 0.080515,
+      "pagerank": 0.031599
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000053",
@@ -1590,7 +4129,55 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "alveolar macrophage metabolic reprogramming"
+    ],
+    "search_terms": [
+      "肺泡巨噬细胞代谢重编程",
+      "其他",
+      "其他层",
+      "alveolar macrophage metabolic reprogramming",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 4,
+      "degree_centrality": 0.057971,
+      "betweenness_centrality": 0.01023,
+      "closeness_centrality": 0.069013,
+      "pagerank": 0.033309
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000054",
@@ -1619,7 +4206,55 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "propionate"
+    ],
+    "search_terms": [
+      "丙酸盐",
+      "能量代谢物",
+      "分子信号层",
+      "propionate",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "能量代谢物",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.048309,
+      "pagerank": 0.010745
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000055",
@@ -1648,7 +4283,57 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "high-fiber diet",
+      "fiber-rich diet"
+    ],
+    "search_terms": [
+      "高纤维饮食",
+      "其他",
+      "其他层",
+      "high-fiber diet",
+      "fiber-rich diet",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 3,
+      "degree_centrality": 0.043478,
+      "betweenness_centrality": 0.007246,
+      "closeness_centrality": 0.055741,
+      "pagerank": 0.010745
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000056",
@@ -1677,7 +4362,57 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "SCFA-producing bacteria",
+      "short-chain fatty acid-producing bacteria"
+    ],
+    "search_terms": [
+      "短链脂肪酸产生菌",
+      "其他",
+      "其他层",
+      "SCFA-producing bacteria",
+      "short-chain fatty acid-producing bacteria",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.008951,
+      "closeness_centrality": 0.069013,
+      "pagerank": 0.013789
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000057",
@@ -1706,7 +4441,55 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "sterile lung injury inflammation"
+    ],
+    "search_terms": [
+      "无菌性肺损伤炎症",
+      "其他",
+      "其他层",
+      "sterile lung injury inflammation",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.041408,
+      "pagerank": 0.013789
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000058",
@@ -1735,7 +4518,55 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "infectious lung injury"
+    ],
+    "search_terms": [
+      "感染性肺损伤",
+      "其他",
+      "其他层",
+      "infectious lung injury",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.041408,
+      "pagerank": 0.013789
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000059",
@@ -1764,7 +4595,57 @@
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间"
+    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "alveolar macrophages",
+      "AMs"
+    ],
+    "search_terms": [
+      "肺泡巨噬细胞",
+      "免疫细胞",
+      "免疫细胞层",
+      "alveolar macrophages",
+      "AMs",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "免疫细胞",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.053677,
+      "pagerank": 0.024176
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 18:33:09 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000060",
@@ -1793,7 +4674,57 @@
       }
     ],
     "created_at": "2026-07-16 21:58:03 中国标准时间",
-    "updated_at": "2026-07-16 21:58:03 中国标准时间"
+    "updated_at": "2026-07-16 21:58:03 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "gut microbiome",
+      "gut microbiota"
+    ],
+    "search_terms": [
+      "肠道微生物群",
+      "其他",
+      "其他层",
+      "gut microbiome",
+      "gut microbiota",
+      "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+      "10.1080/10253890.2026.2684153"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/10253890.2026.2684153",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.033126,
+      "pagerank": 0.013028
+    },
+    "community_id": 4,
+    "community_name": "耳穴迷走神经-肠脑免疫模块",
+    "community_color": "#54F2B2",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 21:58:03 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000061",
@@ -1808,10 +4739,9 @@
       "y": -6.416,
       "z": 151.339
     },
-    "evidence_count": 2,
+    "evidence_count": 1,
     "evidence_pmids": [
-      "41866335",
-      "42046449"
+      "41866335"
     ],
     "sources": [
       {
@@ -1820,17 +4750,58 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31"
-      },
-      {
-        "pmid": "42046449",
-        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
-        "doi": "10.1080/13510002.2026.2663621",
-        "publication_date": "2026-Dec-31"
       }
     ],
     "created_at": "2026-07-16 22:00:42 中国标准时间",
-    "updated_at": "2026-07-16 14:30:24 UTC"
+    "updated_at": "2026-07-16 22:00:42 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "inflammation"
+    ],
+    "search_terms": [
+      "炎症",
+      "其他",
+      "其他层",
+      "inflammation",
+      "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+      "10.1080/13510002.2026.2646383"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/13510002.2026.2646383",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.181314,
+      "pagerank": 0.011354
+    },
+    "community_id": 1,
+    "community_name": "大黄素-细胞因子/铁死亡模块",
+    "community_color": "#FF6FCF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:00:42 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000062",
@@ -1859,7 +4830,55 @@
       }
     ],
     "created_at": "2026-07-16 22:02:40 中国标准时间",
-    "updated_at": "2026-07-16 22:02:40 中国标准时间"
+    "updated_at": "2026-07-16 22:02:40 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "ovarian oxidative stress and inflammation"
+    ],
+    "search_terms": [
+      "卵巢氧化应激和炎症",
+      "其他",
+      "其他层",
+      "ovarian oxidative stress and inflammation",
+      "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+      "10.1080/19490976.2025.2611645"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41503791",
+        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2611645",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.026087,
+      "pagerank": 0.013789
+    },
+    "community_id": 5,
+    "community_name": "肠道病毒组-卵巢炎症模块",
+    "community_color": "#FF7188",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:02:40 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000063",
@@ -1888,7 +4907,52 @@
       }
     ],
     "created_at": "2026-07-16 22:02:49 中国标准时间",
-    "updated_at": "2026-07-16 22:02:49 中国标准时间"
+    "updated_at": "2026-07-16 22:02:49 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "Clostridium butyricum",
+      "其他",
+      "其他层",
+      "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+      "10.1080/19490976.2025.2609455"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41481427",
+        "title": "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2609455",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41481427/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 2,
+      "degree_centrality": 0.028986,
+      "betweenness_centrality": 0.000426,
+      "closeness_centrality": 0.028986,
+      "pagerank": 0.010745
+    },
+    "community_id": 8,
+    "community_name": "丁酸梭菌-Th17模块",
+    "community_color": "#62FFD5",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:02:49 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000064",
@@ -1917,7 +4981,52 @@
       }
     ],
     "created_at": "2026-07-16 22:02:49 中国标准时间",
-    "updated_at": "2026-07-16 22:02:49 中国标准时间"
+    "updated_at": "2026-07-16 22:02:49 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "Th17细胞",
+      "免疫细胞",
+      "免疫细胞层",
+      "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+      "10.1080/19490976.2025.2609455"
+    ],
+    "category": "免疫细胞",
+    "publications": [
+      {
+        "pmid": "41481427",
+        "title": "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2609455",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41481427/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.019324,
+      "pagerank": 0.015312
+    },
+    "community_id": 8,
+    "community_name": "丁酸梭菌-Th17模块",
+    "community_color": "#62FFD5",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:02:49 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000065",
@@ -1946,7 +5055,52 @@
       }
     ],
     "created_at": "2026-07-16 22:02:49 中国标准时间",
-    "updated_at": "2026-07-16 22:02:49 中国标准时间"
+    "updated_at": "2026-07-16 22:02:49 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [],
+    "search_terms": [
+      "IL-17",
+      "细胞因子",
+      "分子信号层",
+      "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+      "10.1080/19490976.2025.2609455"
+    ],
+    "category": "细胞因子",
+    "publications": [
+      {
+        "pmid": "41481427",
+        "title": "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2609455",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41481427/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.019324,
+      "pagerank": 0.015312
+    },
+    "community_id": 8,
+    "community_name": "丁酸梭菌-Th17模块",
+    "community_color": "#62FFD5",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:02:49 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000066",
@@ -1975,7 +5129,56 @@
       }
     ],
     "created_at": "2026-07-16 22:02:49 中国标准时间",
-    "updated_at": "2026-07-16 22:02:49 中国标准时间"
+    "updated_at": "2026-07-16 22:02:49 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "butyrate"
+    ],
+    "search_terms": [
+      "丁酸",
+      "其他",
+      "其他层",
+      "能量代谢物",
+      "butyrate",
+      "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+      "10.1080/19490976.2025.2609455"
+    ],
+    "category": "能量代谢物",
+    "publications": [
+      {
+        "pmid": "41481427",
+        "title": "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2609455",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41481427/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.014493,
+      "pagerank": 0.010745
+    },
+    "community_id": 9,
+    "community_name": "丁酸-PI3K/AKT模块",
+    "community_color": "#C68CFF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:02:49 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000067",
@@ -2004,7 +5207,57 @@
       }
     ],
     "created_at": "2026-07-16 22:02:49 中国标准时间",
-    "updated_at": "2026-07-16 22:02:49 中国标准时间"
+    "updated_at": "2026-07-16 22:02:49 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "PI3K/AKT pathway",
+      "PI3K-Akt signaling pathway"
+    ],
+    "search_terms": [
+      "PI3K/AKT通路",
+      "信号通路",
+      "分子信号层",
+      "PI3K/AKT pathway",
+      "PI3K-Akt signaling pathway",
+      "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+      "10.1080/19490976.2025.2609455"
+    ],
+    "category": "信号通路",
+    "publications": [
+      {
+        "pmid": "41481427",
+        "title": "Clostridium butyricum alleviates multiple myeloma by remodeling the bone marrow microenvironment and inhibiting PI3K/AKT pathway through the gut‒bone axis.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2609455",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41481427/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.014493,
+      "pagerank": 0.019878
+    },
+    "community_id": 9,
+    "community_name": "丁酸-PI3K/AKT模块",
+    "community_color": "#C68CFF",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:02:49 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000068",
@@ -2033,7 +5286,55 @@
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
-    "updated_at": "2026-07-16 22:02:56 中国标准时间"
+    "updated_at": "2026-07-16 22:02:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "dietary fiber"
+    ],
+    "search_terms": [
+      "膳食纤维",
+      "其他",
+      "其他层",
+      "dietary fiber",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.053677,
+      "pagerank": 0.010745
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:02:56 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000069",
@@ -2062,7 +5363,55 @@
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
-    "updated_at": "2026-07-16 22:02:56 中国标准时间"
+    "updated_at": "2026-07-16 22:02:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "sterile lung injury inflammation"
+    ],
+    "search_terms": [
+      "肺无菌损伤炎症",
+      "其他",
+      "其他层",
+      "sterile lung injury inflammation",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
+    ],
+    "category": "其他",
+    "publications": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
+        "doi": "10.1080/19490976.2025.2606486",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "evidence": ""
+      }
+    ],
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.048309,
+      "pagerank": 0.024901
+    },
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
+      {
+        "at": "2026-07-16 22:02:56 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
+      }
+    ]
   },
   {
     "id": "N000070",
@@ -2091,1351 +5440,54 @@
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
-    "updated_at": "2026-07-16 22:02:56 中国标准时间"
-  },
-  {
-    "id": "N000071",
-    "name": "迷走神经",
-    "type": "神经结构",
-    "layer": "神经免疫层",
-    "x": -1.562,
-    "y": -4.701,
-    "z": 55.81,
-    "position": {
-      "x": -1.562,
-      "y": -4.701,
-      "z": 55.81
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42339759"
+    "updated_at": "2026-07-16 22:02:56 中国标准时间",
+    "schema_version": "2.0",
+    "aliases": [
+      "lung infection"
     ],
-    "sources": [
-      {
-        "pmid": "42339759",
-        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
-        "doi": "10.1080/10253890.2026.2684153",
-        "publication_date": "2026-Dec-31"
-      }
+    "search_terms": [
+      "肺感染",
+      "其他",
+      "其他层",
+      "lung infection",
+      "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+      "10.1080/19490976.2025.2606486"
     ],
-    "created_at": "2026-07-16 14:28:28 UTC",
-    "updated_at": "2026-07-16 14:28:28 UTC"
-  },
-  {
-    "id": "N000072",
-    "name": "脑-体通信",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 3.33,
-    "y": 2.947,
-    "z": 154.024,
-    "position": {
-      "x": 3.33,
-      "y": 2.947,
-      "z": 154.024
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42339759"
-    ],
-    "sources": [
-      {
-        "pmid": "42339759",
-        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
-        "doi": "10.1080/10253890.2026.2684153",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:28:28 UTC",
-    "updated_at": "2026-07-16 14:28:28 UTC"
-  },
-  {
-    "id": "N000073",
-    "name": "尿酸",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -1.017,
-    "y": -5.142,
-    "z": 151.367,
-    "position": {
-      "x": -1.017,
-      "y": -5.142,
-      "z": 151.367
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42241031"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:29:14 UTC"
-  },
-  {
-    "id": "N000074",
-    "name": "活性氧",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -0.002,
-    "y": -7.591,
-    "z": 147.953,
-    "position": {
-      "x": -0.002,
-      "y": -7.591,
-      "z": 147.953
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42241031"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:29:14 UTC"
-  },
-  {
-    "id": "N000075",
-    "name": "脂质过氧化",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 2.625,
-    "y": 1.059,
-    "z": 153.571,
-    "position": {
-      "x": 2.625,
-      "y": 1.059,
-      "z": 153.571
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42241031"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:29:14 UTC"
-  },
-  {
-    "id": "N000076",
-    "name": "细胞内铁离子",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -4.957,
-    "y": 4.853,
-    "z": 152.155,
-    "position": {
-      "x": -4.957,
-      "y": 4.853,
-      "z": 152.155
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42241031"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:29:14 UTC"
-  },
-  {
-    "id": "N000077",
-    "name": "抗氧化能力",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 5.36,
-    "y": 1.294,
-    "z": 146.749,
-    "position": {
-      "x": 5.36,
-      "y": 1.294,
-      "z": 146.749
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42241031"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:29:14 UTC"
-  },
-  {
-    "id": "N000078",
-    "name": "Nrf2信号通路",
-    "type": "信号通路",
-    "layer": "分子信号层",
-    "x": -6.264,
-    "y": -5.436,
-    "z": 117.869,
-    "position": {
-      "x": -6.264,
-      "y": -5.436,
-      "z": 117.869
-    },
-    "evidence_count": 2,
-    "evidence_pmids": [
-      "42241031",
-      "42046449"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      },
-      {
-        "pmid": "42046449",
-        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
-        "doi": "10.1080/13510002.2026.2663621",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:30:24 UTC"
-  },
-  {
-    "id": "N000079",
-    "name": "神经炎症",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -2.001,
-    "y": 0.613,
-    "z": 145.982,
-    "position": {
-      "x": -2.001,
-      "y": 0.613,
-      "z": 145.982
-    },
-    "evidence_count": 3,
-    "evidence_pmids": [
-      "42241031",
-      "41496520",
-      "42262337"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      },
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      },
-      {
-        "pmid": "42262337",
-        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
-        "doi": "10.1080/19490976.2026.2684074",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-17 09:29:15 UTC"
-  },
-  {
-    "id": "N000080",
-    "name": "运动功能",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 8.632,
-    "y": -1.123,
-    "z": 151.417,
-    "position": {
-      "x": 8.632,
-      "y": -1.123,
-      "z": 151.417
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42241031"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:29:14 UTC"
-  },
-  {
-    "id": "N000081",
-    "name": "多巴胺能神经元密度",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 3.215,
-    "y": 1.173,
-    "z": 147.616,
-    "position": {
-      "x": 3.215,
-      "y": 1.173,
-      "z": 147.616
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42241031"
-    ],
-    "sources": [
-      {
-        "pmid": "42241031",
-        "title": "Uric acid alleviates the inflammatory response in LPS-induced BV2 cells and MPTP-induced PD mice by resisting ferroptosis through the Nrf2 signalling pathway.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42241031/",
-        "doi": "10.1080/13510002.2026.2668238",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:29:14 UTC"
-  },
-  {
-    "id": "N000082",
-    "name": "槲皮素",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 4.407,
-    "y": 7.82,
-    "z": 146.315,
-    "position": {
-      "x": 4.407,
-      "y": 7.82,
-      "z": 146.315
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42046449"
-    ],
-    "sources": [
-      {
-        "pmid": "42046449",
-        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
-        "doi": "10.1080/13510002.2026.2663621",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:30:24 UTC",
-    "updated_at": "2026-07-16 14:30:24 UTC"
-  },
-  {
-    "id": "N000083",
-    "name": "PERK信号通路",
-    "type": "信号通路",
-    "layer": "分子信号层",
-    "x": -3.057,
-    "y": -6.274,
-    "z": 118.361,
-    "position": {
-      "x": -3.057,
-      "y": -6.274,
-      "z": 118.361
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42046449"
-    ],
-    "sources": [
-      {
-        "pmid": "42046449",
-        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
-        "doi": "10.1080/13510002.2026.2663621",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:30:24 UTC",
-    "updated_at": "2026-07-16 14:30:24 UTC"
-  },
-  {
-    "id": "N000084",
-    "name": "坏死性凋亡",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -7.941,
-    "y": 6.182,
-    "z": 151.963,
-    "position": {
-      "x": -7.941,
-      "y": 6.182,
-      "z": 151.963
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42046449"
-    ],
-    "sources": [
-      {
-        "pmid": "42046449",
-        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
-        "doi": "10.1080/13510002.2026.2663621",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:30:24 UTC",
-    "updated_at": "2026-07-16 14:30:24 UTC"
-  },
-  {
-    "id": "N000085",
-    "name": "免疫功能障碍",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -1.284,
-    "y": -7.358,
-    "z": 146.851,
-    "position": {
-      "x": -1.284,
-      "y": -7.358,
-      "z": 146.851
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42046449"
-    ],
-    "sources": [
-      {
-        "pmid": "42046449",
-        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
-        "doi": "10.1080/13510002.2026.2663621",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:30:24 UTC",
-    "updated_at": "2026-07-16 14:30:24 UTC"
-  },
-  {
-    "id": "N000086",
-    "name": "Akkermansia muciniphila-derived extracellular vesicles",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -6.401,
-    "y": -2.149,
-    "z": 146.778,
-    "position": {
-      "x": -6.401,
-      "y": -2.149,
-      "z": 146.778
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:34:22 UTC",
-    "updated_at": "2026-07-16 14:34:22 UTC"
-  },
-  {
-    "id": "N000087",
-    "name": "小胶质细胞/星形胶质细胞激活",
-    "type": "免疫细胞",
-    "layer": "免疫细胞层",
-    "x": 2.193,
-    "y": -4.91,
-    "z": 75.88,
-    "position": {
-      "x": 2.193,
-      "y": -4.91,
-      "z": 75.88
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:34:22 UTC",
-    "updated_at": "2026-07-16 14:34:22 UTC"
-  },
-  {
-    "id": "N000088",
-    "name": "海马5-HT水平",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -8.868,
-    "y": 5.423,
-    "z": 150.548,
-    "position": {
-      "x": -8.868,
-      "y": 5.423,
-      "z": 150.548
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:34:22 UTC",
-    "updated_at": "2026-07-16 14:34:22 UTC"
-  },
-  {
-    "id": "N000089",
-    "name": "突触可塑性",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 0.423,
-    "y": -3.872,
-    "z": 153.954,
-    "position": {
-      "x": 0.423,
-      "y": -3.872,
-      "z": 153.954
-    },
-    "evidence_count": 2,
-    "evidence_pmids": [
-      "41496520",
-      "42262337"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      },
-      {
-        "pmid": "42262337",
-        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
-        "doi": "10.1080/19490976.2026.2684074",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:34:22 UTC",
-    "updated_at": "2026-07-17 09:29:15 UTC"
-  },
-  {
-    "id": "N000090",
-    "name": "肠道屏障完整性",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 7.537,
-    "y": 7.232,
-    "z": 146.666,
-    "position": {
-      "x": 7.537,
-      "y": 7.232,
-      "z": 146.666
-    },
-    "evidence_count": 2,
-    "evidence_pmids": [
-      "41496520",
-      "41503791"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      },
-      {
-        "pmid": "41503791",
-        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
-        "doi": "10.1080/19490976.2025.2611645",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:34:22 UTC",
-    "updated_at": "2026-07-17 04:18:51 UTC"
-  },
-  {
-    "id": "N000091",
-    "name": "肠道菌群",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 42.042,
-    "y": 73.842,
-    "z": 147.81,
-    "position": {
-      "x": 42.042,
-      "y": 73.842,
-      "z": 147.81
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41467904"
-    ],
-    "sources": [
+    "category": "其他",
+    "publications": [
       {
         "pmid": "41467904",
         "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "authors": [],
+        "journal": "",
+        "year": 2026,
+        "publication_date": "2026-Dec-31",
         "doi": "10.1080/19490976.2025.2606486",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 14:34:34 UTC",
-    "updated_at": "2026-07-16 14:34:34 UTC"
-  },
-  {
-    "id": "N000092",
-    "name": "丙酸",
-    "type": "能量代谢物",
-    "layer": "分子信号层",
-    "x": 43.319,
-    "y": 70.294,
-    "z": 118.727,
-    "position": {
-      "x": 43.319,
-      "y": 70.294,
-      "z": 118.727
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41467904"
-    ],
-    "sources": [
-      {
-        "pmid": "41467904",
-        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
-        "doi": "10.1080/19490976.2025.2606486",
-        "publication_date": "2026-Dec-31"
+        "evidence": ""
       }
     ],
-    "created_at": "2026-07-16 14:34:34 UTC",
-    "updated_at": "2026-07-16 14:34:34 UTC"
-  },
-  {
-    "id": "N000093",
-    "name": "肺部感染",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 28.074,
-    "y": 58.253,
-    "z": 151.674,
-    "position": {
-      "x": 28.074,
-      "y": 58.253,
-      "z": 151.674
+    "metrics": {
+      "degree_count": 1,
+      "degree_centrality": 0.014493,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.048309,
+      "pagerank": 0.024901
     },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41467904"
-    ],
-    "sources": [
+    "community_id": 7,
+    "community_name": "膳食纤维-肺泡巨噬细胞模块",
+    "community_color": "#D4FF65",
+    "evidence_grade": "C",
+    "evidence_grade_method": "count_proxy",
+    "conflict_count": 0,
+    "deleted_at": null,
+    "history": [
       {
-        "pmid": "41467904",
-        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
-        "doi": "10.1080/19490976.2025.2606486",
-        "publication_date": "2026-Dec-31"
+        "at": "2026-07-16 22:02:56 中国标准时间",
+        "event": "created",
+        "evidence_count": 1,
+        "inferred": true
       }
-    ],
-    "created_at": "2026-07-16 14:34:34 UTC",
-    "updated_at": "2026-07-16 14:34:34 UTC"
-  },
-  {
-    "id": "N000094",
-    "name": "应激调节神经回路",
-    "type": "神经结构",
-    "layer": "神经免疫层",
-    "x": 2.459,
-    "y": 8.794,
-    "z": 54.619,
-    "position": {
-      "x": 2.459,
-      "y": 8.794,
-      "z": 54.619
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42339759"
-    ],
-    "sources": [
-      {
-        "pmid": "42339759",
-        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
-        "doi": "10.1080/10253890.2026.2684153",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 15:54:00 UTC",
-    "updated_at": "2026-07-16 15:54:00 UTC"
-  },
-  {
-    "id": "N000095",
-    "name": "肺无菌性损伤炎症",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 27.45,
-    "y": 59.493,
-    "z": 151.108,
-    "position": {
-      "x": 27.45,
-      "y": 59.493,
-      "z": 151.108
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41467904"
-    ],
-    "sources": [
-      {
-        "pmid": "41467904",
-        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
-        "doi": "10.1080/19490976.2025.2606486",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-16 16:01:08 UTC",
-    "updated_at": "2026-07-16 16:01:08 UTC"
-  },
-  {
-    "id": "N000096",
-    "name": "肠道细菌组",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 5.492,
-    "y": 0.757,
-    "z": 147.911,
-    "position": {
-      "x": 5.492,
-      "y": 0.757,
-      "z": 147.911
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41503791"
-    ],
-    "sources": [
-      {
-        "pmid": "41503791",
-        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
-        "doi": "10.1080/19490976.2025.2611645",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 04:18:51 UTC",
-    "updated_at": "2026-07-17 04:18:51 UTC"
-  },
-  {
-    "id": "N000097",
-    "name": "下丘脑-垂体-卵巢轴激素水平",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 2.746,
-    "y": 5.394,
-    "z": 151.585,
-    "position": {
-      "x": 2.746,
-      "y": 5.394,
-      "z": 151.585
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41503791"
-    ],
-    "sources": [
-      {
-        "pmid": "41503791",
-        "title": "Gut virome dysbiosis contributes to premature ovarian insufficiency by modulating gut bacteriome.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
-        "doi": "10.1080/19490976.2025.2611645",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 04:18:51 UTC",
-    "updated_at": "2026-07-17 04:18:51 UTC"
-  },
-  {
-    "id": "N000098",
-    "name": "自主神经功能",
-    "type": "神经结构",
-    "layer": "神经免疫层",
-    "x": 1.916,
-    "y": -5.013,
-    "z": 57.17,
-    "position": {
-      "x": 1.916,
-      "y": -5.013,
-      "z": 57.17
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42339759"
-    ],
-    "sources": [
-      {
-        "pmid": "42339759",
-        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
-        "doi": "10.1080/10253890.2026.2684153",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 04:53:03 UTC",
-    "updated_at": "2026-07-17 04:53:03 UTC"
-  },
-  {
-    "id": "N000099",
-    "name": "线粒体稳态",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -1.568,
-    "y": -2.566,
-    "z": 150.525,
-    "position": {
-      "x": -1.568,
-      "y": -2.566,
-      "z": 150.525
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41866335"
-    ],
-    "sources": [
-      {
-        "pmid": "41866335",
-        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
-        "doi": "10.1080/13510002.2026.2646383",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 04:56:27 UTC",
-    "updated_at": "2026-07-17 04:56:27 UTC"
-  },
-  {
-    "id": "N000100",
-    "name": "AmEVs",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -8.998,
-    "y": 6.056,
-    "z": 146.749,
-    "position": {
-      "x": -8.998,
-      "y": 6.056,
-      "z": 146.749
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 04:58:58 UTC",
-    "updated_at": "2026-07-17 04:58:58 UTC"
-  },
-  {
-    "id": "N000101",
-    "name": "结肠5-HT过度产生",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 2.118,
-    "y": 2.594,
-    "z": 153.088,
-    "position": {
-      "x": 2.118,
-      "y": 2.594,
-      "z": 153.088
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 04:58:58 UTC",
-    "updated_at": "2026-07-17 04:58:58 UTC"
-  },
-  {
-    "id": "N000102",
-    "name": "有益双歧杆菌",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -2.521,
-    "y": 7.317,
-    "z": 147.03,
-    "position": {
-      "x": -2.521,
-      "y": 7.317,
-      "z": 147.03
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 04:58:58 UTC",
-    "updated_at": "2026-07-17 04:58:58 UTC"
-  },
-  {
-    "id": "N000103",
-    "name": "致病菌Bacteroides和Mucispirillum",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -4.049,
-    "y": -3.582,
-    "z": 151.466,
-    "position": {
-      "x": -4.049,
-      "y": -3.582,
-      "z": 151.466
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 04:58:58 UTC",
-    "updated_at": "2026-07-17 04:58:58 UTC"
-  },
-  {
-    "id": "N000104",
-    "name": "omega-3",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 3.455,
-    "y": 2.806,
-    "z": 149.889,
-    "position": {
-      "x": 3.455,
-      "y": 2.806,
-      "z": 149.889
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42262337"
-    ],
-    "sources": [
-      {
-        "pmid": "42262337",
-        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
-        "doi": "10.1080/19490976.2026.2684074",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:29:15 UTC",
-    "updated_at": "2026-07-17 09:29:15 UTC"
-  },
-  {
-    "id": "N000105",
-    "name": "慢性低度炎症",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 5.463,
-    "y": 5.727,
-    "z": 149.378,
-    "position": {
-      "x": 5.463,
-      "y": 5.727,
-      "z": 149.378
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42262337"
-    ],
-    "sources": [
-      {
-        "pmid": "42262337",
-        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
-        "doi": "10.1080/19490976.2026.2684074",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:29:15 UTC",
-    "updated_at": "2026-07-17 09:29:15 UTC"
-  },
-  {
-    "id": "N000106",
-    "name": "肠上皮完整性",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -3.893,
-    "y": 8.497,
-    "z": 149.011,
-    "position": {
-      "x": -3.893,
-      "y": 8.497,
-      "z": 149.011
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42262337"
-    ],
-    "sources": [
-      {
-        "pmid": "42262337",
-        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
-        "doi": "10.1080/19490976.2026.2684074",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:29:15 UTC",
-    "updated_at": "2026-07-17 09:29:15 UTC"
-  },
-  {
-    "id": "N000107",
-    "name": "Nrf2",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 2.256,
-    "y": -8.161,
-    "z": 150.429,
-    "position": {
-      "x": 2.256,
-      "y": -8.161,
-      "z": 150.429
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42046449"
-    ],
-    "sources": [
-      {
-        "pmid": "42046449",
-        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
-        "doi": "10.1080/13510002.2026.2663621",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:30:47 UTC",
-    "updated_at": "2026-07-17 09:30:47 UTC"
-  },
-  {
-    "id": "N000108",
-    "name": "PERK",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -8.015,
-    "y": 8.162,
-    "z": 147.448,
-    "position": {
-      "x": -8.015,
-      "y": 8.162,
-      "z": 147.448
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "42046449"
-    ],
-    "sources": [
-      {
-        "pmid": "42046449",
-        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
-        "doi": "10.1080/13510002.2026.2663621",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:30:47 UTC",
-    "updated_at": "2026-07-17 09:30:47 UTC"
-  },
-  {
-    "id": "N000109",
-    "name": "Bifidobacterium",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 5.658,
-    "y": 0.088,
-    "z": 148.637,
-    "position": {
-      "x": 5.658,
-      "y": 0.088,
-      "z": 148.637
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:34:51 UTC",
-    "updated_at": "2026-07-17 09:34:51 UTC"
-  },
-  {
-    "id": "N000110",
-    "name": "Bacteroides",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -1.706,
-    "y": 3.121,
-    "z": 148.035,
-    "position": {
-      "x": -1.706,
-      "y": 3.121,
-      "z": 148.035
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:34:51 UTC",
-    "updated_at": "2026-07-17 09:34:51 UTC"
-  },
-  {
-    "id": "N000111",
-    "name": "Mucispirillum",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -3.957,
-    "y": -6.989,
-    "z": 149.678,
-    "position": {
-      "x": -3.957,
-      "y": -6.989,
-      "z": 149.678
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:34:51 UTC",
-    "updated_at": "2026-07-17 09:34:51 UTC"
-  },
-  {
-    "id": "N000112",
-    "name": "短链脂肪酸产生",
-    "type": "其他",
-    "layer": "其他层",
-    "x": -2.073,
-    "y": 4.413,
-    "z": 150.358,
-    "position": {
-      "x": -2.073,
-      "y": 4.413,
-      "z": 150.358
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:34:51 UTC",
-    "updated_at": "2026-07-17 09:34:51 UTC"
-  },
-  {
-    "id": "N000113",
-    "name": "Amuc_1100",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 3.565,
-    "y": 3.683,
-    "z": 147.594,
-    "position": {
-      "x": 3.565,
-      "y": 3.683,
-      "z": 147.594
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:34:51 UTC",
-    "updated_at": "2026-07-17 09:34:51 UTC"
-  },
-  {
-    "id": "N000114",
-    "name": "5-HT产生",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 8.282,
-    "y": 7.576,
-    "z": 148.775,
-    "position": {
-      "x": 8.282,
-      "y": 7.576,
-      "z": 148.775
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41496520"
-    ],
-    "sources": [
-      {
-        "pmid": "41496520",
-        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
-        "doi": "10.1080/19490976.2025.2611546",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:34:51 UTC",
-    "updated_at": "2026-07-17 09:34:51 UTC"
-  },
-  {
-    "id": "N000115",
-    "name": "肺损伤炎症",
-    "type": "其他",
-    "layer": "其他层",
-    "x": 40.793,
-    "y": 62.035,
-    "z": 150.228,
-    "position": {
-      "x": 40.793,
-      "y": 62.035,
-      "z": 150.228
-    },
-    "evidence_count": 1,
-    "evidence_pmids": [
-      "41467904"
-    ],
-    "sources": [
-      {
-        "pmid": "41467904",
-        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
-        "doi": "10.1080/19490976.2025.2606486",
-        "publication_date": "2026-Dec-31"
-      }
-    ],
-    "created_at": "2026-07-17 09:35:03 UTC",
-    "updated_at": "2026-07-17 09:35:03 UTC"
+    ]
   }
 ]
