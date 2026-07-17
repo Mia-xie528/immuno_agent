@@ -2346,10 +2346,11 @@
       "y": 0.613,
       "z": 145.982
     },
-    "evidence_count": 2,
+    "evidence_count": 3,
     "evidence_pmids": [
       "42241031",
-      "41496520"
+      "41496520",
+      "42262337"
     ],
     "sources": [
       {
@@ -2365,10 +2366,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
         "doi": "10.1080/19490976.2025.2611546",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42262337",
+        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
+        "doi": "10.1080/19490976.2026.2684074",
+        "publication_date": "2026-Dec-31"
       }
     ],
     "created_at": "2026-07-16 14:29:14 UTC",
-    "updated_at": "2026-07-16 14:34:22 UTC"
+    "updated_at": "2026-07-17 09:29:15 UTC"
   },
   {
     "id": "N000080",
@@ -2644,9 +2652,10 @@
       "y": -3.872,
       "z": 153.954
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "41496520"
+      "41496520",
+      "42262337"
     ],
     "sources": [
       {
@@ -2655,10 +2664,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
         "doi": "10.1080/19490976.2025.2611546",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42262337",
+        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
+        "doi": "10.1080/19490976.2026.2684074",
+        "publication_date": "2026-Dec-31"
       }
     ],
     "created_at": "2026-07-16 14:34:22 UTC",
-    "updated_at": "2026-07-16 14:34:22 UTC"
+    "updated_at": "2026-07-17 09:29:15 UTC"
   },
   {
     "id": "N000090",
@@ -3073,5 +3089,353 @@
     ],
     "created_at": "2026-07-17 04:58:58 UTC",
     "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "N000104",
+    "name": "omega-3",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.455,
+    "y": 2.806,
+    "z": 149.889,
+    "position": {
+      "x": 3.455,
+      "y": 2.806,
+      "z": 149.889
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42262337"
+    ],
+    "sources": [
+      {
+        "pmid": "42262337",
+        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
+        "doi": "10.1080/19490976.2026.2684074",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:29:15 UTC",
+    "updated_at": "2026-07-17 09:29:15 UTC"
+  },
+  {
+    "id": "N000105",
+    "name": "慢性低度炎症",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.463,
+    "y": 5.727,
+    "z": 149.378,
+    "position": {
+      "x": 5.463,
+      "y": 5.727,
+      "z": 149.378
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42262337"
+    ],
+    "sources": [
+      {
+        "pmid": "42262337",
+        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
+        "doi": "10.1080/19490976.2026.2684074",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:29:15 UTC",
+    "updated_at": "2026-07-17 09:29:15 UTC"
+  },
+  {
+    "id": "N000106",
+    "name": "肠上皮完整性",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -3.893,
+    "y": 8.497,
+    "z": 149.011,
+    "position": {
+      "x": -3.893,
+      "y": 8.497,
+      "z": 149.011
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42262337"
+    ],
+    "sources": [
+      {
+        "pmid": "42262337",
+        "title": "Maternal diet shapes neonatal microbiome ontogenesis and neurometabolic resilience.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42262337/",
+        "doi": "10.1080/19490976.2026.2684074",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:29:15 UTC",
+    "updated_at": "2026-07-17 09:29:15 UTC"
+  },
+  {
+    "id": "N000107",
+    "name": "Nrf2",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 2.256,
+    "y": -8.161,
+    "z": 150.429,
+    "position": {
+      "x": 2.256,
+      "y": -8.161,
+      "z": 150.429
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42046449"
+    ],
+    "sources": [
+      {
+        "pmid": "42046449",
+        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
+        "doi": "10.1080/13510002.2026.2663621",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:30:47 UTC",
+    "updated_at": "2026-07-17 09:30:47 UTC"
+  },
+  {
+    "id": "N000108",
+    "name": "PERK",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -8.015,
+    "y": 8.162,
+    "z": 147.448,
+    "position": {
+      "x": -8.015,
+      "y": 8.162,
+      "z": 147.448
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42046449"
+    ],
+    "sources": [
+      {
+        "pmid": "42046449",
+        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
+        "doi": "10.1080/13510002.2026.2663621",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:30:47 UTC",
+    "updated_at": "2026-07-17 09:30:47 UTC"
+  },
+  {
+    "id": "N000109",
+    "name": "Bifidobacterium",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.658,
+    "y": 0.088,
+    "z": 148.637,
+    "position": {
+      "x": 5.658,
+      "y": 0.088,
+      "z": 148.637
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:34:51 UTC",
+    "updated_at": "2026-07-17 09:34:51 UTC"
+  },
+  {
+    "id": "N000110",
+    "name": "Bacteroides",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -1.706,
+    "y": 3.121,
+    "z": 148.035,
+    "position": {
+      "x": -1.706,
+      "y": 3.121,
+      "z": 148.035
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:34:51 UTC",
+    "updated_at": "2026-07-17 09:34:51 UTC"
+  },
+  {
+    "id": "N000111",
+    "name": "Mucispirillum",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -3.957,
+    "y": -6.989,
+    "z": 149.678,
+    "position": {
+      "x": -3.957,
+      "y": -6.989,
+      "z": 149.678
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:34:51 UTC",
+    "updated_at": "2026-07-17 09:34:51 UTC"
+  },
+  {
+    "id": "N000112",
+    "name": "短链脂肪酸产生",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -2.073,
+    "y": 4.413,
+    "z": 150.358,
+    "position": {
+      "x": -2.073,
+      "y": 4.413,
+      "z": 150.358
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:34:51 UTC",
+    "updated_at": "2026-07-17 09:34:51 UTC"
+  },
+  {
+    "id": "N000113",
+    "name": "Amuc_1100",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.565,
+    "y": 3.683,
+    "z": 147.594,
+    "position": {
+      "x": 3.565,
+      "y": 3.683,
+      "z": 147.594
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:34:51 UTC",
+    "updated_at": "2026-07-17 09:34:51 UTC"
+  },
+  {
+    "id": "N000114",
+    "name": "5-HT产生",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 8.282,
+    "y": 7.576,
+    "z": 148.775,
+    "position": {
+      "x": 8.282,
+      "y": 7.576,
+      "z": 148.775
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:34:51 UTC",
+    "updated_at": "2026-07-17 09:34:51 UTC"
+  },
+  {
+    "id": "N000115",
+    "name": "肺损伤炎症",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 40.793,
+    "y": 62.035,
+    "z": 150.228,
+    "position": {
+      "x": 40.793,
+      "y": 62.035,
+      "z": 150.228
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 09:35:03 UTC",
+    "updated_at": "2026-07-17 09:35:03 UTC"
   }
 ]
