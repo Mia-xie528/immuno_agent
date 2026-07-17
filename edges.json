@@ -1137,7 +1137,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31",
-        "evidence": "EMO alleviated joint inflammation and reduced pro-inflammatory cytokines"
+        "evidence": "reduced pro-inflammatory cytokines"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
@@ -1159,7 +1159,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31",
-        "evidence": "EMO reduced oxidative stress"
+        "evidence": "reduced oxidative stress"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
@@ -1247,7 +1247,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要提到SCFAs altered the metabolic programming of AMs。"
+        "evidence": "摘要说明SCFAs altered the metabolic programming of AMs。"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -1269,7 +1269,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出propionate is the key SCFA mediating the effect via FMT experiments。"
+        "evidence": "摘要指出propionate是介导FR diet效应的关键SCFA。"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -1555,7 +1555,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出fiber-rich diet favor SCFA-producing bacteria and increase SCFA levels。"
+        "evidence": "摘要指出fiber-rich diet促进SCFA-producing bacteria产生propionate。"
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
@@ -2330,5 +2330,225 @@
     ],
     "created_at": "2026-07-17 04:18:51 UTC",
     "updated_at": "2026-07-17 04:18:51 UTC"
+  },
+  {
+    "id": "E000107",
+    "source": "N000038",
+    "target": "N000098",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31",
+        "evidence": "downstream autonomic function"
+      }
+    ],
+    "created_at": "2026-07-17 04:53:03 UTC",
+    "updated_at": "2026-07-17 04:53:03 UTC"
+  },
+  {
+    "id": "E000108",
+    "source": "N000012",
+    "target": "N000099",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41866335"
+    ],
+    "sources": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "doi": "10.1080/13510002.2026.2646383",
+        "publication_date": "2026-Dec-31",
+        "evidence": "restored mitochondrial homeostasis"
+      }
+    ],
+    "created_at": "2026-07-17 04:56:27 UTC",
+    "updated_at": "2026-07-17 04:56:27 UTC"
+  },
+  {
+    "id": "E000109",
+    "source": "N000100",
+    "target": "N000079",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31",
+        "evidence": "suppressed neuroinflammation via reduced hippocampal pro-inflammatory cytokines"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "E000110",
+    "source": "N000100",
+    "target": "N000087",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31",
+        "evidence": "inhibited microglial/astrocyte activation"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "E000111",
+    "source": "N000100",
+    "target": "N000090",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31",
+        "evidence": "repaired intestinal and blood‒brain barrier integrity by upregulating tight junction proteins"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "E000112",
+    "source": "N000100",
+    "target": "N000088",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31",
+        "evidence": "restoring hippocampal 5-HT levels and 5-HT1A receptor expression"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "E000113",
+    "source": "N000100",
+    "target": "N000089",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31",
+        "evidence": "enhanced synaptic plasticity and BDNF upregulation in the hippocampus"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "E000114",
+    "source": "N000100",
+    "target": "N000101",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31",
+        "evidence": "reducing colonic serotonin (5-HT) overproduction"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "E000115",
+    "source": "N000100",
+    "target": "N000102",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31",
+        "evidence": "AmEVs-mediated enrichment of beneficial Bifidobacterium"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "E000116",
+    "source": "N000100",
+    "target": "N000103",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31",
+        "evidence": "suppression of pathogenic Bacteroides and Mucispirillum"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
   }
 ]

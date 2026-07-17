@@ -2899,5 +2899,179 @@
     ],
     "created_at": "2026-07-17 04:18:51 UTC",
     "updated_at": "2026-07-17 04:18:51 UTC"
+  },
+  {
+    "id": "N000098",
+    "name": "自主神经功能",
+    "type": "神经结构",
+    "layer": "神经免疫层",
+    "x": 1.916,
+    "y": -5.013,
+    "z": 57.17,
+    "position": {
+      "x": 1.916,
+      "y": -5.013,
+      "z": 57.17
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 04:53:03 UTC",
+    "updated_at": "2026-07-17 04:53:03 UTC"
+  },
+  {
+    "id": "N000099",
+    "name": "线粒体稳态",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -1.568,
+    "y": -2.566,
+    "z": 150.525,
+    "position": {
+      "x": -1.568,
+      "y": -2.566,
+      "z": 150.525
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41866335"
+    ],
+    "sources": [
+      {
+        "pmid": "41866335",
+        "title": "Ferroptosis inhibition and mitochondrial rescue: a novel mechanism of emodin in rheumatoid arthritis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
+        "doi": "10.1080/13510002.2026.2646383",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 04:56:27 UTC",
+    "updated_at": "2026-07-17 04:56:27 UTC"
+  },
+  {
+    "id": "N000100",
+    "name": "AmEVs",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -8.998,
+    "y": 6.056,
+    "z": 146.749,
+    "position": {
+      "x": -8.998,
+      "y": 6.056,
+      "z": 146.749
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "N000101",
+    "name": "结肠5-HT过度产生",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 2.118,
+    "y": 2.594,
+    "z": 153.088,
+    "position": {
+      "x": 2.118,
+      "y": 2.594,
+      "z": 153.088
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "N000102",
+    "name": "有益双歧杆菌",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -2.521,
+    "y": 7.317,
+    "z": 147.03,
+    "position": {
+      "x": -2.521,
+      "y": 7.317,
+      "z": 147.03
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
+  },
+  {
+    "id": "N000103",
+    "name": "致病菌Bacteroides和Mucispirillum",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -4.049,
+    "y": -3.582,
+    "z": 151.466,
+    "position": {
+      "x": -4.049,
+      "y": -3.582,
+      "z": 151.466
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-17 04:58:58 UTC",
+    "updated_at": "2026-07-17 04:58:58 UTC"
   }
 ]
