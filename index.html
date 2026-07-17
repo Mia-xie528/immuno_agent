@@ -56,8 +56,14 @@
     }
 
     button,
+    input,
     a {
       font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
     }
 
     #graph {
@@ -85,7 +91,7 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      z-index: 100;
+      z-index: 500;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -93,7 +99,7 @@
       transform: translate(-50%, -50%);
       color: #bcefff;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.16em;
       text-shadow:
         0 0 10px rgba(93, 229, 255, 0.85),
@@ -138,10 +144,10 @@
 
     #focus-tip {
       position: fixed;
-      top: 20px;
+      top: 18px;
       left: 50%;
       z-index: 80;
-      max-width: calc(100vw - 40px);
+      max-width: calc(100vw - 420px);
       padding: 10px 16px;
       overflow: hidden;
       transform: translateX(-50%);
@@ -159,6 +165,339 @@
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       pointer-events: none;
+    }
+
+    #date-panel {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 150;
+      width: 330px;
+      max-height: calc(100vh - 40px);
+      padding: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(104, 225, 255, 0.24);
+      border-radius: 22px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(13, 27, 51, 0.88),
+          rgba(3, 8, 20, 0.84)
+        );
+      box-shadow:
+        0 22px 70px rgba(0, 0, 0, 0.48),
+        0 0 28px rgba(67, 216, 255, 0.13),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(24px) saturate(145%);
+      -webkit-backdrop-filter: blur(24px) saturate(145%);
+    }
+
+    .date-panel-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .date-panel-title {
+      margin: 0;
+      color: #f0fbff;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .date-panel-subtitle {
+      margin: 6px 0 0;
+      color: #7f9bb8;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .date-panel-icon {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      flex: 0 0 auto;
+      color: #70ecff;
+      font-size: 19px;
+      border: 1px solid rgba(102, 229, 255, 0.22);
+      border-radius: 12px;
+      background: rgba(74, 221, 255, 0.07);
+      box-shadow: 0 0 18px rgba(76, 221, 255, 0.1);
+    }
+
+    .date-search-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 9px;
+    }
+
+    #date-search-input {
+      width: 100%;
+      min-width: 0;
+      height: 44px;
+      padding: 0 13px;
+      color: #eefcff;
+      font-size: 14px;
+      border: 1px solid rgba(121, 225, 255, 0.21);
+      border-radius: 13px;
+      outline: none;
+      background: rgba(0, 4, 15, 0.68);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.04),
+        0 0 0 0 rgba(86, 225, 255, 0);
+      transition:
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+    }
+
+    #date-search-input::placeholder {
+      color: #58708c;
+    }
+
+    #date-search-input:focus {
+      border-color: rgba(92, 233, 255, 0.72);
+      box-shadow:
+        0 0 0 3px rgba(76, 220, 255, 0.1),
+        0 0 20px rgba(71, 217, 255, 0.1);
+    }
+
+    #date-search-input:disabled {
+      opacity: 0.55;
+      cursor: wait;
+    }
+
+    #date-search-button {
+      height: 44px;
+      padding: 0 17px;
+      color: #03131d;
+      font-size: 13px;
+      font-weight: 850;
+      border: 0;
+      border-radius: 13px;
+      background:
+        linear-gradient(
+          105deg,
+          #62efff,
+          #89aaff 58%,
+          #bd8aff
+        );
+      box-shadow:
+        0 9px 24px rgba(71, 218, 255, 0.22),
+        0 0 18px rgba(139, 112, 255, 0.16);
+      cursor: pointer;
+      transition:
+        transform 150ms ease,
+        box-shadow 150ms ease;
+    }
+
+    #date-search-button:hover {
+      transform: translateY(-1px);
+      box-shadow:
+        0 12px 28px rgba(71, 218, 255, 0.31),
+        0 0 22px rgba(139, 112, 255, 0.23);
+    }
+
+    #date-search-button:disabled {
+      opacity: 0.5;
+      cursor: wait;
+      transform: none;
+    }
+
+    #date-search-message {
+      min-height: 20px;
+      margin: 10px 2px 0;
+      color: #7f9db9;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    #date-search-message.success {
+      color: #7ff5c4;
+    }
+
+    #date-search-message.error {
+      color: #ff8192;
+    }
+
+    #recent-date-section {
+      margin-top: 14px;
+    }
+
+    .panel-section-label {
+      display: block;
+      margin-bottom: 9px;
+      color: #738da8;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    #recent-dates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .recent-date-chip {
+      padding: 7px 10px;
+      color: #bceeff;
+      font-size: 11px;
+      font-weight: 700;
+      border: 1px solid rgba(103, 223, 255, 0.17);
+      border-radius: 999px;
+      background: rgba(74, 221, 255, 0.055);
+      cursor: pointer;
+      transition:
+        color 140ms ease,
+        border-color 140ms ease,
+        background-color 140ms ease,
+        transform 140ms ease;
+    }
+
+    .recent-date-chip:hover,
+    .recent-date-chip.active {
+      color: #04151c;
+      border-color: transparent;
+      background:
+        linear-gradient(
+          100deg,
+          #72f2ff,
+          #b1d8ff
+        );
+      transform: translateY(-1px);
+    }
+
+    #date-results-section {
+      display: none;
+      margin-top: 15px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(126, 220, 255, 0.11);
+    }
+
+    #date-results-section.visible {
+      display: block;
+    }
+
+    .date-results-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    #date-results-summary {
+      min-width: 0;
+      color: #dffaff;
+      font-size: 12px;
+      font-weight: 750;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    #clear-date-filter {
+      flex: 0 0 auto;
+      padding: 6px 9px;
+      color: #ffafba;
+      font-size: 11px;
+      font-weight: 700;
+      border: 1px solid rgba(255, 113, 133, 0.23);
+      border-radius: 9px;
+      background: rgba(255, 72, 101, 0.065);
+      cursor: pointer;
+      transition:
+        border-color 140ms ease,
+        background-color 140ms ease;
+    }
+
+    #clear-date-filter:hover {
+      border-color: rgba(255, 113, 133, 0.55);
+      background: rgba(255, 72, 101, 0.12);
+    }
+
+    #date-results {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      max-height: min(310px, calc(100vh - 385px));
+      padding-right: 3px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(104, 221, 255, 0.34) transparent;
+    }
+
+    #date-results::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    #date-results::-webkit-scrollbar-thumb {
+      border-radius: 999px;
+      background: rgba(104, 221, 255, 0.34);
+    }
+
+    .date-result-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+      padding: 10px 11px;
+      text-align: left;
+      border: 1px solid rgba(118, 222, 255, 0.11);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.035);
+      cursor: pointer;
+      transition:
+        border-color 140ms ease,
+        background-color 140ms ease,
+        transform 140ms ease;
+    }
+
+    .date-result-item:hover {
+      transform: translateX(2px);
+      border-color: rgba(103, 228, 255, 0.34);
+      background: rgba(80, 221, 255, 0.075);
+    }
+
+    .date-result-main {
+      min-width: 0;
+    }
+
+    .date-result-name {
+      display: block;
+      overflow: hidden;
+      color: #eefcff;
+      font-size: 13px;
+      font-weight: 750;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .date-result-type {
+      display: block;
+      margin-top: 4px;
+      overflow: hidden;
+      color: #728da7;
+      font-size: 11px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .date-result-count {
+      min-width: 32px;
+      padding: 5px 7px;
+      color: #8df2ff;
+      font-size: 11px;
+      font-weight: 800;
+      text-align: center;
+      border-radius: 8px;
+      background: rgba(75, 222, 255, 0.08);
     }
 
     #reset-view {
@@ -211,7 +550,7 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      z-index: 500;
+      z-index: 600;
       display: none;
       width: min(720px, calc(100vw - 36px));
       max-height: calc(100vh - 40px);
@@ -257,7 +596,7 @@
     #modal-overlay {
       position: fixed;
       inset: 0;
-      z-index: 300;
+      z-index: 400;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -527,17 +866,30 @@
       fill: currentColor;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
       #focus-tip {
+        display: none;
+      }
+
+      #date-panel {
         top: 12px;
-        max-width: calc(100vw - 24px);
+        left: 12px;
+        width: min(330px, calc(100vw - 24px));
+        max-height: 46vh;
+        padding: 16px;
+      }
+
+      #date-results {
+        max-height: 145px;
       }
 
       #reset-view {
         right: 14px;
         bottom: 14px;
       }
+    }
 
+    @media (max-width: 520px) {
       #node-card {
         padding: 28px 22px 24px;
         border-radius: 22px;
@@ -567,12 +919,63 @@
   </div>
 
   <div id="focus-tip">
-    所有节点名称永久显示；点击节点或流动粒子可聚焦星团
+    点击节点或流动粒子可聚焦星团，所有节点名称永久显示
   </div>
+
+  <aside id="date-panel">
+    <div class="date-panel-header">
+      <div>
+        <h2 class="date-panel-title">按更新日期检索</h2>
+        <p class="date-panel-subtitle">
+          输入日期后，当天更新的节点将自动排列并集中显示。
+        </p>
+      </div>
+
+      <div class="date-panel-icon" aria-hidden="true">⌕</div>
+    </div>
+
+    <div class="date-search-row">
+      <input
+        id="date-search-input"
+        type="text"
+        inputmode="numeric"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="例如：2026.7.16"
+        aria-label="输入节点更新日期"
+        disabled
+      />
+
+      <button id="date-search-button" type="button" disabled>
+        搜索
+      </button>
+    </div>
+
+    <div id="date-search-message">
+      支持 2026.7.16、2026-7-16、2026/7/16
+    </div>
+
+    <div id="recent-date-section">
+      <span class="panel-section-label">最近更新日期</span>
+      <div id="recent-dates"></div>
+    </div>
+
+    <section id="date-results-section">
+      <div class="date-results-header">
+        <div id="date-results-summary"></div>
+
+        <button id="clear-date-filter" type="button">
+          清除筛选
+        </button>
+      </div>
+
+      <div id="date-results"></div>
+    </section>
+  </aside>
 
   <button id="reset-view" type="button">
     <span>◎</span>
-    返回全景
+    <span id="reset-view-label">返回全景</span>
   </button>
 
   <div id="error-panel" role="alert" aria-live="assertive">
@@ -611,7 +1014,7 @@
         </div>
 
         <div class="info-item date-item">
-          <span class="info-label">创建日期（中国标准时间）</span>
+          <span class="info-label">更新日期（中国标准时间）</span>
           <span class="info-value" id="node-created-date"></span>
         </div>
       </div>
@@ -642,8 +1045,10 @@
       "use strict";
 
       const NEW_NODE_WINDOW_MS = 48 * 60 * 60 * 1000;
-      const CAMERA_FOCUS_DURATION = 1100;
-      const CAMERA_RESET_DURATION = 1300;
+      const CAMERA_FOCUS_DURATION = 1000;
+      const CAMERA_RESET_DURATION = 1200;
+      const DATE_LAYOUT_SPACING_X = 48;
+      const DATE_LAYOUT_SPACING_Y = 42;
 
       const TYPE_COLORS = [
         "#48E7FF",
@@ -665,7 +1070,44 @@
       const loadingElement = document.getElementById("loading");
       const errorPanel = document.getElementById("error-panel");
       const errorMessage = document.getElementById("error-message");
+
+      const dateSearchInput = document.getElementById(
+        "date-search-input"
+      );
+
+      const dateSearchButton = document.getElementById(
+        "date-search-button"
+      );
+
+      const dateSearchMessage = document.getElementById(
+        "date-search-message"
+      );
+
+      const recentDatesElement = document.getElementById(
+        "recent-dates"
+      );
+
+      const dateResultsSection = document.getElementById(
+        "date-results-section"
+      );
+
+      const dateResultsSummary = document.getElementById(
+        "date-results-summary"
+      );
+
+      const dateResultsElement = document.getElementById(
+        "date-results"
+      );
+
+      const clearDateFilterButton = document.getElementById(
+        "clear-date-filter"
+      );
+
       const resetViewButton = document.getElementById("reset-view");
+
+      const resetViewLabel = document.getElementById(
+        "reset-view-label"
+      );
 
       const modalOverlay = document.getElementById("modal-overlay");
       const closeModalButton = document.getElementById("close-modal");
@@ -681,18 +1123,27 @@
         "node-created-date"
       );
 
-      const pubmedLinkElement = document.getElementById("pubmed-link");
+      const pubmedLinkElement = document.getElementById(
+        "pubmed-link"
+      );
 
       const animatedNodeObjects = new Set();
+      const nodeObjectById = new Map();
       const glowTextureCache = new Map();
 
       let graph = null;
       let animationFrameId = null;
+      let detailTimer = null;
+
       let graphNodes = [];
       let graphEdges = [];
       let overviewCamera = null;
+
       let currentFocusNodeIds = new Set();
-      let detailTimer = null;
+      let dateFilteredNodeIds = null;
+      let currentDateMatches = [];
+      let activeDateKey = "";
+      let layoutSnapshot = null;
 
       function showError(error) {
         if (animationFrameId !== null) {
@@ -851,11 +1302,11 @@
         }
 
         match = text.match(
-          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*(?:UTC|GMT)$/i
+          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*(?:北京时间|北京标准时间)$/i
         );
 
         if (match) {
-          return createUtcDate(
+          return createChinaStandardDate(
             Number(match[1]),
             Number(match[2]),
             Number(match[3]),
@@ -866,11 +1317,11 @@
         }
 
         match = text.match(
-          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*(?:北京时间|北京标准时间)$/i
+          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*(?:UTC|GMT)$/i
         );
 
         if (match) {
-          return createChinaStandardDate(
+          return createUtcDate(
             Number(match[1]),
             Number(match[2]),
             Number(match[3]),
@@ -908,16 +1359,7 @@
         return null;
       }
 
-      function formatCreatedDate(value) {
-        const date =
-          value instanceof Date
-            ? value
-            : parseNodeCreatedAt(value);
-
-        if (!date || Number.isNaN(date.getTime())) {
-          return "日期未知";
-        }
-
+      function getChinaDateParts(date) {
         const parts = new Intl.DateTimeFormat("zh-CN", {
           timeZone: "Asia/Shanghai",
           year: "numeric",
@@ -931,7 +1373,83 @@
           partMap[part.type] = part.value;
         });
 
-        return `${partMap.year}.${partMap.month}.${partMap.day}`;
+        return {
+          year: Number(partMap.year),
+          month: Number(partMap.month),
+          day: Number(partMap.day)
+        };
+      }
+
+      function formatCreatedDate(value) {
+        const date =
+          value instanceof Date
+            ? value
+            : parseNodeCreatedAt(value);
+
+        if (!date || Number.isNaN(date.getTime())) {
+          return "日期未知";
+        }
+
+        const parts = getChinaDateParts(date);
+
+        return `${parts.year}.${parts.month}.${parts.day}`;
+      }
+
+      function normalizeDateQuery(value) {
+        if (typeof value !== "string") {
+          return null;
+        }
+
+        const normalized = value
+          .trim()
+          .replace(/\s+/g, "")
+          .replace(/年/g, ".")
+          .replace(/月/g, ".")
+          .replace(/日/g, "")
+          .replace(/[-/]/g, ".")
+          .replace(/\.+/g, ".");
+
+        const match = normalized.match(
+          /^(\d{4})\.(\d{1,2})\.(\d{1,2})$/
+        );
+
+        if (!match) {
+          return null;
+        }
+
+        const year = Number(match[1]);
+        const month = Number(match[2]);
+        const day = Number(match[3]);
+
+        const testDate = new Date(
+          Date.UTC(year, month - 1, day)
+        );
+
+        if (
+          testDate.getUTCFullYear() !== year ||
+          testDate.getUTCMonth() !== month - 1 ||
+          testDate.getUTCDate() !== day
+        ) {
+          return null;
+        }
+
+        return `${year}.${month}.${day}`;
+      }
+
+      function dateKeyToTimestamp(dateKey) {
+        const match = String(dateKey).match(
+          /^(\d{4})\.(\d{1,2})\.(\d{1,2})$/
+        );
+
+        if (!match) {
+          return 0;
+        }
+
+        return Date.UTC(
+          Number(match[1]),
+          Number(match[2]) - 1,
+          Number(match[3])
+        );
       }
 
       function isNewNode(createdAt) {
@@ -1029,6 +1547,7 @@
 
       function createNodeObject(node) {
         const group = new THREE.Group();
+
         const radius = getNodeRadius(node);
         const coreColor = getNodeColor(node);
         const glowColor = getNodeGlowColor(node);
@@ -1093,9 +1612,7 @@
         });
 
         const glowSprite = new THREE.Sprite(glowMaterial);
-
-        const glowScale =
-          radius * (node.__isNew ? 7.2 : 5.6);
+        const glowScale = radius * (node.__isNew ? 7.2 : 5.6);
 
         glowSprite.scale.set(glowScale, glowScale, 1);
         glowSprite.renderOrder = 1;
@@ -1140,7 +1657,7 @@
         group.add(label);
 
         group.userData = {
-          nodeId: node.id,
+          nodeId: String(node.id),
           innerSphere,
           outerSphere,
           glowSprite,
@@ -1148,10 +1665,13 @@
           isNew: node.__isNew,
           phase: Math.random() * Math.PI * 2,
           targetOpacity: 1,
-          currentOpacity: 1
+          currentOpacity: 1,
+          targetLabelOpacity: 1,
+          currentLabelOpacity: 1
         };
 
         animatedNodeObjects.add(group);
+        nodeObjectById.set(String(node.id), group);
 
         return group;
       }
@@ -1227,7 +1747,10 @@
       }
 
       function getNodeId(nodeOrId) {
-        if (nodeOrId && typeof nodeOrId === "object") {
+        if (
+          nodeOrId &&
+          typeof nodeOrId === "object"
+        ) {
           return String(nodeOrId.id);
         }
 
@@ -1298,9 +1821,14 @@
 
         const center = nodes.reduce(
           (accumulator, node) => {
-            accumulator.x += node.x;
-            accumulator.y += node.y;
-            accumulator.z += node.z;
+            const x = Number.isFinite(node.fx) ? node.fx : node.x;
+            const y = Number.isFinite(node.fy) ? node.fy : node.y;
+            const z = Number.isFinite(node.fz) ? node.fz : node.z;
+
+            accumulator.x += x;
+            accumulator.y += y;
+            accumulator.z += z;
+
             return accumulator;
           },
           { x: 0, y: 0, z: 0 }
@@ -1313,9 +1841,13 @@
         let radius = 0;
 
         nodes.forEach((node) => {
-          const dx = node.x - center.x;
-          const dy = node.y - center.y;
-          const dz = node.z - center.z;
+          const x = Number.isFinite(node.fx) ? node.fx : node.x;
+          const y = Number.isFinite(node.fy) ? node.fy : node.y;
+          const z = Number.isFinite(node.fz) ? node.fz : node.z;
+
+          const dx = x - center.x;
+          const dy = y - center.y;
+          const dz = z - center.z;
 
           radius = Math.max(
             radius,
@@ -1350,7 +1882,7 @@
           !Number.isFinite(direction.z) ||
           direction.lengthSq() < 0.001
         ) {
-          direction.set(0.42, 0.24, 1).normalize();
+          direction.set(0.3, 0.18, 1).normalize();
         }
 
         const fieldOfView =
@@ -1360,8 +1892,8 @@
           radius / Math.tan(fieldOfView / 2);
 
         const distance = Math.max(
-          70,
-          Math.min(580, fitDistance * 1.25 + 38)
+          75,
+          Math.min(720, fitDistance * 1.35 + 44)
         );
 
         return {
@@ -1371,21 +1903,179 @@
         };
       }
 
-      function setFocusedVisuals(focusedIds) {
-        currentFocusNodeIds = new Set(focusedIds);
-
+      function updateNodeVisualStates() {
         animatedNodeObjects.forEach((object) => {
-          const isFocused = currentFocusNodeIds.has(
-            String(object.userData.nodeId)
-          );
+          const nodeId = String(object.userData.nodeId);
 
-          object.userData.targetOpacity =
-            currentFocusNodeIds.size === 0 || isFocused
-              ? 1
-              : 0.24;
+          const matchesDate =
+            !dateFilteredNodeIds ||
+            dateFilteredNodeIds.has(nodeId);
 
-          object.userData.label.material.opacity = 1;
+          const matchesFocus =
+            currentFocusNodeIds.size === 0 ||
+            currentFocusNodeIds.has(nodeId);
+
+          if (matchesDate && matchesFocus) {
+            object.userData.targetOpacity = 1;
+            object.userData.targetLabelOpacity = 1;
+          } else if (!matchesDate) {
+            object.userData.targetOpacity = 0.055;
+            object.userData.targetLabelOpacity = 0.22;
+          } else {
+            object.userData.targetOpacity = 0.22;
+            object.userData.targetLabelOpacity = 0.48;
+          }
         });
+      }
+
+      function setFocusedVisuals(focusedIds) {
+        currentFocusNodeIds = new Set(
+          focusedIds.map(String)
+        );
+
+        updateNodeVisualStates();
+      }
+
+      function getLinkSourceId(link) {
+        return getNodeId(link.source);
+      }
+
+      function getLinkTargetId(link) {
+        return getNodeId(link.target);
+      }
+
+      function linkMatchesDateFilter(link) {
+        if (!dateFilteredNodeIds) {
+          return true;
+        }
+
+        return (
+          dateFilteredNodeIds.has(getLinkSourceId(link)) &&
+          dateFilteredNodeIds.has(getLinkTargetId(link))
+        );
+      }
+
+      function linkTouchesDateFilter(link) {
+        if (!dateFilteredNodeIds) {
+          return true;
+        }
+
+        return (
+          dateFilteredNodeIds.has(getLinkSourceId(link)) ||
+          dateFilteredNodeIds.has(getLinkTargetId(link))
+        );
+      }
+
+      function getBaseLinkColor(link) {
+        const relation = String(link.relation);
+
+        if (relation.includes("抑制")) {
+          return "#FF5288";
+        }
+
+        if (relation.includes("促进")) {
+          return "#7DF5FF";
+        }
+
+        return "#C49BFF";
+      }
+
+      function linkColorAccessor(link) {
+        if (!dateFilteredNodeIds) {
+          const relation = String(link.relation);
+
+          if (relation.includes("抑制")) {
+            return "rgba(255, 64, 112, 0.74)";
+          }
+
+          if (relation.includes("促进")) {
+            return "rgba(74, 228, 255, 0.72)";
+          }
+
+          return "rgba(166, 128, 255, 0.68)";
+        }
+
+        if (linkMatchesDateFilter(link)) {
+          return getBaseLinkColor(link);
+        }
+
+        if (linkTouchesDateFilter(link)) {
+          return "rgba(90, 124, 154, 0.14)";
+        }
+
+        return "rgba(36, 48, 68, 0.025)";
+      }
+
+      function linkOpacityAccessor(link) {
+        if (!dateFilteredNodeIds) {
+          return 0.74;
+        }
+
+        if (linkMatchesDateFilter(link)) {
+          return 0.9;
+        }
+
+        if (linkTouchesDateFilter(link)) {
+          return 0.13;
+        }
+
+        return 0.025;
+      }
+
+      function linkWidthAccessor(link) {
+        const relation = String(link.relation);
+        const baseWidth = relation.includes("抑制") ? 1.3 : 1;
+
+        if (!dateFilteredNodeIds) {
+          return baseWidth;
+        }
+
+        return linkMatchesDateFilter(link)
+          ? baseWidth * 1.35
+          : 0.25;
+      }
+
+      function linkParticleCountAccessor(link) {
+        if (
+          dateFilteredNodeIds &&
+          !linkMatchesDateFilter(link)
+        ) {
+          return 0;
+        }
+
+        return String(link.relation).includes("抑制")
+          ? 7
+          : 6;
+      }
+
+      function linkParticleWidthAccessor(link) {
+        if (
+          dateFilteredNodeIds &&
+          !linkMatchesDateFilter(link)
+        ) {
+          return 0;
+        }
+
+        return String(link.relation).includes("抑制")
+          ? 2.5
+          : 2.15;
+      }
+
+      function refreshLinkStyles() {
+        if (!graph) {
+          return;
+        }
+
+        graph
+          .linkColor(linkColorAccessor)
+          .linkOpacity(linkOpacityAccessor)
+          .linkWidth(linkWidthAccessor)
+          .linkDirectionalParticles(linkParticleCountAccessor)
+          .linkDirectionalParticleWidth(linkParticleWidthAccessor);
+
+        if (typeof graph.refresh === "function") {
+          graph.refresh();
+        }
       }
 
       function stopAutoRotation() {
@@ -1429,18 +2119,28 @@
           CAMERA_FOCUS_DURATION
         );
 
+        resetViewLabel.textContent = dateFilteredNodeIds
+          ? "返回日期结果"
+          : "返回全景";
+
         resetViewButton.classList.add("visible");
       }
 
       function focusOnNode(node) {
-        focusOnCluster([node.id], 1);
+        focusOnCluster(
+          [node.id],
+          dateFilteredNodeIds ? 0 : 1
+        );
       }
 
       function focusOnLink(link) {
-        const sourceId = getNodeId(link.source);
-        const targetId = getNodeId(link.target);
-
-        focusOnCluster([sourceId, targetId], 1);
+        focusOnCluster(
+          [
+            getNodeId(link.source),
+            getNodeId(link.target)
+          ],
+          dateFilteredNodeIds ? 0 : 1
+        );
       }
 
       function calculateOverviewCamera(nodes) {
@@ -1478,7 +2178,7 @@
 
         const distance = Math.max(
           280,
-          Math.min(1300, fitDistance * 1.38 + 100)
+          Math.min(1400, fitDistance * 1.38 + 100)
         );
 
         return {
@@ -1495,13 +2195,167 @@
         overviewCamera = calculateOverviewCamera(graphNodes);
       }
 
-      function resetOverview() {
+      function ensureLayoutSnapshot() {
+        if (layoutSnapshot) {
+          return;
+        }
+
+        layoutSnapshot = new Map();
+
+        graphNodes.forEach((node) => {
+          layoutSnapshot.set(String(node.id), {
+            x: Number.isFinite(node.x) ? node.x : 0,
+            y: Number.isFinite(node.y) ? node.y : 0,
+            z: Number.isFinite(node.z) ? node.z : 0,
+            fx: Number.isFinite(node.fx) ? node.fx : null,
+            fy: Number.isFinite(node.fy) ? node.fy : null,
+            fz: Number.isFinite(node.fz) ? node.fz : null
+          });
+        });
+      }
+
+      function restoreSnapshotPositions(removeSnapshot = false) {
+        if (!layoutSnapshot) {
+          return;
+        }
+
+        graphNodes.forEach((node) => {
+          const saved = layoutSnapshot.get(String(node.id));
+
+          if (!saved) {
+            return;
+          }
+
+          node.x = saved.x;
+          node.y = saved.y;
+          node.z = saved.z;
+
+          node.vx = 0;
+          node.vy = 0;
+          node.vz = 0;
+
+          node.fx = saved.fx;
+          node.fy = saved.fy;
+          node.fz = saved.fz;
+        });
+
+        if (removeSnapshot) {
+          layoutSnapshot = null;
+        }
+      }
+
+      function arrangeDateNodes(nodes) {
+        ensureLayoutSnapshot();
+        restoreSnapshotPositions(false);
+
+        const sortedNodes = [...nodes].sort((a, b) => {
+          const evidenceDifference =
+            Number(b.evidence_count) -
+            Number(a.evidence_count);
+
+          if (evidenceDifference !== 0) {
+            return evidenceDifference;
+          }
+
+          return String(a.name).localeCompare(
+            String(b.name),
+            "zh-CN"
+          );
+        });
+
+        const count = sortedNodes.length;
+        const columns = Math.max(
+          1,
+          Math.ceil(Math.sqrt(count))
+        );
+
+        const rows = Math.ceil(count / columns);
+
+        sortedNodes.forEach((node, index) => {
+          const column = index % columns;
+          const row = Math.floor(index / columns);
+
+          const x =
+            (column - (columns - 1) / 2) *
+            DATE_LAYOUT_SPACING_X;
+
+          const y =
+            ((rows - 1) / 2 - row) *
+            DATE_LAYOUT_SPACING_Y;
+
+          const z =
+            ((index % 3) - 1) * 5;
+
+          node.x = x;
+          node.y = y;
+          node.z = z;
+
+          node.fx = x;
+          node.fy = y;
+          node.fz = z;
+
+          node.vx = 0;
+          node.vy = 0;
+          node.vz = 0;
+        });
+
+        if (graph) {
+          graph.d3ReheatSimulation();
+        }
+      }
+
+      function focusDateResults() {
+        if (
+          !graph ||
+          !currentDateMatches.length
+        ) {
+          return;
+        }
+
+        closeNodeModal();
+        stopAutoRotation();
+
+        currentFocusNodeIds = new Set();
+        updateNodeVisualStates();
+
+        const bounds = calculateClusterBounds(
+          currentDateMatches
+        );
+
+        if (!bounds) {
+          return;
+        }
+
+        const cameraPosition = getCameraPositionForCluster(
+          bounds.center,
+          bounds.radius + 20
+        );
+
+        graph.cameraPosition(
+          cameraPosition,
+          bounds.center,
+          CAMERA_FOCUS_DURATION
+        );
+
+        resetViewButton.classList.remove("visible");
+      }
+
+      function resetCurrentView() {
         if (!graph) {
           return;
         }
 
         closeNodeModal();
-        setFocusedVisuals([]);
+        currentFocusNodeIds = new Set();
+        updateNodeVisualStates();
+
+        if (
+          dateFilteredNodeIds &&
+          currentDateMatches.length
+        ) {
+          focusDateResults();
+          return;
+        }
 
         if (!overviewCamera) {
           saveOverviewCamera();
@@ -1516,10 +2370,247 @@
         resetViewButton.classList.remove("visible");
 
         window.setTimeout(() => {
-          if (graph && currentFocusNodeIds.size === 0) {
+          if (
+            graph &&
+            !dateFilteredNodeIds &&
+            currentFocusNodeIds.size === 0
+          ) {
             graph.controls().autoRotate = true;
           }
         }, CAMERA_RESET_DURATION + 100);
+      }
+
+      function setDateSearchMessage(message, status = "") {
+        dateSearchMessage.textContent = message;
+        dateSearchMessage.classList.remove("success", "error");
+
+        if (status) {
+          dateSearchMessage.classList.add(status);
+        }
+      }
+
+      function setActiveRecentDateChip(dateKey) {
+        document
+          .querySelectorAll(".recent-date-chip")
+          .forEach((button) => {
+            button.classList.toggle(
+              "active",
+              button.dataset.date === dateKey
+            );
+          });
+      }
+
+      function renderRecentDates() {
+        const dateCounts = new Map();
+
+        graphNodes.forEach((node) => {
+          const key = node.__displayDate;
+
+          dateCounts.set(
+            key,
+            (dateCounts.get(key) || 0) + 1
+          );
+        });
+
+        const sortedDates = [...dateCounts.keys()]
+          .sort(
+            (a, b) =>
+              dateKeyToTimestamp(b) -
+              dateKeyToTimestamp(a)
+          )
+          .slice(0, 7);
+
+        recentDatesElement.innerHTML = "";
+
+        if (!sortedDates.length) {
+          recentDatesElement.textContent = "暂无日期";
+          return;
+        }
+
+        sortedDates.forEach((dateKey) => {
+          const button = document.createElement("button");
+
+          button.type = "button";
+          button.className = "recent-date-chip";
+          button.dataset.date = dateKey;
+          button.textContent =
+            `${dateKey} · ${dateCounts.get(dateKey)}`;
+
+          button.addEventListener("click", () => {
+            dateSearchInput.value = dateKey;
+            performDateSearch();
+          });
+
+          recentDatesElement.appendChild(button);
+        });
+      }
+
+      function renderDateResults(nodes, dateKey) {
+        dateResultsElement.innerHTML = "";
+
+        dateResultsSummary.textContent =
+          `${dateKey} · ${nodes.length} 个节点`;
+
+        nodes.forEach((node) => {
+          const button = document.createElement("button");
+
+          button.type = "button";
+          button.className = "date-result-item";
+
+          const main = document.createElement("span");
+          main.className = "date-result-main";
+
+          const name = document.createElement("span");
+          name.className = "date-result-name";
+          name.textContent = node.__isNew
+            ? `${node.name} ✨新`
+            : node.name;
+
+          const type = document.createElement("span");
+          type.className = "date-result-type";
+          type.textContent = node.type;
+
+          const count = document.createElement("span");
+          count.className = "date-result-count";
+          count.textContent = Number(
+            node.evidence_count
+          ).toLocaleString("zh-CN");
+
+          main.appendChild(name);
+          main.appendChild(type);
+
+          button.appendChild(main);
+          button.appendChild(count);
+
+          button.addEventListener("click", () => {
+            handleNodeClick(node);
+          });
+
+          dateResultsElement.appendChild(button);
+        });
+
+        dateResultsSection.classList.add("visible");
+      }
+
+      function performDateSearch() {
+        if (!graph) {
+          return;
+        }
+
+        const dateKey = normalizeDateQuery(
+          dateSearchInput.value
+        );
+
+        if (!dateKey) {
+          setDateSearchMessage(
+            "日期格式不正确，请输入例如：2026.7.16",
+            "error"
+          );
+
+          dateSearchInput.focus();
+          return;
+        }
+
+        const matchedNodes = graphNodes
+          .filter(
+            (node) =>
+              node.__displayDate === dateKey
+          )
+          .sort((a, b) => {
+            const evidenceDifference =
+              Number(b.evidence_count) -
+              Number(a.evidence_count);
+
+            if (evidenceDifference !== 0) {
+              return evidenceDifference;
+            }
+
+            return String(a.name).localeCompare(
+              String(b.name),
+              "zh-CN"
+            );
+          });
+
+        if (!matchedNodes.length) {
+          setDateSearchMessage(
+            `${dateKey} 没有更新节点`,
+            "error"
+          );
+
+          return;
+        }
+
+        activeDateKey = dateKey;
+        currentDateMatches = matchedNodes;
+
+        dateFilteredNodeIds = new Set(
+          matchedNodes.map(
+            (node) => String(node.id)
+          )
+        );
+
+        currentFocusNodeIds = new Set();
+
+        closeNodeModal();
+        stopAutoRotation();
+
+        arrangeDateNodes(matchedNodes);
+        updateNodeVisualStates();
+        refreshLinkStyles();
+
+        renderDateResults(matchedNodes, dateKey);
+        setActiveRecentDateChip(dateKey);
+
+        setDateSearchMessage(
+          `已排列显示 ${matchedNodes.length} 个节点`,
+          "success"
+        );
+
+        window.setTimeout(() => {
+          focusDateResults();
+        }, 100);
+      }
+
+      function clearDateFilter() {
+        if (!graph) {
+          return;
+        }
+
+        closeNodeModal();
+
+        restoreSnapshotPositions(true);
+
+        dateFilteredNodeIds = null;
+        currentDateMatches = [];
+        currentFocusNodeIds = new Set();
+        activeDateKey = "";
+
+        updateNodeVisualStates();
+        refreshLinkStyles();
+
+        dateResultsSection.classList.remove("visible");
+        dateResultsElement.innerHTML = "";
+        dateResultsSummary.textContent = "";
+
+        dateSearchInput.value = "";
+
+        setDateSearchMessage(
+          "支持 2026.7.16、2026-7-16、2026/7/16"
+        );
+
+        setActiveRecentDateChip("");
+
+        if (graph) {
+          graph.d3ReheatSimulation();
+        }
+
+        resetViewLabel.textContent = "返回全景";
+        resetViewButton.classList.remove("visible");
+
+        window.setTimeout(() => {
+          saveOverviewCamera();
+          resetCurrentView();
+        }, 80);
       }
 
       function validateNodes(nodes) {
@@ -1611,7 +2702,9 @@
           }
 
           node.__createdAtDate = parsedCreatedAt;
-          node.__displayDate = formatCreatedDate(parsedCreatedAt);
+          node.__displayDate = formatCreatedDate(
+            parsedCreatedAt
+          );
           node.__isNew = isNewNode(node.created_at);
 
           nodeIds.add(node.id);
@@ -1813,14 +2906,6 @@
           innerSphere.scale.setScalar(corePulse);
           outerSphere.scale.setScalar(haloPulse);
 
-          const baseGlowOpacity = isNew ? 0.88 : 0.58;
-
-          const glowPulse =
-            Math.sin(
-              elapsed * (isNew ? 2.1 : 1.45) + phase
-            ) *
-            (isNew ? 0.11 : 0.1);
-
           const targetOpacity =
             typeof object.userData.targetOpacity === "number"
               ? object.userData.targetOpacity
@@ -1833,11 +2918,36 @@
 
           const nextOpacity =
             currentOpacity +
-            (targetOpacity - currentOpacity) * 0.08;
+            (targetOpacity - currentOpacity) * 0.09;
 
           object.userData.currentOpacity = nextOpacity;
 
-          innerSphere.material.opacity = 0.99 * nextOpacity;
+          const targetLabelOpacity =
+            typeof object.userData.targetLabelOpacity === "number"
+              ? object.userData.targetLabelOpacity
+              : 1;
+
+          const currentLabelOpacity =
+            typeof object.userData.currentLabelOpacity === "number"
+              ? object.userData.currentLabelOpacity
+              : 1;
+
+          const nextLabelOpacity =
+            currentLabelOpacity +
+            (targetLabelOpacity - currentLabelOpacity) * 0.1;
+
+          object.userData.currentLabelOpacity = nextLabelOpacity;
+
+          const baseGlowOpacity = isNew ? 0.88 : 0.58;
+
+          const glowPulse =
+            Math.sin(
+              elapsed * (isNew ? 2.1 : 1.45) + phase
+            ) *
+            (isNew ? 0.11 : 0.1);
+
+          innerSphere.material.opacity =
+            0.99 * nextOpacity;
 
           outerSphere.material.opacity =
             (isNew ? 0.29 : 0.16) * nextOpacity;
@@ -1845,12 +2955,8 @@
           glowSprite.material.opacity =
             (baseGlowOpacity + glowPulse) * nextOpacity;
 
-          /*
-           * 所有节点名称永久保持完全可见：
-           * 不受新旧状态、聚焦状态或球体透明度影响。
-           */
-          label.material.opacity = 1;
           label.visible = true;
+          label.material.opacity = nextLabelOpacity;
         });
 
         animationFrameId =
@@ -1886,27 +2992,9 @@
           .nodeLabel(() => "")
           .linkSource("source")
           .linkTarget("target")
-          .linkColor((link) => {
-            const relation = String(link.relation);
-
-            if (relation.includes("抑制")) {
-              return "rgba(255, 64, 112, 0.74)";
-            }
-
-            if (relation.includes("促进")) {
-              return "rgba(74, 228, 255, 0.72)";
-            }
-
-            return "rgba(166, 128, 255, 0.68)";
-          })
-          .linkWidth((link) => {
-            const relation = String(link.relation);
-
-            return relation.includes("抑制")
-              ? 1.25
-              : 0.95;
-          })
-          .linkOpacity(0.74)
+          .linkColor(linkColorAccessor)
+          .linkWidth(linkWidthAccessor)
+          .linkOpacity(linkOpacityAccessor)
           .linkDirectionalArrowLength(3.7)
           .linkDirectionalArrowRelPos(0.87)
           .linkDirectionalArrowColor((link) => {
@@ -1922,44 +3010,18 @@
 
             return "#B68BFF";
           })
-          .linkDirectionalParticles((link) => {
-            const relation = String(link.relation);
-
-            return relation.includes("抑制")
-              ? 7
-              : 6;
-          })
-          .linkDirectionalParticleWidth((link) => {
-            const relation = String(link.relation);
-
-            return relation.includes("抑制")
-              ? 2.5
-              : 2.15;
-          })
+          .linkDirectionalParticles(linkParticleCountAccessor)
+          .linkDirectionalParticleWidth(linkParticleWidthAccessor)
           .linkDirectionalParticleSpeed((link) => {
-            const relation = String(link.relation);
-
-            return relation.includes("抑制")
+            return String(link.relation).includes("抑制")
               ? 0.006
               : 0.0045;
           })
-          .linkDirectionalParticleColor((link) => {
-            const relation = String(link.relation);
-
-            if (relation.includes("抑制")) {
-              return "#FF5288";
-            }
-
-            if (relation.includes("促进")) {
-              return "#7DF5FF";
-            }
-
-            return "#C49BFF";
-          })
+          .linkDirectionalParticleColor(getBaseLinkColor)
           .linkDirectionalParticleResolution(16)
           .onNodeClick(handleNodeClick)
           .onLinkClick(handleLinkClick)
-          .onBackgroundClick(resetOverview)
+          .onBackgroundClick(resetCurrentView)
           .onNodeHover((node) => {
             graphElement.style.cursor = node
               ? "pointer"
@@ -2080,6 +3142,11 @@
           0
         );
 
+        renderRecentDates();
+
+        dateSearchInput.disabled = false;
+        dateSearchButton.disabled = false;
+
         loadingElement.style.display = "none";
 
         animateNodeGlow();
@@ -2089,6 +3156,25 @@
         }, 1800);
       }
 
+      dateSearchButton.addEventListener(
+        "click",
+        performDateSearch
+      );
+
+      dateSearchInput.addEventListener(
+        "keydown",
+        (event) => {
+          if (event.key === "Enter") {
+            performDateSearch();
+          }
+        }
+      );
+
+      clearDateFilterButton.addEventListener(
+        "click",
+        clearDateFilter
+      );
+
       closeModalButton.addEventListener(
         "click",
         closeNodeModal
@@ -2096,7 +3182,7 @@
 
       resetViewButton.addEventListener(
         "click",
-        resetOverview
+        resetCurrentView
       );
 
       modalOverlay.addEventListener(
@@ -2117,7 +3203,7 @@
             ) {
               closeNodeModal();
             } else {
-              resetOverview();
+              resetCurrentView();
             }
           }
         }
