@@ -2,3073 +2,448 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-  />
-  <meta name="theme-color" content="#02030a" />
-  <title>中医免疫 3D 知识图谱</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#02040b" />
+  <title>中医免疫 PubMed 3D 知识图谱</title>
 
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three-spritetext@1.9.3/dist/three-spritetext.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.73.4/dist/3d-force-graph.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.26.0/dist/index.js"></script>
 
   <style>
     :root {
       color-scheme: dark;
-      font-family:
-        Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC",
-        system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 50% 42%, #101a35 0%, #060916 38%, #02030a 72%, #000106 100%);
-    }
-
-    body {
-      position: relative;
-    }
-
-    button,
-    input,
-    a {
-      font: inherit;
-    }
-
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    #graph {
-      position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      background:
-        radial-gradient(circle at 50% 48%, rgba(19, 42, 83, 0.2), transparent 45%),
-        #010208;
-    }
-
-    #graph canvas {
-      display: block;
-      width: 100%;
-      height: 100%;
-      outline: none;
-    }
-
-    #loading {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      z-index: 500;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 18px;
-      transform: translate(-50%, -50%);
-      color: #bcefff;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-shadow:
-        0 0 10px rgba(93, 229, 255, 0.85),
-        0 0 24px rgba(101, 121, 255, 0.45);
-      pointer-events: none;
-    }
-
-    .loading-orbit {
-      position: relative;
-      width: 58px;
-      height: 58px;
-      border: 1px solid rgba(91, 225, 255, 0.24);
-      border-top-color: #66edff;
-      border-right-color: #9c8cff;
-      border-radius: 50%;
-      box-shadow:
-        0 0 22px rgba(60, 218, 255, 0.35),
-        inset 0 0 20px rgba(117, 87, 255, 0.16);
-      animation: loading-spin 1.2s linear infinite;
-    }
-
-    .loading-orbit::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 11px;
-      height: 11px;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      background: #e8fbff;
-      box-shadow:
-        0 0 10px #82eeff,
-        0 0 24px #6a8cff;
-    }
-
-    @keyframes loading-spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    #focus-tip {
-      position: fixed;
-      top: 18px;
-      left: 50%;
-      z-index: 80;
-      max-width: calc(100vw - 440px);
-      padding: 10px 16px;
-      overflow: hidden;
-      transform: translateX(-50%);
-      color: rgba(218, 248, 255, 0.84);
-      font-size: 12px;
-      letter-spacing: 0.06em;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      border: 1px solid rgba(101, 222, 255, 0.16);
-      border-radius: 999px;
-      background: rgba(4, 10, 25, 0.58);
-      box-shadow:
-        0 8px 28px rgba(0, 0, 0, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      pointer-events: none;
-    }
-
-    /* 日期搜索面板：展开状态 */
-    #date-panel {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 150;
-      width: 330px;
-      height: auto;
-      max-height: calc(100vh - 40px);
-      padding: 20px;
-      overflow: hidden;
-      border: 1px solid rgba(104, 225, 255, 0.24);
-      border-radius: 22px;
-      background:
-        linear-gradient(145deg, rgba(13, 27, 51, 0.9), rgba(3, 8, 20, 0.86));
-      box-shadow:
-        0 22px 70px rgba(0, 0, 0, 0.48),
-        0 0 28px rgba(67, 216, 255, 0.13),
-        inset 0 1px 0 rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(24px) saturate(145%);
-      -webkit-backdrop-filter: blur(24px) saturate(145%);
-      transition:
-        width 220ms ease,
-        height 220ms ease,
-        padding 220ms ease,
-        border-radius 220ms ease,
-        box-shadow 220ms ease;
-    }
-
-    /* 日期搜索面板：收缩状态 */
-    #date-panel.collapsed {
-      width: 58px;
-      height: 58px;
-      padding: 0;
-      border-radius: 18px;
-      box-shadow:
-        0 12px 36px rgba(0, 0, 0, 0.44),
-        0 0 24px rgba(72, 221, 255, 0.17);
-    }
-
-    #date-panel-content {
-      width: 290px;
-      opacity: 1;
-      transform: translateY(0) scale(1);
-      transform-origin: top left;
-      transition:
-        opacity 150ms ease,
-        transform 180ms ease;
-    }
-
-    #date-panel.collapsed #date-panel-content {
-      opacity: 0;
-      transform: translateY(-8px) scale(0.94);
-      pointer-events: none;
-      user-select: none;
-    }
-
-    #date-panel-toggle {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      z-index: 5;
-      display: grid;
-      place-items: center;
-      width: 38px;
-      height: 38px;
-      padding: 0;
-      color: #8ceeff;
-      border: 1px solid rgba(102, 229, 255, 0.24);
-      border-radius: 12px;
-      background: rgba(74, 221, 255, 0.07);
-      box-shadow: 0 0 18px rgba(76, 221, 255, 0.1);
-      cursor: pointer;
-      transition:
-        width 220ms ease,
-        height 220ms ease,
-        inset 220ms ease,
-        border-radius 220ms ease,
-        color 150ms ease,
-        background-color 150ms ease;
-    }
-
-    #date-panel-toggle:hover {
-      color: #e8fdff;
-      background: rgba(82, 226, 255, 0.15);
-    }
-
-    #date-panel.collapsed #date-panel-toggle {
-      top: 0;
-      right: 0;
-      width: 58px;
-      height: 58px;
-      border: 0;
-      border-radius: 18px;
-      background: transparent;
-    }
-
-    #date-panel-toggle svg {
-      width: 21px;
-      height: 21px;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .date-panel-header {
-      padding-right: 48px;
-      margin-bottom: 16px;
-    }
-
-    .date-panel-title {
-      margin: 0;
-      color: #f0fbff;
-      font-size: 17px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-    }
-
-    .date-panel-subtitle {
-      margin: 6px 0 0;
-      color: #7f9bb8;
-      font-size: 12px;
-      line-height: 1.55;
-    }
-
-    .date-search-row {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 9px;
-    }
-
-    #date-search-input {
-      width: 100%;
-      min-width: 0;
-      height: 44px;
-      padding: 0 13px;
-      color: #eefcff;
-      font-size: 14px;
-      border: 1px solid rgba(121, 225, 255, 0.21);
-      border-radius: 13px;
-      outline: none;
-      background: rgba(0, 4, 15, 0.68);
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.04),
-        0 0 0 0 rgba(86, 225, 255, 0);
-      transition:
-        border-color 150ms ease,
-        box-shadow 150ms ease;
-    }
-
-    #date-search-input::placeholder {
-      color: #58708c;
-    }
-
-    #date-search-input:focus {
-      border-color: rgba(92, 233, 255, 0.72);
-      box-shadow:
-        0 0 0 3px rgba(76, 220, 255, 0.1),
-        0 0 20px rgba(71, 217, 255, 0.1);
-    }
-
-    #date-search-input:disabled {
-      opacity: 0.55;
-      cursor: wait;
-    }
-
-    #date-search-button {
-      height: 44px;
-      padding: 0 17px;
-      color: #03131d;
-      font-size: 13px;
-      font-weight: 850;
-      border: 0;
-      border-radius: 13px;
-      background: linear-gradient(105deg, #62efff, #89aaff 58%, #bd8aff);
-      box-shadow:
-        0 9px 24px rgba(71, 218, 255, 0.22),
-        0 0 18px rgba(139, 112, 255, 0.16);
-      cursor: pointer;
-      transition:
-        transform 150ms ease,
-        box-shadow 150ms ease;
-    }
-
-    #date-search-button:hover {
-      transform: translateY(-1px);
-      box-shadow:
-        0 12px 28px rgba(71, 218, 255, 0.31),
-        0 0 22px rgba(139, 112, 255, 0.23);
-    }
-
-    #date-search-button:disabled {
-      opacity: 0.5;
-      cursor: wait;
-      transform: none;
-    }
-
-    #date-search-message {
-      min-height: 20px;
-      margin: 10px 2px 0;
-      color: #7f9db9;
-      font-size: 12px;
-      line-height: 1.5;
-    }
-
-    #date-search-message.success {
-      color: #7ff5c4;
-    }
-
-    #date-search-message.error {
-      color: #ff8192;
-    }
-
-    #recent-date-section {
-      margin-top: 14px;
-    }
-
-    .panel-section-label {
-      display: block;
-      margin-bottom: 9px;
-      color: #738da8;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    #recent-dates {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
-    .recent-date-chip {
-      padding: 7px 10px;
-      color: #bceeff;
-      font-size: 11px;
-      font-weight: 700;
-      border: 1px solid rgba(103, 223, 255, 0.17);
-      border-radius: 999px;
-      background: rgba(74, 221, 255, 0.055);
-      cursor: pointer;
-      transition:
-        color 140ms ease,
-        border-color 140ms ease,
-        background-color 140ms ease,
-        transform 140ms ease;
-    }
-
-    .recent-date-chip:hover,
-    .recent-date-chip.active {
-      color: #04151c;
-      border-color: transparent;
-      background: linear-gradient(100deg, #72f2ff, #b1d8ff);
-      transform: translateY(-1px);
-    }
-
-    #date-results-section {
-      display: none;
-      margin-top: 15px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(126, 220, 255, 0.11);
-    }
-
-    #date-results-section.visible {
-      display: block;
-    }
-
-    .date-results-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    #date-results-summary {
-      min-width: 0;
-      overflow: hidden;
-      color: #dffaff;
-      font-size: 12px;
-      font-weight: 750;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    #clear-date-filter {
-      flex: 0 0 auto;
-      padding: 6px 9px;
-      color: #ffafba;
-      font-size: 11px;
-      font-weight: 700;
-      border: 1px solid rgba(255, 113, 133, 0.23);
-      border-radius: 9px;
-      background: rgba(255, 72, 101, 0.065);
-      cursor: pointer;
-    }
-
-    #date-results {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-      max-height: min(310px, calc(100vh - 385px));
-      padding-right: 3px;
-      overflow-y: auto;
-      scrollbar-width: thin;
-      scrollbar-color: rgba(104, 221, 255, 0.34) transparent;
-    }
-
-    #date-results::-webkit-scrollbar,
-    #publication-list::-webkit-scrollbar {
-      width: 5px;
-    }
-
-    #date-results::-webkit-scrollbar-thumb,
-    #publication-list::-webkit-scrollbar-thumb {
-      border-radius: 999px;
-      background: rgba(104, 221, 255, 0.34);
-    }
-
-    .date-result-item {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 10px;
-      align-items: center;
-      width: 100%;
-      padding: 10px 11px;
-      text-align: left;
-      border: 1px solid rgba(118, 222, 255, 0.11);
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.035);
-      cursor: pointer;
-      transition:
-        border-color 140ms ease,
-        background-color 140ms ease,
-        transform 140ms ease;
-    }
-
-    .date-result-item:hover {
-      transform: translateX(2px);
-      border-color: rgba(103, 228, 255, 0.34);
-      background: rgba(80, 221, 255, 0.075);
-    }
-
-    .date-result-main {
-      min-width: 0;
-    }
-
-    .date-result-name,
-    .date-result-type {
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .date-result-name {
-      color: #eefcff;
-      font-size: 13px;
-      font-weight: 750;
-    }
-
-    .date-result-type {
-      margin-top: 4px;
-      color: #728da7;
-      font-size: 11px;
-    }
-
-    .date-result-count {
-      min-width: 32px;
-      padding: 5px 7px;
-      color: #8df2ff;
-      font-size: 11px;
-      font-weight: 800;
-      text-align: center;
-      border-radius: 8px;
-      background: rgba(75, 222, 255, 0.08);
-    }
-
-    #reset-view {
-      position: fixed;
-      right: 22px;
-      bottom: 22px;
-      z-index: 120;
-      display: none;
-      align-items: center;
-      gap: 8px;
-      min-height: 44px;
-      padding: 10px 16px;
-      color: #dffaff;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      border: 1px solid rgba(103, 227, 255, 0.34);
-      border-radius: 14px;
-      background: linear-gradient(145deg, rgba(20, 43, 70, 0.84), rgba(5, 12, 28, 0.84));
-      box-shadow:
-        0 14px 36px rgba(0, 0, 0, 0.38),
-        0 0 22px rgba(64, 220, 255, 0.14);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      cursor: pointer;
-    }
-
-    #reset-view.visible {
-      display: inline-flex;
-    }
-
-    #error-panel {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      z-index: 600;
-      display: none;
-      width: min(720px, calc(100vw - 36px));
-      max-height: calc(100vh - 40px);
-      padding: 28px 30px;
-      overflow: auto;
-      transform: translate(-50%, -50%);
-      color: #ffd2d7;
-      background: linear-gradient(145deg, rgba(62, 8, 19, 0.94), rgba(24, 4, 11, 0.92));
-      border: 1px solid rgba(255, 75, 98, 0.72);
-      border-radius: 20px;
-      box-shadow:
-        0 24px 80px rgba(0, 0, 0, 0.65),
-        0 0 34px rgba(255, 39, 72, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(20px) saturate(145%);
-      -webkit-backdrop-filter: blur(20px) saturate(145%);
-      text-align: center;
-      line-height: 1.75;
-      word-break: break-word;
-    }
-
-    #error-panel strong {
-      display: block;
-      margin-bottom: 12px;
-      color: #ff536b;
-      font-size: 22px;
-      letter-spacing: 0.06em;
-      text-shadow: 0 0 16px rgba(255, 56, 86, 0.62);
-    }
-
-    #error-message {
-      display: block;
-      color: #ffc2c9;
-      font-size: 15px;
-      white-space: pre-wrap;
-    }
-
-    #modal-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 400;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      visibility: hidden;
-      opacity: 0;
-      background:
-        radial-gradient(circle at center, rgba(28, 52, 91, 0.18), transparent 42%),
-        rgba(0, 1, 8, 0.72);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      transition:
-        opacity 180ms ease,
-        visibility 180ms ease;
-    }
-
-    #modal-overlay.visible {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    #node-card {
-      position: relative;
-      width: min(860px, 100%);
-      max-height: calc(100vh - 48px);
-      padding: 32px;
-      overflow: hidden;
-      transform: translateY(18px) scale(0.965);
-      border: 1px solid rgba(124, 224, 255, 0.3);
-      border-radius: 26px;
-      background: linear-gradient(145deg, rgba(20, 35, 64, 0.9), rgba(6, 10, 25, 0.88));
-      box-shadow:
-        0 34px 100px rgba(0, 0, 0, 0.7),
-        0 0 36px rgba(54, 215, 255, 0.18),
-        inset 0 1px 0 rgba(255, 255, 255, 0.11);
-      backdrop-filter: blur(28px) saturate(150%);
-      -webkit-backdrop-filter: blur(28px) saturate(150%);
-      transition: transform 220ms ease;
-    }
-
-    #modal-overlay.visible #node-card {
-      transform: translateY(0) scale(1);
-    }
-
-    #node-card::before,
-    #node-card::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      pointer-events: none;
-    }
-
-    #node-card::before {
-      top: -160px;
-      right: -130px;
-      width: 330px;
-      height: 330px;
-      background: radial-gradient(circle, rgba(74, 226, 255, 0.24), rgba(74, 226, 255, 0) 68%);
-    }
-
-    #node-card::after {
-      bottom: -190px;
-      left: -150px;
-      width: 360px;
-      height: 360px;
-      background: radial-gradient(circle, rgba(133, 91, 255, 0.2), rgba(133, 91, 255, 0) 68%);
-    }
-
-    #close-modal {
-      position: absolute;
-      top: 18px;
-      right: 18px;
-      z-index: 8;
-      width: 40px;
-      height: 40px;
-      padding: 0;
-      color: #dffaff;
-      font-size: 25px;
-      line-height: 36px;
-      border: 1px solid rgba(141, 230, 255, 0.25);
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.055);
-      cursor: pointer;
-      transition:
-        transform 160ms ease,
-        border-color 160ms ease,
-        background-color 160ms ease;
-    }
-
-    #close-modal:hover {
-      transform: rotate(90deg);
-      border-color: rgba(141, 230, 255, 0.65);
-      background: rgba(88, 221, 255, 0.14);
-    }
-
-    .card-scroll {
-      position: relative;
-      z-index: 2;
-      max-height: calc(100vh - 112px);
-      padding-right: 4px;
-      overflow-y: auto;
-    }
-
-    .card-kicker {
-      margin-bottom: 10px;
-      color: #62e9ff;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    #new-node-badge {
-      display: none;
-      width: fit-content;
-      margin-bottom: 12px;
-      padding: 5px 10px;
-      color: #151b00;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 0.1em;
-      border-radius: 999px;
-      background: linear-gradient(100deg, #f9ffbc, #caff5f, #fff6ae);
-      box-shadow:
-        0 0 16px rgba(217, 255, 92, 0.45),
-        0 0 30px rgba(255, 240, 128, 0.24);
-    }
-
-    #new-node-badge.visible {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    #node-name {
-      margin: 0 52px 22px 0;
-      color: #f2fcff;
-      font-size: clamp(25px, 5vw, 36px);
-      line-height: 1.28;
-      text-shadow:
-        0 0 14px rgba(102, 229, 255, 0.26),
-        0 0 28px rgba(93, 122, 255, 0.18);
-      word-break: break-word;
-    }
-
-    .node-info-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-
-    .info-item {
-      min-width: 0;
-      padding: 14px 15px;
-      border: 1px solid rgba(137, 222, 255, 0.14);
-      border-radius: 15px;
-      background: rgba(255, 255, 255, 0.045);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045);
-    }
-
-    .info-label {
-      display: block;
-      margin-bottom: 7px;
-      color: #849bb8;
-      font-size: 12px;
-      letter-spacing: 0.08em;
-    }
-
-    .info-value {
-      display: block;
-      overflow: hidden;
-      color: #eefcff;
-      font-size: 16px;
-      font-weight: 750;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    #node-created-date {
-      color: #9ceeff;
-    }
-
-    .publication-section {
-      margin-top: 4px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(126, 220, 255, 0.13);
-    }
-
-    .publication-section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 12px;
-    }
-
-    .publication-section-title {
-      margin: 0;
-      color: #f0fbff;
-      font-size: 17px;
-      font-weight: 800;
-    }
-
-    #publication-count {
-      padding: 5px 9px;
-      color: #8eefff;
-      font-size: 11px;
-      font-weight: 800;
-      border-radius: 999px;
-      background: rgba(75, 222, 255, 0.08);
-    }
-
-    #publication-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-height: min(390px, 48vh);
-      padding-right: 5px;
-      overflow-y: auto;
-      scrollbar-width: thin;
-      scrollbar-color: rgba(104, 221, 255, 0.34) transparent;
-    }
-
-    .publication-empty {
-      padding: 20px;
-      color: #7891aa;
-      font-size: 13px;
-      line-height: 1.7;
-      text-align: center;
-      border: 1px dashed rgba(123, 218, 255, 0.18);
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.025);
-    }
-
-    .publication-card {
-      padding: 15px 16px;
-      border: 1px solid rgba(118, 222, 255, 0.13);
-      border-radius: 15px;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.045), rgba(86, 129, 180, 0.025));
-      transition:
-        border-color 150ms ease,
-        background-color 150ms ease,
-        transform 150ms ease;
-    }
-
-    .publication-card:hover {
-      transform: translateY(-1px);
-      border-color: rgba(106, 231, 255, 0.34);
-      background: rgba(77, 218, 255, 0.065);
-    }
-
-    .publication-title {
-      margin: 0 0 9px;
-      color: #f3fcff;
-      font-size: 14px;
-      font-weight: 800;
-      line-height: 1.55;
-    }
-
-    .publication-meta {
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.9fr) auto auto;
-      gap: 8px 12px;
-      align-items: start;
-      color: #829ab3;
-      font-size: 11px;
-      line-height: 1.55;
-    }
-
-    .publication-meta-item {
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .publication-meta-label {
-      color: #5f7b97;
-      margin-right: 4px;
-    }
-
-    .publication-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 28px;
-      padding: 5px 9px;
-      color: #07131c;
-      font-size: 11px;
-      font-weight: 850;
-      text-decoration: none;
-      border-radius: 8px;
-      background: linear-gradient(105deg, #70efff, #a7c4ff);
-      white-space: nowrap;
-    }
-
-    #pubmed-search-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      min-height: 52px;
-      margin-top: 16px;
-      padding: 13px 18px;
-      color: #03141e;
-      font-size: 14px;
-      font-weight: 850;
-      letter-spacing: 0.035em;
-      text-decoration: none;
-      border-radius: 15px;
-      background: linear-gradient(100deg, #64f0ff, #83afff 56%, #bc88ff);
-      box-shadow:
-        0 12px 30px rgba(76, 222, 255, 0.26),
-        0 0 24px rgba(140, 112, 255, 0.22);
-    }
-
-    .pubmed-icon {
-      width: 20px;
-      height: 20px;
-      flex: 0 0 auto;
-      fill: currentColor;
-    }
-
-    @media (max-width: 900px) {
-      #focus-tip {
-        display: none;
-      }
-
-      #date-panel {
-        top: 12px;
-        left: 12px;
-        width: min(330px, calc(100vw - 24px));
-        max-height: 48vh;
-        padding: 16px;
-      }
-
-      #date-panel.collapsed {
-        width: 56px;
-        height: 56px;
-        padding: 0;
-      }
-
-      #date-panel.collapsed #date-panel-toggle {
-        width: 56px;
-        height: 56px;
-      }
-
-      #date-results {
-        max-height: 145px;
-      }
-
-      #reset-view {
-        right: 14px;
-        bottom: 14px;
-      }
-
-      .node-info-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .publication-meta {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 560px) {
-      #node-card {
-        padding: 26px 20px 22px;
-        border-radius: 22px;
-      }
-
-      .node-info-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .publication-meta {
-        grid-template-columns: 1fr;
-      }
-
-      .publication-link {
-        justify-self: start;
-      }
-    }
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      --panel: rgba(8, 15, 32, .88);
+      --panel-2: rgba(12, 24, 48, .78);
+      --line: rgba(115, 221, 255, .22);
+      --cyan: #6feaff;
+      --text: #edfaff;
+      --muted: #86a0bd;
+      --danger: #ff647e;
+      --success: #73efbd;
+      --gold: #e8ff77;
+    }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #010208; }
+    button, input, select, textarea { font: inherit; }
+    button { -webkit-tap-highlight-color: transparent; }
+    #graph { position: fixed; inset: 0; background: radial-gradient(circle at 52% 45%, #0d1830 0, #040713 40%, #010208 75%); }
+    #graph canvas { display: block; outline: none; }
+
+    .glass {
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(15, 29, 56, .9), rgba(3, 8, 20, .88));
+      box-shadow: 0 24px 80px rgba(0,0,0,.55), inset 0 1px rgba(255,255,255,.07);
+      backdrop-filter: blur(22px) saturate(145%);
+      -webkit-backdrop-filter: blur(22px) saturate(145%);
+    }
+
+    #loading, #error-panel {
+      position: fixed; inset: 50% auto auto 50%; transform: translate(-50%, -50%); z-index: 1000;
+    }
+    #loading { display: flex; flex-direction: column; align-items: center; gap: 14px; color: #c8f5ff; letter-spacing: .12em; }
+    .spinner { width: 52px; height: 52px; border: 2px solid rgba(94,228,255,.2); border-top-color: #6defff; border-right-color: #a787ff; border-radius: 50%; animation: spin 1s linear infinite; box-shadow: 0 0 25px rgba(70,220,255,.3); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #error-panel { display: none; width: min(720px, calc(100vw - 32px)); padding: 28px; color: #ffcbd2; text-align: center; border: 1px solid rgba(255,78,103,.7); border-radius: 22px; background: rgba(43,5,14,.94); box-shadow: 0 0 40px rgba(255,40,72,.25); }
+    #error-panel strong { display: block; margin-bottom: 10px; color: var(--danger); font-size: 23px; }
+    #error-message { white-space: pre-wrap; line-height: 1.7; }
+
+    #top-tip { position: fixed; top: 15px; left: 50%; z-index: 80; transform: translateX(-50%); padding: 9px 16px; max-width: min(760px, calc(100vw - 150px)); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #cfefff; font-size: 12px; border: 1px solid rgba(110,220,255,.18); border-radius: 999px; background: rgba(3,10,24,.66); pointer-events: none; }
+
+    #control-shell { position: fixed; left: 16px; top: 16px; z-index: 200; width: 370px; max-height: calc(100vh - 32px); border-radius: 24px; transition: width .2s ease, height .2s ease; overflow: hidden; }
+    #control-shell.collapsed { width: 58px; height: 58px; border-radius: 18px; }
+    #panel-toggle { position: absolute; right: 12px; top: 12px; z-index: 5; width: 42px; height: 42px; display: grid; place-items: center; color: var(--cyan); border: 1px solid rgba(111,230,255,.28); border-radius: 14px; background: rgba(18,40,65,.72); cursor: pointer; }
+    #panel-toggle svg { width: 21px; fill: none; stroke: currentColor; stroke-width: 2; }
+    #control-shell.collapsed #panel-toggle { right: 8px; top: 8px; }
+    #panel-content { max-height: calc(100vh - 32px); overflow: hidden; transition: opacity .15s; }
+    #control-shell.collapsed #panel-content { opacity: 0; pointer-events: none; }
+    .panel-head { padding: 19px 68px 8px 20px; }
+    .panel-head h1 { margin: 0; font-size: 20px; color: var(--text); }
+    .panel-head p { margin: 7px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .tabs { display: flex; gap: 5px; padding: 9px 14px 10px; overflow-x: auto; }
+    .tab-btn { flex: 0 0 auto; padding: 8px 10px; color: #93abc5; font-size: 11px; border: 1px solid transparent; border-radius: 10px; background: transparent; cursor: pointer; }
+    .tab-btn.active { color: #05141d; font-weight: 800; background: linear-gradient(100deg,#68ecff,#b08cff); }
+    .panel-scroll { max-height: calc(100vh - 145px); padding: 0 14px 18px; overflow-y: auto; scrollbar-width: thin; }
+    .tab-page { display: none; }
+    .tab-page.active { display: block; }
+    .section { margin-top: 10px; padding: 13px; border: 1px solid rgba(117,218,255,.12); border-radius: 16px; background: rgba(255,255,255,.025); }
+    .section-title { margin: 0 0 10px; color: #dff8ff; font-size: 13px; font-weight: 800; }
+    .hint { color: #708ba8; font-size: 11px; line-height: 1.5; }
+    .field { margin-bottom: 10px; }
+    .field label { display: block; margin-bottom: 5px; color: #8da6c0; font-size: 11px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
+    input, select { width: 100%; height: 39px; padding: 0 10px; color: #edfbff; border: 1px solid rgba(116,218,255,.18); border-radius: 11px; outline: none; background: rgba(0,5,17,.72); }
+    input:focus, select:focus { border-color: rgba(100,234,255,.62); box-shadow: 0 0 0 3px rgba(72,220,255,.08); }
+    input[type="checkbox"] { width: auto; height: auto; accent-color: #65eaff; }
+    input[type="range"] { padding: 0; height: 28px; border: 0; background: transparent; }
+    .check-row { display: flex; align-items: center; gap: 7px; color: #9bb3ca; font-size: 12px; }
+    .actions { display: flex; gap: 7px; flex-wrap: wrap; }
+    .btn { min-height: 37px; padding: 8px 12px; color: #dffaff; font-size: 12px; font-weight: 700; border: 1px solid rgba(106,224,255,.22); border-radius: 11px; background: rgba(72,219,255,.07); cursor: pointer; }
+    .btn:hover { border-color: rgba(106,224,255,.6); background: rgba(72,219,255,.14); }
+    .btn.primary { color: #04151d; border: 0; background: linear-gradient(100deg,#67edff,#a98bff); }
+    .btn.danger { color: #ffc0ca; border-color: rgba(255,93,117,.25); background: rgba(255,70,96,.07); }
+    .btn.active { color: #07151b; background: var(--gold); }
+    .status { min-height: 18px; margin-top: 8px; color: #7e99b5; font-size: 11px; line-height: 1.5; }
+    .status.ok { color: var(--success); } .status.error { color: var(--danger); }
+    .result-list { display: flex; flex-direction: column; gap: 6px; max-height: 230px; margin-top: 9px; overflow-y: auto; }
+    .result-item { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 8px; align-items: center; padding: 9px 10px; text-align: left; border: 1px solid rgba(110,218,255,.1); border-radius: 11px; background: rgba(255,255,255,.025); cursor: pointer; }
+    .result-item:hover { border-color: rgba(100,230,255,.38); background: rgba(70,220,255,.07); }
+    .result-name { overflow: hidden; color: #ecfbff; font-size: 12px; font-weight: 750; text-overflow: ellipsis; white-space: nowrap; }
+    .result-sub { margin-top: 3px; color: #6e89a5; font-size: 10px; }
+    .badge { display: inline-flex; align-items: center; padding: 4px 7px; color: #a9edff; font-size: 10px; border-radius: 999px; background: rgba(76,218,255,.08); }
+    .legend { display: flex; flex-direction: column; gap: 6px; }
+    .legend-row { display: grid; grid-template-columns: 13px minmax(0,1fr) auto; gap: 8px; align-items: center; padding: 7px 8px; border-radius: 9px; cursor: pointer; }
+    .legend-row:hover { background: rgba(255,255,255,.04); }
+    .legend-row.off { opacity: .35; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; box-shadow: 0 0 9px currentColor; }
+    .legend-name { color: #cfe8f4; font-size: 11px; }
+    .legend-count { color: #66829e; font-size: 10px; }
+    #time-chart { width: 100%; height: 100px; border-radius: 10px; background: rgba(0,4,14,.55); }
+    .compare-output { margin-top: 9px; padding: 10px; color: #a9bfd1; font-size: 11px; line-height: 1.65; border-radius: 10px; background: rgba(0,5,16,.55); white-space: pre-wrap; }
+    .path-output { margin-top: 8px; color: #d9f6ff; font-size: 11px; line-height: 1.6; word-break: break-word; }
+
+    #reset-view, #selection-toolbar { position: fixed; z-index: 160; bottom: 18px; }
+    #reset-view { right: 18px; display: none; }
+    #reset-view.visible { display: inline-flex; }
+    #selection-toolbar { left: 50%; transform: translateX(-50%); display: none; gap: 7px; padding: 8px; border-radius: 14px; }
+    #selection-toolbar.visible { display: flex; }
+    #selection-rect { position: fixed; z-index: 500; display: none; border: 1px solid #73efff; background: rgba(78,220,255,.12); pointer-events: none; }
+
+    .overlay { position: fixed; inset: 0; z-index: 600; display: flex; align-items: center; justify-content: center; padding: 20px; visibility: hidden; opacity: 0; background: rgba(0,1,8,.7); backdrop-filter: blur(10px); transition: .18s; }
+    .overlay.visible { visibility: visible; opacity: 1; }
+    .modal { position: relative; width: min(760px, 100%); max-height: min(88vh, 900px); padding: 24px; overflow-y: auto; border-radius: 24px; transform: translateY(14px) scale(.98); transition: .2s; }
+    .overlay.visible .modal { transform: none; }
+    .close { position: absolute; right: 14px; top: 14px; width: 38px; height: 38px; color: #dffaff; font-size: 24px; border: 1px solid rgba(120,225,255,.22); border-radius: 50%; background: rgba(255,255,255,.05); cursor: pointer; }
+    .kicker { color: var(--cyan); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .modal h2 { margin: 8px 48px 17px 0; color: #f0fbff; font-size: 28px; line-height: 1.25; }
+    .info-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; margin-bottom: 16px; }
+    .info { padding: 11px; border: 1px solid rgba(115,220,255,.12); border-radius: 12px; background: rgba(255,255,255,.03); }
+    .info b { display: block; margin-bottom: 5px; color: #718da8; font-size: 10px; font-weight: 600; }
+    .info span { color: #eafaff; font-size: 13px; word-break: break-word; }
+    .modal-section { margin-top: 14px; padding-top: 13px; border-top: 1px solid rgba(112,218,255,.12); }
+    .modal-section h3 { margin: 0 0 10px; color: #dff8ff; font-size: 14px; }
+    .pub-list, .evidence-list { display: flex; flex-direction: column; gap: 9px; }
+    .pub-card { padding: 12px; border: 1px solid rgba(115,218,255,.11); border-radius: 13px; background: rgba(255,255,255,.025); }
+    .pub-title { color: #eefcff; font-size: 13px; font-weight: 750; line-height: 1.5; }
+    .pub-meta { margin-top: 7px; color: #7e99b5; font-size: 11px; line-height: 1.6; }
+    .pub-links { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 8px; }
+    .pub-link { display: inline-flex; padding: 6px 9px; color: #06151c; font-size: 11px; font-weight: 800; text-decoration: none; border-radius: 9px; background: linear-gradient(100deg,#68edff,#a88eff); }
+    .evidence-quote { margin-top: 8px; padding: 9px 10px; color: #b9ccdc; font-size: 11px; line-height: 1.65; border-left: 2px solid #6cecff; background: rgba(74,220,255,.045); }
+    .warning { padding: 10px; color: #ffd0a7; font-size: 12px; line-height: 1.6; border: 1px solid rgba(255,163,77,.25); border-radius: 11px; background: rgba(255,130,45,.07); }
+    .metrics-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    .metrics-table th, .metrics-table td { padding: 8px; border-bottom: 1px solid rgba(112,218,255,.08); text-align: left; }
+    .metrics-table th { color: #7893af; } .metrics-table td { color: #d7eff8; }
+    .compare-table-wrap { overflow-x: auto; }
+
+    @media (max-width: 800px) {
+      #top-tip { display: none; }
+      #control-shell { left: 10px; top: 10px; width: min(360px, calc(100vw - 20px)); max-height: calc(100vh - 20px); }
+      #control-shell.collapsed { width: 56px; height: 56px; }
+      .panel-scroll { max-height: calc(100vh - 135px); }
+      .info-grid { grid-template-columns: 1fr 1fr; }
+      .modal { padding: 20px 16px; }
+    }
+    @media (max-width: 480px) { .grid2, .grid3, .info-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
-
 <body>
   <div id="graph"></div>
+  <div id="loading"><div class="spinner"></div><div>正在构建科研知识图谱</div></div>
+  <div id="top-tip">单击节点查看证据；双击固定；点击连线查看关系证据；Shift 点击可多选</div>
 
-  <div id="loading">
-    <div class="loading-orbit"></div>
-    <div>正在加载知识图谱</div>
-  </div>
-
-  <div id="focus-tip">
-    点击节点或流动粒子可聚焦星团，所有节点名称永久显示
-  </div>
-
-  <aside id="date-panel">
-    <button
-      id="date-panel-toggle"
-      type="button"
-      aria-label="收缩日期搜索面板"
-      aria-expanded="true"
-      title="收缩日期搜索面板"
-    >
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="11" cy="11" r="6.5"></circle>
-        <path d="M16 16l4 4"></path>
-      </svg>
+  <aside id="control-shell" class="glass">
+    <button id="panel-toggle" aria-label="收缩控制面板" title="收缩/展开控制面板">
+      <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
     </button>
+    <div id="panel-content">
+      <div class="panel-head"><h1>中医免疫知识图谱</h1><p>PubMed 证据检索、路径探索、时间演化与科研导出</p></div>
+      <nav class="tabs">
+        <button class="tab-btn active" data-tab="search">检索</button>
+        <button class="tab-btn" data-tab="explore">探索</button>
+        <button class="tab-btn" data-tab="time">时间</button>
+        <button class="tab-btn" data-tab="display">显示</button>
+        <button class="tab-btn" data-tab="export">导出</button>
+      </nav>
+      <div class="panel-scroll">
+        <section class="tab-page active" id="tab-search">
+          <div class="section">
+            <h3 class="section-title">实体多条件检索</h3>
+            <div class="field"><label>名称、拼音、英文或文献关键词</label><input id="q" placeholder="例：黄芪 / huangqi / inflammation" /></div>
+            <div class="grid2">
+              <div class="field"><label>实体类型</label><select id="type-filter"><option value="">全部类型</option></select></div>
+              <div class="field"><label>新旧节点</label><select id="new-filter"><option value="all">全部</option><option value="new">仅 48 小时内新增</option><option value="old">仅旧节点</option></select></div>
+            </div>
+            <div class="grid2">
+              <div class="field"><label>最少文献数</label><input id="min-evidence" type="number" min="0" placeholder="0" /></div>
+              <div class="field"><label>最多文献数</label><input id="max-evidence" type="number" min="0" placeholder="不限" /></div>
+            </div>
+            <div class="field"><label>更新日期（可选）</label><input id="date-filter" placeholder="2026.7.16" /></div>
+            <div class="actions"><button id="search-btn" class="btn primary">组合搜索</button><button id="clear-search" class="btn">清除</button></div>
+            <div id="search-status" class="status"></div>
+            <div id="search-results" class="result-list"></div>
+          </div>
+        </section>
 
-    <div id="date-panel-content">
-      <div class="date-panel-header">
-        <h2 class="date-panel-title">按更新日期检索</h2>
-        <p class="date-panel-subtitle">
-          输入日期后，当天更新的节点将自动排列并集中显示。
-        </p>
+        <section class="tab-page" id="tab-explore">
+          <div class="section">
+            <h3 class="section-title">多跳关系探索</h3>
+            <div class="field"><label>起始实体</label><input id="explore-node" list="node-list" placeholder="输入或选择实体" /></div>
+            <div class="field"><label>邻居深度</label><select id="hop-depth"><option value="0">仅当前节点</option><option value="1" selected>一阶邻居</option><option value="2">二阶邻居</option><option value="3">三阶邻居</option></select></div>
+            <div class="actions"><button id="explore-btn" class="btn primary">开始探索</button><button id="clear-highlight" class="btn">清除高亮</button></div>
+            <div id="explore-status" class="status"></div>
+          </div>
+          <div class="section">
+            <h3 class="section-title">最短路径查询</h3>
+            <div class="field"><label>起点</label><input id="path-start" list="node-list" placeholder="例：黄芪" /></div>
+            <div class="field"><label>终点</label><input id="path-end" list="node-list" placeholder="例：类风湿关节炎" /></div>
+            <label class="check-row"><input id="directed-path" type="checkbox" /> 仅按关系方向查询</label>
+            <div class="actions" style="margin-top:9px"><button id="path-btn" class="btn primary">查找路径</button></div>
+            <div id="path-output" class="path-output"></div>
+          </div>
+          <div class="section">
+            <h3 class="section-title">节点固定、框选与研究集合</h3>
+            <div class="actions"><button id="box-select-btn" class="btn">框选节点</button><button id="compare-btn" class="btn">对比已选节点</button><button id="clear-selection" class="btn">清空选择</button></div>
+            <div id="selection-status" class="status">Shift 点击节点也可加入多选。</div>
+            <div class="field"><label>研究集合名称</label><input id="collection-name" placeholder="例：NF-κB 炎症轴" /></div>
+            <div class="actions"><button id="save-collection" class="btn">保存已选节点</button></div>
+            <div id="collections" class="result-list"></div>
+          </div>
+        </section>
+
+        <section class="tab-page" id="tab-time">
+          <div class="section">
+            <h3 class="section-title">时间轴播放</h3>
+            <div class="field"><label id="timeline-label">日期</label><input id="timeline" type="range" min="0" max="0" value="0" /></div>
+            <label class="check-row"><input id="cumulative" type="checkbox" /> 只显示截至该日的数据（累计模式）</label>
+            <div class="actions" style="margin-top:9px"><button id="apply-time" class="btn primary">应用日期</button><button id="play-day" class="btn">按天播放</button><button id="play-week" class="btn">按周播放</button><button id="stop-play" class="btn">停止</button><button id="clear-time" class="btn">清除</button></div>
+            <canvas id="time-chart" width="320" height="100"></canvas>
+            <div id="time-status" class="status"></div>
+          </div>
+          <div class="section">
+            <h3 class="section-title">数据版本比较</h3>
+            <div class="grid2"><div class="field"><label>较早日期</label><input id="compare-a" placeholder="2026.7.15" /></div><div class="field"><label>较晚日期</label><input id="compare-b" placeholder="2026.7.16" /></div></div>
+            <button id="version-compare" class="btn primary">比较版本</button>
+            <div id="version-output" class="compare-output">支持 deleted_at 与 history 字段；当前增强数据已提供历史快照结构。</div>
+          </div>
+        </section>
+
+        <section class="tab-page" id="tab-display">
+          <div class="section">
+            <h3 class="section-title">视觉编码</h3>
+            <div class="field"><label>节点颜色</label><select id="color-mode"><option value="type">按实体类型</option><option value="community">按社区星团</option></select></div>
+            <div class="field"><label>节点大小</label><select id="size-mode"><option value="evidence">按文献数</option><option value="pagerank">按 PageRank</option><option value="degree">按连接数</option><option value="betweenness">按介数中心性</option></select></div>
+            <div class="field"><label>标签模式</label><select id="label-mode"><option value="all" selected>全部名称（默认）</option><option value="important">仅重要节点</option><option value="auto">随镜头距离自动</option><option value="none">隐藏名称</option></select></div>
+            <label class="check-row"><input id="avoid-overlap" type="checkbox" /> 启用标签碰撞规避</label>
+          </div>
+          <div class="section"><h3 class="section-title">实体类型图例</h3><p class="hint">点击隐藏/显示；Ctrl/⌘ 点击可单独显示一种类型。</p><div id="type-legend" class="legend"></div></div>
+          <div class="section"><h3 class="section-title">关系图例</h3><div class="legend"><div class="legend-row"><span class="dot" style="color:#67eaff;background:#67eaff"></span><span class="legend-name">促进</span></div><div class="legend-row"><span class="dot" style="color:#ff557f;background:#ff557f"></span><span class="legend-name">抑制</span></div><div class="legend-row"><span class="dot" style="color:#ffd45c;background:#ffd45c"></span><span class="legend-name">48 小时内新增关系</span></div><div class="legend-row"><span class="dot" style="color:#ff8cd8;background:#ff8cd8"></span><span class="legend-name">冲突关系</span></div></div></div>
+        </section>
+
+        <section class="tab-page" id="tab-export">
+          <div class="section">
+            <h3 class="section-title">截图与数据导出</h3>
+            <div class="actions"><button class="btn" data-export="png">当前视角 PNG</button><button class="btn" data-export="png-transparent">透明背景 PNG</button><button class="btn" data-export="json">当前子图 JSON</button><button class="btn" data-export="csv">节点/关系 CSV</button><button class="btn" data-export="graphml">GraphML</button><button class="btn" data-export="cytoscape">Cytoscape JSON</button><button class="btn" data-export="neo4j">Neo4j Cypher</button><button class="btn" data-export="report">统计报告</button></div>
+            <div id="export-status" class="status"></div>
+          </div>
+        </section>
       </div>
-
-      <div class="date-search-row">
-        <input
-          id="date-search-input"
-          type="text"
-          inputmode="numeric"
-          autocomplete="off"
-          spellcheck="false"
-          placeholder="例如：2026.7.16"
-          aria-label="输入节点更新日期"
-          disabled
-        />
-
-        <button id="date-search-button" type="button" disabled>
-          搜索
-        </button>
-      </div>
-
-      <div id="date-search-message">
-        支持 2026.7.16、2026-7-16、2026/7/16
-      </div>
-
-      <div id="recent-date-section">
-        <span class="panel-section-label">最近更新日期</span>
-        <div id="recent-dates"></div>
-      </div>
-
-      <section id="date-results-section">
-        <div class="date-results-header">
-          <div id="date-results-summary"></div>
-          <button id="clear-date-filter" type="button">清除筛选</button>
-        </div>
-        <div id="date-results"></div>
-      </section>
     </div>
   </aside>
 
-  <button id="reset-view" type="button">
-    <span>◎</span>
-    <span id="reset-view-label">返回全景</span>
-  </button>
+  <datalist id="node-list"></datalist>
+  <button id="reset-view" class="btn glass">◎ 返回当前结果</button>
+  <div id="selection-toolbar" class="glass"><span class="badge" id="selected-count">已选 0</span><button id="selection-compare-bottom" class="btn">对比</button><button id="selection-clear-bottom" class="btn">清空</button></div>
+  <div id="selection-rect"></div>
 
-  <div id="error-panel" role="alert" aria-live="assertive">
-    <strong>知识图谱加载失败</strong>
-    <span id="error-message"></span>
-  </div>
+  <div id="error-panel"><strong>知识图谱加载失败</strong><span id="error-message"></span></div>
 
-  <div id="modal-overlay" aria-hidden="true">
-    <article id="node-card" role="dialog" aria-modal="true" aria-labelledby="node-name">
-      <button id="close-modal" type="button" aria-label="关闭详情">×</button>
-
-      <div class="card-scroll">
-        <div class="card-kicker">PubMed Knowledge Entity</div>
-        <div id="new-node-badge">✨ 48 小时内新增</div>
-        <h2 id="node-name"></h2>
-
-        <div class="node-info-grid">
-          <div class="info-item">
-            <span class="info-label">实体类型</span>
-            <span class="info-value" id="node-type"></span>
-          </div>
-
-          <div class="info-item">
-            <span class="info-label">关联文献数量</span>
-            <span class="info-value" id="node-evidence-count"></span>
-          </div>
-
-          <div class="info-item">
-            <span class="info-label">更新日期（中国标准时间）</span>
-            <span class="info-value" id="node-created-date"></span>
-          </div>
-        </div>
-
-        <section class="publication-section">
-          <div class="publication-section-header">
-            <h3 class="publication-section-title">关联 PubMed 文献</h3>
-            <span id="publication-count">0 篇</span>
-          </div>
-
-          <div id="publication-list"></div>
-        </section>
-
-        <a
-          id="pubmed-search-link"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="pubmed-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M14 3a1 1 0 1 0 0 2h3.586l-7.293 7.293a1 1 0 0 0 1.414 1.414L19 6.414V10a1 1 0 1 0 2 0V3h-7ZM5 5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 1 0-2 0v5H5V7h5a1 1 0 1 0 0-2H5Z"
-            />
-          </svg>
-          在 PubMed 中检索该实体的更多论文
-        </a>
-      </div>
-    </article>
-  </div>
+  <div id="node-overlay" class="overlay"><article class="modal glass"><button class="close" data-close="node-overlay">×</button><div id="node-detail"></div></article></div>
+  <div id="edge-overlay" class="overlay"><article class="modal glass"><button class="close" data-close="edge-overlay">×</button><div id="edge-detail"></div></article></div>
+  <div id="compare-overlay" class="overlay"><article class="modal glass"><button class="close" data-close="compare-overlay">×</button><div id="compare-detail"></div></article></div>
 
   <script>
-    (() => {
-      "use strict";
-
-      const NEW_NODE_WINDOW_MS = 48 * 60 * 60 * 1000;
-      const CAMERA_FOCUS_DURATION = 1000;
-      const CAMERA_RESET_DURATION = 1200;
-      const DATE_LAYOUT_SPACING_X = 48;
-      const DATE_LAYOUT_SPACING_Y = 42;
-
-      const TYPE_COLORS = [
-        "#48E7FF",
-        "#8178FF",
-        "#FF62CF",
-        "#4DFFB4",
-        "#FFBE54",
-        "#5F9DFF",
-        "#FF6688",
-        "#9BFF58",
-        "#67FFD9",
-        "#CB78FF"
-      ];
-
-      const NEW_NODE_CORE_COLOR = "#F8FFE5";
-      const NEW_NODE_GLOW_COLOR = "#D8FF63";
-
-      const graphElement = document.getElementById("graph");
-      const loadingElement = document.getElementById("loading");
-      const errorPanel = document.getElementById("error-panel");
-      const errorMessage = document.getElementById("error-message");
-
-      const datePanel = document.getElementById("date-panel");
-      const datePanelToggle = document.getElementById("date-panel-toggle");
-      const dateSearchInput = document.getElementById("date-search-input");
-      const dateSearchButton = document.getElementById("date-search-button");
-      const dateSearchMessage = document.getElementById("date-search-message");
-      const recentDatesElement = document.getElementById("recent-dates");
-      const dateResultsSection = document.getElementById("date-results-section");
-      const dateResultsSummary = document.getElementById("date-results-summary");
-      const dateResultsElement = document.getElementById("date-results");
-      const clearDateFilterButton = document.getElementById("clear-date-filter");
-
-      const resetViewButton = document.getElementById("reset-view");
-      const resetViewLabel = document.getElementById("reset-view-label");
-
-      const modalOverlay = document.getElementById("modal-overlay");
-      const closeModalButton = document.getElementById("close-modal");
-      const newNodeBadge = document.getElementById("new-node-badge");
-      const nodeNameElement = document.getElementById("node-name");
-      const nodeTypeElement = document.getElementById("node-type");
-      const evidenceCountElement = document.getElementById("node-evidence-count");
-      const createdDateElement = document.getElementById("node-created-date");
-      const publicationCountElement = document.getElementById("publication-count");
-      const publicationListElement = document.getElementById("publication-list");
-      const pubmedSearchLinkElement = document.getElementById("pubmed-search-link");
-
-      const animatedNodeObjects = new Set();
-      const glowTextureCache = new Map();
-
-      let graph = null;
-      let animationFrameId = null;
-      let detailTimer = null;
-
-      let graphNodes = [];
-      let graphEdges = [];
-      let overviewCamera = null;
-
-      let currentFocusNodeIds = new Set();
-      let dateFilteredNodeIds = null;
-      let currentDateMatches = [];
-      let layoutSnapshot = null;
-
-      function showError(error) {
-        if (animationFrameId !== null) {
-          cancelAnimationFrame(animationFrameId);
-          animationFrameId = null;
-        }
-
-        loadingElement.style.display = "none";
-        errorPanel.style.display = "block";
-
-        const message = error instanceof Error ? error.message : String(error);
-        errorMessage.textContent = message;
-        console.error(error);
-      }
-
-      function setDatePanelCollapsed(collapsed, persist = true) {
-        datePanel.classList.toggle("collapsed", collapsed);
-        datePanelToggle.setAttribute("aria-expanded", String(!collapsed));
-
-        const label = collapsed
-          ? "展开日期搜索面板"
-          : "收缩日期搜索面板";
-
-        datePanelToggle.setAttribute("aria-label", label);
-        datePanelToggle.title = label;
-
-        if (persist) {
-          try {
-            localStorage.setItem(
-              "knowledgeGraphDatePanelCollapsed",
-              collapsed ? "1" : "0"
-            );
-          } catch (error) {
-            console.warn("无法保存日期面板状态：", error);
-          }
-        }
-      }
-
-      function initializeDatePanelState() {
-        let collapsed = window.innerWidth <= 900;
-
-        try {
-          const saved = localStorage.getItem("knowledgeGraphDatePanelCollapsed");
-
-          if (saved === "1") {
-            collapsed = true;
-          } else if (saved === "0") {
-            collapsed = false;
-          }
-        } catch (error) {
-          console.warn("无法读取日期面板状态：", error);
-        }
-
-        setDatePanelCollapsed(collapsed, false);
-      }
-
-      function hashString(value) {
-        let hash = 0;
-
-        for (let index = 0; index < value.length; index += 1) {
-          hash = (hash << 5) - hash + value.charCodeAt(index);
-          hash |= 0;
-        }
-
-        return Math.abs(hash);
-      }
-
-      function isValidUtcDateParts(date, year, month, day, hour, minute, second) {
-        return (
-          date.getUTCFullYear() === year &&
-          date.getUTCMonth() === month - 1 &&
-          date.getUTCDate() === day &&
-          date.getUTCHours() === hour &&
-          date.getUTCMinutes() === minute &&
-          date.getUTCSeconds() === second
-        );
-      }
-
-      function createUtcDate(year, month, day, hour, minute, second) {
-        const date = new Date(
-          Date.UTC(year, month - 1, day, hour, minute, second)
-        );
-
-        return isValidUtcDateParts(
-          date,
-          year,
-          month,
-          day,
-          hour,
-          minute,
-          second
-        )
-          ? date
-          : null;
-      }
-
-      function createChinaStandardDate(year, month, day, hour, minute, second) {
-        const timestamp = Date.UTC(
-          year,
-          month - 1,
-          day,
-          hour - 8,
-          minute,
-          second
-        );
-
-        const date = new Date(timestamp);
-
-        if (Number.isNaN(date.getTime())) {
-          return null;
-        }
-
-        const chinaTime = new Date(date.getTime() + 8 * 60 * 60 * 1000);
-
-        return isValidUtcDateParts(
-          chinaTime,
-          year,
-          month,
-          day,
-          hour,
-          minute,
-          second
-        )
-          ? date
-          : null;
-      }
-
-      function parseNodeCreatedAt(value) {
-        if (typeof value !== "string" || value.trim() === "") {
-          return null;
-        }
-
-        const text = value
-          .trim()
-          .replace(/[。；;，,]+$/, "")
-          .trim();
-
-        let match = text.match(
-          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*中国标准时间$/i
-        );
-
-        if (match) {
-          return createChinaStandardDate(
-            Number(match[1]),
-            Number(match[2]),
-            Number(match[3]),
-            Number(match[4]),
-            Number(match[5]),
-            Number(match[6])
-          );
-        }
-
-        match = text.match(
-          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*(?:北京时间|北京标准时间)$/i
-        );
-
-        if (match) {
-          return createChinaStandardDate(
-            Number(match[1]),
-            Number(match[2]),
-            Number(match[3]),
-            Number(match[4]),
-            Number(match[5]),
-            Number(match[6])
-          );
-        }
-
-        match = text.match(
-          /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})\s*(?:UTC|GMT)$/i
-        );
-
-        if (match) {
-          return createUtcDate(
-            Number(match[1]),
-            Number(match[2]),
-            Number(match[3]),
-            Number(match[4]),
-            Number(match[5]),
-            Number(match[6])
-          );
-        }
-
-        const isoPattern =
-          /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/i;
-
-        if (isoPattern.test(text)) {
-          const date = new Date(text);
-          return Number.isNaN(date.getTime()) ? null : date;
-        }
-
-        match = text.match(
-          /^(\d{4}-\d{2}-\d{2})\s(\d{2}:\d{2}:\d{2})([+-]\d{2}:\d{2})$/
-        );
-
-        if (match) {
-          const date = new Date(`${match[1]}T${match[2]}${match[3]}`);
-          return Number.isNaN(date.getTime()) ? null : date;
-        }
-
-        return null;
-      }
-
-      function getChinaDateParts(date) {
-        const parts = new Intl.DateTimeFormat("zh-CN", {
-          timeZone: "Asia/Shanghai",
-          year: "numeric",
-          month: "numeric",
-          day: "numeric"
-        }).formatToParts(date);
-
-        const partMap = {};
-
-        parts.forEach((part) => {
-          partMap[part.type] = part.value;
-        });
-
-        return {
-          year: Number(partMap.year),
-          month: Number(partMap.month),
-          day: Number(partMap.day)
-        };
-      }
-
-      function formatCreatedDate(value) {
-        const date = value instanceof Date ? value : parseNodeCreatedAt(value);
-
-        if (!date || Number.isNaN(date.getTime())) {
-          return "日期未知";
-        }
-
-        const parts = getChinaDateParts(date);
-        return `${parts.year}.${parts.month}.${parts.day}`;
-      }
-
-      function normalizeDateQuery(value) {
-        if (typeof value !== "string") {
-          return null;
-        }
-
-        const normalized = value
-          .trim()
-          .replace(/\s+/g, "")
-          .replace(/年/g, ".")
-          .replace(/月/g, ".")
-          .replace(/日/g, "")
-          .replace(/[-/]/g, ".")
-          .replace(/\.+/g, ".");
-
-        const match = normalized.match(/^(\d{4})\.(\d{1,2})\.(\d{1,2})$/);
-
-        if (!match) {
-          return null;
-        }
-
-        const year = Number(match[1]);
-        const month = Number(match[2]);
-        const day = Number(match[3]);
-        const testDate = new Date(Date.UTC(year, month - 1, day));
-
-        if (
-          testDate.getUTCFullYear() !== year ||
-          testDate.getUTCMonth() !== month - 1 ||
-          testDate.getUTCDate() !== day
-        ) {
-          return null;
-        }
-
-        return `${year}.${month}.${day}`;
-      }
-
-      function dateKeyToTimestamp(dateKey) {
-        const match = String(dateKey).match(/^(\d{4})\.(\d{1,2})\.(\d{1,2})$/);
-
-        if (!match) {
-          return 0;
-        }
-
-        return Date.UTC(
-          Number(match[1]),
-          Number(match[2]) - 1,
-          Number(match[3])
-        );
-      }
-
-      function isNewNode(createdAt) {
-        const createdDate = parseNodeCreatedAt(createdAt);
-
-        if (!createdDate) {
-          return false;
-        }
-
-        const elapsed = Date.now() - createdDate.getTime();
-        return elapsed >= 0 && elapsed <= NEW_NODE_WINDOW_MS;
-      }
-
-      function getNodeColor(node) {
-        if (node.__isNew) {
-          return NEW_NODE_CORE_COLOR;
-        }
-
-        const type = String(node.type || "unknown");
-        return TYPE_COLORS[hashString(type) % TYPE_COLORS.length];
-      }
-
-      function getNodeGlowColor(node) {
-        return node.__isNew ? NEW_NODE_GLOW_COLOR : getNodeColor(node);
-      }
-
-      function getNodeRadius(node) {
-        const evidenceCount = Math.max(0, Number(node.evidence_count) || 0);
-
-        return Math.max(
-          3.8,
-          Math.min(9.2, 3.8 + Math.log10(evidenceCount + 1) * 1.8)
-        );
-      }
-
-      function createGlowTexture(color) {
-        if (glowTextureCache.has(color)) {
-          return glowTextureCache.get(color);
-        }
-
-        const canvas = document.createElement("canvas");
-        const size = 256;
-        canvas.width = size;
-        canvas.height = size;
-
-        const context = canvas.getContext("2d");
-
-        if (!context) {
-          throw new Error("浏览器无法创建 Canvas 2D 上下文。");
-        }
-
-        const center = size / 2;
-        const gradient = context.createRadialGradient(
-          center,
-          center,
-          0,
-          center,
-          center,
-          center
-        );
-
-        gradient.addColorStop(0, "rgba(255,255,255,1)");
-        gradient.addColorStop(0.1, color);
-        gradient.addColorStop(0.3, `${color}CC`);
-        gradient.addColorStop(0.58, `${color}48`);
-        gradient.addColorStop(0.82, `${color}12`);
-        gradient.addColorStop(1, "rgba(0,0,0,0)");
-
-        context.fillStyle = gradient;
-        context.fillRect(0, 0, size, size);
-
-        const texture = new THREE.CanvasTexture(canvas);
-        texture.colorSpace = THREE.SRGBColorSpace;
-        texture.needsUpdate = true;
-
-        glowTextureCache.set(color, texture);
-        return texture;
-      }
-
-      function createNodeObject(node) {
-        const group = new THREE.Group();
-        const radius = getNodeRadius(node);
-        const coreColor = getNodeColor(node);
-        const glowColor = getNodeGlowColor(node);
-
-        const threeCoreColor = new THREE.Color(coreColor);
-        const threeGlowColor = new THREE.Color(glowColor);
-
-        const innerSphere = new THREE.Mesh(
-          new THREE.SphereGeometry(radius, 40, 40),
-          new THREE.MeshStandardMaterial({
-            color: threeCoreColor,
-            emissive: threeGlowColor,
-            emissiveIntensity: node.__isNew ? 4.3 : 2.6,
-            roughness: 0.17,
-            metalness: 0.2,
-            transparent: true,
-            opacity: 0.99
-          })
-        );
-
-        innerSphere.renderOrder = 3;
-        group.add(innerSphere);
-
-        const outerSphere = new THREE.Mesh(
-          new THREE.SphereGeometry(
-            radius * (node.__isNew ? 1.58 : 1.45),
-            40,
-            40
-          ),
-          new THREE.MeshBasicMaterial({
-            color: threeGlowColor,
-            transparent: true,
-            opacity: node.__isNew ? 0.29 : 0.16,
-            blending: THREE.AdditiveBlending,
-            depthWrite: false,
-            side: THREE.BackSide
-          })
-        );
-
-        outerSphere.renderOrder = 2;
-        group.add(outerSphere);
-
-        const glowSprite = new THREE.Sprite(
-          new THREE.SpriteMaterial({
-            map: createGlowTexture(glowColor),
-            color: threeGlowColor,
-            transparent: true,
-            opacity: node.__isNew ? 0.95 : 0.67,
-            blending: THREE.AdditiveBlending,
-            depthWrite: false
-          })
-        );
-
-        const glowScale = radius * (node.__isNew ? 7.2 : 5.6);
-        glowSprite.scale.set(glowScale, glowScale, 1);
-        glowSprite.renderOrder = 1;
-        group.add(glowSprite);
-
-        const labelText = node.__isNew
-          ? `${node.name}  ✨新`
-          : String(node.name);
-
-        const label = new SpriteText(labelText);
-        label.color = node.__isNew ? "#F4FFB0" : "#F2FCFF";
-        label.textHeight = Math.max(3.1, Math.min(5, radius * 0.7));
-        label.backgroundColor = node.__isNew
-          ? "rgba(18, 27, 2, 0.92)"
-          : "rgba(0, 3, 12, 0.9)";
-        label.padding = 2.8;
-        label.borderRadius = 4;
-        label.strokeWidth = 0.9;
-        label.strokeColor = "rgba(0, 0, 0, 1)";
-        label.position.set(0, -(radius * 1.9 + 2.8), 0);
-        label.material.depthWrite = false;
-        label.material.depthTest = false;
-        label.material.transparent = true;
-        label.material.opacity = 1;
-        label.renderOrder = 10000;
-        group.add(label);
-
-        group.userData = {
-          nodeId: String(node.id),
-          innerSphere,
-          outerSphere,
-          glowSprite,
-          label,
-          isNew: node.__isNew,
-          phase: Math.random() * Math.PI * 2,
-          targetOpacity: 1,
-          currentOpacity: 1,
-          targetLabelOpacity: 1,
-          currentLabelOpacity: 1
-        };
-
-        animatedNodeObjects.add(group);
-        return group;
-      }
-
-      function createStarField() {
-        const starCount = 3600;
-        const positions = new Float32Array(starCount * 3);
-        const colors = new Float32Array(starCount * 3);
-
-        const white = new THREE.Color("#FFFFFF");
-        const cyan = new THREE.Color("#84EFFF");
-        const violet = new THREE.Color("#B697FF");
-        const paleGold = new THREE.Color("#F4F5C5");
-
-        for (let index = 0; index < starCount; index += 1) {
-          const radius = 500 + Math.random() * 1900;
-          const theta = Math.random() * Math.PI * 2;
-          const phi = Math.acos(2 * Math.random() - 1);
-
-          positions[index * 3] = radius * Math.sin(phi) * Math.cos(theta);
-          positions[index * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
-          positions[index * 3 + 2] = radius * Math.cos(phi);
-
-          const random = Math.random();
-          const selectedColor =
-            random < 0.52
-              ? white
-              : random < 0.75
-                ? cyan
-                : random < 0.92
-                  ? violet
-                  : paleGold;
-
-          const brightness = 0.42 + Math.random() * 0.58;
-          colors[index * 3] = selectedColor.r * brightness;
-          colors[index * 3 + 1] = selectedColor.g * brightness;
-          colors[index * 3 + 2] = selectedColor.b * brightness;
-        }
-
-        const geometry = new THREE.BufferGeometry();
-        geometry.setAttribute(
-          "position",
-          new THREE.BufferAttribute(positions, 3)
-        );
-        geometry.setAttribute(
-          "color",
-          new THREE.BufferAttribute(colors, 3)
-        );
-
-        const stars = new THREE.Points(
-          geometry,
-          new THREE.PointsMaterial({
-            size: 1.7,
-            sizeAttenuation: true,
-            vertexColors: true,
-            transparent: true,
-            opacity: 0.9,
-            blending: THREE.AdditiveBlending,
-            depthWrite: false
-          })
-        );
-
-        stars.name = "deep-space-stars";
-        return stars;
-      }
-
-      function getNodeId(nodeOrId) {
-        if (nodeOrId && typeof nodeOrId === "object") {
-          return String(nodeOrId.id);
-        }
-
-        return String(nodeOrId);
-      }
-
-      function getNodeById(nodeId) {
-        const id = getNodeId(nodeId);
-        return graphNodes.find((node) => String(node.id) === id);
-      }
-
-      function getNeighbourNodes(seedNodeIds, depth = 1) {
-        const visited = new Set(seedNodeIds.map((id) => getNodeId(id)));
-        let frontier = new Set(visited);
-
-        for (let level = 0; level < depth; level += 1) {
-          const nextFrontier = new Set();
-
-          graphEdges.forEach((edge) => {
-            const sourceId = getNodeId(edge.source);
-            const targetId = getNodeId(edge.target);
-
-            if (frontier.has(sourceId) && !visited.has(targetId)) {
-              visited.add(targetId);
-              nextFrontier.add(targetId);
-            }
-
-            if (frontier.has(targetId) && !visited.has(sourceId)) {
-              visited.add(sourceId);
-              nextFrontier.add(sourceId);
-            }
-          });
-
-          frontier = nextFrontier;
-
-          if (frontier.size === 0) {
-            break;
-          }
-        }
-
-        return [...visited]
-          .map(getNodeById)
-          .filter(Boolean)
-          .filter(
-            (node) =>
-              Number.isFinite(node.x) &&
-              Number.isFinite(node.y) &&
-              Number.isFinite(node.z)
-          );
-      }
-
-      function calculateClusterBounds(nodes) {
-        if (!nodes.length) {
-          return null;
-        }
-
-        const center = nodes.reduce(
-          (accumulator, node) => {
-            const x = Number.isFinite(node.fx) ? node.fx : node.x;
-            const y = Number.isFinite(node.fy) ? node.fy : node.y;
-            const z = Number.isFinite(node.fz) ? node.fz : node.z;
-
-            accumulator.x += x;
-            accumulator.y += y;
-            accumulator.z += z;
-            return accumulator;
-          },
-          { x: 0, y: 0, z: 0 }
-        );
-
-        center.x /= nodes.length;
-        center.y /= nodes.length;
-        center.z /= nodes.length;
-
-        let radius = 0;
-
-        nodes.forEach((node) => {
-          const x = Number.isFinite(node.fx) ? node.fx : node.x;
-          const y = Number.isFinite(node.fy) ? node.fy : node.y;
-          const z = Number.isFinite(node.fz) ? node.fz : node.z;
-
-          const dx = x - center.x;
-          const dy = y - center.y;
-          const dz = z - center.z;
-
-          radius = Math.max(
-            radius,
-            Math.sqrt(dx * dx + dy * dy + dz * dz)
-          );
-        });
-
-        return {
-          center,
-          radius: Math.max(radius, 18)
-        };
-      }
-
-      function getCameraPositionForCluster(center, radius) {
-        const camera = graph.camera();
-        const direction = camera.position
-          .clone()
-          .sub(new THREE.Vector3(center.x, center.y, center.z))
-          .normalize();
-
-        if (
-          !Number.isFinite(direction.x) ||
-          !Number.isFinite(direction.y) ||
-          !Number.isFinite(direction.z) ||
-          direction.lengthSq() < 0.001
-        ) {
-          direction.set(0.3, 0.18, 1).normalize();
-        }
-
-        const fieldOfView = (camera.fov * Math.PI) / 180;
-        const fitDistance = radius / Math.tan(fieldOfView / 2);
-        const distance = Math.max(75, Math.min(720, fitDistance * 1.35 + 44));
-
-        return {
-          x: center.x + direction.x * distance,
-          y: center.y + direction.y * distance,
-          z: center.z + direction.z * distance
-        };
-      }
-
-      function updateNodeVisualStates() {
-        animatedNodeObjects.forEach((object) => {
-          const nodeId = String(object.userData.nodeId);
-          const matchesDate =
-            !dateFilteredNodeIds || dateFilteredNodeIds.has(nodeId);
-          const matchesFocus =
-            currentFocusNodeIds.size === 0 || currentFocusNodeIds.has(nodeId);
-
-          if (matchesDate && matchesFocus) {
-            object.userData.targetOpacity = 1;
-            object.userData.targetLabelOpacity = 1;
-          } else if (!matchesDate) {
-            object.userData.targetOpacity = 0.055;
-            object.userData.targetLabelOpacity = 0.28;
-          } else {
-            object.userData.targetOpacity = 0.22;
-            object.userData.targetLabelOpacity = 0.5;
-          }
-        });
-      }
-
-      function setFocusedVisuals(focusedIds) {
-        currentFocusNodeIds = new Set(focusedIds.map(String));
-        updateNodeVisualStates();
-      }
-
-      function getLinkSourceId(link) {
-        return getNodeId(link.source);
-      }
-
-      function getLinkTargetId(link) {
-        return getNodeId(link.target);
-      }
-
-      function linkMatchesDateFilter(link) {
-        if (!dateFilteredNodeIds) {
-          return true;
-        }
-
-        return (
-          dateFilteredNodeIds.has(getLinkSourceId(link)) &&
-          dateFilteredNodeIds.has(getLinkTargetId(link))
-        );
-      }
-
-      function linkTouchesDateFilter(link) {
-        if (!dateFilteredNodeIds) {
-          return true;
-        }
-
-        return (
-          dateFilteredNodeIds.has(getLinkSourceId(link)) ||
-          dateFilteredNodeIds.has(getLinkTargetId(link))
-        );
-      }
-
-      function getBaseLinkColor(link) {
-        const relation = String(link.relation);
-
-        if (relation.includes("抑制")) {
-          return "#FF5288";
-        }
-
-        if (relation.includes("促进")) {
-          return "#7DF5FF";
-        }
-
-        return "#C49BFF";
-      }
-
-      function linkColorAccessor(link) {
-        if (!dateFilteredNodeIds) {
-          const relation = String(link.relation);
-
-          if (relation.includes("抑制")) {
-            return "rgba(255, 64, 112, 0.74)";
-          }
-
-          if (relation.includes("促进")) {
-            return "rgba(74, 228, 255, 0.72)";
-          }
-
-          return "rgba(166, 128, 255, 0.68)";
-        }
-
-        if (linkMatchesDateFilter(link)) {
-          return getBaseLinkColor(link);
-        }
-
-        return linkTouchesDateFilter(link)
-          ? "rgba(90, 124, 154, 0.14)"
-          : "rgba(36, 48, 68, 0.025)";
-      }
-
-      function linkOpacityAccessor(link) {
-        if (!dateFilteredNodeIds) {
-          return 0.74;
-        }
-
-        if (linkMatchesDateFilter(link)) {
-          return 0.9;
-        }
-
-        return linkTouchesDateFilter(link) ? 0.13 : 0.025;
-      }
-
-      function linkWidthAccessor(link) {
-        const baseWidth = String(link.relation).includes("抑制") ? 1.3 : 1;
-
-        if (!dateFilteredNodeIds) {
-          return baseWidth;
-        }
-
-        return linkMatchesDateFilter(link) ? baseWidth * 1.35 : 0.25;
-      }
-
-      function linkParticleCountAccessor(link) {
-        if (dateFilteredNodeIds && !linkMatchesDateFilter(link)) {
-          return 0;
-        }
-
-        return String(link.relation).includes("抑制") ? 7 : 6;
-      }
-
-      function linkParticleWidthAccessor(link) {
-        if (dateFilteredNodeIds && !linkMatchesDateFilter(link)) {
-          return 0;
-        }
-
-        return String(link.relation).includes("抑制") ? 2.5 : 2.15;
-      }
-
-      function refreshLinkStyles() {
-        if (!graph) {
-          return;
-        }
-
-        graph
-          .linkColor(linkColorAccessor)
-          .linkOpacity(linkOpacityAccessor)
-          .linkWidth(linkWidthAccessor)
-          .linkDirectionalParticles(linkParticleCountAccessor)
-          .linkDirectionalParticleWidth(linkParticleWidthAccessor);
-
-        if (typeof graph.refresh === "function") {
-          graph.refresh();
-        }
-      }
-
-      function stopAutoRotation() {
-        if (graph) {
-          graph.controls().autoRotate = false;
-        }
-      }
-
-      function focusOnCluster(seedNodeIds, depth = 1) {
-        if (!graph) {
-          return;
-        }
-
-        const clusterNodes = getNeighbourNodes(seedNodeIds, depth);
-        const bounds = calculateClusterBounds(clusterNodes);
-
-        if (!bounds) {
-          return;
-        }
-
-        stopAutoRotation();
-
-        const cameraPosition = getCameraPositionForCluster(
-          bounds.center,
-          bounds.radius
-        );
-
-        setFocusedVisuals(clusterNodes.map((node) => String(node.id)));
-
-        graph.cameraPosition(
-          cameraPosition,
-          bounds.center,
-          CAMERA_FOCUS_DURATION
-        );
-
-        resetViewLabel.textContent = dateFilteredNodeIds
-          ? "返回日期结果"
-          : "返回全景";
-        resetViewButton.classList.add("visible");
-      }
-
-      function focusOnNode(node) {
-        focusOnCluster([node.id], dateFilteredNodeIds ? 0 : 1);
-      }
-
-      function focusOnLink(link) {
-        focusOnCluster(
-          [getNodeId(link.source), getNodeId(link.target)],
-          dateFilteredNodeIds ? 0 : 1
-        );
-      }
-
-      function calculateOverviewCamera(nodes) {
-        const validNodes = nodes.filter(
-          (node) =>
-            Number.isFinite(node.x) &&
-            Number.isFinite(node.y) &&
-            Number.isFinite(node.z)
-        );
-
-        const bounds = calculateClusterBounds(validNodes);
-
-        if (!bounds) {
-          return {
-            position: { x: 0, y: 42, z: 320 },
-            target: { x: 0, y: 0, z: 0 }
-          };
-        }
-
-        const camera = graph.camera();
-        const fieldOfView = (camera.fov * Math.PI) / 180;
-        const fitDistance = bounds.radius / Math.tan(fieldOfView / 2);
-        const distance = Math.max(
-          280,
-          Math.min(1400, fitDistance * 1.38 + 100)
-        );
-
-        return {
-          position: {
-            x: bounds.center.x + distance * 0.16,
-            y: bounds.center.y + distance * 0.11,
-            z: bounds.center.z + distance
-          },
-          target: bounds.center
-        };
-      }
-
-      function saveOverviewCamera() {
-        overviewCamera = calculateOverviewCamera(graphNodes);
-      }
-
-      function ensureLayoutSnapshot() {
-        if (layoutSnapshot) {
-          return;
-        }
-
-        layoutSnapshot = new Map();
-
-        graphNodes.forEach((node) => {
-          layoutSnapshot.set(String(node.id), {
-            x: Number.isFinite(node.x) ? node.x : 0,
-            y: Number.isFinite(node.y) ? node.y : 0,
-            z: Number.isFinite(node.z) ? node.z : 0,
-            fx: Number.isFinite(node.fx) ? node.fx : null,
-            fy: Number.isFinite(node.fy) ? node.fy : null,
-            fz: Number.isFinite(node.fz) ? node.fz : null
-          });
-        });
-      }
-
-      function restoreSnapshotPositions(removeSnapshot = false) {
-        if (!layoutSnapshot) {
-          return;
-        }
-
-        graphNodes.forEach((node) => {
-          const saved = layoutSnapshot.get(String(node.id));
-
-          if (!saved) {
-            return;
-          }
-
-          node.x = saved.x;
-          node.y = saved.y;
-          node.z = saved.z;
-          node.vx = 0;
-          node.vy = 0;
-          node.vz = 0;
-          node.fx = saved.fx;
-          node.fy = saved.fy;
-          node.fz = saved.fz;
-        });
-
-        if (removeSnapshot) {
-          layoutSnapshot = null;
-        }
-      }
-
-      function arrangeDateNodes(nodes) {
-        ensureLayoutSnapshot();
-        restoreSnapshotPositions(false);
-
-        const sortedNodes = [...nodes].sort((a, b) => {
-          const evidenceDifference =
-            Number(b.evidence_count) - Number(a.evidence_count);
-
-          return evidenceDifference !== 0
-            ? evidenceDifference
-            : String(a.name).localeCompare(String(b.name), "zh-CN");
-        });
-
-        const count = sortedNodes.length;
-        const columns = Math.max(1, Math.ceil(Math.sqrt(count)));
-        const rows = Math.ceil(count / columns);
-
-        sortedNodes.forEach((node, index) => {
-          const column = index % columns;
-          const row = Math.floor(index / columns);
-          const x =
-            (column - (columns - 1) / 2) * DATE_LAYOUT_SPACING_X;
-          const y =
-            ((rows - 1) / 2 - row) * DATE_LAYOUT_SPACING_Y;
-          const z = ((index % 3) - 1) * 5;
-
-          node.x = x;
-          node.y = y;
-          node.z = z;
-          node.fx = x;
-          node.fy = y;
-          node.fz = z;
-          node.vx = 0;
-          node.vy = 0;
-          node.vz = 0;
-        });
-
-        graph.d3ReheatSimulation();
-      }
-
-      function focusDateResults() {
-        if (!graph || !currentDateMatches.length) {
-          return;
-        }
-
-        closeNodeModal();
-        stopAutoRotation();
-        currentFocusNodeIds = new Set();
-        updateNodeVisualStates();
-
-        const bounds = calculateClusterBounds(currentDateMatches);
-
-        if (!bounds) {
-          return;
-        }
-
-        graph.cameraPosition(
-          getCameraPositionForCluster(bounds.center, bounds.radius + 20),
-          bounds.center,
-          CAMERA_FOCUS_DURATION
-        );
-
-        resetViewButton.classList.remove("visible");
-      }
-
-      function resetCurrentView() {
-        if (!graph) {
-          return;
-        }
-
-        closeNodeModal();
-        currentFocusNodeIds = new Set();
-        updateNodeVisualStates();
-
-        if (dateFilteredNodeIds && currentDateMatches.length) {
-          focusDateResults();
-          return;
-        }
-
-        if (!overviewCamera) {
-          saveOverviewCamera();
-        }
-
-        graph.cameraPosition(
-          overviewCamera.position,
-          overviewCamera.target,
-          CAMERA_RESET_DURATION
-        );
-
-        resetViewButton.classList.remove("visible");
-
-        window.setTimeout(() => {
-          if (graph && !dateFilteredNodeIds && currentFocusNodeIds.size === 0) {
-            graph.controls().autoRotate = true;
-          }
-        }, CAMERA_RESET_DURATION + 100);
-      }
-
-      function setDateSearchMessage(message, status = "") {
-        dateSearchMessage.textContent = message;
-        dateSearchMessage.classList.remove("success", "error");
-
-        if (status) {
-          dateSearchMessage.classList.add(status);
-        }
-      }
-
-      function setActiveRecentDateChip(dateKey) {
-        document.querySelectorAll(".recent-date-chip").forEach((button) => {
-          button.classList.toggle("active", button.dataset.date === dateKey);
-        });
-      }
-
-      function renderRecentDates() {
-        const dateCounts = new Map();
-
-        graphNodes.forEach((node) => {
-          const key = node.__displayDate;
-          dateCounts.set(key, (dateCounts.get(key) || 0) + 1);
-        });
-
-        const sortedDates = [...dateCounts.keys()]
-          .sort((a, b) => dateKeyToTimestamp(b) - dateKeyToTimestamp(a))
-          .slice(0, 7);
-
-        recentDatesElement.innerHTML = "";
-
-        sortedDates.forEach((dateKey) => {
-          const button = document.createElement("button");
-          button.type = "button";
-          button.className = "recent-date-chip";
-          button.dataset.date = dateKey;
-          button.textContent = `${dateKey} · ${dateCounts.get(dateKey)}`;
-          button.addEventListener("click", () => {
-            dateSearchInput.value = dateKey;
-            performDateSearch();
-          });
-          recentDatesElement.appendChild(button);
-        });
-      }
-
-      function renderDateResults(nodes, dateKey) {
-        dateResultsElement.innerHTML = "";
-        dateResultsSummary.textContent = `${dateKey} · ${nodes.length} 个节点`;
-
-        nodes.forEach((node) => {
-          const button = document.createElement("button");
-          button.type = "button";
-          button.className = "date-result-item";
-
-          const main = document.createElement("span");
-          main.className = "date-result-main";
-
-          const name = document.createElement("span");
-          name.className = "date-result-name";
-          name.textContent = node.__isNew ? `${node.name} ✨新` : node.name;
-
-          const type = document.createElement("span");
-          type.className = "date-result-type";
-          type.textContent = node.type;
-
-          const count = document.createElement("span");
-          count.className = "date-result-count";
-          count.textContent = Number(node.evidence_count).toLocaleString("zh-CN");
-
-          main.appendChild(name);
-          main.appendChild(type);
-          button.appendChild(main);
-          button.appendChild(count);
-          button.addEventListener("click", () => handleNodeClick(node));
-          dateResultsElement.appendChild(button);
-        });
-
-        dateResultsSection.classList.add("visible");
-      }
-
-      function performDateSearch() {
-        if (!graph) {
-          return;
-        }
-
-        const dateKey = normalizeDateQuery(dateSearchInput.value);
-
-        if (!dateKey) {
-          setDateSearchMessage(
-            "日期格式不正确，请输入例如：2026.7.16",
-            "error"
-          );
-          dateSearchInput.focus();
-          return;
-        }
-
-        const matchedNodes = graphNodes
-          .filter((node) => node.__displayDate === dateKey)
-          .sort((a, b) => {
-            const evidenceDifference =
-              Number(b.evidence_count) - Number(a.evidence_count);
-
-            return evidenceDifference !== 0
-              ? evidenceDifference
-              : String(a.name).localeCompare(String(b.name), "zh-CN");
-          });
-
-        if (!matchedNodes.length) {
-          setDateSearchMessage(`${dateKey} 没有更新节点`, "error");
-          return;
-        }
-
-        currentDateMatches = matchedNodes;
-        dateFilteredNodeIds = new Set(
-          matchedNodes.map((node) => String(node.id))
-        );
-        currentFocusNodeIds = new Set();
-
-        closeNodeModal();
-        stopAutoRotation();
-        arrangeDateNodes(matchedNodes);
-        updateNodeVisualStates();
-        refreshLinkStyles();
-        renderDateResults(matchedNodes, dateKey);
-        setActiveRecentDateChip(dateKey);
-        setDateSearchMessage(
-          `已排列显示 ${matchedNodes.length} 个节点`,
-          "success"
-        );
-
-        window.setTimeout(focusDateResults, 100);
-      }
-
-      function clearDateFilter() {
-        if (!graph) {
-          return;
-        }
-
-        closeNodeModal();
-        restoreSnapshotPositions(true);
-
-        dateFilteredNodeIds = null;
-        currentDateMatches = [];
-        currentFocusNodeIds = new Set();
-
-        updateNodeVisualStates();
-        refreshLinkStyles();
-
-        dateResultsSection.classList.remove("visible");
-        dateResultsElement.innerHTML = "";
-        dateResultsSummary.textContent = "";
-        dateSearchInput.value = "";
-
-        setDateSearchMessage(
-          "支持 2026.7.16、2026-7-16、2026/7/16"
-        );
-        setActiveRecentDateChip("");
-
-        graph.d3ReheatSimulation();
-        resetViewLabel.textContent = "返回全景";
-        resetViewButton.classList.remove("visible");
-
-        window.setTimeout(() => {
-          saveOverviewCamera();
-          resetCurrentView();
-        }, 80);
-      }
-
-      function getPublicationArray(node) {
-        const candidateArrays = [
-          node.publications,
-          node.articles,
-          node.papers,
-          node.literature,
-          node.references
-        ];
-
-        for (const candidate of candidateArrays) {
-          if (Array.isArray(candidate)) {
-            return candidate;
-          }
-        }
-
-        return [];
-      }
-
-      function normalizeAuthors(value) {
-        if (Array.isArray(value)) {
-          return value
-            .map((author) => String(author).trim())
-            .filter(Boolean)
-            .join(", ");
-        }
-
-        if (typeof value === "string") {
-          return value.trim();
-        }
-
-        return "";
-      }
-
-      function normalizePublications(node) {
-        const normalized = [];
-        const publicationArray = getPublicationArray(node);
-
-        publicationArray.forEach((item, index) => {
-          if (typeof item === "string" || typeof item === "number") {
-            const pmid = String(item).trim();
-
-            if (pmid) {
-              normalized.push({
-                title: `PubMed 文献 ${index + 1}`,
-                authors: "",
-                journal: "",
-                year: "",
-                pmid,
-                url: `https://pubmed.ncbi.nlm.nih.gov/${encodeURIComponent(pmid)}/`
-              });
-            }
-
-            return;
-          }
-
-          if (!item || typeof item !== "object" || Array.isArray(item)) {
-            return;
-          }
-
-          const pmid = String(
-            item.pmid ?? item.PMID ?? item.pubmed_id ?? item.id ?? ""
-          ).trim();
-
-          const title = String(
-            item.title ?? item.article_title ?? item.name ?? `PubMed 文献 ${index + 1}`
-          ).trim();
-
-          const authors = normalizeAuthors(
-            item.authors ?? item.author ?? item.author_list
-          );
-
-          const journal = String(
-            item.journal ?? item.journal_name ?? item.source ?? ""
-          ).trim();
-
-          const yearValue = item.year ?? item.publication_year ?? item.pub_year ?? "";
-          const year = yearValue === null || yearValue === undefined
-            ? ""
-            : String(yearValue).trim();
-
-          const explicitUrl = String(
-            item.pubmed_url ?? item.pubmed_link ?? item.url ?? ""
-          ).trim();
-
-          const url = explicitUrl || (
-            pmid
-              ? `https://pubmed.ncbi.nlm.nih.gov/${encodeURIComponent(pmid)}/`
-              : `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(title)}`
-          );
-
-          normalized.push({
-            title: title || `PubMed 文献 ${index + 1}`,
-            authors,
-            journal,
-            year,
-            pmid,
-            url
-          });
-        });
-
-        if (!normalized.length && Array.isArray(node.pmids)) {
-          node.pmids.forEach((value, index) => {
-            const pmid = String(value).trim();
-
-            if (!pmid) {
-              return;
-            }
-
-            normalized.push({
-              title: `PubMed 文献 ${index + 1}`,
-              authors: "",
-              journal: "",
-              year: "",
-              pmid,
-              url: `https://pubmed.ncbi.nlm.nih.gov/${encodeURIComponent(pmid)}/`
-            });
-          });
-        }
-
-        return normalized;
-      }
-
-      function createMetaItem(label, value) {
-        const element = document.createElement("span");
-        element.className = "publication-meta-item";
-
-        const labelElement = document.createElement("span");
-        labelElement.className = "publication-meta-label";
-        labelElement.textContent = `${label}：`;
-
-        const valueElement = document.createElement("span");
-        valueElement.textContent = value || "未提供";
-
-        element.appendChild(labelElement);
-        element.appendChild(valueElement);
-        return element;
-      }
-
-      function renderPublicationList(node) {
-        const publications = normalizePublications(node);
-        publicationListElement.innerHTML = "";
-        publicationCountElement.textContent = `${publications.length} 篇`;
-
-        if (!publications.length) {
-          const empty = document.createElement("div");
-          empty.className = "publication-empty";
-          empty.textContent =
-            "nodes.json 暂未提供该节点的文献明细。可在节点中增加 publications 数组，或至少增加 pmids 数组。";
-          publicationListElement.appendChild(empty);
-          return;
-        }
-
-        publications.forEach((publication) => {
-          const card = document.createElement("article");
-          card.className = "publication-card";
-
-          const title = document.createElement("h4");
-          title.className = "publication-title";
-          title.textContent = publication.title;
-
-          const meta = document.createElement("div");
-          meta.className = "publication-meta";
-          meta.appendChild(createMetaItem("作者", publication.authors));
-          meta.appendChild(createMetaItem("期刊", publication.journal));
-          meta.appendChild(createMetaItem("年份", publication.year));
-          meta.appendChild(createMetaItem("PMID", publication.pmid));
-
-          const link = document.createElement("a");
-          link.className = "publication-link";
-          link.href = publication.url;
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
-          link.textContent = "打开 PubMed";
-
-          meta.appendChild(link);
-          card.appendChild(title);
-          card.appendChild(meta);
-          publicationListElement.appendChild(card);
-        });
-      }
-
-      function openNodeModal(node) {
-        const nodeName = String(node.name);
-
-        nodeNameElement.textContent = nodeName;
-        nodeTypeElement.textContent = String(node.type);
-        evidenceCountElement.textContent = Number(
-          node.evidence_count
-        ).toLocaleString("zh-CN");
-        createdDateElement.textContent =
-          node.__displayDate || formatCreatedDate(node.created_at);
-
-        pubmedSearchLinkElement.href =
-          `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(nodeName)}`;
-
-        newNodeBadge.classList.toggle("visible", Boolean(node.__isNew));
-        renderPublicationList(node);
-
-        modalOverlay.classList.add("visible");
-        modalOverlay.setAttribute("aria-hidden", "false");
-
-        window.setTimeout(() => {
-          closeModalButton.focus();
-        }, 0);
-      }
-
-      function closeNodeModal() {
-        modalOverlay.classList.remove("visible");
-        modalOverlay.setAttribute("aria-hidden", "true");
-      }
-
-      function handleNodeClick(node) {
-        if (detailTimer !== null) {
-          clearTimeout(detailTimer);
-        }
-
-        focusOnNode(node);
-
-        detailTimer = window.setTimeout(() => {
-          openNodeModal(node);
-          detailTimer = null;
-        }, CAMERA_FOCUS_DURATION + 80);
-      }
-
-      function handleLinkClick(link) {
-        if (detailTimer !== null) {
-          clearTimeout(detailTimer);
-          detailTimer = null;
-        }
-
-        closeNodeModal();
-        focusOnLink(link);
-      }
-
-      function animateNodeGlow() {
-        const elapsed = performance.now() * 0.001;
-
-        animatedNodeObjects.forEach((object) => {
-          const {
-            innerSphere,
-            outerSphere,
-            glowSprite,
-            label,
-            isNew,
-            phase
-          } = object.userData;
-
-          const corePulse =
-            1 +
-            Math.sin(elapsed * (isNew ? 2.4 : 1.7) + phase) *
-              (isNew ? 0.065 : 0.035);
-
-          const haloPulse =
-            1 +
-            Math.sin(elapsed * (isNew ? 1.8 : 1.25) + phase) *
-              (isNew ? 0.13 : 0.075);
-
-          innerSphere.scale.setScalar(corePulse);
-          outerSphere.scale.setScalar(haloPulse);
-
-          const targetOpacity = Number.isFinite(object.userData.targetOpacity)
-            ? object.userData.targetOpacity
-            : 1;
-
-          const currentOpacity = Number.isFinite(object.userData.currentOpacity)
-            ? object.userData.currentOpacity
-            : 1;
-
-          const nextOpacity =
-            currentOpacity + (targetOpacity - currentOpacity) * 0.09;
-
-          object.userData.currentOpacity = nextOpacity;
-
-          const targetLabelOpacity = Number.isFinite(
-            object.userData.targetLabelOpacity
-          )
-            ? object.userData.targetLabelOpacity
-            : 1;
-
-          const currentLabelOpacity = Number.isFinite(
-            object.userData.currentLabelOpacity
-          )
-            ? object.userData.currentLabelOpacity
-            : 1;
-
-          const nextLabelOpacity =
-            currentLabelOpacity +
-            (targetLabelOpacity - currentLabelOpacity) * 0.1;
-
-          object.userData.currentLabelOpacity = nextLabelOpacity;
-
-          const baseGlowOpacity = isNew ? 0.88 : 0.58;
-          const glowPulse =
-            Math.sin(elapsed * (isNew ? 2.1 : 1.45) + phase) *
-            (isNew ? 0.11 : 0.1);
-
-          innerSphere.material.opacity = 0.99 * nextOpacity;
-          outerSphere.material.opacity = (isNew ? 0.29 : 0.16) * nextOpacity;
-          glowSprite.material.opacity =
-            (baseGlowOpacity + glowPulse) * nextOpacity;
-          label.visible = true;
-          label.material.opacity = Math.max(0.22, nextLabelOpacity);
-        });
-
-        animationFrameId = window.requestAnimationFrame(animateNodeGlow);
-      }
-
-      function validateNodes(nodes) {
-        if (!Array.isArray(nodes)) {
-          throw new Error("nodes.json 格式错误：根数据必须是数组。");
-        }
-
-        const nodeIds = new Set();
-
-        nodes.forEach((node, index) => {
-          const itemNumber = index + 1;
-
-          if (!node || typeof node !== "object" || Array.isArray(node)) {
-            throw new Error(
-              `nodes.json 第 ${itemNumber} 条数据格式错误：节点必须是对象。`
-            );
-          }
-
-          if (typeof node.id !== "string" || node.id.trim() === "") {
-            throw new Error(
-              `nodes.json 第 ${itemNumber} 条数据缺少有效字段 id。`
-            );
-          }
-
-          if (typeof node.name !== "string" || node.name.trim() === "") {
-            throw new Error(`nodes.json 中节点 ${node.id} 缺少有效字段 name。`);
-          }
-
-          if (typeof node.type !== "string" || node.type.trim() === "") {
-            throw new Error(`nodes.json 中节点 ${node.id} 缺少有效字段 type。`);
-          }
-
-          if (
-            typeof node.evidence_count !== "number" ||
-            !Number.isFinite(node.evidence_count)
-          ) {
-            throw new Error(
-              `nodes.json 中节点 ${node.id} 的 evidence_count 必须是数字。`
-            );
-          }
-
-          if (
-            typeof node.created_at !== "string" ||
-            node.created_at.trim() === ""
-          ) {
-            throw new Error(
-              `nodes.json 中节点 ${node.id} 缺少有效字段 created_at。`
-            );
-          }
-
-          const parsedCreatedAt = parseNodeCreatedAt(node.created_at);
-
-          if (!parsedCreatedAt) {
-            throw new Error(
-              `nodes.json 中节点 ${node.id} 的 created_at 格式错误：${node.created_at}。\n` +
-              "支持以下时间格式：\n" +
-              "1. 2026-07-17 10:00:00 中国标准时间\n" +
-              "2. 2026-07-16 14:28:28 UTC\n" +
-              "3. 2026-07-16T14:28:28Z\n" +
-              "4. 2026-07-16T22:28:28+08:00"
-            );
-          }
-
-          if (nodeIds.has(node.id)) {
-            throw new Error(`nodes.json 存在重复节点 id：${node.id}。`);
-          }
-
-          node.__createdAtDate = parsedCreatedAt;
-          node.__displayDate = formatCreatedDate(parsedCreatedAt);
-          node.__isNew = isNewNode(node.created_at);
-
-          nodeIds.add(node.id);
-        });
-
-        return nodeIds;
-      }
-
-      function validateEdges(edges, nodeIds) {
-        if (!Array.isArray(edges)) {
-          throw new Error("edges.json 格式错误：根数据必须是数组。");
-        }
-
-        edges.forEach((edge, index) => {
-          const itemNumber = index + 1;
-
-          if (!edge || typeof edge !== "object" || Array.isArray(edge)) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据格式错误：连接必须是对象。`
-            );
-          }
-
-          if (typeof edge.source !== "string" || edge.source.trim() === "") {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据缺少有效字段 source。`
-            );
-          }
-
-          if (typeof edge.target !== "string" || edge.target.trim() === "") {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据缺少有效字段 target。`
-            );
-          }
-
-          if (
-            typeof edge.relation !== "string" ||
-            edge.relation.trim() === ""
-          ) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据缺少有效字段 relation。`
-            );
-          }
-
-          if (!nodeIds.has(edge.source)) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据引用了不存在的 source 节点：${edge.source}。`
-            );
-          }
-
-          if (!nodeIds.has(edge.target)) {
-            throw new Error(
-              `edges.json 第 ${itemNumber} 条数据引用了不存在的 target 节点：${edge.target}。`
-            );
-          }
-        });
-      }
-
-      async function fetchJson(filename) {
-        let response;
-
-        try {
-          response = await fetch(`./${filename}`, {
-            method: "GET",
-            cache: "no-store"
-          });
-        } catch (error) {
-          throw new Error(
-            `无法加载 ${filename}：${error.message}。\n` +
-            `请确认 ${filename} 与 index.html 位于同一目录，并通过 GitHub Pages 或 HTTP 服务器访问。`
-          );
-        }
-
-        if (response.status === 404) {
-          throw new Error(
-            `找不到 ${filename}。\n` +
-            `请确认 ${filename} 与 index.html 位于同一目录，并检查文件名大小写。`
-          );
-        }
-
-        if (!response.ok) {
-          throw new Error(
-            `加载 ${filename} 失败：HTTP ${response.status} ${response.statusText || ""}。`
-          );
-        }
-
-        const rawText = await response.text();
-
-        if (rawText.trim() === "") {
-          throw new Error(`${filename} 内容为空。`);
-        }
-
-        try {
-          return JSON.parse(rawText);
-        } catch (error) {
-          throw new Error(`${filename} JSON 解析失败：${error.message}`);
-        }
-      }
-
-      function initializeGraph(nodes, edges) {
-        if (
-          typeof THREE === "undefined" ||
-          typeof ForceGraph3D === "undefined" ||
-          typeof SpriteText === "undefined"
-        ) {
-          throw new Error(
-            "3D 依赖库加载失败，请检查网络连接或 CDN 是否可访问。"
-          );
-        }
-
-        graphNodes = nodes;
-        graphEdges = edges;
-
-        graph = ForceGraph3D()(graphElement)
-          .width(window.innerWidth)
-          .height(window.innerHeight)
-          .backgroundColor("#010208")
-          .showNavInfo(false)
-          .graphData({ nodes, links: edges })
-          .nodeId("id")
-          .nodeThreeObject(createNodeObject)
-          .nodeThreeObjectExtend(false)
-          .nodeLabel(() => "")
-          .linkSource("source")
-          .linkTarget("target")
-          .linkColor(linkColorAccessor)
-          .linkWidth(linkWidthAccessor)
-          .linkOpacity(linkOpacityAccessor)
-          .linkDirectionalArrowLength(3.7)
-          .linkDirectionalArrowRelPos(0.87)
-          .linkDirectionalArrowColor((link) => {
-            const relation = String(link.relation);
-
-            if (relation.includes("抑制")) {
-              return "#FF4C81";
-            }
-
-            if (relation.includes("促进")) {
-              return "#5CEBFF";
-            }
-
-            return "#B68BFF";
-          })
-          .linkDirectionalParticles(linkParticleCountAccessor)
-          .linkDirectionalParticleWidth(linkParticleWidthAccessor)
-          .linkDirectionalParticleSpeed((link) =>
-            String(link.relation).includes("抑制") ? 0.006 : 0.0045
-          )
-          .linkDirectionalParticleColor(getBaseLinkColor)
-          .linkDirectionalParticleResolution(16)
-          .onNodeClick(handleNodeClick)
-          .onLinkClick(handleLinkClick)
-          .onBackgroundClick(resetCurrentView)
-          .onNodeHover((node) => {
-            graphElement.style.cursor = node ? "pointer" : "default";
-          })
-          .onLinkHover((link) => {
-            graphElement.style.cursor = link ? "pointer" : "default";
-          })
-          .warmupTicks(100)
-          .cooldownTicks(220)
-          .d3AlphaDecay(0.021)
-          .d3VelocityDecay(0.3);
-
-        const chargeForce = graph.d3Force("charge");
-        const linkForce = graph.d3Force("link");
-
-        if (chargeForce) {
-          chargeForce.strength(-170);
-        }
-
-        if (linkForce) {
-          linkForce.distance(58);
-        }
-
-        const scene = graph.scene();
-        scene.add(createStarField());
-        scene.add(new THREE.HemisphereLight("#B8F3FF", "#11061F", 1.55));
-
-        const cyanLight = new THREE.PointLight("#45E7FF", 2900, 1300, 1.8);
-        cyanLight.position.set(240, 190, 280);
-        scene.add(cyanLight);
-
-        const violetLight = new THREE.PointLight("#936BFF", 2500, 1100, 1.8);
-        violetLight.position.set(-260, -120, -190);
-        scene.add(violetLight);
-
-        const goldLight = new THREE.PointLight("#DFFF72", 1600, 900, 1.9);
-        goldLight.position.set(30, 260, -220);
-        scene.add(goldLight);
-
-        scene.fog = new THREE.FogExp2("#010208", 0.0004);
-
-        const renderer = graph.renderer();
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-        renderer.outputColorSpace = THREE.SRGBColorSpace;
-        renderer.toneMapping = THREE.ACESFilmicToneMapping;
-        renderer.toneMappingExposure = 1.3;
-
-        const controls = graph.controls();
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.07;
-        controls.autoRotate = true;
-        controls.autoRotateSpeed = 0.18;
-        controls.minDistance = 35;
-        controls.maxDistance = 1500;
-        controls.addEventListener("start", () => {
-          controls.autoRotate = false;
-        });
-
-        const initialDistance = Math.max(
-          290,
-          210 + Math.sqrt(Math.max(nodes.length, 1)) * 27
-        );
-
-        graph.cameraPosition(
-          {
-            x: initialDistance * 0.14,
-            y: initialDistance * 0.1,
-            z: initialDistance
-          },
-          { x: 0, y: 0, z: 0 },
-          0
-        );
-
-        renderRecentDates();
-        dateSearchInput.disabled = false;
-        dateSearchButton.disabled = false;
-        loadingElement.style.display = "none";
-        animateNodeGlow();
-
-        window.setTimeout(saveOverviewCamera, 1800);
-      }
-
-      datePanelToggle.addEventListener("click", () => {
-        const collapsed = !datePanel.classList.contains("collapsed");
-        setDatePanelCollapsed(collapsed);
-
-        if (!collapsed) {
-          window.setTimeout(() => dateSearchInput.focus(), 220);
-        }
-      });
-
-      dateSearchButton.addEventListener("click", performDateSearch);
-
-      dateSearchInput.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-          performDateSearch();
-        }
-      });
-
-      clearDateFilterButton.addEventListener("click", clearDateFilter);
-      closeModalButton.addEventListener("click", closeNodeModal);
-      resetViewButton.addEventListener("click", resetCurrentView);
-
-      modalOverlay.addEventListener("click", (event) => {
-        if (event.target === modalOverlay) {
-          closeNodeModal();
-        }
-      });
-
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          if (modalOverlay.classList.contains("visible")) {
-            closeNodeModal();
-          } else if (!datePanel.classList.contains("collapsed")) {
-            setDatePanelCollapsed(true);
-          } else {
-            resetCurrentView();
-          }
-        }
-      });
-
-      window.addEventListener("resize", () => {
-        if (graph) {
-          graph.width(window.innerWidth).height(window.innerHeight);
-        }
-      });
-
-      window.addEventListener("beforeunload", () => {
-        if (animationFrameId !== null) {
-          cancelAnimationFrame(animationFrameId);
-        }
-
-        if (detailTimer !== null) {
-          clearTimeout(detailTimer);
-        }
-      });
-
-      initializeDatePanelState();
-
-      Promise.all([
-        fetchJson("nodes.json"),
-        fetchJson("edges.json")
-      ])
-        .then(([nodes, edges]) => {
-          const nodeIds = validateNodes(nodes);
-          validateEdges(edges, nodeIds);
-          initializeGraph(nodes, edges);
-        })
-        .catch(showError);
-    })();
+  (() => {
+    "use strict";
+
+    const NEW_MS = 48 * 60 * 60 * 1000;
+    const TYPE_PALETTE = ["#4DE7FF","#8978FF","#FF62C8","#55F2AF","#FFB756","#679CFF","#FF6684","#A2F55D","#67FFD9","#C17CFF","#F4E36A"];
+    const $ = (id) => document.getElementById(id);
+    const state = {
+      graph: null, nodes: [], edges: [], nodeMap: new Map(), edgeMap: new Map(), adjacency: new Map(),
+      hiddenTypes: new Set(), searchIds: null, timeNodeIds: null, timeEdgeIds: null,
+      highlightNodes: new Set(), highlightEdges: new Set(), selected: new Set(), pinned: new Set(), favorites: new Set(),
+      colorMode: "type", sizeMode: "evidence", labelMode: "all", avoidOverlap: false,
+      dates: [], playTimer: null, boxMode: false, layoutSnapshot: null, clickTimer: null, lastClickNode: null,
+      nodeObjects: new Map(), glowCache: new Map(), starField: null, overlapTick: 0
+    };
+
+    function escapeHtml(value) { return String(value ?? "").replace(/[&<>'"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c])); }
+    function idOf(v) { return typeof v === "object" && v ? String(v.id) : String(v); }
+    function edgeKey(e) { return String(e.id || `${idOf(e.source)}→${idOf(e.target)}:${e.relation}`); }
+    function hash(s) { let h=0; for (const c of String(s)) h=((h<<5)-h+c.charCodeAt(0))|0; return Math.abs(h); }
+    function typeColor(type) { return TYPE_PALETTE[hash(type) % TYPE_PALETTE.length]; }
+    function parseDate(value) {
+      if (!value) return null; const s=String(value).trim().replace(/中国标准时间|北京时间|北京标准时间/g, "").trim();
+      let m=s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})[ T](\d{1,2}):(\d{2}):(\d{2})\s*(UTC|GMT)?$/i);
+      if (m) { const [,y,mo,d,h,mi,se,z]=m; return z ? new Date(Date.UTC(+y,+mo-1,+d,+h,+mi,+se)) : new Date(Date.UTC(+y,+mo-1,+d,+h-8,+mi,+se)); }
+      const d=new Date(value); return Number.isNaN(d.getTime()) ? null : d;
+    }
+    function dateKey(value) { const d=value instanceof Date ? value : parseDate(value); if (!d) return ""; const p=new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",year:"numeric",month:"numeric",day:"numeric"}).formatToParts(d); const o={}; p.forEach(x=>o[x.type]=x.value); return `${o.year}.${o.month}.${o.day}`; }
+    function normalizeDateInput(v) { const m=String(v||"").trim().replace(/年|月|[-/]/g,".").replace(/日/g,"").replace(/\.+/g,".").match(/^(\d{4})\.(\d{1,2})\.(\d{1,2})$/); if(!m)return ""; const d=new Date(Date.UTC(+m[1],+m[2]-1,+m[3])); if(d.getUTCFullYear()!=+m[1]||d.getUTCMonth()!=+m[2]-1||d.getUTCDate()!=+m[3])return ""; return `${+m[1]}.${+m[2]}.${+m[3]}`; }
+    function keyToDate(k) { const m=String(k).match(/^(\d{4})\.(\d{1,2})\.(\d{1,2})$/); return m ? new Date(Date.UTC(+m[1],+m[2]-1,+m[3],16)) : null; }
+    function isNew(item) { const d=parseDate(item.created_at); const diff=d ? Date.now()-d.getTime() : Infinity; return diff>=0 && diff<=NEW_MS; }
+    function fmt(n,d=3) { const v=Number(n); return Number.isFinite(v) ? v.toFixed(d) : "—"; }
+    function download(name, content, type="text/plain;charset=utf-8") { const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([content],{type})); a.download=name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000); }
+    function showError(err) { $("loading").style.display="none"; $("error-panel").style.display="block"; $("error-message").textContent=err instanceof Error?err.message:String(err); console.error(err); }
+    async function fetchJson(name) { let r; try { r=await fetch(`./${name}`,{cache:"no-store"}); } catch(e) { throw new Error(`无法请求 ${name}：${e.message}\n请通过 GitHub Pages 或 HTTP 服务器访问。`); } if(r.status===404) throw new Error(`找不到 ${name}，请确认它和 index.html 位于同一目录。`); if(!r.ok) throw new Error(`加载 ${name} 失败：HTTP ${r.status}`); const t=await r.text(); try{return JSON.parse(t);}catch(e){throw new Error(`${name} JSON 解析失败：${e.message}`);} }
+
+    function validate(nodes,edges) {
+      if(!Array.isArray(nodes)||!Array.isArray(edges)) throw new Error("nodes.json 与 edges.json 的根结构必须是数组。");
+      const ids=new Set(); nodes.forEach((n,i)=>{ for(const f of ["id","name","type","created_at"]) if(!n[f]) throw new Error(`nodes.json 第 ${i+1} 项缺少 ${f}`); if(ids.has(n.id)) throw new Error(`重复节点 ID：${n.id}`); ids.add(n.id); });
+      edges.forEach((e,i)=>{ for(const f of ["source","target","relation"]) if(!e[f]) throw new Error(`edges.json 第 ${i+1} 项缺少 ${f}`); if(!ids.has(e.source)||!ids.has(e.target)) throw new Error(`edges.json 第 ${i+1} 项引用不存在的节点`); });
+    }
+
+    function buildIndexes() {
+      state.nodeMap=new Map(state.nodes.map(n=>[String(n.id),n])); state.edgeMap=new Map(); state.adjacency=new Map(state.nodes.map(n=>[String(n.id),[]]));
+      state.edges.forEach(e=>{ state.edgeMap.set(edgeKey(e),e); state.adjacency.get(idOf(e.source))?.push({node:idOf(e.target),edge:e,direction:"out"}); state.adjacency.get(idOf(e.target))?.push({node:idOf(e.source),edge:e,direction:"in"}); });
+      state.nodes.forEach(n=>{ n.__createdDate=parseDate(n.created_at); n.__updatedDate=parseDate(n.updated_at||n.created_at); n.__dateKey=dateKey(n.updated_at||n.created_at); n.__isNew=isNew(n); n.__search=buildSearchText(n); });
+      state.edges.forEach(e=>{ e.__createdDate=parseDate(e.created_at); e.__updatedDate=parseDate(e.updated_at||e.created_at); e.__dateKey=dateKey(e.updated_at||e.created_at); e.__isNew=isNew(e); });
+      state.favorites=new Set(JSON.parse(localStorage.getItem("kg-favorites")||"[]"));
+    }
+    function buildSearchText(n) {
+      const parts=[n.name,n.type,n.category,n.layer,...(n.aliases||[]),...(n.search_terms||[])];
+      for(const p of (n.publications||n.sources||[])) parts.push(p.title,p.journal,p.doi,p.evidence);
+      try { if(window.pinyinPro?.pinyin) { const py=window.pinyinPro.pinyin(n.name,{toneType:"none",type:"array"}); parts.push(py.join(" "),py.join("")); } } catch(_) {}
+      return parts.filter(Boolean).join(" ").toLowerCase();
+    }
+
+    function nodeRadius(n) {
+      const m=n.metrics||{}; let v;
+      if(state.sizeMode==="pagerank") v=(Number(m.pagerank)||0)*500;
+      else if(state.sizeMode==="degree") v=Number(m.degree_count)||0;
+      else if(state.sizeMode==="betweenness") v=(Number(m.betweenness_centrality)||0)*80;
+      else v=Math.log2(1+Number(n.evidence_count||0))*2.2;
+      return Math.max(3.7,Math.min(11,4+v*.65));
+    }
+    function nodeColor(n) { return state.colorMode==="community" ? (n.community_color||TYPE_PALETTE[(n.community_id||0)%TYPE_PALETTE.length]) : typeColor(n.type); }
+    function glowTexture(color) {
+      if(state.glowCache.has(color)) return state.glowCache.get(color); const c=document.createElement("canvas"); c.width=c.height=256; const x=c.getContext("2d"),g=x.createRadialGradient(128,128,0,128,128,128); g.addColorStop(0,"#fff"); g.addColorStop(.12,color); g.addColorStop(.4,color+"99"); g.addColorStop(.75,color+"22"); g.addColorStop(1,"transparent"); x.fillStyle=g; x.fillRect(0,0,256,256); const t=new THREE.CanvasTexture(c); t.colorSpace=THREE.SRGBColorSpace; state.glowCache.set(color,t); return t;
+    }
+    function createNodeObject(n) {
+      const group=new THREE.Group(), r=nodeRadius(n), c=n.__isNew?"#F5FFE5":nodeColor(n), glow=n.__isNew?"#DFFF69":c;
+      const core=new THREE.Mesh(new THREE.SphereGeometry(r,32,32),new THREE.MeshStandardMaterial({color:c,emissive:glow,emissiveIntensity:n.__isNew?4.2:2.5,roughness:.2,metalness:.16,transparent:true,opacity:.98})); group.add(core);
+      const halo=new THREE.Mesh(new THREE.SphereGeometry(r*(n.__isNew?1.58:1.43),28,28),new THREE.MeshBasicMaterial({color:glow,transparent:true,opacity:n.__isNew?.28:.15,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.BackSide})); group.add(halo);
+      const sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:glowTexture(glow),color:glow,transparent:true,opacity:n.__isNew?.9:.62,blending:THREE.AdditiveBlending,depthWrite:false})); sprite.scale.set(r*(n.__isNew?7:5.5),r*(n.__isNew?7:5.5),1); group.add(sprite);
+      const label=new SpriteText(`${n.name}${n.__isNew?"  ✨新":""}`); label.color=n.__isNew?"#F3FFA5":"#F2FCFF"; label.textHeight=Math.max(2.9,Math.min(5,r*.67)); label.backgroundColor=n.__isNew?"rgba(20,28,2,.9)":"rgba(0,3,12,.88)"; label.padding=2.5; label.borderRadius=4; label.strokeWidth=.8; label.strokeColor="#000"; label.position.set(0,-(r*1.85+2.5),0); label.material.depthTest=false; label.material.depthWrite=false; label.renderOrder=9999; group.add(label);
+      const ring=new THREE.Mesh(new THREE.TorusGeometry(r*1.75,.24,12,48),new THREE.MeshBasicMaterial({color:"#fff27a",transparent:true,opacity:.9,depthWrite:false})); ring.rotation.x=Math.PI/2; ring.visible=false; group.add(ring);
+      group.userData={nodeId:String(n.id),core,halo,sprite,label,ring,phase:Math.random()*Math.PI*2,baseR:r,targetOpacity:1,currentOpacity:1}; state.nodeObjects.set(String(n.id),group); return group;
+    }
+    function createStars() { const count=3000,p=new Float32Array(count*3),c=new Float32Array(count*3); for(let i=0;i<count;i++){const r=500+Math.random()*1800,t=Math.random()*Math.PI*2,ph=Math.acos(2*Math.random()-1); p[i*3]=r*Math.sin(ph)*Math.cos(t);p[i*3+1]=r*Math.sin(ph)*Math.sin(t);p[i*3+2]=r*Math.cos(ph);const b=.45+Math.random()*.55;c[i*3]=b;c[i*3+1]=b*(.8+Math.random()*.2);c[i*3+2]=b;} const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.BufferAttribute(p,3));g.setAttribute("color",new THREE.BufferAttribute(c,3));return new THREE.Points(g,new THREE.PointsMaterial({size:1.6,vertexColors:true,transparent:true,opacity:.8,blending:THREE.AdditiveBlending,depthWrite:false})); }
+
+    function nodeVisible(n) { return !state.hiddenTypes.has(n.type) && (!state.searchIds||state.searchIds.has(String(n.id))) && (!state.timeNodeIds||state.timeNodeIds.has(String(n.id))); }
+    function linkVisible(e) { return nodeVisible(state.nodeMap.get(idOf(e.source))) && nodeVisible(state.nodeMap.get(idOf(e.target))) && (!state.timeEdgeIds||state.timeEdgeIds.has(edgeKey(e))); }
+    function relationColor(e) { if(e.conflict) return "#FF82D3"; if(e.__isNew) return "#FFD85D"; const r=String(e.relation); if(r.includes("抑制"))return "#FF557E"; if(r.includes("促进"))return "#69EFFF"; if(r.includes("归经"))return "#C994FF"; return "#89A7FF"; }
+    function linkColor(e) { return state.highlightEdges.size && !state.highlightEdges.has(edgeKey(e)) ? "#26354B" : relationColor(e); }
+    function linkWidth(e) { const base=.55+Math.max(.35,Number(e.confidence||.5))*1.5+Math.log2(1+Number(e.evidence_count||0))*.35; return state.highlightEdges.has(edgeKey(e))?base*2.2:base; }
+    function particleCount(e) { if(state.highlightEdges.size&&!state.highlightEdges.has(edgeKey(e)))return 0; return Math.min(12,2+Number(e.evidence_count||1)*2+(e.__isNew?2:0)); }
+    function refresh() { if(!state.graph)return; state.graph.nodeVisibility(nodeVisible).linkVisibility(linkVisible).linkColor(linkColor).linkWidth(linkWidth).linkDirectionalParticles(particleCount).linkDirectionalParticleColor(relationColor); if(state.graph.refresh) state.graph.refresh(); updateObjectStates(); }
+    function updateObjectStates() {
+      for(const n of state.nodes){const o=state.nodeObjects.get(String(n.id));if(!o)continue; const highlighted=!state.highlightNodes.size||state.highlightNodes.has(String(n.id)); o.userData.targetOpacity=highlighted?1:.12; o.userData.ring.visible=state.selected.has(String(n.id))||state.pinned.has(String(n.id))||state.favorites.has(String(n.id)); o.userData.ring.material.color.set(state.selected.has(String(n.id))?"#71F3FF":state.pinned.has(String(n.id))?"#FFF17A":"#FF8ED8");}
+    }
+
+    function fitNodes(nodes,duration=900) { const valid=nodes.filter(n=>Number.isFinite(n.x)&&Number.isFinite(n.y)&&Number.isFinite(n.z)); if(!valid.length)return; const center=valid.reduce((a,n)=>(a.x+=n.x,a.y+=n.y,a.z+=n.z,a),{x:0,y:0,z:0}); center.x/=valid.length;center.y/=valid.length;center.z/=valid.length;let radius=18;valid.forEach(n=>radius=Math.max(radius,Math.hypot(n.x-center.x,n.y-center.y,n.z-center.z)));const cam=state.graph.camera(),dir=cam.position.clone().sub(new THREE.Vector3(center.x,center.y,center.z)).normalize();if(!Number.isFinite(dir.x))dir.set(.2,.1,1).normalize();const dist=Math.max(70,Math.min(900,radius/Math.tan(cam.fov*Math.PI/360)*1.35+40));state.graph.controls().autoRotate=false;state.graph.cameraPosition({x:center.x+dir.x*dist,y:center.y+dir.y*dist,z:center.z+dir.z*dist},center,duration);$("reset-view").classList.add("visible");}
+    function bfs(root,depth) { const seen=new Set([root]),edges=new Set(),q=[[root,0]];while(q.length){const [id,d]=q.shift();if(d>=depth)continue;for(const a of state.adjacency.get(id)||[]){edges.add(edgeKey(a.edge));if(!seen.has(a.node)){seen.add(a.node);q.push([a.node,d+1]);}}}return{nodes:seen,edges}; }
+    function exploreNode(id,depth) { if(!state.nodeMap.has(id))return; const r=bfs(id,depth);state.highlightNodes=r.nodes;state.highlightEdges=r.edges;refresh();fitNodes([...r.nodes].map(x=>state.nodeMap.get(x)));$("explore-status").textContent=`已高亮 ${r.nodes.size} 个节点、${r.edges.size} 条关系。`;$("explore-status").className="status ok"; }
+    function clearHighlight(){state.highlightNodes.clear();state.highlightEdges.clear();refresh();$("path-output").textContent="";}
+    function shortestPath(start,end,directed){const q=[start],prev=new Map([[start,null]]),prevEdge=new Map();while(q.length){const cur=q.shift();if(cur===end)break;for(const a of state.adjacency.get(cur)||[]){if(directed&&a.direction!=="out")continue;if(!prev.has(a.node)){prev.set(a.node,cur);prevEdge.set(a.node,a.edge);q.push(a.node);}}}if(!prev.has(end))return null;const ids=[],es=[];let c=end;while(c){ids.push(c);if(prevEdge.has(c))es.push(prevEdge.get(c));c=prev.get(c);}return{nodes:ids.reverse(),edges:es.reverse()};}
+
+    function nodeByInput(value){const v=String(value||"").trim().toLowerCase();return state.nodes.find(n=>String(n.id).toLowerCase()===v||String(n.name).toLowerCase()===v||(n.aliases||[]).some(a=>String(a).toLowerCase()===v));}
+    function doSearch(){const q=$("q").value.trim().toLowerCase().replace(/\s+/g,""),type=$("type-filter").value,nf=$("new-filter").value,min=$("min-evidence").value===""?0:Number($("min-evidence").value),max=$("max-evidence").value===""?Infinity:Number($("max-evidence").value),dk=normalizeDateInput($("date-filter").value);let matches=state.nodes.filter(n=>{let text=n.__search.replace(/\s+/g,"");return(!q||text.includes(q))&&(!type||n.type===type)&&(Number(n.evidence_count||0)>=min)&&(Number(n.evidence_count||0)<=max)&&(nf==="all"||(nf==="new"&&n.__isNew)||(nf==="old"&&!n.__isNew))&&(!$("date-filter").value.trim()||n.__dateKey===dk);}); if($("date-filter").value.trim()&&!dk){setStatus("search-status","日期格式错误，例如 2026.7.16","error");return;}state.searchIds=new Set(matches.map(n=>String(n.id)));renderResults(matches,$("search-results"));setStatus("search-status",`找到 ${matches.length} 个节点`,matches.length?"ok":"error");refresh();if(matches.length)fitNodes(matches);}
+    function clearSearch(){state.searchIds=null;["q","min-evidence","max-evidence","date-filter"].forEach(id=>$(id).value="");$("type-filter").value="";$("new-filter").value="all";$("search-results").innerHTML="";setStatus("search-status","已清除搜索条件");refresh();}
+    function renderResults(nodes,el){el.innerHTML="";nodes.slice(0,100).forEach(n=>{const b=document.createElement("button");b.className="result-item";b.innerHTML=`<span><span class="result-name">${escapeHtml(n.name)}${n.__isNew?" ✨新":""}</span><span class="result-sub">${escapeHtml(n.type)} · ${n.evidence_count||0} 篇 · ${escapeHtml(n.__dateKey)}</span></span><span class="badge">${escapeHtml(n.evidence_grade||"—")}</span>`;b.onclick=()=>handleNodeClick(n,{shiftKey:false});el.appendChild(b);});}
+    function setStatus(id,msg,kind=""){const el=$(id);el.textContent=msg;el.className=`status ${kind}`;}
+
+    function nodePublications(n){const arr=n.publications||n.sources||[];return arr.map(p=>({pmid:String(p.pmid||""),title:p.title||"题名暂未提供",authors:Array.isArray(p.authors)?p.authors.join(", "):(p.authors||""),journal:p.journal||"",year:p.year||String(p.publication_date||"").match(/\d{4}/)?.[0]||"",url:p.pubmed_url||(p.pmid?`https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/`:`https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(n.name)}`),doi:p.doi||"",evidence:p.evidence||""}));}
+    function openNode(n){const m=n.metrics||{},pubs=nodePublications(n);$("node-detail").innerHTML=`<div class="kicker">Research Entity ${n.__isNew?"· 48H NEW":""}</div><h2>${escapeHtml(n.name)}</h2><div class="actions"><button class="btn" id="favorite-node">${state.favorites.has(String(n.id))?"★ 已收藏":"☆ 收藏"}</button><button class="btn" id="pin-node">${state.pinned.has(String(n.id))?"解除固定":"固定节点"}</button><button class="btn" id="select-node">加入对比</button><a class="pub-link" target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(n.name)}">PubMed 综合检索</a></div><div class="info-grid" style="margin-top:14px"><div class="info"><b>实体类型</b><span>${escapeHtml(n.type)}</span></div><div class="info"><b>分类</b><span>${escapeHtml(n.category||n.type)}</span></div><div class="info"><b>文献数量</b><span>${n.evidence_count||0}</span></div><div class="info"><b>更新日期</b><span>${escapeHtml(n.__dateKey)}</span></div><div class="info"><b>证据等级</b><span>${escapeHtml(n.evidence_grade||"—")}（数量代理）</span></div><div class="info"><b>社区星团</b><span>${escapeHtml(n.community_name||"—")}</span></div></div><section class="modal-section"><h3>中心性与关键节点指标</h3><table class="metrics-table"><tr><th>连接数</th><td>${m.degree_count??"—"}</td><th>Degree</th><td>${fmt(m.degree_centrality,4)}</td></tr><tr><th>PageRank</th><td>${fmt(m.pagerank,6)}</td><th>介数中心性</th><td>${fmt(m.betweenness_centrality,6)}</td></tr><tr><th>接近中心性</th><td>${fmt(m.closeness_centrality,6)}</td><th>冲突关系数</th><td>${n.conflict_count||0}</td></tr></table></section><section class="modal-section"><h3>关联 PubMed 文献（${pubs.length}）</h3><div class="pub-list">${pubs.length?pubs.map(pubCard).join(""):'<div class="hint">该节点尚未提供文献明细。</div>'}</div></section>`;
+      $("favorite-node").onclick=()=>{const id=String(n.id);state.favorites.has(id)?state.favorites.delete(id):state.favorites.add(id);localStorage.setItem("kg-favorites",JSON.stringify([...state.favorites]));openNode(n);refresh();};
+      $("pin-node").onclick=()=>{togglePin(n);openNode(n);}; $("select-node").onclick=()=>{state.selected.add(String(n.id));updateSelectionUI();refresh();}; $("node-overlay").classList.add("visible");
+    }
+    function pubCard(p){return `<article class="pub-card"><div class="pub-title">${escapeHtml(p.title)}</div><div class="pub-meta"><b>作者：</b>${escapeHtml(p.authors||"暂无作者数据")}<br><b>期刊：</b>${escapeHtml(p.journal||"暂未提供")}　<b>年份：</b>${escapeHtml(p.year||"未知")}<br><b>PMID：</b>${escapeHtml(p.pmid||"未提供")}${p.doi?`　<b>DOI：</b>${escapeHtml(p.doi)}`:""}</div><div class="pub-links"><a class="pub-link" target="_blank" rel="noopener" href="${escapeHtml(p.url)}">打开 PubMed</a></div>${p.evidence?`<div class="evidence-quote">${escapeHtml(p.evidence)}</div>`:""}</article>`;}
+    function openEdge(e){const s=state.nodeMap.get(idOf(e.source)),t=state.nodeMap.get(idOf(e.target)),pubs=(e.publications||e.sources||[]).map(p=>({pmid:String(p.pmid||""),title:p.title||"题名暂未提供",authors:Array.isArray(p.authors)?p.authors.join(", "):(p.authors||""),journal:p.journal||"",year:p.year||String(p.publication_date||"").match(/\d{4}/)?.[0]||"",url:p.pubmed_url||(p.pmid?`https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/`:"#"),doi:p.doi||"",evidence:p.evidence||""}));const pmids=[...(e.evidence_pmids||[])];$("edge-detail").innerHTML=`<div class="kicker">Evidence Relation ${e.__isNew?"· 48H NEW":""}</div><h2>${escapeHtml(s?.name)} → ${escapeHtml(t?.name)}</h2>${e.conflict?`<div class="warning">⚠ 检测到冲突证据：同一实体对同时存在 ${escapeHtml((e.conflicting_relations||[]).join(" / "))}。请结合实验条件和原始文献判断。</div>`:""}<div class="info-grid" style="margin-top:14px"><div class="info"><b>起点实体</b><span>${escapeHtml(s?.name)}</span></div><div class="info"><b>终点实体</b><span>${escapeHtml(t?.name)}</span></div><div class="info"><b>关系类型</b><span>${escapeHtml(e.relation)}</span></div><div class="info"><b>证据数量</b><span>${e.evidence_count||0}</span></div><div class="info"><b>置信度</b><span>${fmt(e.confidence,3)}</span></div><div class="info"><b>证据等级</b><span>${escapeHtml(e.evidence_grade||"—")}</span></div><div class="info"><b>创建日期</b><span>${escapeHtml(dateKey(e.created_at))}</span></div><div class="info"><b>PMID 列表</b><span>${escapeHtml(pmids.join(", ")||"未提供")}</span></div></div><section class="modal-section"><h3>证据原句与来源文章</h3><div class="evidence-list">${pubs.length?pubs.map(pubCard).join(""):'<div class="hint">暂无关系证据明细。</div>'}</div></section><div class="actions" style="margin-top:14px"><a class="pub-link" target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(`${s?.name} ${t?.name}`)}">在 PubMed 检索该实体对</a></div>`;$("edge-overlay").classList.add("visible");}
+
+    function handleNodeClick(n,event={}) { const id=String(n.id); if(event.shiftKey){state.selected.has(id)?state.selected.delete(id):state.selected.add(id);updateSelectionUI();refresh();return;} if(state.lastClickNode===id&&state.clickTimer){clearTimeout(state.clickTimer);state.clickTimer=null;state.lastClickNode=null;togglePin(n);return;} state.lastClickNode=id;state.clickTimer=setTimeout(()=>{state.clickTimer=null;state.lastClickNode=null;const depth=Number($("hop-depth").value||1);exploreNode(id,depth);setTimeout(()=>openNode(n),650);},260); }
+    function togglePin(n){const id=String(n.id);if(state.pinned.has(id)){state.pinned.delete(id);n.fx=n.fy=n.fz=undefined;}else{state.pinned.add(id);n.fx=n.x;n.fy=n.y;n.fz=n.z;}refresh();setStatus("selection-status",state.pinned.has(id)?`已固定 ${n.name}`:`已解除固定 ${n.name}`,"ok");}
+
+    function updateSelectionUI(){const c=state.selected.size;$("selected-count").textContent=`已选 ${c}`;$("selection-toolbar").classList.toggle("visible",c>0);$("selection-status").textContent=`当前已选 ${c} 个节点。`;}
+    function showCompare(){const ns=[...state.selected].map(id=>state.nodeMap.get(id)).filter(Boolean);if(!ns.length){setStatus("selection-status","请先选择节点","error");return;}const metrics=["degree_count","pagerank","betweenness_centrality","closeness_centrality"];$("compare-detail").innerHTML=`<div class="kicker">Node Comparison</div><h2>多节点科研对比</h2><div class="compare-table-wrap"><table class="metrics-table"><thead><tr><th>指标</th>${ns.map(n=>`<th>${escapeHtml(n.name)}</th>`).join("")}</tr></thead><tbody><tr><th>类型</th>${ns.map(n=>`<td>${escapeHtml(n.type)}</td>`).join("")}</tr><tr><th>文献数</th>${ns.map(n=>`<td>${n.evidence_count||0}</td>`).join("")}</tr><tr><th>证据等级</th>${ns.map(n=>`<td>${escapeHtml(n.evidence_grade||"—")}</td>`).join("")}</tr><tr><th>社区</th>${ns.map(n=>`<td>${escapeHtml(n.community_name||"—")}</td>`).join("")}</tr>${metrics.map(k=>`<tr><th>${k}</th>${ns.map(n=>`<td>${fmt(n.metrics?.[k],k==="degree_count"?0:6)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;$("compare-overlay").classList.add("visible");}
+
+    function setupBoxSelection(){const rect=$("selection-rect");let start=null;const canvas=state.graph.renderer().domElement;canvas.addEventListener("pointerdown",e=>{if(!state.boxMode)return;e.preventDefault();e.stopPropagation();start={x:e.clientX,y:e.clientY};rect.style.display="block";rect.style.left=start.x+"px";rect.style.top=start.y+"px";rect.style.width=rect.style.height="0";},{capture:true});window.addEventListener("pointermove",e=>{if(!start)return;const x=Math.min(start.x,e.clientX),y=Math.min(start.y,e.clientY),w=Math.abs(e.clientX-start.x),h=Math.abs(e.clientY-start.y);Object.assign(rect.style,{left:x+"px",top:y+"px",width:w+"px",height:h+"px"});});window.addEventListener("pointerup",e=>{if(!start)return;const x1=Math.min(start.x,e.clientX),x2=Math.max(start.x,e.clientX),y1=Math.min(start.y,e.clientY),y2=Math.max(start.y,e.clientY);const cam=state.graph.camera(),renderer=state.graph.renderer(),box=renderer.domElement.getBoundingClientRect();for(const n of state.nodes){if(!nodeVisible(n))continue;const v=new THREE.Vector3(n.x,n.y,n.z).project(cam);const sx=box.left+(v.x+1)/2*box.width,sy=box.top+(1-v.y)/2*box.height;if(sx>=x1&&sx<=x2&&sy>=y1&&sy<=y2)state.selected.add(String(n.id));}start=null;rect.style.display="none";state.boxMode=false;state.graph.controls().enabled=true;$("box-select-btn").classList.remove("active");updateSelectionUI();refresh();});}
+
+    function buildTimeline(){const ds=[];for(const x of [...state.nodes,...state.edges]){const d=x.__createdDate;if(d)ds.push(d);}const min=new Date(Math.min(...ds)),max=new Date(Math.max(...ds));for(let d=new Date(Date.UTC(min.getUTCFullYear(),min.getUTCMonth(),min.getUTCDate()));d<=max;d=new Date(d.getTime()+86400000))state.dates.push(dateKey(d));const r=$("timeline");r.max=Math.max(0,state.dates.length-1);r.value=r.max;updateTimelineLabel();drawTimeChart();}
+    function updateTimelineLabel(){const k=state.dates[Number($("timeline").value)]||"—";$("timeline-label").textContent=`日期：${k}`;}
+    function applyTime(){const k=state.dates[Number($("timeline").value)],target=keyToDate(k),cum=$("cumulative").checked;if(!target)return;const end=new Date(target.getTime()+86400000);if(cum){state.timeNodeIds=new Set(state.nodes.filter(n=>n.__createdDate<=end&&(!n.deleted_at||parseDate(n.deleted_at)>end)).map(n=>String(n.id)));state.timeEdgeIds=new Set(state.edges.filter(e=>e.__createdDate<=end&&(!e.deleted_at||parseDate(e.deleted_at)>end)).map(edgeKey));}else{state.timeNodeIds=new Set(state.nodes.filter(n=>n.__dateKey===k).map(n=>String(n.id)));state.timeEdgeIds=new Set(state.edges.filter(e=>e.__dateKey===k).map(edgeKey));}refresh();const visible=state.nodes.filter(nodeVisible);setStatus("time-status",`${k}：${visible.length} 个节点、${state.edges.filter(linkVisible).length} 条关系`,visible.length?"ok":"error");if(visible.length)fitNodes(visible);}
+    function clearTime(){state.timeNodeIds=state.timeEdgeIds=null;refresh();setStatus("time-status","已清除时间筛选");}
+    function startPlay(step){clearInterval(state.playTimer);state.playTimer=setInterval(()=>{const r=$("timeline"),next=Math.min(Number(r.max),Number(r.value)+step);r.value=next;updateTimelineLabel();applyTime();if(next>=Number(r.max)){clearInterval(state.playTimer);state.playTimer=null;}},850);}
+    function drawTimeChart(){const canvas=$("time-chart"),ctx=canvas.getContext("2d"),w=canvas.width,h=canvas.height;ctx.clearRect(0,0,w,h);const counts=state.dates.map(k=>({n:state.nodes.filter(x=>dateKey(x.created_at)===k).length,e:state.edges.filter(x=>dateKey(x.created_at)===k).length})),mx=Math.max(1,...counts.flatMap(x=>[x.n,x.e]));ctx.strokeStyle="#62eaff";ctx.lineWidth=2;ctx.beginPath();counts.forEach((x,i)=>{const px=8+i*(w-16)/Math.max(1,counts.length-1),py=h-10-x.n*(h-20)/mx;i?ctx.lineTo(px,py):ctx.moveTo(px,py)});ctx.stroke();ctx.strokeStyle="#ffd45f";ctx.beginPath();counts.forEach((x,i)=>{const px=8+i*(w-16)/Math.max(1,counts.length-1),py=h-10-x.e*(h-20)/mx;i?ctx.lineTo(px,py):ctx.moveTo(px,py)});ctx.stroke();ctx.fillStyle="#7d98b3";ctx.font="10px sans-serif";ctx.fillText("蓝：新增节点　金：新增关系",8,12);}
+    function snapshotAt(item,d){const created=parseDate(item.created_at),deleted=parseDate(item.deleted_at);return created&&created<=d&&(!deleted||deleted>d);}
+    function evidenceAt(item,d){const hs=(item.history||[]).map(h=>({...h,date:parseDate(h.at)})).filter(h=>h.date&&h.date<=d).sort((a,b)=>a.date-b.date);return hs.length?Number(hs.at(-1).evidence_count||0):(snapshotAt(item,d)?Number(item.evidence_count||0):0);}
+    function versionCompare(){const a=keyToDate(normalizeDateInput($("compare-a").value)),b=keyToDate(normalizeDateInput($("compare-b").value));if(!a||!b||a>=b){$("version-output").textContent="请输入两个有效日期，且较早日期必须小于较晚日期。";return;}const addedN=state.nodes.filter(n=>!snapshotAt(n,a)&&snapshotAt(n,b)),deletedN=state.nodes.filter(n=>snapshotAt(n,a)&&!snapshotAt(n,b)),addedE=state.edges.filter(e=>!snapshotAt(e,a)&&snapshotAt(e,b)),deletedE=state.edges.filter(e=>snapshotAt(e,a)&&!snapshotAt(e,b));let changes=state.nodes.map(n=>({n,d:evidenceAt(n,b)-evidenceAt(n,a)})).filter(x=>x.d!==0).sort((x,y)=>Math.abs(y.d)-Math.abs(x.d));const evA=state.nodes.reduce((s,n)=>s+evidenceAt(n,a),0),evB=state.nodes.reduce((s,n)=>s+evidenceAt(n,b),0);$("version-output").textContent=`新增节点：${addedN.length}\n删除节点：${deletedN.length}\n新增关系：${addedE.length}\n删除关系：${deletedE.length}\n节点证据总数变化：${evA} → ${evB}（${evB-evA>=0?"+":""}${evB-evA}）\n变化最大的实体：${changes.slice(0,5).map(x=>`${x.n.name} ${x.d>=0?"+":""}${x.d}`).join("；")||"无"}\n\n说明：删除统计依赖 deleted_at；证据变化依赖 history。增强数据中的 inferred=true 历史记录属于基于 created_at/updated_at 的推断。`;}
+
+    function renderLegend(){const counts=new Map();state.nodes.forEach(n=>counts.set(n.type,(counts.get(n.type)||0)+1));$("type-legend").innerHTML="";for(const [type,count] of [...counts].sort((a,b)=>b[1]-a[1])){const row=document.createElement("div");row.className="legend-row";row.dataset.type=type;row.innerHTML=`<span class="dot" style="color:${typeColor(type)};background:${typeColor(type)}"></span><span class="legend-name">${escapeHtml(type)}</span><span class="legend-count">${count}</span>`;row.onclick=e=>{if(e.ctrlKey||e.metaKey){state.hiddenTypes=new Set([...counts.keys()].filter(x=>x!==type));}else state.hiddenTypes.has(type)?state.hiddenTypes.delete(type):state.hiddenTypes.add(type);renderLegend();refresh();};row.classList.toggle("off",state.hiddenTypes.has(type));$("type-legend").appendChild(row);}}
+    function rebuildNodeObjects(){state.graph.nodeThreeObject(createNodeObject);refresh();}
+
+    function currentSubgraph(){const ns=state.nodes.filter(nodeVisible),ids=new Set(ns.map(n=>String(n.id))),es=state.edges.filter(e=>ids.has(idOf(e.source))&&ids.has(idOf(e.target))&&linkVisible(e));return{nodes:ns,edges:es};}
+    function csvEscape(v){const s=typeof v==="object"?JSON.stringify(v):String(v??"");return `"${s.replaceAll('"','""')}"`;}
+    function exportData(kind){const {nodes,edges}=currentSubgraph(),stamp=new Date().toISOString().slice(0,10);try{if(kind==="png"||kind==="png-transparent"){const scene=state.graph.scene(),old=scene.background,oldFog=scene.fog;if(kind.includes("transparent")){scene.background=null;scene.fog=null;}state.graph.renderer().render(scene,state.graph.camera());const a=document.createElement("a");a.download=`kg-${kind}-${stamp}.png`;a.href=state.graph.renderer().domElement.toDataURL("image/png");a.click();scene.background=old;scene.fog=oldFog;}else if(kind==="json")download(`subgraph-${stamp}.json`,JSON.stringify({nodes,edges},null,2),"application/json");else if(kind==="csv"){const nk=["id","name","type","category","evidence_count","created_at","updated_at","community_name","evidence_grade","metrics"],ek=["id","source","target","relation","evidence_count","confidence","evidence_grade","conflict","created_at"];download(`nodes-${stamp}.csv`,[nk.join(","),...nodes.map(n=>nk.map(k=>csvEscape(n[k])).join(","))].join("\n"),"text/csv;charset=utf-8");download(`edges-${stamp}.csv`,[ek.join(","),...edges.map(e=>ek.map(k=>csvEscape(k==="source"?idOf(e.source):k==="target"?idOf(e.target):e[k])).join(","))].join("\n"),"text/csv;charset=utf-8");}else if(kind==="graphml"){const x=`<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns"><graph edgedefault="directed">${nodes.map(n=>`<node id="${escapeHtml(n.id)}"><data key="name">${escapeHtml(n.name)}</data><data key="type">${escapeHtml(n.type)}</data></node>`).join("")}${edges.map(e=>`<edge id="${escapeHtml(e.id)}" source="${escapeHtml(idOf(e.source))}" target="${escapeHtml(idOf(e.target))}"><data key="relation">${escapeHtml(e.relation)}</data></edge>`).join("")}</graph></graphml>`;download(`graph-${stamp}.graphml`,x,"application/xml");}else if(kind==="cytoscape")download(`cytoscape-${stamp}.json`,JSON.stringify({elements:{nodes:nodes.map(n=>({data:n})),edges:edges.map(e=>({data:{...e,source:idOf(e.source),target:idOf(e.target)}}))}},null,2),"application/json");else if(kind==="neo4j"){const q=[...nodes.map(n=>`MERGE (n:Entity {id:${JSON.stringify(n.id)}}) SET n.name=${JSON.stringify(n.name)}, n.type=${JSON.stringify(n.type)}, n.evidence_count=${Number(n.evidence_count||0)};`),...edges.map(e=>`MATCH (a:Entity {id:${JSON.stringify(idOf(e.source))}}),(b:Entity {id:${JSON.stringify(idOf(e.target))}}) MERGE (a)-[r:RELATED {id:${JSON.stringify(e.id)}}]->(b) SET r.relation=${JSON.stringify(e.relation)}, r.confidence=${Number(e.confidence||0)};`)];download(`neo4j-${stamp}.cypher`,q.join("\n"));}else if(kind==="report"){const tc={};nodes.forEach(n=>tc[n.type]=(tc[n.type]||0)+1);const cc=edges.filter(e=>e.conflict).length,grades={};edges.forEach(e=>grades[e.evidence_grade]=(grades[e.evidence_grade]||0)+1);const text=`中医免疫知识图谱统计报告\n生成时间：${new Date().toLocaleString("zh-CN")}\n当前节点：${nodes.length}\n当前关系：${edges.length}\n冲突关系：${cc}\n\n实体类型：\n${Object.entries(tc).map(([k,v])=>`${k}: ${v}`).join("\n")}\n\n关系证据等级：\n${Object.entries(grades).map(([k,v])=>`${k}: ${v}`).join("\n")}\n\nPageRank 前10：\n${[...nodes].sort((a,b)=>(b.metrics?.pagerank||0)-(a.metrics?.pagerank||0)).slice(0,10).map((n,i)=>`${i+1}. ${n.name} ${fmt(n.metrics?.pagerank,6)}`).join("\n")}`;download(`report-${stamp}.txt`,text);}setStatus("export-status",`已生成 ${kind} 导出文件`,"ok");}catch(e){setStatus("export-status",`导出失败：${e.message}`,"error");}}
+
+    function animate(){const now=performance.now()*.001;for(const [id,o] of state.nodeObjects){const n=state.nodeMap.get(id),u=o.userData;u.currentOpacity+=(u.targetOpacity-u.currentOpacity)*.08;const pulse=1+Math.sin(now*1.7+u.phase)*(n.__isNew?.06:.03);u.core.scale.setScalar(pulse);u.halo.scale.setScalar(1+Math.sin(now*1.25+u.phase)*(n.__isNew?.12:.07));u.core.material.opacity=.98*u.currentOpacity;u.halo.material.opacity=(n.__isNew?.28:.15)*u.currentOpacity;u.sprite.material.opacity=(n.__isNew?.86:.58)*u.currentOpacity;u.ring.rotation.z+=.006;u.label.visible=labelVisible(n)&&nodeVisible(n);u.label.material.opacity=Math.max(.35,u.currentOpacity);}if(state.avoidOverlap&&performance.now()-state.overlapTick>250){avoidLabelOverlap();state.overlapTick=performance.now();}requestAnimationFrame(animate);}
+    function labelVisible(n){if(state.labelMode==="none")return false;if(state.labelMode==="all")return true;const important=(n.metrics?.pagerank||0)>=quantilePagerank()||Number(n.evidence_count||0)>=3||state.highlightNodes.has(String(n.id))||state.selected.has(String(n.id));if(state.labelMode==="important")return important;const dist=state.graph?.camera().position.length()||500;return dist<430||important;}
+    let cachedQ=null;function quantilePagerank(){if(cachedQ!==null)return cachedQ;const a=state.nodes.map(n=>n.metrics?.pagerank||0).sort((x,y)=>x-y);cachedQ=a[Math.floor(a.length*.72)]||0;return cachedQ;}
+    function avoidLabelOverlap(){const cam=state.graph.camera(),box=state.graph.renderer().domElement.getBoundingClientRect(),items=[];for(const n of [...state.nodes].sort((a,b)=>(b.metrics?.pagerank||0)-(a.metrics?.pagerank||0))){const o=state.nodeObjects.get(String(n.id));if(!o||!labelVisible(n)||!nodeVisible(n))continue;const p=new THREE.Vector3(n.x,n.y,n.z).project(cam),x=(p.x+1)*box.width/2,y=(1-p.y)*box.height/2,w=Math.min(170,20+String(n.name).length*8),h=19;const hit=items.some(r=>x-w/2<r.x2&&x+w/2>r.x1&&y-h/2<r.y2&&y+h/2>r.y1);o.userData.label.visible=!hit;if(!hit)items.push({x1:x-w/2,x2:x+w/2,y1:y-h/2,y2:y+h/2});}}
+
+    function renderCollections(){const data=JSON.parse(localStorage.getItem("kg-collections")||"{}");$("collections").innerHTML="";for(const [name,ids] of Object.entries(data)){const b=document.createElement("button");b.className="result-item";b.innerHTML=`<span><span class="result-name">${escapeHtml(name)}</span><span class="result-sub">${ids.length} 个节点</span></span><span class="badge">打开</span>`;b.onclick=()=>{state.selected=new Set(ids.filter(id=>state.nodeMap.has(id)));updateSelectionUI();refresh();fitNodes([...state.selected].map(id=>state.nodeMap.get(id)));};$("collections").appendChild(b);}}
+
+    function setupUI(){
+      $("panel-toggle").onclick=()=>{const p=$("control-shell");p.classList.toggle("collapsed");localStorage.setItem("kg-panel-collapsed",p.classList.contains("collapsed")?"1":"0");};if(localStorage.getItem("kg-panel-collapsed")==="1"||innerWidth<700)$("control-shell").classList.add("collapsed");
+      document.querySelectorAll(".tab-btn").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab-btn,.tab-page").forEach(x=>x.classList.remove("active"));b.classList.add("active");$(`tab-${b.dataset.tab}`).classList.add("active");});
+      $("search-btn").onclick=doSearch;$("clear-search").onclick=clearSearch;$("q").onkeydown=e=>{if(e.key==="Enter")doSearch();};
+      $("explore-btn").onclick=()=>{const n=nodeByInput($("explore-node").value);n?exploreNode(String(n.id),Number($("hop-depth").value)):setStatus("explore-status","未找到起始实体","error");};$("clear-highlight").onclick=clearHighlight;
+      $("path-btn").onclick=()=>{const s=nodeByInput($("path-start").value),t=nodeByInput($("path-end").value);if(!s||!t){$("path-output").textContent="起点或终点不存在。";return;}const p=shortestPath(String(s.id),String(t.id),$("directed-path").checked);if(!p){$("path-output").textContent="没有找到可达路径。";return;}state.highlightNodes=new Set(p.nodes);state.highlightEdges=new Set(p.edges.map(edgeKey));refresh();fitNodes(p.nodes.map(id=>state.nodeMap.get(id)));$("path-output").textContent=p.nodes.map(id=>state.nodeMap.get(id).name).join(" → ");};
+      $("box-select-btn").onclick=()=>{state.boxMode=!state.boxMode;state.graph.controls().enabled=!state.boxMode;$("box-select-btn").classList.toggle("active",state.boxMode);setStatus("selection-status",state.boxMode?"请在图谱中拖拽矩形框选节点":"已退出框选模式",state.boxMode?"ok":"");};
+      $("compare-btn").onclick=$("selection-compare-bottom").onclick=showCompare;$("clear-selection").onclick=$("selection-clear-bottom").onclick=()=>{state.selected.clear();updateSelectionUI();refresh();};
+      $("save-collection").onclick=()=>{const name=$("collection-name").value.trim();if(!name||!state.selected.size){setStatus("selection-status","请输入集合名称并选择节点","error");return;}const data=JSON.parse(localStorage.getItem("kg-collections")||"{}");data[name]=[...state.selected];localStorage.setItem("kg-collections",JSON.stringify(data));renderCollections();setStatus("selection-status",`已保存研究集合：${name}`,"ok");};
+      $("timeline").oninput=updateTimelineLabel;$("apply-time").onclick=applyTime;$("clear-time").onclick=clearTime;$("play-day").onclick=()=>startPlay(1);$("play-week").onclick=()=>startPlay(7);$("stop-play").onclick=()=>{clearInterval(state.playTimer);state.playTimer=null;};$("version-compare").onclick=versionCompare;
+      $("color-mode").onchange=e=>{state.colorMode=e.target.value;state.nodeObjects.clear();rebuildNodeObjects();};$("size-mode").onchange=e=>{state.sizeMode=e.target.value;state.nodeObjects.clear();rebuildNodeObjects();};$("label-mode").onchange=e=>state.labelMode=e.target.value;$("avoid-overlap").onchange=e=>state.avoidOverlap=e.target.checked;
+      document.querySelectorAll("[data-export]").forEach(b=>b.onclick=()=>exportData(b.dataset.export));$("reset-view").onclick=()=>{clearHighlight();const ns=state.nodes.filter(nodeVisible);fitNodes(ns,1000);$("reset-view").classList.remove("visible");};
+      document.querySelectorAll("[data-close]").forEach(b=>b.onclick=()=>$(b.dataset.close).classList.remove("visible"));document.querySelectorAll(".overlay").forEach(o=>o.onclick=e=>{if(e.target===o)o.classList.remove("visible");});document.onkeydown=e=>{if(e.key==="Escape")document.querySelectorAll(".overlay.visible").forEach(o=>o.classList.remove("visible"));};
+    }
+
+    function initGraph(){
+      state.graph=ForceGraph3D({rendererConfig:{antialias:true,alpha:true,preserveDrawingBuffer:true}})($("graph"))
+        .width(innerWidth).height(innerHeight).backgroundColor("#010208").showNavInfo(false).graphData({nodes:state.nodes,links:state.edges}).nodeId("id")
+        .nodeThreeObject(createNodeObject).nodeThreeObjectExtend(false).nodeLabel(()=>"").nodeVisibility(nodeVisible)
+        .linkSource("source").linkTarget("target").linkVisibility(linkVisible).linkColor(linkColor).linkWidth(linkWidth).linkOpacity(.75)
+        .linkDirectionalArrowLength(3.2).linkDirectionalArrowRelPos(.86).linkDirectionalArrowColor(relationColor)
+        .linkDirectionalParticles(particleCount).linkDirectionalParticleWidth(e=>Math.min(3,.9+Number(e.confidence||.5)*1.6)).linkDirectionalParticleSpeed(e=>e.__isNew?.009:.0045).linkDirectionalParticleColor(relationColor).linkDirectionalParticleResolution(14)
+        .onNodeClick(handleNodeClick).onNodeDragEnd(n=>{if(state.pinned.has(String(n.id))){n.fx=n.x;n.fy=n.y;n.fz=n.z;}}).onLinkClick(e=>{state.highlightNodes=new Set([idOf(e.source),idOf(e.target)]);state.highlightEdges=new Set([edgeKey(e)]);refresh();fitNodes([state.nodeMap.get(idOf(e.source)),state.nodeMap.get(idOf(e.target))]);setTimeout(()=>openEdge(e),500);})
+        .onNodeHover(n=>$("graph").style.cursor=n?"pointer":"default").onLinkHover(e=>$("graph").style.cursor=e?"pointer":"default").onBackgroundClick(()=>clearHighlight())
+        .warmupTicks(80).cooldownTicks(180).d3AlphaDecay(.022).d3VelocityDecay(.3);
+      state.graph.d3Force("charge")?.strength(-165);state.graph.d3Force("link")?.distance(58);
+      const scene=state.graph.scene();state.starField=createStars();scene.add(state.starField);scene.add(new THREE.HemisphereLight("#b8f3ff","#10051e",1.45));const a=new THREE.PointLight("#48e8ff",2600,1300,1.8);a.position.set(230,180,260);scene.add(a);const b=new THREE.PointLight("#986aff",2200,1100,1.8);b.position.set(-250,-100,-180);scene.add(b);scene.fog=new THREE.FogExp2("#010208",.00038);
+      const renderer=state.graph.renderer();renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.25;
+      const controls=state.graph.controls();controls.enableDamping=true;controls.dampingFactor=.07;controls.autoRotate=true;controls.autoRotateSpeed=.13;controls.minDistance=30;controls.maxDistance=1600;controls.addEventListener("start",()=>controls.autoRotate=false);
+      const z=Math.max(300,210+Math.sqrt(state.nodes.length)*28);state.graph.cameraPosition({x:z*.12,y:z*.08,z},{x:0,y:0,z:0},0);setupBoxSelection();
+    }
+
+    async function main(){try{const [nodes,edges]=await Promise.all([fetchJson("nodes.json"),fetchJson("edges.json")]);validate(nodes,edges);state.nodes=nodes;state.edges=edges;buildIndexes();initGraph();
+      const types=[...new Set(nodes.map(n=>n.type))].sort();types.forEach(t=>$("type-filter").append(new Option(t,t)));const dl=$("node-list");nodes.sort((a,b)=>a.name.localeCompare(b.name,"zh-CN")).forEach(n=>{const o=document.createElement("option");o.value=n.name;o.label=`${n.type} · ${n.id}`;dl.appendChild(o);});
+      renderLegend();renderCollections();buildTimeline();setupUI();animate();$("loading").style.display="none";window.onresize=()=>state.graph.width(innerWidth).height(innerHeight);
+    }catch(e){showError(e);}}
+    main();
+  })();
   </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"7939e04a4baf43c8b86a560f74aac60e","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
