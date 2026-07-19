@@ -2725,7 +2725,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31",
-        "evidence": "reduced oxidative stress"
+        "evidence": "EMO reduced oxidative stress"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
@@ -2881,7 +2881,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要提到gut‒lung axis（肠-肺轴）影响肺损伤反应，与中医肺与大肠相表里理论一致。"
+        "evidence": "摘要中提及gut‒lung axis（肠-肺轴）调节肺损伤反应，与中医肺与大肠相表里理论一致。"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -2985,7 +2985,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出FR饮食的效果依赖于微生物产生丙酸盐的能力。"
+        "evidence": "摘要说明propionate reprogrammed alveolar macrophages metabolically。"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -3459,7 +3459,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41503791/",
         "doi": "10.1080/19490976.2025.2611645",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出肠道病毒组通过调节肠道细菌组和肠屏障完整性，影响下丘脑-垂体-卵巢轴激素水平，并调节卵巢氧化应激和炎症。"
+        "evidence": "摘要指出肠道病毒组通过调节肠道细菌组和肠屏障完整性，影响卵巢氧化应激和炎症。"
       }
     ],
     "created_at": "2026-07-16 22:02:40 中国标准时间",
@@ -3667,7 +3667,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出高纤维饮食促进短链脂肪酸（SCFA）产生。"
+        "evidence": "摘要指出fiber-rich diet促进SCFA-producing bacteria产生propionate。"
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
@@ -4268,5 +4268,49 @@
     ],
     "created_at": "2026-07-18 08:34:12 UTC",
     "updated_at": "2026-07-18 08:34:12 UTC"
+  },
+  {
+    "id": "E000095",
+    "source": "N000054",
+    "target": "N000069",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "摘要指出fiber-rich diet attenuated lung inflammation after sterile injury。"
+      }
+    ],
+    "created_at": "2026-07-19 09:36:26 UTC",
+    "updated_at": "2026-07-19 09:36:26 UTC"
+  },
+  {
+    "id": "E000096",
+    "source": "N000054",
+    "target": "N000070",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "摘要指出fiber-rich diet exacerbated lung infection。"
+      }
+    ],
+    "created_at": "2026-07-19 09:36:26 UTC",
+    "updated_at": "2026-07-19 09:36:26 UTC"
   }
 ]
