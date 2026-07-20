@@ -6139,8 +6139,8 @@
   {
     "id": "N000093",
     "name": "自主神经功能",
-    "type": "其他",
-    "layer": "其他层",
+    "type": "神经结构",
+    "layer": "神经免疫层",
     "x": 6.88,
     "y": 7.205,
     "z": 153.273,
@@ -6251,5 +6251,92 @@
     ],
     "created_at": "2026-07-20 07:23:08 UTC",
     "updated_at": "2026-07-20 07:23:08 UTC"
+  },
+  {
+    "id": "N000097",
+    "name": "肠道微生物组成",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -5.709,
+    "y": -4.352,
+    "z": 152.946,
+    "position": {
+      "x": -5.709,
+      "y": -4.352,
+      "z": 152.946
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-20 12:01:40 UTC",
+    "updated_at": "2026-07-20 12:01:40 UTC"
+  },
+  {
+    "id": "N000098",
+    "name": "海马5-羟色胺水平",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -3.013,
+    "y": 3.163,
+    "z": 152.779,
+    "position": {
+      "x": -3.013,
+      "y": 3.163,
+      "z": 152.779
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-20 12:08:01 UTC",
+    "updated_at": "2026-07-20 12:08:01 UTC"
+  },
+  {
+    "id": "N000099",
+    "name": "5-羟色胺产生",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -8.722,
+    "y": 0.897,
+    "z": 153.587,
+    "position": {
+      "x": -8.722,
+      "y": 0.897,
+      "z": 153.587
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41496520"
+    ],
+    "sources": [
+      {
+        "pmid": "41496520",
+        "title": "Akkermansia muciniphila-derived extracellular vesicles alleviate colitis-related cognitive impairment via tryptophan metabolic reprogramming of the gut‒brain axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41496520/",
+        "doi": "10.1080/19490976.2025.2611546",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-20 12:08:01 UTC",
+    "updated_at": "2026-07-20 12:08:01 UTC"
   }
 ]
