@@ -6135,5 +6135,121 @@
     ],
     "created_at": "2026-07-18 08:34:12 UTC",
     "updated_at": "2026-07-18 08:34:12 UTC"
+  },
+  {
+    "id": "N000093",
+    "name": "自主神经功能",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.88,
+    "y": 7.205,
+    "z": 153.273,
+    "position": {
+      "x": 6.88,
+      "y": 7.205,
+      "z": 153.273
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-20 07:17:18 UTC",
+    "updated_at": "2026-07-20 07:17:18 UTC"
+  },
+  {
+    "id": "N000094",
+    "name": "肠道菌群",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 42.042,
+    "y": 73.842,
+    "z": 147.81,
+    "position": {
+      "x": 42.042,
+      "y": 73.842,
+      "z": 147.81
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-20 07:23:08 UTC",
+    "updated_at": "2026-07-20 07:23:08 UTC"
+  },
+  {
+    "id": "N000095",
+    "name": "肺无菌性损伤炎症",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 27.45,
+    "y": 59.493,
+    "z": 151.108,
+    "position": {
+      "x": 27.45,
+      "y": 59.493,
+      "z": 151.108
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-20 07:23:08 UTC",
+    "updated_at": "2026-07-20 07:23:08 UTC"
+  },
+  {
+    "id": "N000096",
+    "name": "肺组织代谢重编程",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 31.822,
+    "y": 56.811,
+    "z": 147.111,
+    "position": {
+      "x": 31.822,
+      "y": 56.811,
+      "z": 147.111
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-20 07:23:08 UTC",
+    "updated_at": "2026-07-20 07:23:08 UTC"
   }
 ]

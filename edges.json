@@ -3037,7 +3037,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "fiber-rich diet favored the presence of SCFA-producing fermentative bacteria。"
+        "evidence": "Dietary fiber interventions would favor the presence of short-chain fatty acid (SCFA)-producing fermentative bacteria."
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -4312,5 +4312,137 @@
     ],
     "created_at": "2026-07-19 09:36:26 UTC",
     "updated_at": "2026-07-19 09:36:26 UTC"
+  },
+  {
+    "id": "E000097",
+    "source": "N000038",
+    "target": "N000093",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31",
+        "evidence": "downstream autonomic function"
+      }
+    ],
+    "created_at": "2026-07-20 07:17:18 UTC",
+    "updated_at": "2026-07-20 07:17:18 UTC"
+  },
+  {
+    "id": "E000098",
+    "source": "N000094",
+    "target": "N000050",
+    "relation": "表里",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "The gut microbiome can influence lung injury outcomes through the gut‒lung axis."
+      }
+    ],
+    "created_at": "2026-07-20 07:23:08 UTC",
+    "updated_at": "2026-07-20 07:23:08 UTC"
+  },
+  {
+    "id": "E000099",
+    "source": "N000091",
+    "target": "N000053",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically."
+      }
+    ],
+    "created_at": "2026-07-20 07:23:08 UTC",
+    "updated_at": "2026-07-20 07:23:08 UTC"
+  },
+  {
+    "id": "E000100",
+    "source": "N000052",
+    "target": "N000095",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "Fiber-rich diet attenuated lung inflammation after sterile injury."
+      }
+    ],
+    "created_at": "2026-07-20 07:23:08 UTC",
+    "updated_at": "2026-07-20 07:23:08 UTC"
+  },
+  {
+    "id": "E000101",
+    "source": "N000052",
+    "target": "N000092",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "Fiber-rich diet exacerbated lung infection."
+      }
+    ],
+    "created_at": "2026-07-20 07:23:08 UTC",
+    "updated_at": "2026-07-20 07:23:08 UTC"
+  },
+  {
+    "id": "E000102",
+    "source": "N000052",
+    "target": "N000096",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "SCFAs altered the metabolic programming of lung tissue ex vivo."
+      }
+    ],
+    "created_at": "2026-07-20 07:23:08 UTC",
+    "updated_at": "2026-07-20 07:23:08 UTC"
   }
 ]
