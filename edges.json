@@ -2933,7 +2933,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要提到SCFAs altered the metabolic programming of AMs。"
+        "evidence": "SCFAs altered the metabolic programming of AMs and lung tissue ex vivo。"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -4285,7 +4285,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出fiber-rich diet attenuated lung inflammation after sterile injury。"
+        "evidence": "fiber-rich diet reprogrammed AMs and attenuated lung inflammation after sterile injury。"
       }
     ],
     "created_at": "2026-07-19 09:36:26 UTC",
@@ -4307,7 +4307,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出fiber-rich diet exacerbated lung infection。"
+        "evidence": "exacerbating lung infection。"
       }
     ],
     "created_at": "2026-07-19 09:36:26 UTC",
@@ -4554,5 +4554,203 @@
     ],
     "created_at": "2026-07-20 12:08:14 UTC",
     "updated_at": "2026-07-20 12:08:14 UTC"
+  },
+  {
+    "id": "E000108",
+    "source": "N000100",
+    "target": "N000061",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42046449"
+    ],
+    "sources": [
+      {
+        "pmid": "42046449",
+        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
+        "doi": "10.1080/13510002.2026.2663621",
+        "publication_date": "2026-Dec-31",
+        "evidence": "QUE treatment downregulated the expression of cytokines linked to ERS, necroptosis, and inflammation."
+      }
+    ],
+    "created_at": "2026-07-21 10:37:50 UTC",
+    "updated_at": "2026-07-21 10:37:50 UTC"
+  },
+  {
+    "id": "E000109",
+    "source": "N000100",
+    "target": "N000101",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42046449"
+    ],
+    "sources": [
+      {
+        "pmid": "42046449",
+        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
+        "doi": "10.1080/13510002.2026.2663621",
+        "publication_date": "2026-Dec-31",
+        "evidence": "QUE treatment efficiently attenuated thymus immune disorders and necroptosis in broilers through Nrf2/PERK signaling."
+      }
+    ],
+    "created_at": "2026-07-21 10:37:50 UTC",
+    "updated_at": "2026-07-21 10:37:50 UTC"
+  },
+  {
+    "id": "E000110",
+    "source": "N000100",
+    "target": "N000102",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42046449"
+    ],
+    "sources": [
+      {
+        "pmid": "42046449",
+        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
+        "doi": "10.1080/13510002.2026.2663621",
+        "publication_date": "2026-Dec-31",
+        "evidence": "QUE treatment reduced LPS-induced imbalance in redox homeostasis through Nrf2 signaling pathway."
+      }
+    ],
+    "created_at": "2026-07-21 10:37:50 UTC",
+    "updated_at": "2026-07-21 10:37:50 UTC"
+  },
+  {
+    "id": "E000111",
+    "source": "N000103",
+    "target": "N000104",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42046449"
+    ],
+    "sources": [
+      {
+        "pmid": "42046449",
+        "title": "Elucidating the protective role of quercetin against lipopolysaccharide-induced necroptosis in broiler thymus: insights from Nrf2/PERK signaling based on network pharmacology and experimental validation.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
+        "doi": "10.1080/13510002.2026.2663621",
+        "publication_date": "2026-Dec-31",
+        "evidence": "Nrf2 can initiate protein kinase RNA-like ER kinase (PERK), leading to immune dysfunction and necroptosis."
+      }
+    ],
+    "created_at": "2026-07-21 10:37:50 UTC",
+    "updated_at": "2026-07-21 10:37:50 UTC"
+  },
+  {
+    "id": "E000112",
+    "source": "N000072",
+    "target": "N000105",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41705654"
+    ],
+    "sources": [
+      {
+        "pmid": "41705654",
+        "title": "Anti-inflammatory effects of nicotinamide mononucleotide (NMN) in human skeletal muscle after BFR-exercise.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41705654/",
+        "doi": "10.1080/15502783.2026.2632284",
+        "publication_date": "2026-Dec-31",
+        "evidence": "NMN supplementation suppressed exercise-induced increases in TNF-α and IL-10 mRNA"
+      }
+    ],
+    "created_at": "2026-07-21 10:40:04 UTC",
+    "updated_at": "2026-07-21 10:40:04 UTC"
+  },
+  {
+    "id": "E000113",
+    "source": "N000072",
+    "target": "N000106",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41705654"
+    ],
+    "sources": [
+      {
+        "pmid": "41705654",
+        "title": "Anti-inflammatory effects of nicotinamide mononucleotide (NMN) in human skeletal muscle after BFR-exercise.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41705654/",
+        "doi": "10.1080/15502783.2026.2632284",
+        "publication_date": "2026-Dec-31",
+        "evidence": "NMN supplementation suppressed exercise-induced increases in TNF-α and IL-10 mRNA"
+      }
+    ],
+    "created_at": "2026-07-21 10:40:04 UTC",
+    "updated_at": "2026-07-21 10:40:04 UTC"
+  },
+  {
+    "id": "E000114",
+    "source": "N000072",
+    "target": "N000107",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41705654"
+    ],
+    "sources": [
+      {
+        "pmid": "41705654",
+        "title": "Anti-inflammatory effects of nicotinamide mononucleotide (NMN) in human skeletal muscle after BFR-exercise.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41705654/",
+        "doi": "10.1080/15502783.2026.2632284",
+        "publication_date": "2026-Dec-31",
+        "evidence": "suppressed exercise-induced increases in TNF-α and IL-10 mRNA, suggesting attenuated inflammatory signaling"
+      }
+    ],
+    "created_at": "2026-07-21 10:40:04 UTC",
+    "updated_at": "2026-07-21 10:40:04 UTC"
+  },
+  {
+    "id": "E000115",
+    "source": "N000068",
+    "target": "N000056",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "dietary fiber interventions would favor the presence of short-chain fatty acid (SCFA)-producing fermentative bacteria。"
+      }
+    ],
+    "created_at": "2026-07-21 10:41:25 UTC",
+    "updated_at": "2026-07-21 10:41:25 UTC"
+  },
+  {
+    "id": "E000116",
+    "source": "N000056",
+    "target": "N000054",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "depended on the ability of the microbiota to produce propionate。"
+      }
+    ],
+    "created_at": "2026-07-21 10:41:25 UTC",
+    "updated_at": "2026-07-21 10:41:25 UTC"
   }
 ]
