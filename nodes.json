@@ -6578,5 +6578,34 @@
     ],
     "created_at": "2026-07-21 10:40:04 UTC",
     "updated_at": "2026-07-21 10:40:04 UTC"
+  },
+  {
+    "id": "N000108",
+    "name": "肠脑轴",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.652,
+    "y": 3.497,
+    "z": 152.287,
+    "position": {
+      "x": 6.652,
+      "y": 3.497,
+      "z": 152.287
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-22 10:36:47 UTC",
+    "updated_at": "2026-07-22 10:36:47 UTC"
   }
 ]
