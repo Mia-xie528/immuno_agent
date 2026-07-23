@@ -2355,7 +2355,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
         "doi": "10.1080/10253890.2026.2684153",
         "publication_date": "2026-Dec-31",
-        "evidence": "taVNS is proposed to engage stress regulatory circuits"
+        "evidence": "stimulating auricular vagal afferents, transcutaneous auricular vagal nerve stimulation (taVNS) is proposed to engage stress regulatory circuits"
       }
     ],
     "created_at": "2026-07-16 18:28:21 中国标准时间",
@@ -3615,7 +3615,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41481427/",
         "doi": "10.1080/19490976.2025.2609455",
         "publication_date": "2026-Dec-31",
-        "evidence": "butyrate could induce MM cells' apoptosis via HDAC inhibition-mediated upregulation of PPARγ, leading to sequential suppression of the PI3K/AKT pathway"
+        "evidence": "butyrate could induce MM cells' apoptosis via HDAC inhibition-mediated upregulation of PPARγ, leading to sequential suppression of the PI3K/AKT pathway and antiapoptotic BCL-2 expression."
       }
     ],
     "created_at": "2026-07-16 22:02:49 中国标准时间",
@@ -4219,7 +4219,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "fiber-rich diet enriched SCFA-producing gut bacteria and depended on propionate production。"
+        "evidence": "FR diets depended on the ability of the microbiota to produce propionate。"
       }
     ],
     "created_at": "2026-07-18 08:34:12 UTC",
@@ -4774,5 +4774,1633 @@
     ],
     "created_at": "2026-07-22 10:36:47 UTC",
     "updated_at": "2026-07-22 10:36:47 UTC"
+  },
+  {
+    "id": "E000118",
+    "source": "N000109",
+    "target": "N000110",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06",
+        "evidence": "16α-HTA and Alisol A reduced GPER expression at a low dose and suppressed AKT phosphorylation independently of EGFR."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:27 UTC",
+    "updated_at": "2026-07-23 10:43:27 UTC"
+  },
+  {
+    "id": "E000119",
+    "source": "N000111",
+    "target": "N000112",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06",
+        "evidence": "16α-HTA and Alisol A reduced GPER expression at a low dose"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:27 UTC",
+    "updated_at": "2026-07-23 10:43:27 UTC"
+  },
+  {
+    "id": "E000120",
+    "source": "N000113",
+    "target": "N000112",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06",
+        "evidence": "16α-HTA and Alisol A reduced GPER expression at a low dose"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:27 UTC",
+    "updated_at": "2026-07-23 10:43:27 UTC"
+  },
+  {
+    "id": "E000121",
+    "source": "N000114",
+    "target": "N000115",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392551"
+    ],
+    "sources": [
+      {
+        "pmid": "42392551",
+        "title": "Taohe Chengqi Decoction ameliorates APID-related local uterine inflammatory injury through modulation of inflammation, oxidative stress, and JNK/p38 MAPK-NF-κB-related signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
+        "doi": "10.1016/j.jep.2026.122152",
+        "publication_date": "2026-Dec-06",
+        "evidence": "THCQD improved inflammatory activation"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:30 UTC",
+    "updated_at": "2026-07-23 10:43:30 UTC"
+  },
+  {
+    "id": "E000122",
+    "source": "N000114",
+    "target": "N000046",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392551"
+    ],
+    "sources": [
+      {
+        "pmid": "42392551",
+        "title": "Taohe Chengqi Decoction ameliorates APID-related local uterine inflammatory injury through modulation of inflammation, oxidative stress, and JNK/p38 MAPK-NF-κB-related signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
+        "doi": "10.1016/j.jep.2026.122152",
+        "publication_date": "2026-Dec-06",
+        "evidence": "THCQD improved redox imbalance"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:30 UTC",
+    "updated_at": "2026-07-23 10:43:30 UTC"
+  },
+  {
+    "id": "E000123",
+    "source": "N000114",
+    "target": "N000116",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392551"
+    ],
+    "sources": [
+      {
+        "pmid": "42392551",
+        "title": "Taohe Chengqi Decoction ameliorates APID-related local uterine inflammatory injury through modulation of inflammation, oxidative stress, and JNK/p38 MAPK-NF-κB-related signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
+        "doi": "10.1016/j.jep.2026.122152",
+        "publication_date": "2026-Dec-06",
+        "evidence": "JNK/p38 MAPK-NF-κB-apoptosis-related signaling in THCQD intervention"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:30 UTC",
+    "updated_at": "2026-07-23 10:43:30 UTC"
+  },
+  {
+    "id": "E000124",
+    "source": "N000117",
+    "target": "N000118",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379538"
+    ],
+    "sources": [
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06",
+        "evidence": "XZSWD suppressed RIPK1/RIPK3/MLKL phosphorylation, consistent with inhibition of necroptotic cell death."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:33 UTC",
+    "updated_at": "2026-07-23 10:43:33 UTC"
+  },
+  {
+    "id": "E000125",
+    "source": "N000117",
+    "target": "N000119",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379538"
+    ],
+    "sources": [
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06",
+        "evidence": "XZSWD reduced reactive oxygen species (ROS) accumulation."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:33 UTC",
+    "updated_at": "2026-07-23 10:43:33 UTC"
+  },
+  {
+    "id": "E000126",
+    "source": "N000117",
+    "target": "N000120",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379538"
+    ],
+    "sources": [
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06",
+        "evidence": "XZSWD ameliorates hyperuricemia-associated renal injury by attenuating TNF-α-driven RIPK1/RIPK3/MLKL-mediated necroptosis."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:33 UTC",
+    "updated_at": "2026-07-23 10:43:33 UTC"
+  },
+  {
+    "id": "E000127",
+    "source": "N000121",
+    "target": "N000122",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06",
+        "evidence": "血清5-HT水平从2.43升至5.81 μg/mL"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "E000128",
+    "source": "N000121",
+    "target": "N000123",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06",
+        "evidence": "下调结肠SLC6A4表达"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "E000129",
+    "source": "N000121",
+    "target": "N000124",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06",
+        "evidence": "上调结肠TPH1表达"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "E000130",
+    "source": "N000121",
+    "target": "N000125",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06",
+        "evidence": "上调结肠TGR5表达"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "E000131",
+    "source": "N000126",
+    "target": "N000006",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL effectively inhibited the overexpression of ... inflammatory cytokines such as TNF-α"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000132",
+    "source": "N000126",
+    "target": "N000010",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL effectively inhibited the overexpression of ... inflammatory cytokines such as ... IL-6"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000133",
+    "source": "N000126",
+    "target": "N000005",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL effectively inhibited the overexpression of ... inflammatory cytokines such as ... IL-1β"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000134",
+    "source": "N000126",
+    "target": "N000127",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL effectively inhibited the overexpression of pro-inflammatory mediators, including cyclooxygenase-2 (COX-2)"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000135",
+    "source": "N000126",
+    "target": "N000128",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL effectively inhibited the overexpression of pro-inflammatory mediators, including ... inducible nitric oxide synthase (iNOS)"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000136",
+    "source": "N000126",
+    "target": "N000129",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL ... increasing glutathione (GSH) levels"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000137",
+    "source": "N000126",
+    "target": "N000130",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL ... reducing malondialdehyde (MDA) ... levels"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000138",
+    "source": "N000126",
+    "target": "N000131",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL ... reducing ... nitric oxide (NO) levels"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000139",
+    "source": "N000126",
+    "target": "N000103",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL ... regulating the ... Keap1/Nrf2 signaling pathways ... modulating the mRNA expression of ... Nrf2"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000140",
+    "source": "N000126",
+    "target": "N000002",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL significantly alleviated LPS-induced ALI in mice by regulating the NF-κB ... signaling pathways"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000141",
+    "source": "N000126",
+    "target": "N000132",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL ... significantly elevated cecal short-chain fatty acids (SCFAs), such as acetic acid, propionic acid and butyric acid"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000142",
+    "source": "N000126",
+    "target": "N000133",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PLSL effectively improved intestinal microbial diversity, increased the relative abundance of beneficial bacteria, including Lachnospiraceae"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "E000143",
+    "source": "N000134",
+    "target": "N000135",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379535"
+    ],
+    "sources": [
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06",
+        "evidence": "GomG treatment was associated with suppression of the PI3K-AKT/JAK3-STAT3 signaling pathway"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:44 UTC",
+    "updated_at": "2026-07-23 10:43:44 UTC"
+  },
+  {
+    "id": "E000144",
+    "source": "N000134",
+    "target": "N000045",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379535"
+    ],
+    "sources": [
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06",
+        "evidence": "reduced release of pro-inflammatory cytokines"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:44 UTC",
+    "updated_at": "2026-07-23 10:43:44 UTC"
+  },
+  {
+    "id": "E000145",
+    "source": "N000134",
+    "target": "N000136",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379535"
+    ],
+    "sources": [
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06",
+        "evidence": "attenuated epidermal hyperplasia"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:44 UTC",
+    "updated_at": "2026-07-23 10:43:44 UTC"
+  },
+  {
+    "id": "E000146",
+    "source": "N000134",
+    "target": "N000137",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379535"
+    ],
+    "sources": [
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06",
+        "evidence": "ameliorated metabolic disturbance"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:44 UTC",
+    "updated_at": "2026-07-23 10:43:44 UTC"
+  },
+  {
+    "id": "E000147",
+    "source": "N000138",
+    "target": "N000131",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372813"
+    ],
+    "sources": [
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06",
+        "evidence": "CYAs dose-dependently suppressed NO production"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:48 UTC",
+    "updated_at": "2026-07-23 10:43:48 UTC"
+  },
+  {
+    "id": "E000148",
+    "source": "N000138",
+    "target": "N000006",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372813"
+    ],
+    "sources": [
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06",
+        "evidence": "CYAs dose-dependently suppressed TNF-α secretion"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:48 UTC",
+    "updated_at": "2026-07-23 10:43:48 UTC"
+  },
+  {
+    "id": "E000149",
+    "source": "N000138",
+    "target": "N000010",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372813"
+    ],
+    "sources": [
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06",
+        "evidence": "CYAs dose-dependently suppressed IL-6 secretion"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:48 UTC",
+    "updated_at": "2026-07-23 10:43:48 UTC"
+  },
+  {
+    "id": "E000150",
+    "source": "N000138",
+    "target": "N000128",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372813"
+    ],
+    "sources": [
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06",
+        "evidence": "downregulated iNOS mRNA and attenuated iNOS protein overexpression"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:48 UTC",
+    "updated_at": "2026-07-23 10:43:48 UTC"
+  },
+  {
+    "id": "E000151",
+    "source": "N000138",
+    "target": "N000127",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372813"
+    ],
+    "sources": [
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06",
+        "evidence": "downregulated COX-2 mRNA and attenuated COX-2 protein overexpression"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:48 UTC",
+    "updated_at": "2026-07-23 10:43:48 UTC"
+  },
+  {
+    "id": "E000152",
+    "source": "N000139",
+    "target": "N000140",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "QFXBF downregulated STING at both mRNA and protein levels in lung tissue."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "E000153",
+    "source": "N000139",
+    "target": "N000141",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "QFXBF downregulated HIF-1α at both mRNA and protein levels in lung tissue."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "E000154",
+    "source": "N000139",
+    "target": "N000142",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "QFXBF reduced glucose utilization and lactate accumulation in BSMCs."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "E000155",
+    "source": "N000140",
+    "target": "N000141",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "QFXBF attenuated HIF-1α activity through suppression of STING."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "E000156",
+    "source": "N000141",
+    "target": "N000142",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "QFXBF attenuated glycolytic flux through suppression of STING/HIF-1α."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "E000157",
+    "source": "N000143",
+    "target": "N000140",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "Tectorigenin significantly reduced STING expression in STING-overexpressing BSMCs."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "E000158",
+    "source": "N000143",
+    "target": "N000144",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "Tectorigenin reduced lactate metabolism in STING-overexpressing BSMCs."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "E000159",
+    "source": "N000145",
+    "target": "N000146",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372809"
+    ],
+    "sources": [
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SHLI dampened NF-κB activation by limiting IκBα phosphorylation and restraining p65 activation."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:55 UTC",
+    "updated_at": "2026-07-23 10:43:55 UTC"
+  },
+  {
+    "id": "E000160",
+    "source": "N000145",
+    "target": "N000006",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372809"
+    ],
+    "sources": [
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SHLI reduced the secretion of TNF-α."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:55 UTC",
+    "updated_at": "2026-07-23 10:43:55 UTC"
+  },
+  {
+    "id": "E000161",
+    "source": "N000145",
+    "target": "N000005",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372809"
+    ],
+    "sources": [
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SHLI reduced the secretion of IL-1β."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:55 UTC",
+    "updated_at": "2026-07-23 10:43:55 UTC"
+  },
+  {
+    "id": "E000162",
+    "source": "N000145",
+    "target": "N000147",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372809"
+    ],
+    "sources": [
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SHLI reduced the secretion of TNFAIP6."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:55 UTC",
+    "updated_at": "2026-07-23 10:43:55 UTC"
+  },
+  {
+    "id": "E000163",
+    "source": "N000145",
+    "target": "N000013",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372809"
+    ],
+    "sources": [
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SHLI modulated the transcription of IL-1α."
+      }
+    ],
+    "created_at": "2026-07-23 10:43:55 UTC",
+    "updated_at": "2026-07-23 10:43:55 UTC"
+  },
+  {
+    "id": "E000164",
+    "source": "N000148",
+    "target": "N000149",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06",
+        "evidence": "LF alleviates LPS-induced ALI in broilers by suppressing MAPK signaling"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "E000165",
+    "source": "N000148",
+    "target": "N000115",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06",
+        "evidence": "LF reduced inflammatory responses and enhanced antioxidative capacity"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "E000166",
+    "source": "N000150",
+    "target": "N000149",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06",
+        "evidence": "luteolin may treat ALI by regulating the MAPK signaling pathway"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "E000167",
+    "source": "N000151",
+    "target": "N000149",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06",
+        "evidence": "β-sitosterol may treat ALI by regulating the MAPK signaling pathway"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "E000168",
+    "source": "N000152",
+    "target": "N000149",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06",
+        "evidence": "phillyrin may treat ALI by regulating the MAPK signaling pathway"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "E000169",
+    "source": "N000153",
+    "target": "N000154",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06",
+        "evidence": "URSA mice exhibited enhanced NK cell-proDSC communication ... which were attenuated by YXAT."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "E000170",
+    "source": "N000153",
+    "target": "N000155",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06",
+        "evidence": "proliferating DSCs ... were abnormally downregulated in URSA mice, and this reduction was restored by YXAT."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "E000171",
+    "source": "N000153",
+    "target": "N000156",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06",
+        "evidence": "the recovery of Lgals1 expression coincides with the restoration of proDSC differentiation following YXAT treatment."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "E000172",
+    "source": "N000157",
+    "target": "N000158",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06",
+        "evidence": "enhanced NK cell-proDSC communication with excessive inflammatory activation (e.g., Spp1-Cd44)"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "E000173",
+    "source": "N000159",
+    "target": "N000158",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06",
+        "evidence": "enhanced NK cell-proDSC communication with excessive inflammatory activation (e.g., ... Gzma-Pard3)"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "E000174",
+    "source": "N000160",
+    "target": "N000161",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06",
+        "evidence": "TXYF treatment significantly alleviated IBS-D symptoms... integrative metagenomic and metabolomic analyses revealed a strong association between Alistipes finegoldii and colonic indole and IAA levels."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "E000175",
+    "source": "N000161",
+    "target": "N000162",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06",
+        "evidence": "transplantation of A. finegoldii combined with tryptophan supplementation... recapitulated the therapeutic effects of TXYF against IBS-D."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "E000176",
+    "source": "N000162",
+    "target": "N000163",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06",
+        "evidence": "Western blot analysis showed that TXYF activated the aryl hydrocarbon receptor (AhR) in the colon."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "E000177",
+    "source": "N000163",
+    "target": "N000164",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06",
+        "evidence": "both IAA and faecal supernatant from TXYF-treated mice protected against tumour necrosis factor-induced epithelial barrier disruption in an AhR-dependent manner."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "E000178",
+    "source": "N000165",
+    "target": "N000166",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM inhibited TGF-β1-induced fibroblast activation and collagen formation."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "E000179",
+    "source": "N000165",
+    "target": "N000167",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM inhibited TGF-β1-induced Smad2/3 signaling."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "E000180",
+    "source": "N000165",
+    "target": "N000168",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM enhanced mitophagy, thereby preserving mitochondrial membrane potential."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "E000181",
+    "source": "N000165",
+    "target": "N000169",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM activated PINK1/parkin signaling in cultured fibroblasts."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "E000182",
+    "source": "N000165",
+    "target": "N000170",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM promoted PINK1 spot formation."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "E000183",
+    "source": "N000165",
+    "target": "N000171",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM increased the mitochondrial LC3BII/I ratio."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "E000184",
+    "source": "N000165",
+    "target": "N000172",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM remarkably alleviated pulmonary fibrosis by reducing pulmonary edema and inflammation."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "E000185",
+    "source": "N000165",
+    "target": "N000173",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM remarkably alleviated pulmonary fibrosis by reducing pulmonary edema and inflammation."
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "E000186",
+    "source": "N000174",
+    "target": "N000010",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42349766"
+    ],
+    "sources": [
+      {
+        "pmid": "42349766",
+        "title": "Diterpenoids from Tripterygium Glycosides Tablets and their anti-inflammatory activity.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42349766/",
+        "doi": "10.1016/j.jep.2026.122115",
+        "publication_date": "2026-Dec-06",
+        "evidence": "Compound 1 markedly suppressed NO, IL-6, and TNF-α production"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:15 UTC",
+    "updated_at": "2026-07-23 10:44:15 UTC"
+  },
+  {
+    "id": "E000187",
+    "source": "N000174",
+    "target": "N000006",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42349766"
+    ],
+    "sources": [
+      {
+        "pmid": "42349766",
+        "title": "Diterpenoids from Tripterygium Glycosides Tablets and their anti-inflammatory activity.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42349766/",
+        "doi": "10.1016/j.jep.2026.122115",
+        "publication_date": "2026-Dec-06",
+        "evidence": "Compound 1 markedly suppressed NO, IL-6, and TNF-α production"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:15 UTC",
+    "updated_at": "2026-07-23 10:44:15 UTC"
+  },
+  {
+    "id": "E000188",
+    "source": "N000174",
+    "target": "N000131",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42349766"
+    ],
+    "sources": [
+      {
+        "pmid": "42349766",
+        "title": "Diterpenoids from Tripterygium Glycosides Tablets and their anti-inflammatory activity.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42349766/",
+        "doi": "10.1016/j.jep.2026.122115",
+        "publication_date": "2026-Dec-06",
+        "evidence": "Compound 1 markedly suppressed NO, IL-6, and TNF-α production"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:15 UTC",
+    "updated_at": "2026-07-23 10:44:15 UTC"
+  },
+  {
+    "id": "E000189",
+    "source": "N000175",
+    "target": "N000005",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42341861"
+    ],
+    "sources": [
+      {
+        "pmid": "42341861",
+        "title": "Digeda-8 formula attenuates cholestatic liver injury in rats by restoring bile acid transport and suppressing inflammation: An integrated metabolomics and proteomics approach.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42341861/",
+        "doi": "10.1016/j.jep.2026.122096",
+        "publication_date": "2026-Dec-06",
+        "evidence": "suppressed pro-inflammatory cytokines (IL-1β and TNF-α)"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:17 UTC",
+    "updated_at": "2026-07-23 10:44:17 UTC"
+  },
+  {
+    "id": "E000190",
+    "source": "N000175",
+    "target": "N000006",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42341861"
+    ],
+    "sources": [
+      {
+        "pmid": "42341861",
+        "title": "Digeda-8 formula attenuates cholestatic liver injury in rats by restoring bile acid transport and suppressing inflammation: An integrated metabolomics and proteomics approach.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42341861/",
+        "doi": "10.1016/j.jep.2026.122096",
+        "publication_date": "2026-Dec-06",
+        "evidence": "suppressed pro-inflammatory cytokines (IL-1β and TNF-α)"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:17 UTC",
+    "updated_at": "2026-07-23 10:44:17 UTC"
+  },
+  {
+    "id": "E000191",
+    "source": "N000175",
+    "target": "N000127",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42341861"
+    ],
+    "sources": [
+      {
+        "pmid": "42341861",
+        "title": "Digeda-8 formula attenuates cholestatic liver injury in rats by restoring bile acid transport and suppressing inflammation: An integrated metabolomics and proteomics approach.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42341861/",
+        "doi": "10.1016/j.jep.2026.122096",
+        "publication_date": "2026-Dec-06",
+        "evidence": "suppressed pro-inflammatory cytokines (IL-1β and TNF-α) via COX-2 inhibition"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:17 UTC",
+    "updated_at": "2026-07-23 10:44:17 UTC"
   }
 ]

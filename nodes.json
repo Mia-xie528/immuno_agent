@@ -90,9 +90,10 @@
       "y": -5.514,
       "z": 111.166
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "42438788"
+      "42438788",
+      "42379536"
     ],
     "sources": [
       {
@@ -101,10 +102,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42438788/",
         "doi": "10.1007/s10616-026-01032-5",
         "publication_date": "2026-Aug"
+      },
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 16:07:18 中国标准时间",
+    "updated_at": "2026-07-23 10:43:42 UTC",
     "schema_version": "2.0",
     "aliases": [],
     "search_terms": [
@@ -312,10 +320,13 @@
       "y": -0.642,
       "z": 118.313
     },
-    "evidence_count": 2,
+    "evidence_count": 5,
     "evidence_pmids": [
       "42438788",
-      "42444447"
+      "42444447",
+      "42379536",
+      "42372809",
+      "42341861"
     ],
     "sources": [
       {
@@ -331,10 +342,31 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
         "doi": "10.1142/S0192415X26500588",
         "publication_date": "2026-Jul-14"
+      },
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42341861",
+        "title": "Digeda-8 formula attenuates cholestatic liver injury in rats by restoring bile acid transport and suppressing inflammation: An integrated metabolomics and proteomics approach.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42341861/",
+        "doi": "10.1016/j.jep.2026.122096",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-23 10:44:17 UTC",
     "schema_version": "2.0",
     "aliases": [],
     "search_terms": [
@@ -413,11 +445,16 @@
       "y": -2.169,
       "z": 114.226
     },
-    "evidence_count": 3,
+    "evidence_count": 8,
     "evidence_pmids": [
       "42438788",
       "42443290",
-      "41705654"
+      "41705654",
+      "42379536",
+      "42372813",
+      "42372809",
+      "42349766",
+      "42341861"
     ],
     "sources": [
       {
@@ -440,10 +477,45 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41705654/",
         "doi": "10.1080/15502783.2026.2632284",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42349766",
+        "title": "Diterpenoids from Tripterygium Glycosides Tablets and their anti-inflammatory activity.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42349766/",
+        "doi": "10.1016/j.jep.2026.122115",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42341861",
+        "title": "Digeda-8 formula attenuates cholestatic liver injury in rats by restoring bile acid transport and suppressing inflammation: An integrated metabolomics and proteomics approach.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42341861/",
+        "doi": "10.1016/j.jep.2026.122096",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-14 16:07:18 中国标准时间",
-    "updated_at": "2026-07-18 08:32:38 UTC",
+    "updated_at": "2026-07-23 10:44:17 UTC",
     "schema_version": "2.0",
     "aliases": [],
     "search_terms": [
@@ -755,11 +827,14 @@
       "y": 3.873,
       "z": 114.931
     },
-    "evidence_count": 3,
+    "evidence_count": 6,
     "evidence_pmids": [
       "42443290",
       "42444447",
-      "42443928"
+      "42443928",
+      "42379536",
+      "42372813",
+      "42349766"
     ],
     "sources": [
       {
@@ -782,10 +857,31 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42443928/",
         "doi": "10.1186/s13020-026-01445-6",
         "publication_date": "2026-Jul-13"
+      },
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42349766",
+        "title": "Diterpenoids from Tripterygium Glycosides Tablets and their anti-inflammatory activity.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42349766/",
+        "doi": "10.1016/j.jep.2026.122115",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-14 16:07:22 中国标准时间",
-    "updated_at": "2026-07-14 20:30:35 中国标准时间",
+    "updated_at": "2026-07-23 10:44:15 UTC",
     "schema_version": "2.0",
     "aliases": [],
     "search_terms": [
@@ -1059,9 +1155,10 @@
       "y": -3.655,
       "z": 117.449
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "42444447"
+      "42444447",
+      "42372809"
     ],
     "sources": [
       {
@@ -1070,10 +1167,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42444447/",
         "doi": "10.1142/S0192415X26500588",
         "publication_date": "2026-Jul-14"
+      },
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-14 20:30:30 中国标准时间",
-    "updated_at": "2026-07-14 20:30:30 中国标准时间",
+    "updated_at": "2026-07-23 10:43:55 UTC",
     "schema_version": "2.0",
     "aliases": [],
     "search_terms": [
@@ -3503,9 +3607,10 @@
       "y": -5.908,
       "z": 112.953
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "41866335"
+      "41866335",
+      "42379535"
     ],
     "sources": [
       {
@@ -3514,10 +3619,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
-    "updated_at": "2026-07-16 18:30:56 中国标准时间",
+    "updated_at": "2026-07-23 10:43:44 UTC",
     "schema_version": "2.0",
     "aliases": [
       "pro-inflammatory cytokines"
@@ -3580,9 +3692,10 @@
       "y": 8.653,
       "z": 149.741
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "41866335"
+      "41866335",
+      "42392551"
     ],
     "sources": [
       {
@@ -3591,10 +3704,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42392551",
+        "title": "Taohe Chengqi Decoction ameliorates APID-related local uterine inflammatory injury through modulation of inflammation, oxidative stress, and JNK/p38 MAPK-NF-κB-related signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
+        "doi": "10.1016/j.jep.2026.122152",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
-    "updated_at": "2026-07-16 18:30:56 中国标准时间",
+    "updated_at": "2026-07-23 10:43:30 UTC",
     "schema_version": "2.0",
     "aliases": [
       "oxidative stress"
@@ -6447,9 +6567,10 @@
       "y": 5.717,
       "z": 113.952
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "42046449"
+      "42046449",
+      "42379536"
     ],
     "sources": [
       {
@@ -6458,10 +6579,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
         "doi": "10.1080/13510002.2026.2663621",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-21 10:37:50 UTC",
-    "updated_at": "2026-07-21 10:37:50 UTC"
+    "updated_at": "2026-07-23 10:43:42 UTC"
   },
   {
     "id": "N000104",
@@ -6607,5 +6735,1996 @@
     ],
     "created_at": "2026-07-22 10:36:47 UTC",
     "updated_at": "2026-07-22 10:36:47 UTC"
+  },
+  {
+    "id": "N000109",
+    "name": "柴归汤",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.286,
+    "y": 8.854,
+    "z": 148.702,
+    "position": {
+      "x": 1.286,
+      "y": 8.854,
+      "z": 148.702
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:27 UTC",
+    "updated_at": "2026-07-23 10:43:27 UTC"
+  },
+  {
+    "id": "N000110",
+    "name": "AKT磷酸化",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -6.697,
+    "y": 3.205,
+    "z": 113.943,
+    "position": {
+      "x": -6.697,
+      "y": 3.205,
+      "z": 113.943
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:27 UTC",
+    "updated_at": "2026-07-23 10:43:27 UTC"
+  },
+  {
+    "id": "N000111",
+    "name": "16α-Hydroxytrametenolic acid",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -5.122,
+    "y": -2.118,
+    "z": 149.325,
+    "position": {
+      "x": -5.122,
+      "y": -2.118,
+      "z": 149.325
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:27 UTC",
+    "updated_at": "2026-07-23 10:43:27 UTC"
+  },
+  {
+    "id": "N000112",
+    "name": "GPER表达",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 7.64,
+    "y": 0.241,
+    "z": 152.139,
+    "position": {
+      "x": 7.64,
+      "y": 0.241,
+      "z": 152.139
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:27 UTC",
+    "updated_at": "2026-07-23 10:43:27 UTC"
+  },
+  {
+    "id": "N000113",
+    "name": "Alisol A",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -7.141,
+    "y": -6.601,
+    "z": 147.868,
+    "position": {
+      "x": -7.141,
+      "y": -6.601,
+      "z": 147.868
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:27 UTC",
+    "updated_at": "2026-07-23 10:43:27 UTC"
+  },
+  {
+    "id": "N000114",
+    "name": "桃核承气汤",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.669,
+    "y": -6.412,
+    "z": 146.297,
+    "position": {
+      "x": 3.669,
+      "y": -6.412,
+      "z": 146.297
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392551"
+    ],
+    "sources": [
+      {
+        "pmid": "42392551",
+        "title": "Taohe Chengqi Decoction ameliorates APID-related local uterine inflammatory injury through modulation of inflammation, oxidative stress, and JNK/p38 MAPK-NF-κB-related signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
+        "doi": "10.1016/j.jep.2026.122152",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:30 UTC",
+    "updated_at": "2026-07-23 10:43:30 UTC"
+  },
+  {
+    "id": "N000115",
+    "name": "炎症反应",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -7.223,
+    "y": -2.365,
+    "z": 147.229,
+    "position": {
+      "x": -7.223,
+      "y": -2.365,
+      "z": 147.229
+    },
+    "evidence_count": 2,
+    "evidence_pmids": [
+      "42392551",
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42392551",
+        "title": "Taohe Chengqi Decoction ameliorates APID-related local uterine inflammatory injury through modulation of inflammation, oxidative stress, and JNK/p38 MAPK-NF-κB-related signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
+        "doi": "10.1016/j.jep.2026.122152",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:30 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "N000116",
+    "name": "JNK/p38 MAPK-NF-κB信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -3.525,
+    "y": -7.548,
+    "z": 112.665,
+    "position": {
+      "x": -3.525,
+      "y": -7.548,
+      "z": 112.665
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392551"
+    ],
+    "sources": [
+      {
+        "pmid": "42392551",
+        "title": "Taohe Chengqi Decoction ameliorates APID-related local uterine inflammatory injury through modulation of inflammation, oxidative stress, and JNK/p38 MAPK-NF-κB-related signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
+        "doi": "10.1016/j.jep.2026.122152",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:30 UTC",
+    "updated_at": "2026-07-23 10:43:30 UTC"
+  },
+  {
+    "id": "N000117",
+    "name": "Xin-Zi-Sheng-Wan decoction",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -2.021,
+    "y": -3.363,
+    "z": 146.847,
+    "position": {
+      "x": -2.021,
+      "y": -3.363,
+      "z": 146.847
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379538"
+    ],
+    "sources": [
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:33 UTC",
+    "updated_at": "2026-07-23 10:43:33 UTC"
+  },
+  {
+    "id": "N000118",
+    "name": "RIPK1/RIPK3/MLKL介导的坏死性凋亡",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 0.616,
+    "y": -5.936,
+    "z": 115.669,
+    "position": {
+      "x": 0.616,
+      "y": -5.936,
+      "z": 115.669
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379538"
+    ],
+    "sources": [
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:33 UTC",
+    "updated_at": "2026-07-23 10:43:33 UTC"
+  },
+  {
+    "id": "N000119",
+    "name": "活性氧积累",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -6.425,
+    "y": -6.204,
+    "z": 150.028,
+    "position": {
+      "x": -6.425,
+      "y": -6.204,
+      "z": 150.028
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379538"
+    ],
+    "sources": [
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:33 UTC",
+    "updated_at": "2026-07-23 10:43:33 UTC"
+  },
+  {
+    "id": "N000120",
+    "name": "TNF-α驱动的坏死性凋亡",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 4.981,
+    "y": -0.21,
+    "z": 112.28,
+    "position": {
+      "x": 4.981,
+      "y": -0.21,
+      "z": 112.28
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379538"
+    ],
+    "sources": [
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:33 UTC",
+    "updated_at": "2026-07-23 10:43:33 UTC"
+  },
+  {
+    "id": "N000121",
+    "name": "大黄提取物",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -4.596,
+    "y": 6.107,
+    "z": 148.518,
+    "position": {
+      "x": -4.596,
+      "y": 6.107,
+      "z": 148.518
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "N000122",
+    "name": "血清5-羟色胺",
+    "type": "神经结构",
+    "layer": "神经免疫层",
+    "x": 4.316,
+    "y": 7.704,
+    "z": 58.659,
+    "position": {
+      "x": 4.316,
+      "y": 7.704,
+      "z": 58.659
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "N000123",
+    "name": "SLC6A4",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -2.858,
+    "y": -4.843,
+    "z": 147.933,
+    "position": {
+      "x": -2.858,
+      "y": -4.843,
+      "z": 147.933
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "N000124",
+    "name": "TPH1",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 4.58,
+    "y": -8.891,
+    "z": 147.953,
+    "position": {
+      "x": 4.58,
+      "y": -8.891,
+      "z": 147.953
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "N000125",
+    "name": "TGR5",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.076,
+    "y": -1.746,
+    "z": 146.277,
+    "position": {
+      "x": 5.076,
+      "y": -1.746,
+      "z": 146.277
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:36 UTC",
+    "updated_at": "2026-07-23 10:43:36 UTC"
+  },
+  {
+    "id": "N000126",
+    "name": "PLSL",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.726,
+    "y": 6.365,
+    "z": 153.173,
+    "position": {
+      "x": 3.726,
+      "y": 6.365,
+      "z": 153.173
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "N000127",
+    "name": "COX-2",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 0.899,
+    "y": 2.937,
+    "z": 146.05,
+    "position": {
+      "x": 0.899,
+      "y": 2.937,
+      "z": 146.05
+    },
+    "evidence_count": 3,
+    "evidence_pmids": [
+      "42379536",
+      "42372813",
+      "42341861"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42341861",
+        "title": "Digeda-8 formula attenuates cholestatic liver injury in rats by restoring bile acid transport and suppressing inflammation: An integrated metabolomics and proteomics approach.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42341861/",
+        "doi": "10.1016/j.jep.2026.122096",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:44:17 UTC"
+  },
+  {
+    "id": "N000128",
+    "name": "iNOS",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -4.152,
+    "y": -0.927,
+    "z": 149.446,
+    "position": {
+      "x": -4.152,
+      "y": -0.927,
+      "z": 149.446
+    },
+    "evidence_count": 2,
+    "evidence_pmids": [
+      "42379536",
+      "42372813"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:48 UTC"
+  },
+  {
+    "id": "N000129",
+    "name": "GSH",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.96,
+    "y": -4.038,
+    "z": 151.655,
+    "position": {
+      "x": 6.96,
+      "y": -4.038,
+      "z": 151.655
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "N000130",
+    "name": "MDA",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -7.562,
+    "y": -3.661,
+    "z": 148.538,
+    "position": {
+      "x": -7.562,
+      "y": -3.661,
+      "z": 148.538
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "N000131",
+    "name": "NO",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 7.436,
+    "y": 7.542,
+    "z": 150.968,
+    "position": {
+      "x": 7.436,
+      "y": 7.542,
+      "z": 150.968
+    },
+    "evidence_count": 3,
+    "evidence_pmids": [
+      "42379536",
+      "42372813",
+      "42349766"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42349766",
+        "title": "Diterpenoids from Tripterygium Glycosides Tablets and their anti-inflammatory activity.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42349766/",
+        "doi": "10.1016/j.jep.2026.122115",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:44:15 UTC"
+  },
+  {
+    "id": "N000132",
+    "name": "SCFAs",
+    "type": "能量代谢物",
+    "layer": "分子信号层",
+    "x": 2.73,
+    "y": 5.01,
+    "z": 116.466,
+    "position": {
+      "x": 2.73,
+      "y": 5.01,
+      "z": 116.466
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "N000133",
+    "name": "Lachnospiraceae",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.18,
+    "y": -2.971,
+    "z": 148.066,
+    "position": {
+      "x": 5.18,
+      "y": -2.971,
+      "z": 148.066
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:42 UTC",
+    "updated_at": "2026-07-23 10:43:42 UTC"
+  },
+  {
+    "id": "N000134",
+    "name": "Gomisin G",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 7.336,
+    "y": -5.154,
+    "z": 150.29,
+    "position": {
+      "x": 7.336,
+      "y": -5.154,
+      "z": 150.29
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379535"
+    ],
+    "sources": [
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:44 UTC",
+    "updated_at": "2026-07-23 10:43:44 UTC"
+  },
+  {
+    "id": "N000135",
+    "name": "PI3K-AKT/JAK3-STAT3信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -6.739,
+    "y": 5.081,
+    "z": 114.854,
+    "position": {
+      "x": -6.739,
+      "y": 5.081,
+      "z": 114.854
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379535"
+    ],
+    "sources": [
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:44 UTC",
+    "updated_at": "2026-07-23 10:43:44 UTC"
+  },
+  {
+    "id": "N000136",
+    "name": "表皮增生",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 0.7,
+    "y": -8.737,
+    "z": 147.802,
+    "position": {
+      "x": 0.7,
+      "y": -8.737,
+      "z": 147.802
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379535"
+    ],
+    "sources": [
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:44 UTC",
+    "updated_at": "2026-07-23 10:43:44 UTC"
+  },
+  {
+    "id": "N000137",
+    "name": "代谢紊乱改善",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -7.668,
+    "y": -0.707,
+    "z": 151.464,
+    "position": {
+      "x": -7.668,
+      "y": -0.707,
+      "z": 151.464
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379535"
+    ],
+    "sources": [
+      {
+        "pmid": "42379535",
+        "title": "Elucidating the therapeutic mechanism of Gomisin G from Guomin Gecoction for psoriasis treatment through targeting the PI3K-AKT/JAK3-STAT3 pathway.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379535/",
+        "doi": "10.1016/j.jep.2026.122143",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:44 UTC",
+    "updated_at": "2026-07-23 10:43:44 UTC"
+  },
+  {
+    "id": "N000138",
+    "name": "Corydalis yanhusuo alkaloids",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.936,
+    "y": 8.613,
+    "z": 148.843,
+    "position": {
+      "x": 1.936,
+      "y": 8.613,
+      "z": 148.843
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372813"
+    ],
+    "sources": [
+      {
+        "pmid": "42372813",
+        "title": "Optimization of extraction, chemical characterization, and in vitro antioxidant and anti-inflammatory mechanisms of Corydalis yanhusuo alkaloids.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
+        "doi": "10.1016/j.jep.2026.122136",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:48 UTC",
+    "updated_at": "2026-07-23 10:43:48 UTC"
+  },
+  {
+    "id": "N000139",
+    "name": "QFXBF",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -8.868,
+    "y": -7.324,
+    "z": 150.491,
+    "position": {
+      "x": -8.868,
+      "y": -7.324,
+      "z": 150.491
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "N000140",
+    "name": "STING",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 6.997,
+    "y": -4.997,
+    "z": 115.318,
+    "position": {
+      "x": 6.997,
+      "y": -4.997,
+      "z": 115.318
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "N000141",
+    "name": "HIF-1α",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -0.331,
+    "y": 6.473,
+    "z": 115.704,
+    "position": {
+      "x": -0.331,
+      "y": 6.473,
+      "z": 115.704
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "N000142",
+    "name": "糖酵解",
+    "type": "能量代谢物",
+    "layer": "分子信号层",
+    "x": -8.789,
+    "y": 0.715,
+    "z": 113.184,
+    "position": {
+      "x": -8.789,
+      "y": 0.715,
+      "z": 113.184
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "N000143",
+    "name": "tectorigenin",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.696,
+    "y": 4.144,
+    "z": 153.942,
+    "position": {
+      "x": 3.696,
+      "y": 4.144,
+      "z": 153.942
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "N000144",
+    "name": "乳酸代谢",
+    "type": "能量代谢物",
+    "layer": "分子信号层",
+    "x": 8.453,
+    "y": -8.607,
+    "z": 115.494,
+    "position": {
+      "x": 8.453,
+      "y": -8.607,
+      "z": 115.494
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:52 UTC",
+    "updated_at": "2026-07-23 10:43:52 UTC"
+  },
+  {
+    "id": "N000145",
+    "name": "双黄连注射液",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -7.071,
+    "y": 5.463,
+    "z": 146.18,
+    "position": {
+      "x": -7.071,
+      "y": 5.463,
+      "z": 146.18
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372809"
+    ],
+    "sources": [
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:55 UTC",
+    "updated_at": "2026-07-23 10:43:55 UTC"
+  },
+  {
+    "id": "N000146",
+    "name": "NF-κB信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 3.806,
+    "y": -3.339,
+    "z": 115.172,
+    "position": {
+      "x": 3.806,
+      "y": -3.339,
+      "z": 115.172
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372809"
+    ],
+    "sources": [
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:55 UTC",
+    "updated_at": "2026-07-23 10:43:55 UTC"
+  },
+  {
+    "id": "N000147",
+    "name": "TNFAIP6",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": 0.515,
+    "y": -5.708,
+    "z": 114.207,
+    "position": {
+      "x": 0.515,
+      "y": -5.708,
+      "z": 114.207
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372809"
+    ],
+    "sources": [
+      {
+        "pmid": "42372809",
+        "title": "Integrating machine learning and pharmacology reveals NF-κB-mediated inflammatory regulation by Shuanghuanglian injection in acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
+        "doi": "10.1016/j.jep.2026.122137",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:55 UTC",
+    "updated_at": "2026-07-23 10:43:55 UTC"
+  },
+  {
+    "id": "N000148",
+    "name": "金银花-连翘提取物",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 8.914,
+    "y": -8.97,
+    "z": 152.911,
+    "position": {
+      "x": 8.914,
+      "y": -8.97,
+      "z": 152.911
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "N000149",
+    "name": "MAPK信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 8.579,
+    "y": 3.992,
+    "z": 112.775,
+    "position": {
+      "x": 8.579,
+      "y": 3.992,
+      "z": 112.775
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "N000150",
+    "name": "木犀草素",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -3.415,
+    "y": 4.315,
+    "z": 151.702,
+    "position": {
+      "x": -3.415,
+      "y": 4.315,
+      "z": 151.702
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "N000151",
+    "name": "β-谷甾醇",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -2.111,
+    "y": 6.314,
+    "z": 150.867,
+    "position": {
+      "x": -2.111,
+      "y": 6.314,
+      "z": 150.867
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "N000152",
+    "name": "连翘苷",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -1.031,
+    "y": 3.293,
+    "z": 148.767,
+    "position": {
+      "x": -1.031,
+      "y": 3.293,
+      "z": 148.767
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:43:59 UTC",
+    "updated_at": "2026-07-23 10:43:59 UTC"
+  },
+  {
+    "id": "N000153",
+    "name": "Yang-Xue-An-Tai Decoction",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -1.429,
+    "y": 6.276,
+    "z": 146.329,
+    "position": {
+      "x": -1.429,
+      "y": 6.276,
+      "z": 146.329
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "N000154",
+    "name": "NK细胞-proDSC通信",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.725,
+    "y": 3.524,
+    "z": 146.352,
+    "position": {
+      "x": 3.725,
+      "y": 3.524,
+      "z": 146.352
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "N000155",
+    "name": "proDSC分化",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 8.768,
+    "y": 6.262,
+    "z": 149.876,
+    "position": {
+      "x": 8.768,
+      "y": 6.262,
+      "z": 149.876
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "N000156",
+    "name": "Lgals1表达",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.964,
+    "y": 1.468,
+    "z": 150.703,
+    "position": {
+      "x": 6.964,
+      "y": 1.468,
+      "z": 150.703
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "N000157",
+    "name": "Spp1-Cd44",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 2.184,
+    "y": 4.717,
+    "z": 146.63,
+    "position": {
+      "x": 2.184,
+      "y": 4.717,
+      "z": 146.63
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "N000158",
+    "name": "炎症激活",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -4.869,
+    "y": 4.995,
+    "z": 150.51,
+    "position": {
+      "x": -4.869,
+      "y": 4.995,
+      "z": 150.51
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "N000159",
+    "name": "Gzma-Pard3",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.838,
+    "y": -2.854,
+    "z": 153.858,
+    "position": {
+      "x": 1.838,
+      "y": -2.854,
+      "z": 153.858
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:03 UTC",
+    "updated_at": "2026-07-23 10:44:03 UTC"
+  },
+  {
+    "id": "N000160",
+    "name": "痛泻要方",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -0.347,
+    "y": -0.671,
+    "z": 146.879,
+    "position": {
+      "x": -0.347,
+      "y": -0.671,
+      "z": 146.879
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "N000161",
+    "name": "Alistipes finegoldii",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 4.932,
+    "y": -7.963,
+    "z": 150.236,
+    "position": {
+      "x": 4.932,
+      "y": -7.963,
+      "z": 150.236
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "N000162",
+    "name": "吲哚-3-乙酸",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 2.682,
+    "y": -7.09,
+    "z": 150.083,
+    "position": {
+      "x": 2.682,
+      "y": -7.09,
+      "z": 150.083
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "N000163",
+    "name": "芳香烃受体",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.2,
+    "y": -0.442,
+    "z": 147.766,
+    "position": {
+      "x": 1.2,
+      "y": -0.442,
+      "z": 147.766
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "N000164",
+    "name": "肿瘤坏死因子诱导的上皮屏障破坏",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.002,
+    "y": 1.455,
+    "z": 146.145,
+    "position": {
+      "x": 6.002,
+      "y": 1.455,
+      "z": 146.145
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361932"
+    ],
+    "sources": [
+      {
+        "pmid": "42361932",
+        "title": "Tong-Xie-Yao-Fang ameliorates IBS-D: Potential role of Alistipes finegoldii-associated gut tryptophan indole metabolism.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
+        "doi": "10.1016/j.jep.2026.122061",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:06 UTC",
+    "updated_at": "2026-07-23 10:44:06 UTC"
+  },
+  {
+    "id": "N000165",
+    "name": "Salvia miltiorrhiza Bunge",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 0.57,
+    "y": -2.484,
+    "z": 148.013,
+    "position": {
+      "x": 0.57,
+      "y": -2.484,
+      "z": 148.013
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000166",
+    "name": "TGF-β1-induced fibroblast activation",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.264,
+    "y": -5.599,
+    "z": 149.836,
+    "position": {
+      "x": 6.264,
+      "y": -5.599,
+      "z": 149.836
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000167",
+    "name": "Smad2/3 signaling",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -0.198,
+    "y": 5.708,
+    "z": 111.113,
+    "position": {
+      "x": -0.198,
+      "y": 5.708,
+      "z": 111.113
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000168",
+    "name": "mitophagy",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.308,
+    "y": -7.89,
+    "z": 151.716,
+    "position": {
+      "x": 3.308,
+      "y": -7.89,
+      "z": 151.716
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000169",
+    "name": "PINK1/parkin signaling",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -4.006,
+    "y": 1.626,
+    "z": 114.738,
+    "position": {
+      "x": -4.006,
+      "y": 1.626,
+      "z": 114.738
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000170",
+    "name": "PINK1 spot formation",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.365,
+    "y": -5.026,
+    "z": 149.191,
+    "position": {
+      "x": 3.365,
+      "y": -5.026,
+      "z": 149.191
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000171",
+    "name": "mitochondrial LC3BII/I ratio",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 0.103,
+    "y": -2.375,
+    "z": 152.414,
+    "position": {
+      "x": 0.103,
+      "y": -2.375,
+      "z": 152.414
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000172",
+    "name": "pulmonary edema",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 2.133,
+    "y": -0.336,
+    "z": 148.157,
+    "position": {
+      "x": 2.133,
+      "y": -0.336,
+      "z": 148.157
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000173",
+    "name": "inflammation",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.151,
+    "y": -3.646,
+    "z": 151.342,
+    "position": {
+      "x": 1.151,
+      "y": -3.646,
+      "z": 151.342
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:11 UTC",
+    "updated_at": "2026-07-23 10:44:11 UTC"
+  },
+  {
+    "id": "N000174",
+    "name": "雷公藤多苷片",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 8.544,
+    "y": 6.672,
+    "z": 146.601,
+    "position": {
+      "x": 8.544,
+      "y": 6.672,
+      "z": 146.601
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42349766"
+    ],
+    "sources": [
+      {
+        "pmid": "42349766",
+        "title": "Diterpenoids from Tripterygium Glycosides Tablets and their anti-inflammatory activity.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42349766/",
+        "doi": "10.1016/j.jep.2026.122115",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:15 UTC",
+    "updated_at": "2026-07-23 10:44:15 UTC"
+  },
+  {
+    "id": "N000175",
+    "name": "Digeda-8",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 7.064,
+    "y": 5.206,
+    "z": 153.943,
+    "position": {
+      "x": 7.064,
+      "y": 5.206,
+      "z": 153.943
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42341861"
+    ],
+    "sources": [
+      {
+        "pmid": "42341861",
+        "title": "Digeda-8 formula attenuates cholestatic liver injury in rats by restoring bile acid transport and suppressing inflammation: An integrated metabolomics and proteomics approach.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42341861/",
+        "doi": "10.1016/j.jep.2026.122096",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-23 10:44:17 UTC",
+    "updated_at": "2026-07-23 10:44:17 UTC"
   }
 ]
