@@ -3692,10 +3692,11 @@
       "y": 8.653,
       "z": 149.741
     },
-    "evidence_count": 2,
+    "evidence_count": 3,
     "evidence_pmids": [
       "41866335",
-      "42392551"
+      "42392551",
+      "42379538"
     ],
     "sources": [
       {
@@ -3711,10 +3712,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
         "doi": "10.1016/j.jep.2026.122152",
         "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
-    "updated_at": "2026-07-23 10:43:30 UTC",
+    "updated_at": "2026-07-24 10:36:38 UTC",
     "schema_version": "2.0",
     "aliases": [
       "oxidative stress"
@@ -4867,10 +4875,11 @@
       "y": -6.416,
       "z": 151.339
     },
-    "evidence_count": 2,
+    "evidence_count": 3,
     "evidence_pmids": [
       "41866335",
-      "42046449"
+      "42046449",
+      "42379537"
     ],
     "sources": [
       {
@@ -4886,10 +4895,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42046449/",
         "doi": "10.1080/13510002.2026.2663621",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-16 22:00:42 中国标准时间",
-    "updated_at": "2026-07-21 10:37:50 UTC",
+    "updated_at": "2026-07-24 10:36:41 UTC",
     "schema_version": "2.0",
     "aliases": [
       "inflammation"
@@ -6306,9 +6322,10 @@
       "y": 73.842,
       "z": 147.81
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "41467904"
+      "41467904",
+      "42379537"
     ],
     "sources": [
       {
@@ -6317,10 +6334,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-20 07:23:08 UTC",
-    "updated_at": "2026-07-20 07:23:08 UTC"
+    "updated_at": "2026-07-24 10:36:41 UTC"
   },
   {
     "id": "N000095",
@@ -8726,5 +8750,585 @@
     ],
     "created_at": "2026-07-23 10:44:17 UTC",
     "updated_at": "2026-07-23 10:44:17 UTC"
+  },
+  {
+    "id": "N000176",
+    "name": "迷走神经",
+    "type": "神经结构",
+    "layer": "神经免疫层",
+    "x": -1.562,
+    "y": -4.701,
+    "z": 55.81,
+    "position": {
+      "x": -1.562,
+      "y": -4.701,
+      "z": 55.81
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-24 10:30:13 UTC",
+    "updated_at": "2026-07-24 10:30:13 UTC"
+  },
+  {
+    "id": "N000177",
+    "name": "脑-体通信",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.33,
+    "y": 2.947,
+    "z": 154.024,
+    "position": {
+      "x": 3.33,
+      "y": 2.947,
+      "z": 154.024
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-24 10:30:13 UTC",
+    "updated_at": "2026-07-24 10:30:13 UTC"
+  },
+  {
+    "id": "N000178",
+    "name": "肠道-肺轴",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 32.756,
+    "y": 62.086,
+    "z": 149.068,
+    "position": {
+      "x": 32.756,
+      "y": 62.086,
+      "z": 149.068
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:09 UTC",
+    "updated_at": "2026-07-24 10:36:09 UTC"
+  },
+  {
+    "id": "N000179",
+    "name": "肺免疫代谢稳态",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 40.632,
+    "y": 57.691,
+    "z": 147.733,
+    "position": {
+      "x": 40.632,
+      "y": 57.691,
+      "z": 147.733
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:09 UTC",
+    "updated_at": "2026-07-24 10:36:09 UTC"
+  },
+  {
+    "id": "N000180",
+    "name": "柴桂汤",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 0.457,
+    "y": 5.173,
+    "z": 153.028,
+    "position": {
+      "x": 0.457,
+      "y": 5.173,
+      "z": 153.028
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:32 UTC",
+    "updated_at": "2026-07-24 10:36:32 UTC"
+  },
+  {
+    "id": "N000181",
+    "name": "16α-羟基茯苓酸",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.937,
+    "y": 1.901,
+    "z": 151.823,
+    "position": {
+      "x": 6.937,
+      "y": 1.901,
+      "z": 151.823
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:32 UTC",
+    "updated_at": "2026-07-24 10:36:32 UTC"
+  },
+  {
+    "id": "N000182",
+    "name": "泽泻醇A",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -8.629,
+    "y": 3.747,
+    "z": 151.219,
+    "position": {
+      "x": -8.629,
+      "y": 3.747,
+      "z": 151.219
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:32 UTC",
+    "updated_at": "2026-07-24 10:36:32 UTC"
+  },
+  {
+    "id": "N000183",
+    "name": "5-羟色胺",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.892,
+    "y": 6.342,
+    "z": 149.441,
+    "position": {
+      "x": 3.892,
+      "y": 6.342,
+      "z": 149.441
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:41 UTC",
+    "updated_at": "2026-07-24 10:36:41 UTC"
+  },
+  {
+    "id": "N000184",
+    "name": "胆汁酸代谢",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -62.224,
+    "y": -2.666,
+    "z": 150.466,
+    "position": {
+      "x": -62.224,
+      "y": -2.666,
+      "z": 150.466
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:41 UTC",
+    "updated_at": "2026-07-24 10:36:41 UTC"
+  },
+  {
+    "id": "N000185",
+    "name": "祛风宣痹方",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.892,
+    "y": 0.239,
+    "z": 151.77,
+    "position": {
+      "x": 5.892,
+      "y": 0.239,
+      "z": 151.77
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:56 UTC",
+    "updated_at": "2026-07-24 10:36:56 UTC"
+  },
+  {
+    "id": "N000186",
+    "name": "鸢尾黄素",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 3.024,
+    "y": -4.924,
+    "z": 152.925,
+    "position": {
+      "x": 3.024,
+      "y": -4.924,
+      "z": 152.925
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:56 UTC",
+    "updated_at": "2026-07-24 10:36:56 UTC"
+  },
+  {
+    "id": "N000187",
+    "name": "NK细胞-proDSC通讯",
+    "type": "免疫细胞",
+    "layer": "免疫细胞层",
+    "x": -3.724,
+    "y": 0.667,
+    "z": 77.032,
+    "position": {
+      "x": -3.724,
+      "y": 0.667,
+      "z": 77.032
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:06 UTC",
+    "updated_at": "2026-07-24 10:37:06 UTC"
+  },
+  {
+    "id": "N000188",
+    "name": "TGF-β1诱导的成纤维细胞活化",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 7.616,
+    "y": -0.045,
+    "z": 149.445,
+    "position": {
+      "x": 7.616,
+      "y": -0.045,
+      "z": 149.445
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "N000189",
+    "name": "Smad2/3信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -4.165,
+    "y": -6.79,
+    "z": 115.075,
+    "position": {
+      "x": -4.165,
+      "y": -6.79,
+      "z": 115.075
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "N000190",
+    "name": "线粒体自噬",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -2.903,
+    "y": -1.703,
+    "z": 150.222,
+    "position": {
+      "x": -2.903,
+      "y": -1.703,
+      "z": 150.222
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "N000191",
+    "name": "PINK1/parkin信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -8.312,
+    "y": 8.991,
+    "z": 113.871,
+    "position": {
+      "x": -8.312,
+      "y": 8.991,
+      "z": 113.871
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "N000192",
+    "name": "LC3BII/I比值",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.388,
+    "y": 2.534,
+    "z": 150.711,
+    "position": {
+      "x": 6.388,
+      "y": 2.534,
+      "z": 150.711
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "N000193",
+    "name": "PINK1",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 6.49,
+    "y": -6.216,
+    "z": 147.247,
+    "position": {
+      "x": 6.49,
+      "y": -6.216,
+      "z": 147.247
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "N000194",
+    "name": "SM的抗活化效应",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 8.337,
+    "y": 3.407,
+    "z": 152.468,
+    "position": {
+      "x": 8.337,
+      "y": 3.407,
+      "z": 152.468
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "N000195",
+    "name": "AKT",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.29,
+    "y": -4.301,
+    "z": 148.099,
+    "position": {
+      "x": 1.29,
+      "y": -4.301,
+      "z": 148.099
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
   }
 ]

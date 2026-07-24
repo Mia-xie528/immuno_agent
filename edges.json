@@ -2355,7 +2355,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
         "doi": "10.1080/10253890.2026.2684153",
         "publication_date": "2026-Dec-31",
-        "evidence": "stimulating auricular vagal afferents, transcutaneous auricular vagal nerve stimulation (taVNS) is proposed to engage stress regulatory circuits"
+        "evidence": "taVNS is proposed to engage stress regulatory circuits"
       }
     ],
     "created_at": "2026-07-16 18:28:21 中国标准时间",
@@ -2673,7 +2673,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31",
-        "evidence": "EMO alleviated joint inflammation and reduced pro-inflammatory cytokines"
+        "evidence": "reduced pro-inflammatory cytokines"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
@@ -2725,7 +2725,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41866335/",
         "doi": "10.1080/13510002.2026.2646383",
         "publication_date": "2026-Dec-31",
-        "evidence": "EMO reduced oxidative stress"
+        "evidence": "reduced oxidative stress"
       }
     ],
     "created_at": "2026-07-16 18:30:56 中国标准时间",
@@ -2933,7 +2933,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "SCFAs altered the metabolic programming of AMs and lung tissue ex vivo。"
+        "evidence": "SCFAs altered the metabolic programming of AMs"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -2985,7 +2985,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出effect depended on the ability of the microbiota to produce propionate。"
+        "evidence": "depended on the ability of the microbiota to produce propionate"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
@@ -3615,7 +3615,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41481427/",
         "doi": "10.1080/19490976.2025.2609455",
         "publication_date": "2026-Dec-31",
-        "evidence": "butyrate could induce MM cells' apoptosis via HDAC inhibition-mediated upregulation of PPARγ, leading to sequential suppression of the PI3K/AKT pathway and antiapoptotic BCL-2 expression."
+        "evidence": "butyrate could induce MM cells' apoptosis via HDAC inhibition-mediated upregulation of PPARγ, leading to sequential suppression of the PI3K/AKT pathway"
       }
     ],
     "created_at": "2026-07-16 22:02:49 中国标准时间",
@@ -3667,7 +3667,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31",
-        "evidence": "摘要指出fiber-rich diet favor the presence of SCFA-producing bacteria and increase SCFA levels。"
+        "evidence": "fiber-rich diet favored the presence of SCFA-producing bacteria"
       }
     ],
     "created_at": "2026-07-16 22:02:56 中国标准时间",
@@ -5253,7 +5253,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
         "doi": "10.1016/j.jep.2026.122148",
         "publication_date": "2026-Dec-06",
-        "evidence": "PLSL ... regulating the ... Keap1/Nrf2 signaling pathways ... modulating the mRNA expression of ... Nrf2"
+        "evidence": "PLSL significantly alleviated LPS-induced ALI in mice by regulating the ... Keap1/Nrf2 signaling pathways"
       }
     ],
     "created_at": "2026-07-23 10:43:42 UTC",
@@ -5451,7 +5451,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
         "doi": "10.1016/j.jep.2026.122136",
         "publication_date": "2026-Dec-06",
-        "evidence": "CYAs dose-dependently suppressed TNF-α secretion"
+        "evidence": "suppressed TNF-α/IL-6 secretion"
       }
     ],
     "created_at": "2026-07-23 10:43:48 UTC",
@@ -5473,7 +5473,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
         "doi": "10.1016/j.jep.2026.122136",
         "publication_date": "2026-Dec-06",
-        "evidence": "CYAs dose-dependently suppressed IL-6 secretion"
+        "evidence": "suppressed TNF-α/IL-6 secretion"
       }
     ],
     "created_at": "2026-07-23 10:43:48 UTC",
@@ -5495,7 +5495,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
         "doi": "10.1016/j.jep.2026.122136",
         "publication_date": "2026-Dec-06",
-        "evidence": "downregulated iNOS mRNA and attenuated iNOS protein overexpression"
+        "evidence": "downregulated iNOS mRNA and protein"
       }
     ],
     "created_at": "2026-07-23 10:43:48 UTC",
@@ -5517,7 +5517,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372813/",
         "doi": "10.1016/j.jep.2026.122136",
         "publication_date": "2026-Dec-06",
-        "evidence": "downregulated COX-2 mRNA and attenuated COX-2 protein overexpression"
+        "evidence": "downregulated COX-2 mRNA and protein"
       }
     ],
     "created_at": "2026-07-23 10:43:48 UTC",
@@ -5605,7 +5605,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
         "doi": "10.1016/j.jep.2026.122134",
         "publication_date": "2026-Dec-06",
-        "evidence": "QFXBF attenuated HIF-1α activity through suppression of STING."
+        "evidence": "QFXBF attenuated HIF-1α activity and glycolytic flux through suppression of STING."
       }
     ],
     "created_at": "2026-07-23 10:43:52 UTC",
@@ -5627,7 +5627,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
         "doi": "10.1016/j.jep.2026.122134",
         "publication_date": "2026-Dec-06",
-        "evidence": "QFXBF attenuated glycolytic flux through suppression of STING/HIF-1α."
+        "evidence": "QFXBF attenuated HIF-1α activity and glycolytic flux through suppression of STING."
       }
     ],
     "created_at": "2026-07-23 10:43:52 UTC",
@@ -5693,7 +5693,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
         "doi": "10.1016/j.jep.2026.122137",
         "publication_date": "2026-Dec-06",
-        "evidence": "SHLI dampened NF-κB activation by limiting IκBα phosphorylation and restraining p65 activation."
+        "evidence": "SHLI dampened NF-κB activation by limiting IκBα phosphorylation and restraining p65 activation"
       }
     ],
     "created_at": "2026-07-23 10:43:55 UTC",
@@ -5715,7 +5715,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
         "doi": "10.1016/j.jep.2026.122137",
         "publication_date": "2026-Dec-06",
-        "evidence": "SHLI reduced the secretion of TNF-α."
+        "evidence": "SHLI reduced the secretion of TNF-α"
       }
     ],
     "created_at": "2026-07-23 10:43:55 UTC",
@@ -5737,7 +5737,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
         "doi": "10.1016/j.jep.2026.122137",
         "publication_date": "2026-Dec-06",
-        "evidence": "SHLI reduced the secretion of IL-1β."
+        "evidence": "SHLI reduced the secretion of IL-1β"
       }
     ],
     "created_at": "2026-07-23 10:43:55 UTC",
@@ -5759,7 +5759,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372809/",
         "doi": "10.1016/j.jep.2026.122137",
         "publication_date": "2026-Dec-06",
-        "evidence": "SHLI reduced the secretion of TNFAIP6."
+        "evidence": "SHLI reduced the secretion of TNFAIP6"
       }
     ],
     "created_at": "2026-07-23 10:43:55 UTC",
@@ -5825,7 +5825,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
         "doi": "10.1016/j.jep.2026.122008",
         "publication_date": "2026-Dec-06",
-        "evidence": "LF reduced inflammatory responses and enhanced antioxidative capacity"
+        "evidence": "reduced inflammatory responses and enhanced antioxidative capacity"
       }
     ],
     "created_at": "2026-07-23 10:43:59 UTC",
@@ -6045,7 +6045,7 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361932/",
         "doi": "10.1016/j.jep.2026.122061",
         "publication_date": "2026-Dec-06",
-        "evidence": "transplantation of A. finegoldii combined with tryptophan supplementation... recapitulated the therapeutic effects of TXYF against IBS-D."
+        "evidence": "integrative metagenomic and metabolomic analyses revealed a strong association between Alistipes finegoldii and colonic indole and IAA levels."
       }
     ],
     "created_at": "2026-07-23 10:44:06 UTC",
@@ -6402,5 +6402,555 @@
     ],
     "created_at": "2026-07-23 10:44:17 UTC",
     "updated_at": "2026-07-23 10:44:17 UTC"
+  },
+  {
+    "id": "E000192",
+    "source": "N000176",
+    "target": "N000177",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42339759"
+    ],
+    "sources": [
+      {
+        "pmid": "42339759",
+        "title": "Transcutaneous auricular vagus nerve stimulation and stress regulation: preclinical insights and unresolved challenges.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339759/",
+        "doi": "10.1080/10253890.2026.2684153",
+        "publication_date": "2026-Dec-31",
+        "evidence": "central role of the vagus nerve in brain-body communication"
+      }
+    ],
+    "created_at": "2026-07-24 10:30:13 UTC",
+    "updated_at": "2026-07-24 10:30:13 UTC"
+  },
+  {
+    "id": "E000193",
+    "source": "N000053",
+    "target": "N000057",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "fiber-rich diet attenuated lung inflammation after sterile injury"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:09 UTC",
+    "updated_at": "2026-07-24 10:36:09 UTC"
+  },
+  {
+    "id": "E000194",
+    "source": "N000094",
+    "target": "N000054",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "depended on the ability of the microbiota to produce propionate"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:09 UTC",
+    "updated_at": "2026-07-24 10:36:09 UTC"
+  },
+  {
+    "id": "E000195",
+    "source": "N000178",
+    "target": "N000179",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31",
+        "evidence": "gut‒lung axis can regulate resting lung metabolic tone"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:09 UTC",
+    "updated_at": "2026-07-24 10:36:09 UTC"
+  },
+  {
+    "id": "E000196",
+    "source": "N000180",
+    "target": "N000110",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06",
+        "evidence": "16α-HTA and Alisol A reduced GPER expression at a low dose and suppressed AKT phosphorylation independently of EGFR."
+      }
+    ],
+    "created_at": "2026-07-24 10:36:32 UTC",
+    "updated_at": "2026-07-24 10:36:32 UTC"
+  },
+  {
+    "id": "E000197",
+    "source": "N000181",
+    "target": "N000112",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06",
+        "evidence": "16α-HTA and Alisol A reduced GPER expression at a low dose"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:32 UTC",
+    "updated_at": "2026-07-24 10:36:32 UTC"
+  },
+  {
+    "id": "E000198",
+    "source": "N000182",
+    "target": "N000112",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42392552"
+    ],
+    "sources": [
+      {
+        "pmid": "42392552",
+        "title": "A cell-based affinity mass spectrometry strategy for the rapid discovery of active components from Chinese herbal formulae: Chai-Gui decoction as a study case.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392552/",
+        "doi": "10.1016/j.jep.2026.122119",
+        "publication_date": "2026-Dec-06",
+        "evidence": "16α-HTA and Alisol A reduced GPER expression at a low dose"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:32 UTC",
+    "updated_at": "2026-07-24 10:36:32 UTC"
+  },
+  {
+    "id": "E000199",
+    "source": "N000117",
+    "target": "N000046",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379538"
+    ],
+    "sources": [
+      {
+        "pmid": "42379538",
+        "title": "Xin-Zi-Sheng-Wan decoction alleviates hyperuricemia-associated renal injury by inhibiting RIPK1/RIPK3/MLKL-mediated necroptosis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379538/",
+        "doi": "10.1016/j.jep.2026.122116",
+        "publication_date": "2026-Dec-06",
+        "evidence": "XZSWD reduced reactive oxygen species (ROS) accumulation."
+      }
+    ],
+    "created_at": "2026-07-24 10:36:38 UTC",
+    "updated_at": "2026-07-24 10:36:38 UTC"
+  },
+  {
+    "id": "E000200",
+    "source": "N000121",
+    "target": "N000061",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06",
+        "evidence": "摘要中提及评估了炎症细胞因子（inflammatory cytokines）"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:41 UTC",
+    "updated_at": "2026-07-24 10:36:41 UTC"
+  },
+  {
+    "id": "E000201",
+    "source": "N000121",
+    "target": "N000183",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06",
+        "evidence": "血清5-HT水平从2.43升至5.81 μg/mL"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:41 UTC",
+    "updated_at": "2026-07-24 10:36:41 UTC"
+  },
+  {
+    "id": "E000202",
+    "source": "N000121",
+    "target": "N000094",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06",
+        "evidence": "部分恢复肠道菌群失调"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:41 UTC",
+    "updated_at": "2026-07-24 10:36:41 UTC"
+  },
+  {
+    "id": "E000203",
+    "source": "N000121",
+    "target": "N000184",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06",
+        "evidence": "恢复初级和次级胆汁酸平衡"
+      }
+    ],
+    "created_at": "2026-07-24 10:36:41 UTC",
+    "updated_at": "2026-07-24 10:36:41 UTC"
+  },
+  {
+    "id": "E000204",
+    "source": "N000185",
+    "target": "N000140",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "QFXBF also downregulated STING at both mRNA and protein levels in lung tissue."
+      }
+    ],
+    "created_at": "2026-07-24 10:36:56 UTC",
+    "updated_at": "2026-07-24 10:36:56 UTC"
+  },
+  {
+    "id": "E000205",
+    "source": "N000185",
+    "target": "N000141",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "QFXBF also downregulated HIF-1α at both mRNA and protein levels in lung tissue."
+      }
+    ],
+    "created_at": "2026-07-24 10:36:56 UTC",
+    "updated_at": "2026-07-24 10:36:56 UTC"
+  },
+  {
+    "id": "E000206",
+    "source": "N000185",
+    "target": "N000142",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "QFXBF dose-dependently suppressed glucose utilization and lactate accumulation."
+      }
+    ],
+    "created_at": "2026-07-24 10:36:56 UTC",
+    "updated_at": "2026-07-24 10:36:56 UTC"
+  },
+  {
+    "id": "E000207",
+    "source": "N000186",
+    "target": "N000140",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "tectorigenin significantly reduced STING expression in STING-overexpressing BSMCs."
+      }
+    ],
+    "created_at": "2026-07-24 10:36:56 UTC",
+    "updated_at": "2026-07-24 10:36:56 UTC"
+  },
+  {
+    "id": "E000208",
+    "source": "N000186",
+    "target": "N000142",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06",
+        "evidence": "tectorigenin significantly reduced lactate metabolism in STING-overexpressing BSMCs."
+      }
+    ],
+    "created_at": "2026-07-24 10:36:56 UTC",
+    "updated_at": "2026-07-24 10:36:56 UTC"
+  },
+  {
+    "id": "E000209",
+    "source": "N000153",
+    "target": "N000187",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06",
+        "evidence": "URSA mice exhibited enhanced NK cell-proDSC communication ... which were attenuated by YXAT."
+      }
+    ],
+    "created_at": "2026-07-24 10:37:06 UTC",
+    "updated_at": "2026-07-24 10:37:06 UTC"
+  },
+  {
+    "id": "E000210",
+    "source": "N000165",
+    "target": "N000188",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM inhibited TGF-β1-induced fibroblast activation and collagen formation."
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "E000211",
+    "source": "N000165",
+    "target": "N000189",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "Mechanistically, SM inhibited TGF-β1-induced Smad2/3 signaling."
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "E000212",
+    "source": "N000165",
+    "target": "N000190",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "RNA-seq analysis revealed that SM enhanced mitophagy."
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "E000213",
+    "source": "N000165",
+    "target": "N000191",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM activated PINK1/parkin signaling in cultured fibroblasts."
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "E000214",
+    "source": "N000165",
+    "target": "N000192",
+    "relation": "促进",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "SM increased the mitochondrial LC3BII/I ratio."
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "E000215",
+    "source": "N000193",
+    "target": "N000194",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "PINK1 knockdown weakens the anti-activating effect in fibroblasts."
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "E000216",
+    "source": "N000195",
+    "target": "N000194",
+    "relation": "抑制",
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06",
+        "evidence": "AKT inhibition weakens the anti-activating effect in fibroblasts."
+      }
+    ],
+    "created_at": "2026-07-24 10:37:14 UTC",
+    "updated_at": "2026-07-24 10:37:14 UTC"
   }
 ]
