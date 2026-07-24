@@ -4172,9 +4172,10 @@
       "y": 62.273,
       "z": 113.426
     },
-    "evidence_count": 1,
+    "evidence_count": 2,
     "evidence_pmids": [
-      "41467904"
+      "41467904",
+      "42379536"
     ],
     "sources": [
       {
@@ -4183,10 +4184,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
         "doi": "10.1080/19490976.2025.2606486",
         "publication_date": "2026-Dec-31"
+      },
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-16 18:33:09 中国标准时间",
-    "updated_at": "2026-07-16 18:33:09 中国标准时间",
+    "updated_at": "2026-07-24 12:35:59 UTC",
     "schema_version": "2.0",
     "aliases": [
       "short-chain fatty acids",
@@ -4875,11 +4883,12 @@
       "y": -6.416,
       "z": 151.339
     },
-    "evidence_count": 3,
+    "evidence_count": 4,
     "evidence_pmids": [
       "41866335",
       "42046449",
-      "42379537"
+      "42379537",
+      "42392551"
     ],
     "sources": [
       {
@@ -4902,10 +4911,17 @@
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
         "doi": "10.1016/j.jep.2026.122105",
         "publication_date": "2026-Dec-06"
+      },
+      {
+        "pmid": "42392551",
+        "title": "Taohe Chengqi Decoction ameliorates APID-related local uterine inflammatory injury through modulation of inflammation, oxidative stress, and JNK/p38 MAPK-NF-κB-related signaling.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42392551/",
+        "doi": "10.1016/j.jep.2026.122152",
+        "publication_date": "2026-Dec-06"
       }
     ],
     "created_at": "2026-07-16 22:00:42 中国标准时间",
-    "updated_at": "2026-07-24 10:36:41 UTC",
+    "updated_at": "2026-07-24 12:35:46 UTC",
     "schema_version": "2.0",
     "aliases": [
       "inflammation"
@@ -9330,5 +9346,382 @@
     ],
     "created_at": "2026-07-24 10:37:14 UTC",
     "updated_at": "2026-07-24 10:37:14 UTC"
+  },
+  {
+    "id": "N000196",
+    "name": "产短链脂肪酸肠道菌群",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 1.278,
+    "y": -7.941,
+    "z": 148.134,
+    "position": {
+      "x": 1.278,
+      "y": -7.941,
+      "z": 148.134
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "41467904"
+    ],
+    "sources": [
+      {
+        "pmid": "41467904",
+        "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung injury responses in mice.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41467904/",
+        "doi": "10.1080/19490976.2025.2606486",
+        "publication_date": "2026-Dec-31"
+      }
+    ],
+    "created_at": "2026-07-24 12:35:18 UTC",
+    "updated_at": "2026-07-24 12:35:18 UTC"
+  },
+  {
+    "id": "N000197",
+    "name": "炎症因子",
+    "type": "细胞因子",
+    "layer": "分子信号层",
+    "x": 4.152,
+    "y": 0.831,
+    "z": 118.652,
+    "position": {
+      "x": 4.152,
+      "y": 0.831,
+      "z": 118.652
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379537"
+    ],
+    "sources": [
+      {
+        "pmid": "42379537",
+        "title": "Rhubarb extract ameliorates slow-transit constipation in rats by modulating gut microbiota and bile acid homeostasis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379537/",
+        "doi": "10.1016/j.jep.2026.122105",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:35:53 UTC",
+    "updated_at": "2026-07-24 12:35:53 UTC"
+  },
+  {
+    "id": "N000198",
+    "name": "Alistipes",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -1.827,
+    "y": -2.49,
+    "z": 152.057,
+    "position": {
+      "x": -1.827,
+      "y": -2.49,
+      "z": 152.057
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42379536"
+    ],
+    "sources": [
+      {
+        "pmid": "42379536",
+        "title": "Ethnopharmacological potential and mechanistic study of Platycodon grandiflorum stems and leaves and Lonicera japonica stems and leaves against acute lung injury.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42379536/",
+        "doi": "10.1016/j.jep.2026.122148",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:35:59 UTC",
+    "updated_at": "2026-07-24 12:35:59 UTC"
+  },
+  {
+    "id": "N000199",
+    "name": "鸢尾素",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -5.029,
+    "y": 6.71,
+    "z": 150.174,
+    "position": {
+      "x": -5.029,
+      "y": 6.71,
+      "z": 150.174
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42372812"
+    ],
+    "sources": [
+      {
+        "pmid": "42372812",
+        "title": "Qufeng xuanbi formula attenuates HDM-induced allergic asthma by targeting the STING/HIF-1α/glycolysis axis.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372812/",
+        "doi": "10.1016/j.jep.2026.122134",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:08 UTC",
+    "updated_at": "2026-07-24 12:36:08 UTC"
+  },
+  {
+    "id": "N000200",
+    "name": "抗氧化能力",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.36,
+    "y": 1.294,
+    "z": 146.749,
+    "position": {
+      "x": 5.36,
+      "y": 1.294,
+      "z": 146.749
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364673"
+    ],
+    "sources": [
+      {
+        "pmid": "42364673",
+        "title": "An integrated approach combining transcriptomics, network pharmacology, and experimental validation are used to investigate the mechanism of Lonicerae Japonicae Flos and Forsythiae Fructus extracts against acute lung injury in chickens.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364673/",
+        "doi": "10.1016/j.jep.2026.122008",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:15 UTC",
+    "updated_at": "2026-07-24 12:36:15 UTC"
+  },
+  {
+    "id": "N000201",
+    "name": "Spp1-(Itgav+Itgb5)",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -3.361,
+    "y": -5.326,
+    "z": 152.271,
+    "position": {
+      "x": -3.361,
+      "y": -5.326,
+      "z": 152.271
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:19 UTC",
+    "updated_at": "2026-07-24 12:36:19 UTC"
+  },
+  {
+    "id": "N000202",
+    "name": "免疫抑制",
+    "type": "其他",
+    "layer": "其他层",
+    "x": -0.828,
+    "y": -3.634,
+    "z": 146.916,
+    "position": {
+      "x": -0.828,
+      "y": -3.634,
+      "z": 146.916
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:19 UTC",
+    "updated_at": "2026-07-24 12:36:19 UTC"
+  },
+  {
+    "id": "N000203",
+    "name": "Lamb2-Dag1",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 7.232,
+    "y": 4.7,
+    "z": 147.763,
+    "position": {
+      "x": 7.232,
+      "y": 4.7,
+      "z": 147.763
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42364671"
+    ],
+    "sources": [
+      {
+        "pmid": "42364671",
+        "title": "Yang-Xue-An-Tai Decoction Treats URSA by regulating the differentiation of proliferating decidual stromal cells through multiple targets.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42364671/",
+        "doi": "10.1016/j.jep.2026.122133",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:19 UTC",
+    "updated_at": "2026-07-24 12:36:19 UTC"
+  },
+  {
+    "id": "N000204",
+    "name": "TGF-β1信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 5.737,
+    "y": -4.104,
+    "z": 113.244,
+    "position": {
+      "x": 5.737,
+      "y": -4.104,
+      "z": 113.244
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:26 UTC",
+    "updated_at": "2026-07-24 12:36:26 UTC"
+  },
+  {
+    "id": "N000205",
+    "name": "肺纤维化",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 26.847,
+    "y": 62.087,
+    "z": 147.454,
+    "position": {
+      "x": 26.847,
+      "y": 62.087,
+      "z": 147.454
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:26 UTC",
+    "updated_at": "2026-07-24 12:36:26 UTC"
+  },
+  {
+    "id": "N000206",
+    "name": "成纤维细胞活化",
+    "type": "其他",
+    "layer": "其他层",
+    "x": 5.734,
+    "y": -6.667,
+    "z": 148.221,
+    "position": {
+      "x": 5.734,
+      "y": -6.667,
+      "z": 148.221
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:26 UTC",
+    "updated_at": "2026-07-24 12:36:26 UTC"
+  },
+  {
+    "id": "N000207",
+    "name": "AKT信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": -2.845,
+    "y": -5.613,
+    "z": 115.878,
+    "position": {
+      "x": -2.845,
+      "y": -5.613,
+      "z": 115.878
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:26 UTC",
+    "updated_at": "2026-07-24 12:36:26 UTC"
+  },
+  {
+    "id": "N000208",
+    "name": "PINK1信号通路",
+    "type": "信号通路",
+    "layer": "分子信号层",
+    "x": 0.132,
+    "y": 3.211,
+    "z": 117.254,
+    "position": {
+      "x": 0.132,
+      "y": 3.211,
+      "z": 117.254
+    },
+    "evidence_count": 1,
+    "evidence_pmids": [
+      "42361931"
+    ],
+    "sources": [
+      {
+        "pmid": "42361931",
+        "title": "Salvia miltiorrhiza Bunge alleviates pulmonary fibrosis by promoting fibroblast mitophagy.",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42361931/",
+        "doi": "10.1016/j.jep.2026.122095",
+        "publication_date": "2026-Dec-06"
+      }
+    ],
+    "created_at": "2026-07-24 12:36:26 UTC",
+    "updated_at": "2026-07-24 12:36:26 UTC"
   }
 ]
